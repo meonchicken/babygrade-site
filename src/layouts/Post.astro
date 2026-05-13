@@ -1,0 +1,861 @@
+---
+import Base from './Base.astro';
+import { render, getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const data = post.data;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+
+// 읽기 시간 추산
+const wordCount = (post.body ?? '').trim().split(/\s+/).length;
+const readTime = Math.max(1, Math.round(wordCount / 250));
+
+// CTA용 1순위 제품
+const topProduct = data.products[0] ?? null;
+
+// 관련 글 (같은 카테고리, 최신순 3개)
+const allPosts = await getCollection('posts', ({ data: d }) => !d.draft);
+const relatedPosts = allPosts
+  .filter((p) => p.id !== post.id && p.data.category === data.category)
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+  .slice(0, 3);
+
+// Schema.org
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  datePublished: data.publishedAt.toISOString(),
+  dateModified: (data.updatedAt || data.publishedAt).toISOString(),
+  image: data.heroImage,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  author: { '@type': 'Organization', name: 'BabyGrade Editorial Team' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'BabyGrade',
+    logo: { '@type': 'ImageObject', url: new URL('/logo.png', Astro.site).href },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: data.faq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const productSchemas = data.products.map((p) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: p.name,
+  image: p.image,
+  offers: {
+    '@type': 'Offer',
+    price: p.price,
+    priceCurrency: 'KRW',
+    url: p.url,
+    availability: 'https://schema.org/InStock',
+  },
+  ...(p.rating && {
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: p.rating, ratingCount: 1 },
+  }),
+}));
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '홈', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: data.category, item: new URL(`/category/${data.category}`, Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: data.title, item: url },
+  ],
+};
+
+const schemas = [articleSchema, faqSchema, breadcrumbSchema, ...productSchemas];
+const { Content } = await render(post);
+---
+
+<Base title={data.title} description={data.description} ogImage={data.heroImage} schemas={schemas}>
+
+  <div class="page-grid">
+
+    <!-- ── 좌측: TOC 사이드바 (데스크탑) ── -->
+    <aside class="toc-col">
+      <div class="toc-sticky">
+        <div class="toc-label">목차</div>
+        <nav class="toc-nav" id="toc-desktop"></nav>
+      </div>
+    </aside>
+
+    <!-- ── 중앙: 헤더 + 본문 ── -->
+    <div class="main-col">
+
+      <!-- 포스트 헤더 -->
+      <header class="post-header">
+        <nav class="breadcrumb">
+          <a href="/">홈</a>
+          <span>›</span>
+          <a href={`/category/${data.category}`}>{data.category}</a>
+          <span>›</span>
+          <span>{data.title}</span>
+        </nav>
+
+        <h1>{data.title}</h1>
+        <p class="description">{data.description}</p>
+
+        <div class="post-meta">
+          <div class="meta-left">
+            <span class="meta-author">BabyGrade Editorial Team</span>
+            <span class="meta-sep">|</span>
+            <time datetime={data.publishedAt.toISOString()}>
+              {data.publishedAt.toLocaleDateString('ko-KR')}
+            </time>
+          </div>
+          <div class="meta-right">
+            <a href={`/category/${data.category}`} class="meta-cat">{data.category}</a>
+            <span class="meta-read">· {readTime}분 읽기</span>
+          </div>
+        </div>
+
+        <p class="affiliate-disclosure" role="note">
+          <strong>광고 고지</strong> · 본 콘텐츠는 쿠팡 파트너스 활동의 일환으로, 본문 내 링크를 통해 발생한 매출에 따라 일정액의 수수료를 제공받습니다.
+        </p>
+      </header>
+
+      <!-- 피처 이미지 -->
+      <img src={data.heroImage} alt={data.heroImageAlt} class="hero" loading="eager" width="1200" height="630" />
+
+      <!-- 모바일 TOC 토글 -->
+      <div class="toc-mobile-wrap">
+        <button class="toc-mobile-toggle" id="toc-mobile-toggle" aria-expanded="false">
+          <span>목차 보기</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="toc-mobile-panel" id="toc-mobile-panel"></div>
+      </div>
+
+      <!-- 한눈에 요약 -->
+      <aside class="tldr">
+        <h2>한눈에 요약</h2>
+        <ul>{data.tldr.map((line) => <li>{line}</li>)}</ul>
+      </aside>
+
+      <!-- 본문 -->
+      <div class="content">
+        <Content />
+      </div>
+
+      <!-- 추천 제품 -->
+      {data.products.length > 0 && (
+        <section class="products">
+          <h2>추천 제품</h2>
+          <p class="products-disclosure">아래 제품 링크는 모두 <strong>쿠팡 파트너스 활동의 일환</strong>이며, 본문 내 링크를 통해 발생한 매출에 따라 일정액의 수수료를 제공받습니다.</p>
+          <div class="product-grid">
+            {data.products.map((p) => (
+              <a href={p.url} rel="nofollow noopener sponsored" target="_blank" class="product-card">
+                <span class="product-card-tag">쿠팡 파트너스</span>
+                <img src={p.image} alt={`${p.name} - ${p.price.toLocaleString()}원`} loading="lazy" width="300" height="300" />
+                <div class="product-body">
+                  <h3>{p.name}</h3>
+                  <p class="price">{p.price.toLocaleString()}원</p>
+                  {p.features.length > 0 && (
+                    <ul class="features">{p.features.slice(0, 3).map((f) => <li>{f}</li>)}</ul>
+                  )}
+                  <span class="cta-btn">최저가 보기 →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- FAQ -->
+      <section class="faq">
+        <h2>자주 묻는 질문</h2>
+        <dl>
+          {data.faq.map((f) => (
+            <>
+              <dt>Q. {f.q}</dt>
+              <dd>A. {f.a}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+
+      <!-- 출처 -->
+      {data.sources.length > 0 && (
+        <section class="sources">
+          <h2>출처</h2>
+          <ul>
+            {data.sources.map((s) => (
+              <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a></li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <!-- 모바일 관련 글 -->
+      {relatedPosts.length > 0 && (
+        <section class="related-mobile">
+          <h2 class="related-title">관련 글</h2>
+          <div class="related-grid">
+            {relatedPosts.map((p) => (
+              <a href={`/${p.id}`} class="related-card">
+                <img src={p.data.heroImage} alt={p.data.title} loading="lazy" width="400" height="225" />
+                <div class="related-card-body">
+                  <span class="related-cat">{p.data.category}</span>
+                  <p class="related-card-title">{p.data.title}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+    </div>
+
+    <!-- ── 우측: CTA + 관련 글 (데스크탑) ── -->
+    <aside class="right-col">
+      <div class="right-sticky">
+
+        <!-- 1순위 제품 CTA -->
+        {topProduct && (
+          <a href={topProduct.url} rel="nofollow noopener sponsored" target="_blank" class="sidebar-cta">
+            <div class="sidebar-cta-sub">이 글의 1순위 추천</div>
+            <img src={topProduct.image} alt={topProduct.name} class="sidebar-cta-img" loading="lazy" width="240" height="240" />
+            <div class="sidebar-cta-name">{topProduct.name}</div>
+            <div class="sidebar-cta-price">{topProduct.price.toLocaleString()}원</div>
+            <span class="sidebar-cta-btn">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              쿠팡에서 보기
+            </span>
+          </a>
+        )}
+
+        <!-- 관련 글 -->
+        {relatedPosts.length > 0 && (
+          <div class="sidebar-related">
+            <div class="sidebar-related-label">관련 글</div>
+            {relatedPosts.map((p) => (
+              <a href={`/${p.id}`} class="rec-card">
+                <img src={p.data.heroImage} alt={p.data.title} class="rec-thumb" loading="lazy" width="128" height="96" />
+                <div class="rec-body">
+                  <span class="rec-cat">{p.data.category}</span>
+                  <div class="rec-title">{p.data.title}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
+
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- ── 모바일 플로팅 CTA 토스트 ── -->
+  {topProduct && (
+    <div id="cta-toast">
+      <div class="toast-inner">
+        <img src={topProduct.image} alt={topProduct.name} class="toast-img" width="44" height="44" />
+        <div class="toast-text">
+          <p class="toast-label">1순위 추천</p>
+          <p class="toast-name">{topProduct.name.split(',')[0]}</p>
+        </div>
+        <a href={topProduct.url} rel="nofollow noopener sponsored" target="_blank" class="toast-btn">쿠팡 보기</a>
+        <button id="cta-toast-close" aria-label="닫기">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  )}
+
+</Base>
+
+<style>
+  /* ── 3컬럼 그리드 ── */
+  .page-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+  }
+  @media (min-width: 1200px) {
+    .page-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr 280px;
+    }
+  }
+
+  /* ── 좌측 TOC ── */
+  .toc-col { display: none; }
+  @media (min-width: 1200px) { .toc-col { display: block; } }
+
+  .toc-sticky {
+    position: sticky;
+    top: 64px;
+    padding: 40px 20px 40px 24px;
+  }
+  .toc-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 14px;
+  }
+  .toc-nav { display: flex; flex-direction: column; gap: 2px; }
+  .toc-nav :global(a) {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 3px 0 3px 10px;
+    border-left: 2px solid transparent;
+    transition: color .15s, border-color .15s;
+    display: block;
+  }
+  .toc-nav :global(a:hover),
+  .toc-nav :global(a.active) { color: var(--text); border-left-color: var(--primary); }
+  .toc-nav :global(a.toc-h3) { padding-left: 20px; font-size: 12px; }
+
+  /* ── 중앙 본문 ── */
+  .main-col {
+    min-width: 0;
+    padding: 0 24px 60px;
+  }
+  @media (max-width: 600px) {
+    .main-col { padding: 0 16px 80px; }
+  }
+  @media (min-width: 1200px) {
+    .main-col { padding: 0 40px 80px; }
+  }
+
+  /* ── 헤더 ── */
+  .post-header { padding-top: 36px; }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: .8rem;
+    color: var(--muted);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .breadcrumb a { color: var(--muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--text); }
+  .post-header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .description {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 20px;
+    max-width: 640px;
+  }
+  .post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 20px;
+    font-size: .88rem;
+  }
+  .meta-left { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+  .meta-author { font-weight: 500; color: var(--text); }
+  .meta-sep { color: var(--border); }
+  .meta-right { display: flex; align-items: center; gap: 8px; }
+  .meta-cat {
+    color: var(--primary-dark);
+    font-weight: 600;
+    font-size: .85rem;
+    text-decoration: none;
+  }
+  .meta-read { color: var(--muted); font-size: .82rem; }
+
+  .affiliate-disclosure {
+    background: #fff8ec;
+    border: 1px solid #ffd591;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: .8rem;
+    color: #854500;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .affiliate-disclosure strong { color: #c05a00; }
+
+  /* ── 피처 이미지 ── */
+  .hero {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 24px 0 28px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ── 모바일 TOC ── */
+  .toc-mobile-wrap { margin-bottom: 24px; }
+  @media (min-width: 1200px) { .toc-mobile-wrap { display: none; } }
+
+  .toc-mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .toc-mobile-panel {
+    display: none;
+    margin-top: 6px;
+    padding: 12px 14px;
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .toc-mobile-panel.open { display: block; }
+  .toc-mobile-panel :global(a) {
+    display: block;
+    font-size: 13px;
+    color: var(--text);
+    text-decoration: none;
+    padding: 4px 0;
+  }
+  .toc-mobile-panel :global(a.toc-h3) { padding-left: 12px; color: var(--muted); }
+
+  /* ── 요약 박스 ── */
+  .tldr {
+    background: #fff;
+    border-left: 4px solid var(--primary);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin-bottom: 32px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .tldr h2 {
+    font-size: .95rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+  }
+  .tldr ul { list-style: none; padding: 0; margin: 0; }
+  .tldr li { padding: 4px 0 4px 22px; position: relative; font-size: .95rem; line-height: 1.7; }
+  .tldr li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+  @media (max-width: 600px) {
+    .tldr { padding: 14px 16px; margin-bottom: 24px; }
+    .tldr li { font-size: .9rem; padding-left: 20px; }
+  }
+
+  /* ── 본문 ── */
+  .content { font-size: 1rem; line-height: 1.8; color: var(--text); word-break: keep-all; overflow-wrap: break-word; }
+  .content :global(h2) {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 44px 0 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--primary);
+    line-height: 1.35;
+  }
+  .content :global(h3) { font-size: 1.1rem; font-weight: 600; margin: 28px 0 10px; }
+  .content :global(p) { margin-bottom: 18px; }
+  .content :global(ul), .content :global(ol) { margin: 0 0 16px 22px; }
+  .content :global(li) { margin-bottom: 6px; }
+  @media (max-width: 600px) {
+    .content { font-size: .96rem; line-height: 1.75; }
+    .content :global(h2) { font-size: 1.2rem; margin: 36px 0 12px; padding-left: 10px; }
+    .content :global(h3) { font-size: 1.04rem; margin: 24px 0 10px; }
+    .content :global(ul), .content :global(ol) { margin: 0 0 14px 18px; }
+  }
+  .content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: .92rem;
+  }
+  .content :global(th), .content :global(td) {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+  }
+  .content :global(th) { background: #fff5e6; font-weight: 600; }
+  /* 모바일: 표를 가로 스크롤 가능한 블록으로 변환 + 폰트/패딩 축소 */
+  @media (max-width: 600px) {
+    .content :global(table) {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+      font-size: .82rem;
+      margin: 16px -4px;
+      /* 스크롤 가능 시각 힌트 */
+      background:
+        linear-gradient(to right, #fff 30%, rgba(255,255,255,0)) left center / 24px 100% no-repeat,
+        linear-gradient(to left, #fff 30%, rgba(255,255,255,0)) right center / 24px 100% no-repeat,
+        linear-gradient(to right, rgba(0,0,0,.08), rgba(0,0,0,0)) left center / 8px 100% no-repeat,
+        linear-gradient(to left, rgba(0,0,0,.08), rgba(0,0,0,0)) right center / 8px 100% no-repeat;
+      background-attachment: local, local, scroll, scroll;
+    }
+    .content :global(th), .content :global(td) {
+      padding: 7px 8px;
+      white-space: nowrap;
+    }
+    .content :global(th:last-child), .content :global(td:last-child) {
+      white-space: normal;
+      min-width: 100px;
+    }
+  }
+  .content :global(blockquote) {
+    border-left: 3px solid var(--border);
+    background: #f9fafb;
+    padding: 12px 18px;
+    margin: 20px 0;
+    color: var(--muted);
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+  }
+  .content :global(hr) { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+  .content :global(img) { max-width: 100%; height: auto; display: block; border-radius: 8px; margin: 16px 0; }
+  .content :global(strong) { font-weight: 600; }
+  .content :global(a) { color: var(--primary-dark); }
+  .content :global(figure.infographic) {
+    margin: 32px 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  .content :global(figure.infographic img) {
+    width: 100%; max-width: 600px; height: auto;
+    margin: 0 auto; border-radius: 8px; display: block;
+  }
+  .content :global(figure.infographic .labels-2col) {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 12px; max-width: 600px; margin: 14px auto 0; font-size: .88rem;
+  }
+  .content :global(figure.infographic .labels-3col) {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 12px; max-width: 600px; margin: 14px auto 0; font-size: .85rem;
+  }
+  .content :global(figure.infographic .labels-6col) {
+    display: grid; grid-template-columns: repeat(6, 1fr);
+    gap: 6px; max-width: 600px; margin: 14px auto 0; font-size: .75rem;
+  }
+  @media (max-width: 600px) {
+    .content :global(figure.infographic) { padding: 14px 12px; }
+    .content :global(figure.infographic .labels-2col) { grid-template-columns: 1fr; gap: 8px; font-size: .85rem; }
+    .content :global(figure.infographic .labels-3col) { gap: 8px; font-size: .78rem; }
+    .content :global(figure.infographic .labels-6col) { grid-template-columns: repeat(3, 1fr); }
+  }
+  .content :global(figure.infographic .labels-2col span),
+  .content :global(figure.infographic .labels-3col span),
+  .content :global(figure.infographic .labels-6col span) {
+    background: #fff5e6; padding: 8px 6px; border-radius: 6px; line-height: 1.4; color: var(--text);
+  }
+  .content :global(figure.infographic b) {
+    color: var(--primary-dark); font-size: .9em; display: block; margin-bottom: 2px;
+  }
+  .content :global(figure.infographic figcaption) {
+    margin-top: 14px; font-size: .85rem; color: var(--muted); font-style: italic;
+  }
+  .content :global(.cpg-block) { margin: 24px 0; }
+  .content :global(.cpg-tag) {
+    display: inline-block; background: #fff5e6; color: #854500;
+    border: 1px solid #ffd591; font-size: .72rem; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 6px; font-weight: 500;
+  }
+  .content :global(a.cpg-cta) {
+    display: flex; flex-direction: column; gap: 4px;
+    background: linear-gradient(135deg, #ff8c42 0%, #e2231a 100%);
+    color: white !important; padding: 16px 20px; border-radius: 10px;
+    text-decoration: none !important; margin: 24px 0;
+    box-shadow: 0 2px 8px rgba(226,35,26,.25);
+    transition: transform .15s, box-shadow .15s;
+  }
+  .content :global(a.cpg-cta:hover) {
+    transform: translateY(-2px); box-shadow: 0 4px 16px rgba(226,35,26,.35);
+  }
+  .content :global(a.cpg-cta .cpg-cta-label) { font-size: .85rem; opacity: .9; font-weight: 500; }
+  .content :global(a.cpg-cta .cpg-cta-name) { font-size: 1rem; font-weight: 600; line-height: 1.4; }
+  .content :global(a.cpg-cta .cpg-cta-price) { font-size: 1.2rem; font-weight: 800; margin-top: 2px; }
+  @media (max-width: 600px) {
+    .content :global(a.cpg-cta) { padding: 14px 16px; gap: 3px; margin: 18px 0; }
+    .content :global(a.cpg-cta .cpg-cta-label) { font-size: .8rem; }
+    .content :global(a.cpg-cta .cpg-cta-name) { font-size: .92rem; }
+    .content :global(a.cpg-cta .cpg-cta-price) { font-size: 1.1rem; }
+  }
+
+  /* ── 추천 제품 ── */
+  .products { margin: 50px 0; }
+  .products h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; }
+  .products-disclosure {
+    background: #fff8ec; border: 1px solid #ffd591; border-radius: 6px;
+    padding: 10px 14px; font-size: .8rem; color: #854500; line-height: 1.5; margin-bottom: 16px;
+  }
+  .products-disclosure strong { color: #c05a00; }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  @media (max-width: 600px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .product-body { padding: 10px; }
+    .product-body h3 { font-size: .85rem; }
+    .price { font-size: .95rem; }
+    .features { font-size: .72rem; }
+  }
+  @media (max-width: 360px) {
+    .product-grid { grid-template-columns: 1fr; }
+  }
+  .product-card {
+    background: #fff; border-radius: 10px; overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06); text-decoration: none;
+    color: inherit; transition: transform .15s; position: relative; display: block;
+  }
+  .product-card:hover { transform: translateY(-2px); }
+  .product-card-tag {
+    position: absolute; top: 8px; left: 8px;
+    background: rgba(255,255,255,.95); color: #854500;
+    font-size: .68rem; padding: 2px 8px; border-radius: 3px;
+    font-weight: 600; z-index: 1; border: 1px solid #ffd591;
+  }
+  .product-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: #faf5ee; display: block; }
+  .product-body { padding: 14px; }
+  .product-body h3 {
+    font-size: .92rem; line-height: 1.4; margin-bottom: 6px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .price { font-weight: 700; color: var(--primary-dark); font-size: 1rem; margin-bottom: 8px; }
+  .features { list-style: none; padding: 0; margin: 0 0 10px; font-size: .78rem; color: var(--muted); }
+  .features li { margin: 0; padding-left: 10px; position: relative; }
+  .features li::before { content: '·'; position: absolute; left: 3px; }
+  .cta-btn {
+    display: inline-block; background: var(--primary); color: white;
+    padding: 6px 12px; border-radius: 4px; font-size: .82rem; font-weight: 600;
+  }
+
+  /* ── FAQ ── */
+  .faq { margin: 50px 0; }
+  .faq h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 16px; }
+  .faq dt { font-weight: 600; margin-top: 18px; color: var(--text); word-break: keep-all; overflow-wrap: break-word; }
+  .faq dd { margin: 6px 0 0 18px; color: var(--muted); line-height: 1.7; word-break: keep-all; overflow-wrap: break-word; }
+  @media (max-width: 600px) {
+    .faq { margin: 36px 0; }
+    .faq h2 { font-size: 1.15rem; }
+    .faq dt { font-size: .94rem; margin-top: 16px; }
+    .faq dd { font-size: .9rem; margin-left: 14px; }
+  }
+
+  /* ── 출처 ── */
+  .sources { margin: 40px 0; padding-top: 24px; border-top: 1px solid var(--border); }
+  .sources h2 { font-size: 1rem; font-weight: 600; margin-bottom: 10px; }
+  .sources ul { list-style: none; padding: 0; font-size: .88rem; }
+  .sources li { margin: 6px 0; }
+  .sources a { color: var(--muted); text-decoration: underline; }
+
+  /* ── 모바일 관련 글 ── */
+  .related-mobile { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+  @media (min-width: 1200px) { .related-mobile { display: none; } }
+  .related-title { font-size: 1rem; font-weight: 700; margin-bottom: 16px; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .related-card { display: block; text-decoration: none; color: inherit; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: box-shadow .15s; }
+  .related-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+  .related-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+  .related-card-body { padding: 12px; }
+  .related-cat { font-size: .72rem; font-weight: 700; color: var(--primary-dark); text-transform: uppercase; display: block; margin-bottom: 4px; }
+  .related-card-title { font-size: .88rem; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* ── 우측 사이드바 ── */
+  .right-col { display: none; }
+  @media (min-width: 1200px) { .right-col { display: block; } }
+
+  .right-sticky {
+    position: sticky;
+    top: 64px;
+    padding: 40px 24px 40px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* 사이드바 CTA */
+  .sidebar-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0f141f;
+    border-radius: 16px;
+    padding: 20px 16px;
+    text-decoration: none;
+    color: white;
+    transition: background .15s;
+    gap: 8px;
+  }
+  .sidebar-cta:hover { background: #1a2233; }
+  .sidebar-cta-sub { font-size: 11px; color: #98a2b3; font-weight: 600; letter-spacing: .04em; }
+  .sidebar-cta-img {
+    width: 100%; max-width: 160px; aspect-ratio: 1;
+    object-fit: cover; border-radius: 10px; background: #fff;
+  }
+  .sidebar-cta-name {
+    font-size: .88rem; font-weight: 600; color: white;
+    text-align: center; line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .sidebar-cta-price { font-size: 1.1rem; font-weight: 800; color: #FF8C42; }
+  .sidebar-cta-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: white; color: #0f141f;
+    font-size: .82rem; font-weight: 700;
+    padding: 8px 16px; border-radius: 999px;
+    transition: background .15s, color .15s;
+    margin-top: 4px;
+  }
+  .sidebar-cta:hover .sidebar-cta-btn { background: var(--primary); color: white; }
+
+  /* 사이드바 관련 글 */
+  .sidebar-related-label {
+    font-size: 11px; font-weight: 700; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px;
+  }
+  .sidebar-related { display: flex; flex-direction: column; gap: 0; }
+  .rec-card {
+    display: flex; gap: 10px; align-items: flex-start;
+    text-decoration: none; padding: 8px; border-radius: 10px;
+    transition: background .15s; color: inherit;
+  }
+  .rec-card:hover { background: #f9fafb; }
+  .rec-thumb { width: 64px; height: 48px; object-fit: cover; border-radius: 6px; flex-shrink: 0; display: block; }
+  .rec-body { flex: 1; min-width: 0; }
+  .rec-cat { font-size: 10px; font-weight: 700; color: var(--primary-dark); text-transform: uppercase; letter-spacing: .05em; display: block; margin-bottom: 3px; }
+  .rec-title { font-size: 12.5px; font-weight: 600; color: var(--text); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* ── 모바일 플로팅 토스트 ── */
+  #cta-toast {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+    transform: translateY(120%);
+    transition: transform .5s cubic-bezier(.4,0,.2,1);
+  }
+  @media (min-width: 1200px) { #cta-toast { display: none; } }
+  .toast-inner {
+    margin: 0 12px 12px;
+    background: #0f141f;
+    border-radius: 16px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.35);
+  }
+  .toast-img { width: 44px; height: 44px; object-fit: cover; border-radius: 8px; flex-shrink: 0; background: #fff; }
+  .toast-text { flex: 1; min-width: 0; }
+  .toast-label { font-size: 10px; color: #98a2b3; font-weight: 600; }
+  .toast-name { font-size: 13px; color: white; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .toast-btn {
+    flex-shrink: 0; background: var(--primary); color: white;
+    font-size: 12px; font-weight: 700; padding: 8px 14px;
+    border-radius: 999px; text-decoration: none; white-space: nowrap;
+  }
+  #cta-toast-close {
+    flex-shrink: 0; color: #667085; background: none; border: none;
+    cursor: pointer; padding: 4px; display: flex; align-items: center;
+  }
+  #cta-toast-close:hover { color: white; }
+</style>
+
+<script>
+  /* ── TOC 자동 생성 ── */
+  const content = document.querySelector('.content');
+  const tocDesktop = document.getElementById('toc-desktop');
+  const tocMobilePanel = document.getElementById('toc-mobile-panel');
+
+  if (content && (tocDesktop || tocMobilePanel)) {
+    const headings = [...content.querySelectorAll('h2, h3')];
+
+    headings.forEach((el, i) => {
+      if (!el.id) {
+        el.id = 'heading-' + i;
+      }
+    });
+
+    const makeLink = (el: Element) => {
+      const a = document.createElement('a');
+      a.href = '#' + el.id;
+      a.textContent = el.textContent ?? '';
+      if (el.tagName === 'H3') a.classList.add('toc-h3');
+      return a;
+    };
+
+    headings.forEach((el) => {
+      tocDesktop?.appendChild(makeLink(el));
+      tocMobilePanel?.appendChild(makeLink(el));
+    });
+
+    /* 스크롤 활성 표시 */
+    if (tocDesktop && headings.length) {
+      const links = [...tocDesktop.querySelectorAll('a')];
+      const setActive = (id: string) =>
+        links.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+
+      headings.forEach((el) => {
+        new IntersectionObserver(
+          (entries) => {
+            entries.filter((e) => e.isIntersecting).forEach((e) => setActive(e.target.id));
+          },
+          { rootMargin: '-64px 0px -60% 0px', threshold: 0 }
+        ).observe(el);
+      });
+    }
+  }
+
+  /* ── 모바일 TOC 토글 ── */
+  const toggle = document.getElementById('toc-mobile-toggle');
+  const panel = document.getElementById('toc-mobile-panel');
+  toggle?.addEventListener('click', () => {
+    const open = panel!.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  panel?.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('click', () => {
+      panel.classList.remove('open');
+      toggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── 플로팅 토스트: 본문 50% 스크롤 시 등장 ── */
+  const toast = document.getElementById('cta-toast');
+  const closeBtn = document.getElementById('cta-toast-close');
+  const article = document.querySelector('.content');
+  if (toast && article && !sessionStorage.getItem('cta-dismissed')) {
+    const show = () => { toast.style.transform = 'translateY(0)'; };
+    const onScroll = () => {
+      const { top, height } = article.getBoundingClientRect();
+      if (-top / height >= 0.5) { show(); window.removeEventListener('scroll', onScroll); }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    closeBtn?.addEventListener('click', () => {
+      toast.style.transform = 'translateY(120%)';
+      sessionStorage.setItem('cta-dismissed', '1');
+    });
+  }
+</script>

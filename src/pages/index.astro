@@ -1,0 +1,153 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+
+const categories = ['임산부', '신생아', '영아', '유아'] as const;
+const byCategory = Object.fromEntries(categories.map((c) => [c, posts.filter((p) => p.data.category === c).slice(0, 4)]));
+---
+
+<Base title="BabyGrade - 임산부·신생아·영유아 용품 등급 비교 (2026 맘카페·리뷰 빅데이터)" description="임산부·신생아·영아·유아 용품 등급 비교. 쿠팡 리뷰·맘카페·디시 후기와 KC·BPA-Free 안전 인증 검증으로 진짜 안전한 제품만 골라드려요.">
+  <section class="hero-banner">
+    <div class="hero-inner">
+      <h1>육아 용품, <br />안전 인증으로 등급 비교하세요</h1>
+      <p>임산부·신생아·영아·유아 - 리뷰 빅데이터 + 안전 인증 분석</p>
+    </div>
+  </section>
+
+  {posts.length === 0 && (
+    <section class="empty">
+      <p>아직 게시된 글이 없어요. 곧 첫 리뷰가 올라옵니다 👶</p>
+    </section>
+  )}
+
+  {categories.map((cat) => byCategory[cat].length > 0 && (
+    <section class="cat-section">
+      <div class="section-header">
+        <h2>{cat}</h2>
+        <a href={`/category/${cat}`} class="more">전체 보기 →</a>
+      </div>
+      <div class="post-grid">
+        {byCategory[cat].map((post) => (
+          <a class="post-card" href={`/${post.id}`}>
+            <img src={post.data.heroImage} alt={post.data.heroImageAlt} loading="lazy" width="400" height="225" />
+            <div class="post-body">
+              <span class="cat-tag">{post.data.category}</span>
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .hero-banner {
+    background: linear-gradient(135deg, #ffefd5 0%, #fff5e6 100%);
+    padding: 60px 24px;
+    text-align: center;
+  }
+  .hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .hero-banner h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 14px;
+    color: var(--text);
+  }
+  .hero-banner p {
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+  .empty {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 60px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    color: var(--muted);
+  }
+  .cat-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 24px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
+  }
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  .more {
+    font-size: .9rem;
+    color: var(--muted);
+  }
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+  }
+  .post-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    color: inherit;
+    text-decoration: none;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    text-decoration: none;
+  }
+  .post-card img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background: #faf5ee;
+  }
+  .post-body {
+    padding: 14px 16px 18px;
+  }
+  .cat-tag {
+    display: inline-block;
+    background: #fff5e6;
+    color: var(--primary-dark);
+    font-size: .72rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .post-body h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .post-body p {
+    color: var(--muted);
+    font-size: .85rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @media (max-width: 600px) {
+    .hero-banner h1 { font-size: 1.6rem; }
+  }
+</style>

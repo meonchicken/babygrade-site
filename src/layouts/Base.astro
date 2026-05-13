@@ -1,0 +1,142 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  schemas?: object[];
+}
+
+const { title, description, ogImage = '/og-default.png', schemas = [] } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site).href} />
+
+    <!-- JSON-LD Schemas -->
+    {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+
+    <link rel="preconnect" href="https://ads-partners.coupang.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <style is:global>
+      :root {
+        --primary: #ff8c42;
+        --primary-dark: #e2231a;
+        --bg: #fffaf5;
+        --text: #2d2424;
+        --muted: #8a7e76;
+        --border: #f0e4d7;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+      a { color: var(--primary-dark); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      img { max-width: 100%; height: auto; display: block; }
+
+      header.site {
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+        padding: 14px 24px;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        box-shadow: 0 1px 3px rgba(0,0,0,.04);
+      }
+      header.site .inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: var(--primary-dark);
+      }
+      nav.menu {
+        display: flex;
+        gap: 20px;
+      }
+      nav.menu a {
+        color: var(--text);
+        font-weight: 500;
+        font-size: .95rem;
+      }
+      footer.site {
+        margin-top: 60px;
+        padding: 30px 24px;
+        background: #fff;
+        border-top: 1px solid var(--border);
+        text-align: center;
+        color: var(--muted);
+        font-size: .85rem;
+      }
+      footer.site .footer-nav {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin-bottom: 12px;
+      }
+      footer.site .footer-nav a {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <div class="inner">
+        <a href="/" class="logo">👶 BabyGrade</a>
+        <nav class="menu">
+          <a href="/category/임산부">임산부</a>
+          <a href="/category/신생아">신생아</a>
+          <a href="/category/영아">영아</a>
+          <a href="/category/유아">유아</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site">
+      <nav class="footer-nav">
+        <a href="/about">소개</a>
+        <a href="/privacy">개인정보</a>
+        <a href="mailto:zamzaricompany@gmail.com">문의</a>
+      </nav>
+      <p>© 2026 BabyGrade · 본 사이트는 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</p>
+    </footer>
+  </body>
+</html>

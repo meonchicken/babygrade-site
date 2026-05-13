@@ -1,0 +1,20 @@
+{
+  "name": "affiliate-site",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && cp dist/sitemap-index.xml dist/sitemap.xml",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.1.8",
+    "gray-matter": "^4.0.3",
+    "sharp": "^0.34.5"
+  }
+}

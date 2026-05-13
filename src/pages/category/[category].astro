@@ -1,0 +1,92 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const categories = ['임산부', '신생아', '영아', '유아', '안전', '기타'] as const;
+  return categories.map((c) => ({ params: { category: c } }));
+}
+
+const { category } = Astro.params;
+const posts = (await getCollection('posts', ({ data }) => data.category === category && !data.draft))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+---
+
+<Base title={`${category} 추천 - BabyGrade`} description={`영유아 ${category} 카테고리 등급 비교와 리뷰 빅데이터 분석.`}>
+  <section class="cat-page">
+    <header class="cat-header">
+      <nav class="breadcrumb"><a href="/">홈</a> › {category}</nav>
+      <h1>{category}</h1>
+      <p>{posts.length}개의 글</p>
+    </header>
+
+    <div class="post-grid">
+      {posts.map((post) => (
+        <a class="post-card" href={`/${post.id}`}>
+          <img src={post.data.heroImage} alt={post.data.heroImageAlt} loading="lazy" width="400" height="225" />
+          <div class="post-body">
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {posts.length === 0 && <p class="empty">이 카테고리에 글이 아직 없어요.</p>}
+  </section>
+</Base>
+
+<style>
+  .cat-page {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 24px;
+  }
+  .cat-header {
+    margin-bottom: 30px;
+  }
+  .breadcrumb {
+    font-size: .85rem;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .cat-header h1 {
+    font-size: 2rem;
+  }
+  .cat-header p {
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+  }
+  .post-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    color: inherit;
+    text-decoration: none;
+  }
+  .post-card:hover { text-decoration: none; transform: translateY(-2px); }
+  .post-card img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  .post-body { padding: 14px 16px; }
+  .post-body h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  .post-body p {
+    color: var(--muted);
+    font-size: .85rem;
+  }
+  .empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 60px;
+  }
+</style>
