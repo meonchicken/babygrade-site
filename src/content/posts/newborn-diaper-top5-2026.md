@@ -162,16 +162,9 @@ sources:
 
 <div class="cpg-block">
   <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
-  <a href="<div class="cpg-block">
-  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
   <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=9080722281&itemId=26676066378&vendorItemId=93648314657&traceid=V0-153-59347b08fc7f2077&requestid=20260514000032398285170705&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
     <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
     <span class="cpg-cta-name">하기스 네이처메이드밤부 밴드형 기저귀 신생아용 남여공용 3팩</span>
-    <span class="cpg-cta-price">57,900원</span>
-  </a>
-</div>" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
-    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
-    <span class="cpg-cta-name">하기스 네이처메이드밤부 밴드형 기저귀 신생아용 3팩</span>
     <span class="cpg-cta-price">57,900원</span>
   </a>
 </div>
@@ -182,16 +175,9 @@ sources:
 
 <div class="cpg-block">
   <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
-  <a href="<div class="cpg-block">
-  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
   <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=9364912386&itemId=27615417051&vendorItemId=94578472569&traceid=V0-153-14006fb34b9abcf6&requestid=20260514000032398285170705&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
     <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
     <span class="cpg-cta-name">하기스 2026 매직컴포트 밴드형 기저귀 남여공용</span>
-    <span class="cpg-cta-price">42,900원</span>
-  </a>
-</div>" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
-    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
-    <span class="cpg-cta-name">하기스 2026 매직컴포트 밴드형 기저귀</span>
     <span class="cpg-cta-price">42,900원</span>
   </a>
 </div>
@@ -202,14 +188,7 @@ sources:
 
 <div class="cpg-block">
   <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
-  <a href="<div class="cpg-block">
-  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
   <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=7816634416&itemId=18785745419&vendorItemId=92616694424&traceid=V0-153-2f9ebe449634c901&requestid=20260514000032398285170705&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
-    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
-    <span class="cpg-cta-name">리베로 뉴본 밴드형 기저귀</span>
-    <span class="cpg-cta-price">27,000원</span>
-  </a>
-</div>" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
     <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
     <span class="cpg-cta-name">리베로 뉴본 밴드형 기저귀</span>
     <span class="cpg-cta-price">27,000원</span>
@@ -222,14 +201,7 @@ sources:
 
 <div class="cpg-block">
   <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
-  <a href="<div class="cpg-block">
-  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
   <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=7663452012&itemId=24313881344&vendorItemId=91329698217&traceid=V0-153-a74235750f6e820a&requestid=20260514000032398285170705&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
-    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
-    <span class="cpg-cta-name">모모래빗 에코씽씽 밴드형 기저귀 신생아용 4팩</span>
-    <span class="cpg-cta-price">50,360원</span>
-  </a>
-</div>" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
     <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
     <span class="cpg-cta-name">모모래빗 에코씽씽 밴드형 기저귀 신생아용 4팩</span>
     <span class="cpg-cta-price">50,360원</span>
@@ -242,16 +214,9 @@ sources:
 
 <div class="cpg-block">
   <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
-  <a href="<div class="cpg-block">
-  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
   <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=8409449109&itemId=23867357786&vendorItemId=90130716873&traceid=V0-153-31acffc37ee9141f&requestid=20260514000032398285170705&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
     <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
     <span class="cpg-cta-name">하기스 NEW 네이처메이드 밴드형 기저귀 아동공용</span>
-    <span class="cpg-cta-price">22,190원</span>
-  </a>
-</div>" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
-    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
-    <span class="cpg-cta-name">하기스 NEW 네이처메이드 밴드형 기저귀</span>
     <span class="cpg-cta-price">22,190원</span>
   </a>
 </div>
