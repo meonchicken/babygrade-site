@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { proxyImage } from '../../utils/image-proxy';
 
 export async function getStaticPaths() {
   const categories = ['임산부', '신생아', '영아', '유아', '안전', '기타'] as const;
@@ -10,20 +11,60 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const posts = (await getCollection('posts', ({ data }) => data.category === category && !data.draft))
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+
+const categoryUrl = new URL(`/category/${category}/`, Astro.site).href;
+const siteUrl = Astro.site!.href;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '홈', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: category, item: categoryUrl },
+  ],
+};
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': categoryUrl,
+  url: categoryUrl,
+  name: `${category} 추천 - BabyGrade`,
+  description: `영유아 ${category} 카테고리 등급 비교와 리뷰 빅데이터 분석.`,
+  inLanguage: 'ko-KR',
+  isPartOf: { '@id': `${siteUrl}#website` },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: posts.length,
+    itemListElement: posts.map((post, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: new URL(`/${post.id}/`, Astro.site).href,
+      name: post.data.title,
+    })),
+  },
+};
+
+const schemas = [breadcrumbSchema, collectionSchema];
 ---
 
-<Base title={`${category} 추천 - BabyGrade`} description={`영유아 ${category} 카테고리 등급 비교와 리뷰 빅데이터 분석.`}>
+<Base
+  title={`${category} 추천 - BabyGrade`}
+  description={`영유아 ${category} 카테고리 등급 비교와 리뷰 빅데이터 분석.`}
+  ogType="website"
+  schemas={schemas}
+>
   <section class="cat-page">
     <header class="cat-header">
-      <nav class="breadcrumb"><a href="/">홈</a> › {category}</nav>
+      <nav class="breadcrumb" aria-label="현재 위치"><a href="/">홈</a> › {category}</nav>
       <h1>{category}</h1>
       <p>{posts.length}개의 글</p>
     </header>
 
     <div class="post-grid">
       {posts.map((post) => (
-        <a class="post-card" href={`/${post.id}`}>
-          <img src={post.data.heroImage} alt={post.data.heroImageAlt} loading="lazy" width="400" height="225" />
+        <a class="post-card" href={`/${post.id}/`}>
+          <img src={proxyImage(post.data.heroImage)} alt={post.data.heroImageAlt} loading="lazy" width="400" height="225" />
           <div class="post-body">
             <h3>{post.data.title}</h3>
             <p>{post.data.description}</p>

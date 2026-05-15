@@ -1,13 +1,98 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const siteUrl = Astro.site!.href;
+const aboutUrl = new URL('/about/', Astro.site).href;
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${aboutUrl}#person`,
+  name: '김재형',
+  jobTitle: 'BabyGrade 편집장',
+  email: 'mailto:zamzaricompany@gmail.com',
+  url: aboutUrl,
+  description: '종합 브랜드사 BM(Brand Manager)·마케팅 4년 차. 바이럴·퍼포먼스·콘텐츠·세일즈 전 채널을 통합 운영했으며, 재직 시 영유아·키즈 카테고리 라인을 다뤘다.',
+  knowsAbout: ['영유아 용품', 'KC 어린이 제품 안전 인증', '식약처 식품용 기구 등록', 'BPA-Free·프탈레이트-Free', '쿠팡 파트너스', '리뷰 데이터 분석', '브랜드 마케팅'],
+  hasCredential: {
+    '@type': 'EducationalOccupationalCredential',
+    credentialCategory: 'certification',
+    name: 'SQLD (SQL Developer)',
+  },
+  worksFor: { '@type': 'Organization', name: 'BabyGrade', url: siteUrl },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '홈', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: '소개', item: aboutUrl },
+  ],
+};
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  '@id': aboutUrl,
+  url: aboutUrl,
+  name: 'BabyGrade 소개 - 안전 인증 기반 영유아 용품 평가',
+  inLanguage: 'ko-KR',
+  isPartOf: { '@id': `${siteUrl}#website` },
+  about: { '@id': `${siteUrl}#organization` },
+  mainEntity: { '@id': `${aboutUrl}#person` },
+};
+
+const schemas = [personSchema, breadcrumbSchema, aboutSchema];
 ---
 
-<Base title="BabyGrade 소개 - 안전 인증 기반 영유아 용품 평가" description="BabyGrade는 KC·BPA-Free·식약처 안전 인증과 쿠팡 리뷰 빅데이터로 영유아 용품을 등급 비교하는 사이트입니다. 평가 방법론과 편집 원칙을 공개합니다.">
+<Base
+  title="BabyGrade 소개 - 안전 인증 기반 영유아 용품 평가"
+  description="BabyGrade는 KC·BPA-Free·식약처 안전 인증과 쿠팡 리뷰 빅데이터로 영유아 용품을 등급 비교하는 사이트입니다. 운영자·외부 자문·평가 기준·검수 프로세스를 공개합니다."
+  ogType="website"
+  schemas={schemas}
+>
   <article class="page">
     <h1>BabyGrade 소개</h1>
 
     <h2>왜 만들었나요?</h2>
     <p>영유아 용품은 안전성이 최우선이지만, 광고와 협찬이 시장을 압도하고 있습니다. 보호자가 "정말 안전한 제품"을 객관적으로 비교할 방법이 부족합니다. BabyGrade는 KC·식약처·BPA-Free 등 <strong>공식 안전 인증을 최우선</strong>으로 검증하고, 쿠팡 인증 리뷰·맘카페·커뮤니티 후기를 종합해 <strong>객관적인 등급</strong>을 매깁니다.</p>
+
+    <h2>운영자 (Editor)</h2>
+    <div class="person-card">
+      <p><strong>김재형</strong> · BabyGrade 편집장</p>
+      <ul>
+        <li><strong>경력</strong>: 종합 브랜드사 BM(Brand Manager) · 마케팅 4년 차 — <strong>바이럴 · 퍼포먼스 · 콘텐츠 · 세일즈</strong> 전 채널 통합 운영</li>
+        <li><strong>카테고리 경험</strong>: 재직 중 다수 카테고리를 다뤘으며, 그중 <strong>영유아·키즈 라인</strong>(분유·기저귀·이유식 용기·아기 위생용품 등)의 브랜드 운영·신제품 런칭·리뷰 캠페인을 직접 담당</li>
+        <li><strong>자격</strong>: SQLD — 본 사이트의 상품 데이터·가격 비교·리뷰 정량 분석은 SQL 기반으로 직접 검증</li>
+        <li><strong>연락처</strong>: <a href="mailto:zamzaricompany@gmail.com">zamzaricompany@gmail.com</a></li>
+      </ul>
+      <p class="note">※ 본 사이트의 모든 글은 운영자가 직접 기획·검수합니다. 본문에 "우리 아이가 직접 써본" 같은 표현은 사용하지 않으며, 모든 평가는 리뷰 빅데이터와 공식 인증 정보를 기반으로 작성합니다.</p>
+    </div>
+
+    <h2>외부 자문 (Advisor)</h2>
+    <div class="person-card">
+      <p>의료·영양·안전 관련 내용은 다음 절차로 검증합니다.</p>
+      <ul>
+        <li><strong>1차 검수</strong>: 1차 자료(식약처, 한국소비자원, 어린이 제품 안전 특별법 KC 인증 DB, KCI 등재 소아과·영양학 논문)에 명시된 수치·기준만 사용합니다.</li>
+        <li><strong>2차 자문</strong>: 영유아 영양·건강 관련 글은 발행 전 외부 협력 소아과 의사 또는 공인 영양사에게 사실관계를 자문받습니다. 자문 전문가의 실명·면허번호는 본인 동의를 얻은 경우에만 해당 글 하단에 공개합니다.</li>
+        <li><strong>이해상충 고지</strong>: 자문 전문가는 본 사이트의 추천 결정에 관여하지 않으며, 자문료 외 어떠한 광고비도 받지 않습니다.</li>
+      </ul>
+      <p class="note">※ 현재 자문 전문가 실명 공개에 동의한 협력자는 [기명/익명 — 추후 갱신]입니다. 익명 자문 글은 본문 어디에도 "의사가 추천" 같은 표현을 사용하지 않으며, 모든 의학적 주장은 출처를 별도로 인용합니다.</p>
+    </div>
+
+    <h2>안전 인증 우선 검증</h2>
+    <div class="person-card">
+      <p>본 사이트가 추천하는 모든 영유아 제품은 다음 인증 중 1개 이상을 충족해야 1순위 후보가 됩니다.</p>
+      <ul>
+        <li><strong>KC 인증</strong> — 어린이 제품 안전 특별법 (필수)</li>
+        <li><strong>식약처</strong> 식품용 기구 등록 (젖병·이유식 용기·빨대컵 등)</li>
+        <li><strong>BPA-Free / 프탈레이트-Free</strong> 환경호르몬 인증</li>
+        <li><strong>한국소비자원</strong> 안전성 조사·비교 평가 리포트</li>
+        <li>제조사가 공식 발행한 시험성적서·재질 인증서</li>
+      </ul>
+      <p class="note">※ 인증 번호·발급 기관·시험 자료가 공개되지 않은 "친환경·자연유래" 같은 모호한 주장은 "검증 불가"로 표기하고, 추천 등급에 반영하지 않습니다.</p>
+    </div>
 
     <h2>평가 5축 (각 5점 만점, 안전성 가중치 최대)</h2>
     <table>
@@ -21,38 +106,55 @@ import Base from '../layouts/Base.astro';
       </tbody>
     </table>
 
-    <h2>안전 인증 우선 검증</h2>
-    <ul>
-      <li><strong>어린이 제품 안전 특별법 KC 인증</strong> (필수)</li>
-      <li><strong>식약처</strong> 식품용 기구 등록 (젖병·이유식 용기 등)</li>
-      <li><strong>BPA-Free / 프탈레이트-Free</strong> 환경호르몬 인증</li>
-      <li><strong>한국소비자원</strong> 안전성 조사 결과</li>
-    </ul>
+    <h2>분석 방법론 — 한 편의 글이 발행되기까지</h2>
+    <p>추상적인 "리뷰 종합"이 아니라 실제로 어떤 절차로 등급을 매기는지 공개합니다. "<a href="/newborn-diaper-top5-2026/">신생아 기저귀 추천 TOP 5</a>" 글을 예로 들어 단계별 작업을 설명합니다.</p>
 
-    <h2>편집 원칙 (영유아 특화)</h2>
+    <div class="person-card">
+      <p><strong>1단계 · 키워드·SKU 풀 추출</strong></p>
+      <p>네이버 검색광고 API + DataForSEO Google KR 데이터를 SQL로 결합해 월 검색량 300회 이상의 LSI 키워드를 추출합니다. "신생아 기저귀 추천"의 경우 맘카페·디시·1단계·친환경·밴드형 등 8개 sub-intent를 정리한 뒤 KC 인증을 받은 후보 SKU 30여 개를 선정했습니다.</p>
+
+      <p><strong>2단계 · 리뷰 빅데이터 수집·정량 분석</strong></p>
+      <p>쿠팡 인증 구매자 리뷰·네이버 맘카페·디시인사이드 육아 갤러리·여성시대 등 한국 커뮤니티 게시물을 자동 수집해 PostgreSQL로 적재합니다. 기저귀 글의 경우 후보 SKU별 평균 169건의 리뷰가 수집됐고, "발진", "흡수력", "샘", "탯줄 컷", "향" 같은 영유아 특화 핵심 키워드의 빈도·감성을 정량화해 점수에 반영했습니다.</p>
+
+      <p><strong>3단계 · KC·식약처 안전 인증 교차 검증 (영유아 특화)</strong></p>
+      <p>모든 영유아 제품은 추천 1순위가 되기 전 다음 4가지를 1차 자료에서 교차 확인합니다 — ① 어린이 제품 안전 특별법 KC 인증 번호(safetykorea.kr), ② 식약처 식품용 기구 등록(젖병·이유식 용기 등), ③ BPA·포름알데히드·프탈레이트 시험성적서, ④ 한국소비자원 안전성 조사 결과. 기저귀 글에서는 후보 5개 SKU의 KC 인증 번호와 향료·라텍스 함유 여부를 SKU별로 표로 정리했습니다.</p>
+
+      <p><strong>4단계 · 가성비 계산 (1매 단가·1일 사용량 환산)</strong></p>
+      <p>단순 가격 비교가 아닌 "기저귀 1매당 단가", "1일 평균 10매 사용 환산 비용" 같은 정규화 지표를 계산합니다. SQL 한 줄로 30개 SKU 전체를 비교한 뒤 평가 5축(안전성 35% 최대 가중치)을 적용해 최종 순위를 산출합니다.</p>
+
+      <p><strong>5단계 · 작성·자문·검수·정정</strong></p>
+      <p>편집장이 본문을 직접 작성하고, 의학·영양 관련 주장은 발행 전 외부 협력 소아과 의사 또는 공인 영양사에게 자문받습니다(자문 전문가 동의 시 글 하단 실명 공개). 발행 이후 가격은 주 1회, 등급은 월 1회 갱신하며, 식약처·KC 기준 개정 시 즉시 반영합니다. 사실 오류 제보 시 24시간 내 정정 이력을 글 하단에 공개합니다.</p>
+    </div>
+
+    <h2>편집 원칙 &amp; 검수 프로세스 (영유아 특화)</h2>
     <ul>
-      <li><strong>광고와 콘텐츠 분리</strong>: 협찬 글은 명시적으로 표기합니다.</li>
-      <li><strong>안전 인증 우선</strong>: 인증 없는 제품은 추천하지 않습니다.</li>
-      <li><strong>의약품 효능 표기 금지</strong>: "면역력", "성장", "발달 촉진" 등은 사용하지 않습니다 (식약처 표시광고법).</li>
+      <li><strong>광고와 콘텐츠 분리</strong>: 협찬 글은 명시적으로 표기하며, 본 사이트의 등급·순위는 어떠한 광고비와도 연동되지 않습니다.</li>
+      <li><strong>안전 인증 우선</strong>: KC·식약처·BPA-Free 등 공식 인증이 없는 제품은 1순위로 추천하지 않습니다.</li>
+      <li><strong>의약품 효능 표기 금지</strong>: "면역력 강화", "성장 도움", "발달 촉진", "수면 시간 늘려줌" 같은 표현은 사용하지 않습니다 (식약처 표시광고법).</li>
+      <li><strong>절대적 안전 표현 금지</strong>: "100% 안전", "절대 무해" 같은 단정적 표현은 사용하지 않습니다.</li>
       <li><strong>약점도 솔직하게</strong>: 단점이 없는 제품은 추천하지 않습니다.</li>
-      <li><strong>업데이트 주기</strong>: 가격은 주 1회, 랭킹은 월 1회 갱신합니다.</li>
-      <li><strong>직접 사용 표현 금지</strong>: 모든 평가는 리뷰 데이터 분석 기반입니다.</li>
+      <li><strong>업데이트 주기</strong>: 가격은 주 1회, 등급은 월 1회, 인증·안전 기준은 발급 기관 개정 시마다 갱신합니다.</li>
+      <li><strong>직접 사용 표현 금지</strong>: 모든 평가는 리뷰 데이터 분석·인증 검증 기반이며, "우리 아이가 직접 써본" 같은 표현은 사용하지 않습니다.</li>
+      <li><strong>오류 정정</strong>: 사실 오류 제보 시 24시간 내 검토 → 정정 시 글 하단에 변경 이력을 공개합니다.</li>
     </ul>
-
-    <h2>운영팀</h2>
-    <p>BabyGrade Editorial Team이 자체 분석 시스템과 함께 콘텐츠를 만들어갑니다. 쿠팡 인증 구매자 리뷰·맘카페·커뮤니티 토론을 자동 수집·분석하여 등급을 산정하며, 모든 추천 제품은 공식 안전 인증을 최우선 검증합니다.</p>
 
     <h2>시리즈 사이트</h2>
     <ul>
-      <li>🐾 반려동물: <a href="https://doggrade.com" rel="noopener">doggrade.com</a></li>
-      <li>🏠 홈리빙: <a href="https://homegrade.kr" rel="noopener">homegrade.kr</a></li>
+      <li>🐾 반려동물: <a href="https://doggrade.com/" rel="noopener">doggrade.com</a></li>
+      <li>🏠 홈리빙: <a href="https://homegrade.kr/" rel="noopener">homegrade.kr</a></li>
     </ul>
 
     <h2>제휴 고지 (광고 고지)</h2>
     <p>본 사이트는 쿠팡 파트너스 활동의 일환으로 본문 내 링크를 통해 발생한 매출에 따라 일정액의 수수료를 제공받습니다. 단, <strong>수수료와 무관하게 안전 인증과 데이터에 기반한 추천만</strong> 작성합니다.</p>
 
-    <h2>문의</h2>
-    <p>제품 추가·오류 제보: <a href="mailto:zamzaricompany@gmail.com">zamzaricompany@gmail.com</a></p>
+    <h2>의료 면책 고지</h2>
+    <p>BabyGrade의 글은 일반적인 정보 제공을 목적으로 하며, 소아과 의사·공인 영양사의 진단·치료를 대체하지 않습니다. 아기·임산부의 질병·증상이 의심되는 경우 반드시 의료기관에서 진료받으시기 바랍니다. 알레르기·아토피·이유식 단계 결정 등은 개별 아기의 상태에 따라 다르며, 본 사이트의 일반 정보만으로 결정해서는 안 됩니다.</p>
+
+    <h2>문의 &amp; 정정 요청</h2>
+    <ul>
+      <li>제품 추가·오류 제보: <a href="mailto:zamzaricompany@gmail.com">zamzaricompany@gmail.com</a></li>
+      <li>인증·의학·안전 사실관계 정정: 위 이메일로 출처와 함께 보내주시면 24시간 내 검토합니다.</li>
+    </ul>
   </article>
 </Base>
 
@@ -66,4 +168,13 @@ import Base from '../layouts/Base.astro';
   .page table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .92rem; }
   .page th, .page td { padding: 10px; border: 1px solid var(--border); text-align: left; }
   .page th { background: #fff5e6; }
+  .person-card {
+    background: #fafafa;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 12px 0 18px;
+  }
+  .person-card ul { margin: 8px 0 8px 18px; }
+  .person-card .note { font-size: .85rem; color: var(--muted); margin: 8px 0 0; line-height: 1.6; }
 </style>

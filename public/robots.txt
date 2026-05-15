@@ -1,29 +1,44 @@
+# BabyGrade robots.txt
+# 참고: Cloudflare가 이 파일 상단에 "Managed Content" 블록을 자동 주입할 수 있습니다.
+# Cloudflare 대시보드 → AI Crawl Control(또는 robots.txt) → Managed robots.txt OFF 시
+# 아래 정책만 적용됩니다.
+
+# ── 1) 일반 검색엔진(Google·Naver·Bing 등) 전체 허용 ──
 User-agent: *
 Allow: /
 
-# AI 크롤러 전체 허용
-User-agent: GPTBot
-Allow: /
-
+# ── 2) AI 검색 크롤러: 허용(검색 인용 노출 목적) ──
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: PerplexityBot
 Allow: /
 
-User-agent: Anthropic
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ── 3) AI 학습 크롤러: 허용(브랜드 학습/인용 목적) ──
+# 학습 비허용을 원하면 Allow를 Disallow로 바꿔주세요.
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: anthropic-ai
 Allow: /
 
-User-agent: Bytespider
+User-agent: CCBot
 Allow: /
 
+# ── 4) 사이트맵 위치 ──
 Sitemap: https://babygrade.kr/sitemap-index.xml

@@ -3,11 +3,13 @@ interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
   schemas?: object[];
 }
 
-const { title, description, ogImage = '/og-default.png', schemas = [] } = Astro.props;
+const { title, description, ogImage = '/og-default.png', ogType = 'website', schemas = [] } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const absoluteOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, Astro.site).href;
 ---
 
 <!doctype html>
@@ -16,18 +18,23 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#ff8c42" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="application/rss+xml" title="BabyGrade RSS" href="/rss.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="BabyGrade" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+    <meta property="og:image" content={absoluteOgImage} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="ko_KR" />
 
@@ -35,7 +42,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL(ogImage, Astro.site).href} />
+    <meta name="twitter:image" content={absoluteOgImage} />
 
     <!-- JSON-LD Schemas -->
     {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
@@ -118,12 +125,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <header class="site">
       <div class="inner">
         <a href="/" class="logo">👶 BabyGrade</a>
-        <nav class="menu">
-          <a href="/category/임산부">임산부</a>
-          <a href="/category/신생아">신생아</a>
-          <a href="/category/영아">영아</a>
-          <a href="/category/유아">유아</a>
-          <a href="/category/안전">안전</a>
+        <nav class="menu" aria-label="주 메뉴">
+          <a href="/category/임산부/">임산부</a>
+          <a href="/category/신생아/">신생아</a>
+          <a href="/category/영아/">영아</a>
+          <a href="/category/유아/">유아</a>
+          <a href="/category/안전/">안전</a>
         </nav>
       </div>
     </header>
@@ -133,10 +140,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     </main>
 
     <footer class="site">
-      <nav class="footer-nav">
-        <a href="/about">소개</a>
-        <a href="/privacy">개인정보</a>
-        <a href="mailto:zamzaricompany@gmail.com">문의</a>
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <a href="/about/" rel="nofollow">소개</a>
+        <a href="/privacy/" rel="nofollow">개인정보</a>
+        <a href="mailto:zamzaricompany@gmail.com" rel="nofollow">문의</a>
       </nav>
       <p>© 2026 BabyGrade · 본 사이트는 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.</p>
     </footer>
