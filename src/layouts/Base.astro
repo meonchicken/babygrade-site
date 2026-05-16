@@ -86,11 +86,14 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, 
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 12px;
       }
       .logo {
         font-weight: 800;
         font-size: 1.2rem;
         color: var(--primary-dark);
+        white-space: nowrap;
+        flex-shrink: 0;
       }
       nav.menu {
         display: flex;
@@ -100,6 +103,7 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, 
         color: var(--text);
         font-weight: 500;
         font-size: .95rem;
+        white-space: nowrap;
       }
       footer.site {
         margin-top: 60px;
@@ -118,6 +122,50 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, 
       }
       footer.site .footer-nav a {
         color: var(--muted);
+      }
+
+      /* 모바일 최적화 — 헤더가 한 줄에 안 들어가는 문제 해결 */
+      @media (max-width: 720px) {
+        header.site {
+          padding: 10px 16px;
+        }
+        header.site .inner {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 8px;
+        }
+        .logo {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+        nav.menu {
+          gap: 14px;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          justify-content: center;
+          padding-bottom: 2px;
+          scrollbar-width: none;
+        }
+        nav.menu::-webkit-scrollbar { display: none; }
+        nav.menu a {
+          font-size: .9rem;
+        }
+        footer.site {
+          padding: 24px 16px;
+        }
+        footer.site .footer-nav {
+          flex-wrap: wrap;
+          gap: 12px 18px;
+        }
+      }
+      @media (max-width: 380px) {
+        nav.menu {
+          gap: 12px;
+          justify-content: flex-start;
+        }
+        nav.menu a {
+          font-size: .85rem;
+        }
       }
     </style>
   </head>
