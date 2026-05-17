@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
   site: 'https://babygrade.kr',
@@ -12,6 +13,10 @@ export default defineConfig({
       filter: (page) => !page.includes('/404'),
     }),
   ],
+  markdown: {
+    gfm: false,
+    remarkPlugins: [[remarkGfm, { singleTilde: false }]],
+  },
   build: { format: 'directory' },
   image: { service: { entrypoint: 'astro/assets/services/sharp' } },
 });
