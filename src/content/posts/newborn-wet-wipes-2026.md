@@ -1,9 +1,8 @@
 ---
 title: 신생아 물티슈 추천 (2026) — 무자극·캡형·생분해 등급표 비교
 description: >-
-  신생아 물티슈를 무자극 인증·캡형 보관·재질 평가 3가지 객관 기준으로
-  비교한 등급표 가이드. 디시 임신·육아 갤러리·맘카페 공개 글 패턴과 식약처
-  화장품법 신고 기준을 종합해 표준 라인을 분류합니다.
+  신생아 물티슈를 무자극 인증·캡형 보관·재질 평가 3가지 객관 기준으로 비교한 등급표 가이드. 디시 임신·육아 갤러리·맘카페 공개 글 패턴과
+  식약처 화장품법 신고 기준을 종합해 표준 라인을 분류합니다.
 publishedAt: 2026-05-28T00:00:00.000Z
 updatedAt: 2026-05-28T00:00:00.000Z
 category: 신생아
@@ -31,91 +30,89 @@ heroImage: /images/newborn-wet-wipes-2026-1.png
 heroImageAlt: 신생아 물티슈 무자극·캡형·생분해 평가 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
-    **신생아 물티슈**의 핵심 평가 기준은 **(1) 식약처 화장품법 신고(국내 화장품류 분류 시)**,
-    **(2) 자극 시험·무자극 인증 표시**, **(3) 캡형 보관(개봉 후 건조·오염 방지)** 3가지로 압축된다.
-    신생아 물티슈는 출산 직후 1개월에 가장 사용 빈도가 높은 위생용품으로, 표준 사용량은 신생아 1인당
-    월 1,200~1,800매(8~12팩) 수준이다.
+    **신생아 물티슈**의 핵심 평가 기준은 **(1) 식약처 화장품법 신고(국내 화장품류 분류 시)**, **(2) 자극 시험·무자극 인증
+    표시**, **(3) 캡형 보관(개봉 후 건조·오염 방지)** 3가지로 압축된다. 신생아 물티슈는 출산 직후 1개월에 가장 사용 빈도가
+    높은 위생용품으로, 표준 사용량은 신생아 1인당 월 1,200~1,800매(8~12팩) 수준이다.
   - >-
-    재질·기능별로는 **(1) 캡형 캡티슈** — 개봉 후 건조 방지·외출 호환, **(2) 도톰한 엠보싱** —
-    대변 닦이 시나리오 호환, **(3) 생분해 라인** — 환경 부담 저감, **(4) 워머 호환 평면 라인** —
-    겨울철 미온수 적용 4가지 라인이 표준이다. KC 인증은 의무 표시 대상이 아니며 식약처 화장품법 신고가
-    국내 표준이다.
+    재질·기능별로는 **(1) 캡형 캡티슈** — 개봉 후 건조 방지·외출 호환, **(2) 도톰한 엠보싱** — 대변 닦이 시나리오 호환,
+    **(3) 생분해 라인** — 환경 부담 저감, **(4) 워머 호환 평면 라인** — 겨울철 미온수 적용 4가지 라인이 표준이다. KC
+    인증은 의무 표시 대상이 아니며 식약처 화장품법 신고가 국내 표준이다.
   - >-
-    본 글은 일반 정보 제공 목적이며 의료 자문이 아니다. 피부 자극·알러지 우려 시 소아청소년과 전문의
-    상담을 우선해야 하며, 자극 시험 결과는 [식품의약품안전처](https://www.mfds.go.kr) 화장품 안전관리
-    가이드를 참고해야 한다.
+    본 글은 일반 정보 제공 목적이며 의료 자문이 아니다. 피부 자극·알러지 우려 시 소아청소년과 전문의 상담을 우선해야 하며, 자극 시험
+    결과는 [식품의약품안전처](https://www.mfds.go.kr) 화장품 안전관리 가이드를 참고해야 한다.
 faq:
   - q: 신생아 물티슈는 한 달에 몇 팩 필요한가요?
     a: >-
-      디시 임신·육아 갤러리와 맘카페 공개 글 종합상 신생아 1인 월 사용량은
-      **1,200~1,800매(60~80매 캡티슈 기준 약 8~12팩)** 수준이 표준입니다.
-      신생아는 1일 8~12회 기저귀 교체 시나리오가 일반적이고, 1회 교체 시 평균 4~6매 사용 패턴으로
-      월 1,500매 전후로 수렴합니다. 출산 직후 1개월은 사용 빈도가 가장 높고, 3개월 이후 기저귀 교체
-      간격이 늘어나면서 사용량은 점진 감소하는 패턴이 일반적입니다. 초기 구매 시 1개월분 + 1~2주
-      비축 패턴이 표준입니다.
+      디시 임신·육아 갤러리와 맘카페 공개 글 종합상 신생아 1인 월 사용량은 **1,200~1,800매(60~80매 캡티슈 기준 약
+      8~12팩)** 수준이 표준입니다. 신생아는 1일 8~12회 기저귀 교체 시나리오가 일반적이고, 1회 교체 시 평균 4~6매 사용
+      패턴으로 월 1,500매 전후로 수렴합니다. 출산 직후 1개월은 사용 빈도가 가장 높고, 3개월 이후 기저귀 교체 간격이 늘어나면서
+      사용량은 점진 감소하는 패턴이 일반적입니다. 초기 구매 시 1개월분 + 1~2주 비축 패턴이 표준입니다.
   - q: 신생아 물티슈 선택 시 가장 중요한 기준은 무엇인가요?
     a: >-
-      4가지 기준이 표준입니다. **(1) 식약처 화장품법 신고** — 국내 영유아 물티슈는 화장품류로 분류되어
-      식약처 신고 의무, **(2) 자극 시험·무자극 인증 표시** — 1차 자극·누적 자극 시험 통과 라인,
-      **(3) 성분 표시** — 파라벤·페녹시에탄올·인공 향료 미함유 라인 우선, **(4) 보관 형태** —
-      캡형(개봉 후 건조 방지) vs 평면형(워머 호환)을 사용 시나리오에 맞춰 선택입니다.
-      KC 인증은 영유아 물티슈의 의무 표시 대상이 아니며, 식약처 신고가 국내 표준 인증입니다.
+      4가지 기준이 표준입니다. **(1) 식약처 화장품법 신고** — 국내 영유아 물티슈는 화장품류로 분류되어 식약처 신고 의무,
+      **(2) 자극 시험·무자극 인증 표시** — 1차 자극·누적 자극 시험 통과 라인, **(3) 성분 표시** —
+      파라벤·페녹시에탄올·인공 향료 미함유 라인 우선, **(4) 보관 형태** — 캡형(개봉 후 건조 방지) vs 평면형(워머 호환)을
+      사용 시나리오에 맞춰 선택입니다. KC 인증은 영유아 물티슈의 의무 표시 대상이 아니며, 식약처 신고가 국내 표준 인증입니다.
   - q: 캡형 물티슈와 평면 물티슈의 차이는?
     a: >-
-      **캡형(스티커 캡티슈)**은 플라스틱 캡으로 개봉구를 밀봉하는 형태로 개봉 후 건조 방지·외출 호환이
-      강점입니다. 외출·기저귀 갈이 빈도가 높은 신생아·영아 단계에서 다용도로 사용됩니다.
-      **평면형(스티커 라벨)**은 캡 없이 스티커 라벨로 밀봉하는 형태로 워머(보온기) 호환과 가격이 강점입니다.
-      겨울철 미온수 적용·집에서 주로 사용하는 시나리오에 적합합니다. 외출 빈도가 높으면 캡형, 집 중심
-      사용은 평면형 비축이 표준 패턴입니다.
+      **캡형(스티커 캡티슈)**은 플라스틱 캡으로 개봉구를 밀봉하는 형태로 개봉 후 건조 방지·외출 호환이 강점입니다. 외출·기저귀 갈이
+      빈도가 높은 신생아·영아 단계에서 다용도로 사용됩니다. **평면형(스티커 라벨)**은 캡 없이 스티커 라벨로 밀봉하는 형태로
+      워머(보온기) 호환과 가격이 강점입니다. 겨울철 미온수 적용·집에서 주로 사용하는 시나리오에 적합합니다. 외출 빈도가 높으면 캡형,
+      집 중심 사용은 평면형 비축이 표준 패턴입니다.
   - q: 신생아 물티슈 디시·맘카페에서 자주 나오는 질문은?
     a: >-
-      디시인사이드 임신·육아 갤러리와 맘카페 공개 글 종합상 반복 질문은
-      **(1) "베베숲·앙블랑·하기스 무엇이 더 좋나? — 자극 시험 통과 라인은 안전 차이는 작고 두께·향·가격 차이가 큼"**,
-      **(2) "도톰한 게 좋나, 얇은 게 좋나? — 대변 닦이엔 도톰, 손·얼굴엔 얇은 라인이 표준"**,
-      **(3) "생분해 물티슈는 정말 친환경인가? — 부직포 원단을 분해 가능 셀룰로오스로 대체하는 라인이며 환경 부담 저감 라인이지만 가격 부담 큼"**,
-      **(4) "물티슈 워머 꼭 필요한가? — 겨울철 미온수 적용 시 사용, 평면형 라인만 호환"** 네 가지입니다.
-      본 사이트는 직접 사용 후기를 작성하지 않으며, 본 단락은 공개 커뮤니티의 일반적 의견 패턴을 종합한 것입니다.
+      디시인사이드 임신·육아 갤러리와 맘카페 공개 글 종합상 반복 질문은 **(1) "베베숲·앙블랑·하기스 무엇이 더 좋나? — 자극 시험
+      통과 라인은 안전 차이는 작고 두께·향·가격 차이가 큼"**, **(2) "도톰한 게 좋나, 얇은 게 좋나? — 대변 닦이엔 도톰,
+      손·얼굴엔 얇은 라인이 표준"**, **(3) "생분해 물티슈는 정말 친환경인가? — 부직포 원단을 분해 가능 셀룰로오스로 대체하는
+      라인이며 환경 부담 저감 라인이지만 가격 부담 큼"**, **(4) "물티슈 워머 꼭 필요한가? — 겨울철 미온수 적용 시 사용,
+      평면형 라인만 호환"** 네 가지입니다. 본 사이트는 직접 사용 후기를 작성하지 않으며, 본 단락은 공개 커뮤니티의 일반적 의견
+      패턴을 종합한 것입니다.
   - q: 신생아 물티슈에 절대 들어가면 안 되는 성분이 있나요?
     a: >-
-      「식품의약품안전처」 화장품 안전관리 가이드와 「공정거래위원회 표시광고 심사지침」상
-      절대 단정 표현("100% 무해", "전혀 자극 없음")은 사용할 수 없으나, 영유아 물티슈에서 회피 라인으로
-      자주 언급되는 성분은 **(1) 파라벤(메틸·프로필 등) — 일부 라인에서 사용 제한**,
-      **(2) 페녹시에탄올 — 영유아 적용 시 농도 관리 권장**, **(3) 인공 향료(파퓸)** — 자극 가능성**,
-      **(4) MIT·CMIT(이소치아졸리논계) — EU·식약처 사용 제한** 4가지입니다. 성분표 확인과 자극 시험 통과
-      표시를 함께 보는 것이 표준입니다. 본 페이지는 의료 자문이 아니며, 피부 자극·알러지 의심 시 소아청소년과
-      전문의 상담을 우선해야 합니다.
+      「식품의약품안전처」 화장품 안전관리 가이드와 「공정거래위원회 표시광고 심사지침」상 절대 단정 표현("100% 무해", "전혀 자극
+      없음")은 사용할 수 없으나, 영유아 물티슈에서 회피 라인으로 자주 언급되는 성분은 **(1) 파라벤(메틸·프로필 등) — 일부
+      라인에서 사용 제한**, **(2) 페녹시에탄올 — 영유아 적용 시 농도 관리 권장**, **(3) 인공 향료(파퓸)** — 자극
+      가능성**, **(4) MIT·CMIT(이소치아졸리논계) — EU·식약처 사용 제한** 4가지입니다. 성분표 확인과 자극 시험 통과
+      표시를 함께 보는 것이 표준입니다. 본 페이지는 의료 자문이 아니며, 피부 자극·알러지 의심 시 소아청소년과 전문의 상담을 우선해야
+      합니다.
 products:
   - name: 브라운 프리미엄 옐로우 도톰한 아기 물티슈 캡형
     price: 22900
-    image: https://ads-partners.coupang.com/image1/03lUpHyRNOf5FNL30zt1kzNm-LwsXdjkqyRurizAYeZKJ-XqHFpsMLhwg4365zVtUDZMznznnfZEiQGng9wCu-h_FzKFqHketdCmVOk4fN2uDN_jl4WeM0hDt38XeS4lbHFGSfJM25aC8rRhzz_u0O3uk_tP0QXLBaqwSHwLkT9mRh5we7wx-niP3S44Jxw_eRPHkSy6oWVywyPxzCtlf5lgqe1wodcLpBt_q5iHa8SNsSfgF7EfLWAXc0oKcx-GR00YE22o6BzdV5r6OSVi1XGmsWdiRZ5w74AEX8MOHG3HYyM=
-    url: https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=7870430619&itemId=21498415612&vendorItemId=3066423354&traceid=V0-153-f7fb57a79129cf9d&requestid=20260528165956140197386670&token=31850C%7CMIXED
+    image: >-
+      https://ads-partners.coupang.com/image1/03lUpHyRNOf5FNL30zt1kzNm-LwsXdjkqyRurizAYeZKJ-XqHFpsMLhwg4365zVtUDZMznznnfZEiQGng9wCu-h_FzKFqHketdCmVOk4fN2uDN_jl4WeM0hDt38XeS4lbHFGSfJM25aC8rRhzz_u0O3uk_tP0QXLBaqwSHwLkT9mRh5we7wx-niP3S44Jxw_eRPHkSy6oWVywyPxzCtlf5lgqe1wodcLpBt_q5iHa8SNsSfgF7EfLWAXc0oKcx-GR00YE22o6BzdV5r6OSVi1XGmsWdiRZ5w74AEX8MOHG3HYyM=
+    url: >-
+      https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=7870430619&itemId=21498415612&vendorItemId=3066423354&traceid=V0-153-f7fb57a79129cf9d&requestid=20260528165956140197386670&token=31850C%7CMIXED
     features:
       - 캡형 캡티슈 — 개봉 후 건조 방지·외출 호환
       - 도톰한 엠보싱 — 대변 닦이 시나리오 호환
       - 식약처 화장품법 신고 + 자극 시험 통과 표시 라인
   - name: 앙블랑 트리플 세이프 82 아기물티슈 캡형 82g 68매 10팩
     price: 26500
-    image: https://ads-partners.coupang.com/image1/ldk8KQpwQ73g_0h7leXwj2OZVul_UQxyxDH2rRynhW7I8MOHnT_sp1kG_9CS36nGQ0GrVUSQAh3TgPexpusnMn5m9RBXy6ykYOJvgS0KtVl7GR89EKtQaU0163nmgwTN4J7dbcHheg5E8qcs2TMP0t3cNF6MNKa6xhxWiTMY166miCjlIpwmwirw4cEfZjLNpQmwm2vzXrKXjwrdSRCSyd161yo5sFRZVHupKV5fohTg1eaPrttVhd60-PjFXVPTFGGOkGsPMm3zlDoAr-GR68zGw7dhKrnwrtI=
-    url: https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=9234497695&itemId=28194212851&vendorItemId=95148640906&traceid=V0-153-4419830365ce38f4&clickBeacon=375c9190-5a6b-11f1-961d-0630d2a80a25%7E3&requestid=20260528165956140197386670&token=31850C%7CMIXED
+    image: >-
+      https://ads-partners.coupang.com/image1/ldk8KQpwQ73g_0h7leXwj2OZVul_UQxyxDH2rRynhW7I8MOHnT_sp1kG_9CS36nGQ0GrVUSQAh3TgPexpusnMn5m9RBXy6ykYOJvgS0KtVl7GR89EKtQaU0163nmgwTN4J7dbcHheg5E8qcs2TMP0t3cNF6MNKa6xhxWiTMY166miCjlIpwmwirw4cEfZjLNpQmwm2vzXrKXjwrdSRCSyd161yo5sFRZVHupKV5fohTg1eaPrttVhd60-PjFXVPTFGGOkGsPMm3zlDoAr-GR68zGw7dhKrnwrtI=
+    url: >-
+      https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=9234497695&itemId=28194212851&vendorItemId=95148640906&traceid=V0-153-4419830365ce38f4&clickBeacon=375c9190-5a6b-11f1-961d-0630d2a80a25%7E3&requestid=20260528165956140197386670&token=31850C%7CMIXED
     features:
       - 트리플 세이프 라인 — 3중 자극 시험 통과 표시
       - 82g 68매 10팩 — 한 달분 비축 시나리오 호환
       - 캡형 + 도톰 — 외출·대변 닦이 다용도
   - name: 하기스 퓨어그린 생분해 아기물티슈 캡형
     price: 13100
-    image: https://ads-partners.coupang.com/image1/PtRZ30LuityWcSlLPuLp8L9UdMRqQwRDnRcfrEuZ7QuMrcu3ubQHWb6kbNnSA5R04rIoixpyAkAstN_BFhV4kb9FSyIlr5GUiz0tQbkYECAusChnJYOF12SkvO_OBGNfMdrWefbNA6m7X4XXvS1bqLd5ou7O1GtQ3ZG0qiyLe5ctIqtf31TipxB8u9nWflh2KXY6LshDPUFH0PVWyoHKy8PEsz8afbXgwHpmRv7rJT-wdyISH_RamTLvl5WyvZNucuWjzPPgyQNFT8zfzt9FrG_B6NW9fJ9veLqQUDuLtS6202Y=
-    url: https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=6615096004&itemId=15016467162&vendorItemId=82239205259&traceid=V0-153-aa1e39e945998954&requestid=20260528165956140197386670&token=31850C%7CMIXED
+    image: >-
+      https://ads-partners.coupang.com/image1/PtRZ30LuityWcSlLPuLp8L9UdMRqQwRDnRcfrEuZ7QuMrcu3ubQHWb6kbNnSA5R04rIoixpyAkAstN_BFhV4kb9FSyIlr5GUiz0tQbkYECAusChnJYOF12SkvO_OBGNfMdrWefbNA6m7X4XXvS1bqLd5ou7O1GtQ3ZG0qiyLe5ctIqtf31TipxB8u9nWflh2KXY6LshDPUFH0PVWyoHKy8PEsz8afbXgwHpmRv7rJT-wdyISH_RamTLvl5WyvZNucuWjzPPgyQNFT8zfzt9FrG_B6NW9fJ9veLqQUDuLtS6202Y=
+    url: >-
+      https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=6615096004&itemId=15016467162&vendorItemId=82239205259&traceid=V0-153-aa1e39e945998954&requestid=20260528165956140197386670&token=31850C%7CMIXED
     features:
       - 생분해 라인 — 셀룰로오스 부직포 원단으로 환경 부담 저감
       - 캡형 — 개봉 후 건조 방지
       - 가성비 라인 — 1팩 단가 부담 낮음
 sources:
   - title: 식품의약품안전처 화장품 안전관리
-    url: https://www.mfds.go.kr
+    url: 'https://www.mfds.go.kr'
   - title: 공정거래위원회 표시광고 심사지침
-    url: https://www.ftc.go.kr
+    url: 'https://www.ftc.go.kr'
   - title: 국가기술표준원 어린이제품 안전관리
-    url: https://www.kats.go.kr
+    url: 'https://www.kats.go.kr'
 ---
 
 ## 신생아 물티슈, 한 줄로 정리하면?
@@ -157,15 +154,36 @@ sources:
 
 ### 1. 브라운 프리미엄 옐로우 도톰한 아기 물티슈 캡형
 
-캡형 캡티슈 라인으로 개봉 후 건조 방지·외출 호환이 강점이다. 도톰한 엠보싱으로 대변 닦이 시나리오에 호환되며 식약처 화장품법 신고 + 자극 시험 통과 표시 라인이다. 외출 빈도가 높은 신생아·영아 단계에 표준 라인. {{COUPANG_LINK_1}}
+캡형 캡티슈 라인으로 개봉 후 건조 방지·외출 호환이 강점이다. 도톰한 엠보싱으로 대변 닦이 시나리오에 호환되며 식약처 화장품법 신고 + 자극 시험 통과 표시 라인이다. 외출 빈도가 높은 신생아·영아 단계에 표준 라인. <div class="cpg-block">
+  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
+  <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=7870430619&itemId=21498415612&vendorItemId=3066423354&traceid=V0-153-f7fb57a79129cf9d&requestid=20260528165956140197386670&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
+    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
+    <span class="cpg-cta-name">브라운 프리미엄 옐로우 도톰한 아기 물티슈 캡형</span>
+    <span class="cpg-cta-price">22,900원</span>
+  </a>
+</div>
 
 ### 2. 앙블랑 트리플 세이프 82 아기물티슈 캡형 82g 68매 10팩
 
-3중 자극 시험 통과 표시 라인으로 68매 캡티슈 10팩 = 680매 한 달분 비축 패키지 구성이다. 캡형 + 도톰 라인이라 외출·대변 닦이 다용도로 호환되고 신생아 1인 월 사용량(1,200~1,800매) 기준 약 절반 분량을 한 박스로 비축할 수 있다. {{COUPANG_LINK_2}}
+3중 자극 시험 통과 표시 라인으로 68매 캡티슈 10팩 = 680매 한 달분 비축 패키지 구성이다. 캡형 + 도톰 라인이라 외출·대변 닦이 다용도로 호환되고 신생아 1인 월 사용량(1,200~1,800매) 기준 약 절반 분량을 한 박스로 비축할 수 있다. <div class="cpg-block">
+  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
+  <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=9234497695&itemId=28194212851&vendorItemId=95148640906&traceid=V0-153-4419830365ce38f4&clickBeacon=375c9190-5a6b-11f1-961d-0630d2a80a25%7E3&requestid=20260528165956140197386670&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
+    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
+    <span class="cpg-cta-name">앙블랑 트리플 세이프 82 아기물티슈 캡형 82g 68매 10팩</span>
+    <span class="cpg-cta-price">26,500원</span>
+  </a>
+</div>
 
 ### 3. 하기스 퓨어그린 생분해 아기물티슈 캡형
 
-생분해 라인으로 셀룰로오스 부직포 원단을 사용해 환경 부담 저감 라인이다. 캡형 보관으로 개봉 후 건조 방지 호환이며 1팩 단가 부담이 낮아 가성비 라인으로 자주 등장한다. 생분해 표시는 환경 인증과 무관할 수 있으므로 별도 친환경 인증(생분해 표시 + 검증 기관 명시)을 함께 확인하는 것이 표준이다. {{COUPANG_LINK_3}}
+생분해 라인으로 셀룰로오스 부직포 원단을 사용해 환경 부담 저감 라인이다. 캡형 보관으로 개봉 후 건조 방지 호환이며 1팩 단가 부담이 낮아 가성비 라인으로 자주 등장한다. 생분해 표시는 환경 인증과 무관할 수 있으므로 별도 친환경 인증(생분해 표시 + 검증 기관 명시)을 함께 확인하는 것이 표준이다. <div class="cpg-block">
+  <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
+  <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=6615096004&itemId=15016467162&vendorItemId=82239205259&traceid=V0-153-aa1e39e945998954&requestid=20260528165956140197386670&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
+    <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
+    <span class="cpg-cta-name">하기스 퓨어그린 생분해 아기물티슈 캡형</span>
+    <span class="cpg-cta-price">13,100원</span>
+  </a>
+</div>
 
 ## 신생아 물티슈 사용량 — 월 비축 패턴
 
