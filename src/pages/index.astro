@@ -119,6 +119,31 @@ const homeSchemas = [organizationSchema, websiteSchema, collectionSchema, person
     </section>
   ))}
 
+  <!-- ── 전체 글 목록 (모든 글을 홈에서 1클릭으로 — 크롤 깊이·내부링크 보강) ── -->
+  {posts.length > 0 && (
+    <section class="archive" aria-labelledby="archive-heading">
+      <div class="section-header">
+        <h2 id="archive-heading">전체 글</h2>
+        <span class="archive-count">{posts.length}개</span>
+      </div>
+      {categories.map((cat) => {
+        const inCat = posts.filter((p) => p.data.category === cat);
+        return inCat.length > 0 && (
+          <div class="archive-group">
+            <h3 class="archive-cat">
+              <a href={`/category/${cat}/`}>{cat}</a><span>{inCat.length}</span>
+            </h3>
+            <ul class="archive-list">
+              {inCat.map((p) => (
+                <li><a href={`/${p.id}/`}>{p.data.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </section>
+  )}
+
   <!-- ── 편집장 소개 (E-E-A-T) ── -->
   <section class="editor-section" aria-labelledby="editor-heading">
     <div class="editor-card">
@@ -298,5 +323,61 @@ const homeSchemas = [organizationSchema, websiteSchema, collectionSchema, person
   }
   @media (max-width: 600px) {
     .hero-banner h1 { font-size: 1.6rem; }
+  }
+
+  /* ── 전체 글 아카이브 ── */
+  .archive {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 24px;
+  }
+  .archive-count {
+    font-size: .85rem;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .archive-group { margin-bottom: 22px; }
+  .archive-cat {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .archive-cat a { color: var(--primary-dark); text-decoration: none; }
+  .archive-cat a:hover { text-decoration: underline; }
+  .archive-cat span { font-size: .78rem; color: var(--muted); font-weight: 500; }
+  .archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2px 18px;
+  }
+  .archive-list li { margin: 0; }
+  .archive-list a {
+    display: block;
+    padding: 5px 0 5px 14px;
+    font-size: .9rem;
+    line-height: 1.5;
+    color: var(--text);
+    text-decoration: none;
+    position: relative;
+    border-radius: 4px;
+  }
+  .archive-list a::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    color: var(--primary);
+  }
+  .archive-list a:hover { color: var(--primary-dark); text-decoration: underline; }
+  @media (max-width: 600px) {
+    .archive { padding: 0 16px; margin: 36px auto; }
+    .archive-list { grid-template-columns: 1fr; }
   }
 </style>

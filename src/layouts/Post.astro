@@ -45,12 +45,15 @@ const faqHtml = (data.faq ?? []).map((f) => ({
   a: renderInlineMarkdown(f.a),
 }));
 
-// 관련 글 (같은 카테고리, 최신순 3개)
+// 관련 글: 같은 카테고리 최신순 우선 → 부족하면 타 카테고리 최신순으로 채워 4개 보장.
+// (오래된 글·소규모 카테고리 글도 항상 인바운드 내부링크를 받도록 — 색인 유도)
 const allPosts = await getCollection('posts', ({ data: d }) => !d.draft);
-const relatedPosts = allPosts
-  .filter((p) => p.id !== post.id && p.data.category === data.category)
-  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
-  .slice(0, 3);
+const byRecent = (a: typeof allPosts[number], b: typeof allPosts[number]) =>
+  b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+const others = allPosts.filter((p) => p.id !== post.id);
+const sameCategory = others.filter((p) => p.data.category === data.category).sort(byRecent);
+const fillers = others.filter((p) => p.data.category !== data.category).sort(byRecent);
+const relatedPosts = [...sameCategory, ...fillers].slice(0, 4);
 
 // Schema.org
 const absoluteHeroImage = absoluteProxyImage(data.heroImage, siteOrigin);
