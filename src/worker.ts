@@ -152,6 +152,20 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    // 1.5) 구 한글 카테고리 슬러그 → 영문 (301 영구) — src/utils/categories.ts 와 동기화
+    const CATEGORY_SLUG: Record<string, string> = {
+      '임산부': 'maternity', '신생아': 'newborn', '영아': 'infant',
+      '유아': 'toddler', '안전': 'safety', '기타': 'etc',
+    };
+    const catMatch = url.pathname.match(/^\/category\/([^/]+)\/?$/);
+    if (catMatch) {
+      const seg = decodeURIComponent(catMatch[1]);
+      if (CATEGORY_SLUG[seg]) {
+        url.pathname = `/category/${CATEGORY_SLUG[seg]}/`;
+        return Response.redirect(url.toString(), 301);
+      }
+    }
+
     // 2) robots.txt 는 Worker가 직접 응답 (Cloudflare prepend 우회)
     if (url.pathname === '/robots.txt') {
       return new Response(ROBOTS_TXT, {

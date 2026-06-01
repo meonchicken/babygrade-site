@@ -2,17 +2,19 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { proxyImage } from '../../utils/image-proxy';
+import { CATEGORY_SLUG, SLUG_CATEGORY, catUrl } from '../../utils/categories';
 
 export async function getStaticPaths() {
-  const categories = ['임산부', '신생아', '영아', '유아', '안전', '기타'] as const;
-  return categories.map((c) => ({ params: { category: c } }));
+  // URL 슬러그는 영문, 페이지 내부에서는 한글 라벨로 복원해 사용
+  return Object.values(CATEGORY_SLUG).map((slug) => ({ params: { category: slug } }));
 }
 
-const { category } = Astro.params;
+const slug = Astro.params.category!;
+const category = SLUG_CATEGORY[slug];
 const posts = (await getCollection('posts', ({ data }) => data.category === category && !data.draft))
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 
-const categoryUrl = new URL(`/category/${category}/`, Astro.site).href;
+const categoryUrl = new URL(catUrl(category), Astro.site).href;
 const siteUrl = Astro.site!.href;
 
 const breadcrumbSchema = {
