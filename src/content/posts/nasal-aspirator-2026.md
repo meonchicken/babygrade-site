@@ -124,7 +124,7 @@ sources:
 콧물 흡입기는 [식품의약품안전처](https://www.mfds.go.kr) 기준의 **의료기기로 표기·허가되는 제품**이 있으며, 구매 시 의료기기 표기와 사용설명서를 확인하는 것이 표준이다. **"비염·감기·축농증 치료"·"콧물 완전 제거" 같은 효능 단정·절대 표현은 쓸 수 없다.** 흡입팁은 깊이 넣지 않고 표기된 흡입 강도를 지키며, 저장통·흡입팁은 매 사용 후 분리 세척한다.
 
 <figure class="infographic">
-  <img src="/images/nasal-aspirator-2026-1.png" alt="콧물 흡입기 흡입 방식·세척 위생·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/nasal-aspirator-2026-2.png" alt="콧물 흡입기 방식별 비교 일러스트 — 전동 거치·미니·수동" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>흡입 방식</b><br/>전동 거치·미니·수동</span>
     <span><b>세척 위생</b><br/>분리 세척·역류 방지</span>

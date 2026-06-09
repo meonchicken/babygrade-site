@@ -127,7 +127,7 @@ sources:
 식사 동선상 식탁에 붙여 함께 먹는 경우가 많아 **높이 조절**과 **식탁 부착·고정 스트랩** 구성이 실사용에 크게 작용한다. 안전벨트(하네스)는 형태와 무관하게 매번 체결하고, **"100% 안전"·"절대 넘어지지 않음" 같은 절대 표현은 쓸 수 없다.** 식탁의자는 보호자 관찰을 전제로 사용하고, 식판·시트는 분리 세척 가능 구조가 위생에 유리하다.
 
 <figure class="infographic">
-  <img src="/images/baby-dining-chair-2026-1.png" alt="아기 식탁의자 형태·청소 위생·성장 호환 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-dining-chair-2026-2.png" alt="아기 식탁의자 형태별 비교 일러스트 — 이동식·어린이용·부스터" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>이동식·어린이용·부스터</span>
     <span><b>청소 위생</b><br/>식판 탈착·시트 분리</span>

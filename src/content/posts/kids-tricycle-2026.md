@@ -125,7 +125,7 @@ sources:
 영유아 자전거는 [국가기술표준원](https://www.kats.go.kr)의 어린이제품 안전(KC) 대상이며, **안전벨트(하네스)와 전복 방지 가드·핸들봉** 구성이 처음 타는 단계의 실사용에 크게 작용한다. **"100% 안전"·"절대 넘어지지 않음" 같은 절대 표현은 쓸 수 없다.** 세발자전거는 보호자 관찰을 전제로 평탄한 장소에서 사용하고, 헬멧 착용을 함께 권장한다.
 
 <figure class="infographic">
-  <img src="/images/kids-tricycle-2026-1.png" alt="세발자전거 안전 구조·연령 호환·휴대 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-tricycle-2026-2.png" alt="세발자전거 형태별 비교 일러스트 — 정통 세발·접이식·페달없는" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>안전벨트·가드·KC</span>
     <span><b>연령 호환</b><br/>좌석 조절·페달 분리</span>
