@@ -217,10 +217,10 @@ J/U 겸용 대형 라인(57,000원)은 **J자와 U자를 겸하는 다용도 조
 
 함께 읽기 좋은 글:
 
-- [수유 쿠션 추천 비교 — 형태·높이·커버 등급표](/nursing-pillow-2026)
-- [임부복 추천 비교 — 시기별·소재·활용 등급표](/maternity-wear-2026)
-- [임산부 영양제 비교 — 엽산·철분 등급표](/prenatal-supplement-comparison-2026)
-- [출산 준비물 종합 가이드 — 시기별 우선순위](/childbirth-essentials-hub-2026)
+- [수유 쿠션 추천 비교 — 형태·높이·커버 등급표](/nursing-pillow-2026/)
+- [임부복 추천 비교 — 시기별·소재·활용 등급표](/maternity-wear-2026/)
+- [임산부 영양제 비교 — 엽산·철분 등급표](/prenatal-supplement-comparison-2026/)
+- [출산 준비물 종합 가이드 — 시기별 우선순위](/childbirth-essentials-hub-2026/)
 
 ## 자주 함께 검색되는 질문
 

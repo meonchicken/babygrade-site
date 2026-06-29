@@ -218,11 +218,11 @@ sources:
 
 같은 임산부 클러스터에서 함께 읽기 좋은 글:
 
-- [임산부 영양제 비교 — 엽산·철분·DHA 등급표](/prenatal-supplement-comparison-2026)
-- [임산부 비타민 추천 — D·C·종합 멀티 등급표](/prenatal-vitamin-2026)
-- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026)
-- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026)
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
+- [임산부 영양제 비교 — 엽산·철분·DHA 등급표](/prenatal-supplement-comparison-2026/)
+- [임산부 비타민 추천 — D·C·종합 멀티 등급표](/prenatal-vitamin-2026/)
+- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026/)
+- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026/)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
 
 ## 자주 함께 검색되는 질문
 

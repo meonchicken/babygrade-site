@@ -220,10 +220,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [아기 모기장 추천 비교 — 원터치·침대형·통기 등급표](/baby-mosquito-net-2026)
-- [아기 선풍기·유모차 선풍기 추천 비교 — BLDC·KC·날개없는 등급표](/baby-stroller-fan-2026)
-- [짱구베개·신생아 베개 추천 비교 — 월령·통기성 등급표](/newborn-pillow-2026)
-- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026)
+- [아기 모기장 추천 비교 — 원터치·침대형·통기 등급표](/baby-mosquito-net-2026/)
+- [아기 선풍기·유모차 선풍기 추천 비교 — BLDC·KC·날개없는 등급표](/baby-stroller-fan-2026/)
+- [짱구베개·신생아 베개 추천 비교 — 월령·통기성 등급표](/newborn-pillow-2026/)
+- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026/)
 
 ## 자주 함께 검색되는 질문
 

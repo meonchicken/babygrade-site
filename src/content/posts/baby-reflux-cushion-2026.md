@@ -226,10 +226,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026)
-- [수유 쿠션 추천 — 수유 자세·높이 가이드](/nursing-pillow-2026)
-- [짱구베개·신생아 베개 추천 — 월령·통기성 등급표](/newborn-pillow-2026)
-- [신생아 속싸개 추천 — 고관절·소재·월령 등급표](/newborn-swaddle-2026)
+- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026/)
+- [수유 쿠션 추천 — 수유 자세·높이 가이드](/nursing-pillow-2026/)
+- [짱구베개·신생아 베개 추천 — 월령·통기성 등급표](/newborn-pillow-2026/)
+- [신생아 속싸개 추천 — 고관절·소재·월령 등급표](/newborn-swaddle-2026/)
 
 ## 자주 함께 검색되는 질문
 

@@ -160,7 +160,7 @@ sources:
 | 비타민 A·E 상한섭취량 준수 | 비타민 A 3000μg RAE 미만 — 종합 영양제 합산 점검 | 필수 |
 | 가격·복용 편의 | 정제 크기 / 1일 복용 횟수 / 회당 단가 | 권장 |
 
-식약처 「건강기능식품 기준 및 규격」은 임산부 항목을 별도 운영하며 [식품안전나라](https://www.foodsafetykorea.go.kr)에서 인증 번호 조회가 가능하다. 비타민 D 단독 vs 종합 멀티 비타민의 선택은 [산부인과](https://www.ksog.org) 정기 검사 결과(혈중 비타민 D 농도·헤모글로빈·페리틴)에 따라 달라진다. 안전 인증 전반의 등급 체계는 [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)에 정리했다.
+식약처 「건강기능식품 기준 및 규격」은 임산부 항목을 별도 운영하며 [식품안전나라](https://www.foodsafetykorea.go.kr)에서 인증 번호 조회가 가능하다. 비타민 D 단독 vs 종합 멀티 비타민의 선택은 [산부인과](https://www.ksog.org) 정기 검사 결과(혈중 비타민 D 농도·헤모글로빈·페리틴)에 따라 달라진다. 안전 인증 전반의 등급 체계는 [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)에 정리했다.
 
 ## 임산부 비타민 추천 3종 비교 (2026)
 
@@ -260,7 +260,7 @@ WHO와 미국 [ACOG](https://www.acog.org) 임산부 비타민 D 권장량은 **
 
 ## 자주 함께 검색되는 질문
 
-임산부 비타민을 검토하는 예비 부모는 자연스럽게 출산 준비 카테고리로 검색을 확장한다. [임산부 영양제 시기별 권장량](/prenatal-supplement-comparison-2026)에서는 본 글의 비타민과 별개로 **엽산·철분·DHA**를 시기별로 정리했고, [신생아 기저귀 추천 TOP 5](/newborn-diaper-top5-2026)는 KC + 식약처 이중 인증이 적용되는 출산 직후 첫 번째 결정 카테고리이며, [젖병 소독기 추천 비교](/bottle-sterilizer-comparison-2026)는 산후 모유·분유 수유 인프라의 핵심이다. 어린이 제품 안전 인증의 전체 체계는 [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)에서 정리했다.
+임산부 비타민을 검토하는 예비 부모는 자연스럽게 출산 준비 카테고리로 검색을 확장한다. [임산부 영양제 시기별 권장량](/prenatal-supplement-comparison-2026/)에서는 본 글의 비타민과 별개로 **엽산·철분·DHA**를 시기별로 정리했고, [신생아 기저귀 추천 TOP 5](/newborn-diaper-top5-2026/)는 KC + 식약처 이중 인증이 적용되는 출산 직후 첫 번째 결정 카테고리이며, [젖병 소독기 추천 비교](/bottle-sterilizer-comparison-2026/)는 산후 모유·분유 수유 인프라의 핵심이다. 어린이 제품 안전 인증의 전체 체계는 [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)에서 정리했다.
 
 WHO 임산부 영양 가이드 원문은 [WHO 공식 사이트](https://www.who.int)에서, 미국 산부인과학회 권고는 [ACOG](https://www.acog.org)에서, 국내 임산부 비타민 권장량은 [식품의약품안전처](https://www.mfds.go.kr)에서 확인할 수 있다.
 

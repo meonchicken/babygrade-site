@@ -240,13 +240,13 @@ ABM501 5인치 HD 무선 베이비 모니터(81,000원)는 **표준 전용 무�
 
 같은 안전·신생아 클러스터에서 함께 읽기 좋은 글:
 
-- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)
-- [BPA 프리 검증 가이드 — 영유아 용품 안전 표시 판별](/bpa-free-baby-guide-2026)
-- [아기 침대 추천 — KC·매트리스·접이식 등급표](/baby-crib-2026)
-- [아기 모빌 추천 — 흑백·컬러·자동 단계별 등급표](/baby-mobile-2026)
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
-- [신생아 기저귀 추천 TOP 5 — 안전인증 등급표](/newborn-diaper-top5-2026)
-- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026)
+- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)
+- [BPA 프리 검증 가이드 — 영유아 용품 안전 표시 판별](/bpa-free-baby-guide-2026/)
+- [아기 침대 추천 — KC·매트리스·접이식 등급표](/baby-crib-2026/)
+- [아기 모빌 추천 — 흑백·컬러·자동 단계별 등급표](/baby-mobile-2026/)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
+- [신생아 기저귀 추천 TOP 5 — 안전인증 등급표](/newborn-diaper-top5-2026/)
+- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026/)
 
 ## 자주 함께 검색되는 질문
 

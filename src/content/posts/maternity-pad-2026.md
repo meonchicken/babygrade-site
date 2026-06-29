@@ -223,11 +223,11 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [출산 준비물 가이드 — 시기별·필수도 등급표](/childbirth-essentials-hub-2026)
-- [수유 쿠션 추천 비교 — 형태·커버·각도 등급표](/nursing-pillow-2026)
-- [유축기 추천 비교 — 전동·수동·핸즈프리 등급표](/breast-pump-2026)
-- [임산부 영양제 비교 — 엽산·철분 등급표](/prenatal-supplement-comparison-2026)
-- [임부복 추천 비교 — 시기·소재·형태 등급표](/maternity-wear-2026)
+- [출산 준비물 가이드 — 시기별·필수도 등급표](/childbirth-essentials-hub-2026/)
+- [수유 쿠션 추천 비교 — 형태·커버·각도 등급표](/nursing-pillow-2026/)
+- [유축기 추천 비교 — 전동·수동·핸즈프리 등급표](/breast-pump-2026/)
+- [임산부 영양제 비교 — 엽산·철분 등급표](/prenatal-supplement-comparison-2026/)
+- [임부복 추천 비교 — 시기·소재·형태 등급표](/maternity-wear-2026/)
 
 ## 자주 함께 검색되는 질문
 

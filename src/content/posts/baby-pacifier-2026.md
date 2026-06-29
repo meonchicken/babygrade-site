@@ -231,12 +231,12 @@ sources:
 
 같은 신생아 클러스터에서 함께 읽기 좋은 글:
 
-- [신생아 젖병 추천 비교 — PPSU·PP 소재·모유실감 등급표](/baby-bottle-recommendation-2026)
-- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026)
-- [아기 로션 추천 비교 — 보습·무향·아토피 등급표](/baby-lotion-2026)
-- [신생아 물티슈 추천 — 무자극·캡형·생분해 등급표](/newborn-wet-wipes-2026)
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
-- [BPA 프리란 — 영유아 플라스틱 안전 가이드](/bpa-free-baby-guide-2026)
+- [신생아 젖병 추천 비교 — PPSU·PP 소재·모유실감 등급표](/baby-bottle-recommendation-2026/)
+- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026/)
+- [아기 로션 추천 비교 — 보습·무향·아토피 등급표](/baby-lotion-2026/)
+- [신생아 물티슈 추천 — 무자극·캡형·생분해 등급표](/newborn-wet-wipes-2026/)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
+- [BPA 프리란 — 영유아 플라스틱 안전 가이드](/bpa-free-baby-guide-2026/)
 
 ## 자주 함께 검색되는 질문
 

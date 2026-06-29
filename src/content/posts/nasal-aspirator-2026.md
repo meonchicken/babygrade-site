@@ -227,10 +227,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026)
-- [신생아 물티슈 추천 — 무첨가·순한 성분 등급표](/newborn-wet-wipes-2026)
-- [아기 손싸개·가제수건 추천 — 면·KC 인증 등급표](/baby-mittens-2026)
-- [신생아 로션 추천 — 저자극·세라마이드 등급표](/newborn-lotion-2026)
+- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026/)
+- [신생아 물티슈 추천 — 무첨가·순한 성분 등급표](/newborn-wet-wipes-2026/)
+- [아기 손싸개·가제수건 추천 — 면·KC 인증 등급표](/baby-mittens-2026/)
+- [신생아 로션 추천 — 저자극·세라마이드 등급표](/newborn-lotion-2026/)
 
 ## 자주 함께 검색되는 질문
 

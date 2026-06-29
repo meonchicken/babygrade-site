@@ -161,7 +161,7 @@ sources:
 
 ### 1. 네오플램 클린 내열유리 반찬통세트 직사각 8P 밀폐용기
 
-내열 유리(붕규산) 라인으로 화학 첨가물 미함유 재질이다. 이유식 보관 후 전자레인지 재가열·열탕 소독을 모두 지원하며 식약처 「식품용 기구 및 용기·포장의 기준 및 규격」 적합 라인 표시가 있다. 무게가 있어 자기주도 이유식(BLW) 라인보다는 보관·재가열 용도가 표준이다. 자세한 이유식 보관 라인은 [이유식 용기 비교 글](/baby-food-container-2026)에서 확장 분석한다. <div class="cpg-block">
+내열 유리(붕규산) 라인으로 화학 첨가물 미함유 재질이다. 이유식 보관 후 전자레인지 재가열·열탕 소독을 모두 지원하며 식약처 「식품용 기구 및 용기·포장의 기준 및 규격」 적합 라인 표시가 있다. 무게가 있어 자기주도 이유식(BLW) 라인보다는 보관·재가열 용도가 표준이다. 자세한 이유식 보관 라인은 [이유식 용기 비교 글](/baby-food-container-2026/)에서 확장 분석한다. <div class="cpg-block">
   <span class="cpg-tag">쿠팡 파트너스 · 수수료 제공</span>
   <a href="https://link.coupang.com/re/AFFSDP?lptag=AF2360800&pageKey=9416031507&itemId=27980651875&vendorItemId=87708840179&traceid=V0-153-9fe69d88bdff319c&clickBeacon=358b7b10-5a6b-11f1-92f9-e3b255bb8eec%7E3&requestid=20260528165953082210518258&token=31850C%7CMIXED" rel="nofollow noopener sponsored" target="_blank" class="cpg-cta">
     <span class="cpg-cta-label">🛒 쿠팡 최저가 보기</span>
@@ -206,12 +206,12 @@ PP(폴리프로필렌) 재질 유아식기 6종 세트로 BPA 미함유 + 식약
 
 같은 안전·인증 클러스터에서 함께 읽기 좋은 글은 다음과 같다.
 
-- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
-- [신생아 젖병 추천 비교 — PPSU·PP 소재 라인 등급표](/baby-bottle-recommendation-2026)
-- [이유식 용기 비교 — 트라이탄·PP·유리 소재별 등급표](/baby-food-container-2026)
-- [유아 식판 추천 비교 — 트라이탄·에코젠 등급표](/toddler-divided-plate-2026)
-- [어린이 위생용품 종합 가이드 — 칫솔·치약·샴푸·식판·비타민](/children-hygiene-hub-2026)
+- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
+- [신생아 젖병 추천 비교 — PPSU·PP 소재 라인 등급표](/baby-bottle-recommendation-2026/)
+- [이유식 용기 비교 — 트라이탄·PP·유리 소재별 등급표](/baby-food-container-2026/)
+- [유아 식판 추천 비교 — 트라이탄·에코젠 등급표](/toddler-divided-plate-2026/)
+- [어린이 위생용품 종합 가이드 — 칫솔·치약·샴푸·식판·비타민](/children-hygiene-hub-2026/)
 
 ## BPA 프리 디시·맘카페 자주 나오는 오해
 

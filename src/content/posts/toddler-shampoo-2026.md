@@ -267,7 +267,7 @@ sources:
 
 ## 자주 함께 검색되는 질문
 
-유아 샴푸를 검토하는 보호자는 자연스럽게 어린이 위생·생활용품 카테고리로 검색을 확장한다. [어린이 칫솔 추천 비교](/children-toothbrush-2026)·[어린이 치약 추천 비교](/children-toothpaste-2026)는 같은 J 클러스터(만 4~7세 유아 위생) 자기 케어 라인이며, [어린이 비타민 추천 비교](/children-vitamin-2026)는 영양 보충 카테고리다. [신생아 옷 추천 — 100% 면](/newborn-clothes-cotton-2026)은 영아 피부 자극 회피 카테고리, [신생아 기저귀 추천 TOP 5](/newborn-diaper-top5-2026)는 영아 피부 자극·인증 검증 카테고리이며, [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)는 어린이제품 안전특별법 전반의 허브 글이다.
+유아 샴푸를 검토하는 보호자는 자연스럽게 어린이 위생·생활용품 카테고리로 검색을 확장한다. [어린이 칫솔 추천 비교](/children-toothbrush-2026/)·[어린이 치약 추천 비교](/children-toothpaste-2026/)는 같은 J 클러스터(만 4~7세 유아 위생) 자기 케어 라인이며, [어린이 비타민 추천 비교](/children-vitamin-2026/)는 영양 보충 카테고리다. [신생아 옷 추천 — 100% 면](/newborn-clothes-cotton-2026/)은 영아 피부 자극 회피 카테고리, [신생아 기저귀 추천 TOP 5](/newborn-diaper-top5-2026/)는 영아 피부 자극·인증 검증 카테고리이며, [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)는 어린이제품 안전특별법 전반의 허브 글이다.
 
 화장품법·전성분 표시 안내는 [식품의약품안전처](https://www.mfds.go.kr)에서, 영유아 피부 관리·아토피 안내는 [대한피부과학회](https://www.derma.or.kr)에서, 영유아 화장품 안전성 조사 보고는 [한국소비자원](https://www.kca.go.kr)에서 확인할 수 있다.
 

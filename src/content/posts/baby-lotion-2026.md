@@ -229,12 +229,12 @@ sources:
 
 같은 신생아 클러스터에서 함께 읽기 좋은 글:
 
-- [신생아 물티슈 추천 — 무자극·캡형·생분해 등급표](/newborn-wet-wipes-2026)
-- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026)
-- [신생아 속싸개 추천 비교 — 고관절·소재·월령 등급표](/newborn-swaddle-2026)
-- [아기 욕조 추천 — 신생아·접이식·KC 인증 등급표](/baby-bathtub-2026)
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
-- [BPA 프리란 — 영유아 플라스틱 안전 가이드](/bpa-free-baby-guide-2026)
+- [신생아 물티슈 추천 — 무자극·캡형·생분해 등급표](/newborn-wet-wipes-2026/)
+- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026/)
+- [신생아 속싸개 추천 비교 — 고관절·소재·월령 등급표](/newborn-swaddle-2026/)
+- [아기 욕조 추천 — 신생아·접이식·KC 인증 등급표](/baby-bathtub-2026/)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
+- [BPA 프리란 — 영유아 플라스틱 안전 가이드](/bpa-free-baby-guide-2026/)
 
 ## 자주 함께 검색되는 질문
 

@@ -224,12 +224,12 @@ sources:
 
 같은 유아 위생 클러스터에서 함께 읽기 좋은 글:
 
-- [어린이 칫솔 추천 비교 — 미세모·STEP 단계별 등급표](/children-toothbrush-2026)
-- [어린이 치약 추천 비교 — 불소 함량·연령별 단계 등급표](/children-toothpaste-2026)
-- [유아 샴푸 추천 비교 — 저자극·약산성·화해 등급표](/toddler-shampoo-2026)
-- [유아 식판 추천 비교 — 트라이탄·에코젠·5구 깊은 식판 등급표](/toddler-divided-plate-2026)
-- [어린이 위생용품 종합 가이드 — 칫솔·치약·샴푸·식판·비타민](/children-hygiene-hub-2026)
-- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)
+- [어린이 칫솔 추천 비교 — 미세모·STEP 단계별 등급표](/children-toothbrush-2026/)
+- [어린이 치약 추천 비교 — 불소 함량·연령별 단계 등급표](/children-toothpaste-2026/)
+- [유아 샴푸 추천 비교 — 저자극·약산성·화해 등급표](/toddler-shampoo-2026/)
+- [유아 식판 추천 비교 — 트라이탄·에코젠·5구 깊은 식판 등급표](/toddler-divided-plate-2026/)
+- [어린이 위생용품 종합 가이드 — 칫솔·치약·샴푸·식판·비타민](/children-hygiene-hub-2026/)
+- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)
 
 ## "충치 예방"·"99.9% 살균 보장" 광고 표시 주의
 

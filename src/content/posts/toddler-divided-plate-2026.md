@@ -269,7 +269,7 @@ sources:
 
 ## 자주 함께 검색되는 질문
 
-유아 식판을 검토하는 보호자는 자연스럽게 유아 식사·등원 카테고리로 검색을 확장한다. [아기 식판 흡착 안전성 검증](/baby-suction-tray-2026)은 영아 자기주도 이유식(BLW) 단계 흡착 식판을 정리했으며, [이유식 용기 소재 안전성 검증](/baby-food-container-2026)은 보관 용기 트라이탄·PP·유리 소재별 안전성을 정리했다. [어린이 칫솔 추천 비교](/children-toothbrush-2026)·[어린이 치약 추천 비교](/children-toothpaste-2026)·[어린이 비타민 추천 비교](/children-vitamin-2026)는 유아 식사 전후 위생·영양 운영의 카테고리이며, [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)는 어린이제품 안전특별법 전반의 허브 글이다.
+유아 식판을 검토하는 보호자는 자연스럽게 유아 식사·등원 카테고리로 검색을 확장한다. [아기 식판 흡착 안전성 검증](/baby-suction-tray-2026/)은 영아 자기주도 이유식(BLW) 단계 흡착 식판을 정리했으며, [이유식 용기 소재 안전성 검증](/baby-food-container-2026/)은 보관 용기 트라이탄·PP·유리 소재별 안전성을 정리했다. [어린이 칫솔 추천 비교](/children-toothbrush-2026/)·[어린이 치약 추천 비교](/children-toothpaste-2026/)·[어린이 비타민 추천 비교](/children-vitamin-2026/)는 유아 식사 전후 위생·영양 운영의 카테고리이며, [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)는 어린이제품 안전특별법 전반의 허브 글이다.
 
 식약처 식품용 기구·용기 안전기준은 [식품의약품안전처](https://www.mfds.go.kr)에서, 어린이 식기 안전성 조사 보고는 [한국소비자원](https://www.kca.go.kr)에서, 영유아 영양 안내는 [대한소아청소년과학회](https://www.pediatrics.or.kr)에서 확인할 수 있다.
 

@@ -239,12 +239,12 @@ sources:
 
 같은 영아·외출 클러스터에서 함께 읽기 좋은 글:
 
-- [유모차 추천 비교 — 절충형·휴대·디럭스 등급표](/baby-stroller-2026)
-- [카시트 추천 비교 — 신생아·영아·아이사이즈 단계별 등급표](/baby-carseat-2026)
-- [영아 외출 용품 종합 가이드 — 카시트·유모차·이유식·외출 보조](/infant-outing-hub-2026)
-- [아기 옷 추천 비교 — 사이즈·소재·KC 인증 등급표](/baby-clothes-recommendation-2026)
-- [신생아 속싸개 추천 비교 — 고관절·소재·월령 등급표](/newborn-swaddle-2026)
-- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)
+- [유모차 추천 비교 — 절충형·휴대·디럭스 등급표](/baby-stroller-2026/)
+- [카시트 추천 비교 — 신생아·영아·아이사이즈 단계별 등급표](/baby-carseat-2026/)
+- [영아 외출 용품 종합 가이드 — 카시트·유모차·이유식·외출 보조](/infant-outing-hub-2026/)
+- [아기 옷 추천 비교 — 사이즈·소재·KC 인증 등급표](/baby-clothes-recommendation-2026/)
+- [신생아 속싸개 추천 비교 — 고관절·소재·월령 등급표](/newborn-swaddle-2026/)
+- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)
 
 ## "100% 안전"·"고관절 교정" 광고 표시 주의
 

@@ -228,10 +228,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026)
-- [분유 추천 비교 — 단계별·표시기준·국내외 등급표](/baby-formula-stages-2026)
-- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026)
-- [신생아 젖병 추천 비교 — PPSU·PP 소재·모유실감 등급표](/baby-bottle-recommendation-2026)
+- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026/)
+- [분유 추천 비교 — 단계별·표시기준·국내외 등급표](/baby-formula-stages-2026/)
+- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026/)
+- [신생아 젖병 추천 비교 — PPSU·PP 소재·모유실감 등급표](/baby-bottle-recommendation-2026/)
 
 ## 자주 함께 검색되는 질문
 

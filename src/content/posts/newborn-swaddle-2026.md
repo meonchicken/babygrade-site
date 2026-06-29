@@ -226,12 +226,12 @@ sources:
 
 같은 신생아 클러스터에서 함께 읽기 좋은 글:
 
-- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026)
-- [신생아 기저귀 추천 TOP 5 — 안전인증 등급표](/newborn-diaper-top5-2026)
-- [아기 침대 추천 비교 — KC·매트리스·접이식 등급표](/baby-crib-2026)
-- [신생아 물티슈 추천 — 무자극·캡형·생분해 등급표](/newborn-wet-wipes-2026)
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
-- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)
+- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026/)
+- [신생아 기저귀 추천 TOP 5 — 안전인증 등급표](/newborn-diaper-top5-2026/)
+- [아기 침대 추천 비교 — KC·매트리스·접이식 등급표](/baby-crib-2026/)
+- [신생아 물티슈 추천 — 무자극·캡형·생분해 등급표](/newborn-wet-wipes-2026/)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
+- [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)
 
 ## "수면 시간 늘려줌"·"100% 안전" 광고 표시 주의
 

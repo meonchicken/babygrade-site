@@ -232,13 +232,13 @@ sources:
 
 같은 임산부·신생아 클러스터에서 함께 읽기 좋은 글:
 
-- [임부복 추천 비교 — 만삭·태교여행·하객룩 등급표](/maternity-wear-2026)
-- [임산부 영양제 비교 — 엽산·철분·DHA 등급표](/prenatal-supplement-comparison-2026)
-- [임산부 비타민 추천 — D·C·종합 멀티 등급표](/prenatal-vitamin-2026)
-- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026)
-- [신생아 젖병 추천 비교 — PPSU·PP 소재 등급표](/baby-bottle-recommendation-2026)
-- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026)
-- [분유 추천 비교 — 단계별·표시기준·국내외 등급표](/baby-formula-stages-2026)
+- [임부복 추천 비교 — 만삭·태교여행·하객룩 등급표](/maternity-wear-2026/)
+- [임산부 영양제 비교 — 엽산·철분·DHA 등급표](/prenatal-supplement-comparison-2026/)
+- [임산부 비타민 추천 — D·C·종합 멀티 등급표](/prenatal-vitamin-2026/)
+- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026/)
+- [신생아 젖병 추천 비교 — PPSU·PP 소재 등급표](/baby-bottle-recommendation-2026/)
+- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026/)
+- [분유 추천 비교 — 단계별·표시기준·국내외 등급표](/baby-formula-stages-2026/)
 
 ## 자주 함께 검색되는 질문
 

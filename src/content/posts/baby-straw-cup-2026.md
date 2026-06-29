@@ -213,10 +213,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [젖병 추천 비교 — 소재·젖꼭지 단계·세척 등급표](/baby-bottle-recommendation-2026)
-- [이유식 용기 추천 비교 — 소재·밀폐·이유식기 등급표](/baby-food-container-2026)
-- [이유식 추천 단계별 — 초기·중기·후기 가이드](/weaning-food-stages-2026)
-- [영아 외출 용품 종합 가이드 — 카시트·유모차·이유식·외출 보조](/infant-outing-hub-2026)
+- [젖병 추천 비교 — 소재·젖꼭지 단계·세척 등급표](/baby-bottle-recommendation-2026/)
+- [이유식 용기 추천 비교 — 소재·밀폐·이유식기 등급표](/baby-food-container-2026/)
+- [이유식 추천 단계별 — 초기·중기·후기 가이드](/weaning-food-stages-2026/)
+- [영아 외출 용품 종합 가이드 — 카시트·유모차·이유식·외출 보조](/infant-outing-hub-2026/)
 
 ## 자주 함께 검색되는 질문
 

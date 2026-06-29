@@ -219,10 +219,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [아기 모빌 추천 비교 — 형태·시야·안전 등급표](/baby-mobile-2026)
-- [영아 외출 용품 종합 가이드 — 카시트·유모차·이유식·외출 보조](/infant-outing-hub-2026)
-- [어린이 위생용품 종합 가이드 — 치약·샴푸·물티슈 등급표](/children-hygiene-hub-2026)
-- [KC 인증이란 — 어린이제품 안전 인증 한눈에 보기](/kc-certification-baby-products-2026)
+- [아기 모빌 추천 비교 — 형태·시야·안전 등급표](/baby-mobile-2026/)
+- [영아 외출 용품 종합 가이드 — 카시트·유모차·이유식·외출 보조](/infant-outing-hub-2026/)
+- [어린이 위생용품 종합 가이드 — 치약·샴푸·물티슈 등급표](/children-hygiene-hub-2026/)
+- [KC 인증이란 — 어린이제품 안전 인증 한눈에 보기](/kc-certification-baby-products-2026/)
 
 ## 자주 함께 검색되는 질문
 

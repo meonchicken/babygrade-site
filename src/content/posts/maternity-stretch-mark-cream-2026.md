@@ -229,10 +229,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [출산 준비물 완벽 가이드 — 시기별 체크리스트](/childbirth-essentials-hub-2026)
-- [임부복 추천 — 시기별·체형별 등급표](/maternity-wear-2026)
-- [임산부 영양제 비교 — 엽산·철분·종합 등급표](/prenatal-supplement-comparison-2026)
-- [임산부 바디필로우·베개 추천 — 측면수면·소재 등급표](/maternity-body-pillow-2026)
+- [출산 준비물 완벽 가이드 — 시기별 체크리스트](/childbirth-essentials-hub-2026/)
+- [임부복 추천 — 시기별·체형별 등급표](/maternity-wear-2026/)
+- [임산부 영양제 비교 — 엽산·철분·종합 등급표](/prenatal-supplement-comparison-2026/)
+- [임산부 바디필로우·베개 추천 — 측면수면·소재 등급표](/maternity-body-pillow-2026/)
 
 ## 자주 함께 검색되는 질문
 

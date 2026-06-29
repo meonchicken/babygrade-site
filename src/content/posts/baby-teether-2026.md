@@ -220,10 +220,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [아기 손싸개·가제수건 추천 비교 — 소재·KC 등급표](/baby-mittens-2026)
-- [노리개 젖꼭지(쪽쪽이) 추천 비교 — 월령·실리콘 등급표](/baby-pacifier-2026)
-- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026)
-- [KC 인증이란 — 어린이제품 안전 인증 한눈에 보기](/kc-certification-baby-products-2026)
+- [아기 손싸개·가제수건 추천 비교 — 소재·KC 등급표](/baby-mittens-2026/)
+- [노리개 젖꼭지(쪽쪽이) 추천 비교 — 월령·실리콘 등급표](/baby-pacifier-2026/)
+- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026/)
+- [KC 인증이란 — 어린이제품 안전 인증 한눈에 보기](/kc-certification-baby-products-2026/)
 
 ## 자주 함께 검색되는 질문
 

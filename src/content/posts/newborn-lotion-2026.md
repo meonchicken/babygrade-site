@@ -221,10 +221,10 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [아기 로션 추천 비교 — 보습·무향·민감성 등급표](/baby-lotion-2026)
-- [신생아 물티슈 추천 비교 — 성분·두께·안전 등급표](/newborn-wet-wipes-2026)
-- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026)
-- [KC 인증이란 — 어린이제품 안전 인증 한눈에 보기](/kc-certification-baby-products-2026)
+- [아기 로션 추천 비교 — 보습·무향·민감성 등급표](/baby-lotion-2026/)
+- [신생아 물티슈 추천 비교 — 성분·두께·안전 등급표](/newborn-wet-wipes-2026/)
+- [신생아 용품 종합 가이드 — KC 7대 카테고리](/newborn-essentials-hub-2026/)
+- [KC 인증이란 — 어린이제품 안전 인증 한눈에 보기](/kc-certification-baby-products-2026/)
 
 ## 자주 함께 검색되는 질문
 

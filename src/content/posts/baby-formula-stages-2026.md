@@ -270,7 +270,7 @@ sources:
 
 ## 자주 함께 검색되는 질문
 
-분유를 검토하는 보호자는 자연스럽게 신생아 수유·위생 카테고리로 검색을 확장한다. [젖병 소독기 추천 비교](/bottle-sterilizer-comparison-2026)는 같은 N 클러스터(신생아 0~12개월) 수유 위생 라인이며, [신생아 기저귀 추천 TOP 5](/newborn-diaper-top5-2026)·[신생아 옷 추천 — 100% 면](/newborn-clothes-cotton-2026)은 신생아 일상 운영 카테고리다. [아기 침대 추천 비교](/baby-crib-2026)·[아기 모빌 추천 비교](/baby-mobile-2026)는 신생아 수면 카테고리, [임산부 영양제 비교](/prenatal-supplement-comparison-2026)는 임산부 영양 카테고리이며, [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026)는 어린이제품 안전특별법 전반의 허브 글이다.
+분유를 검토하는 보호자는 자연스럽게 신생아 수유·위생 카테고리로 검색을 확장한다. [젖병 소독기 추천 비교](/bottle-sterilizer-comparison-2026/)는 같은 N 클러스터(신생아 0~12개월) 수유 위생 라인이며, [신생아 기저귀 추천 TOP 5](/newborn-diaper-top5-2026/)·[신생아 옷 추천 — 100% 면](/newborn-clothes-cotton-2026/)은 신생아 일상 운영 카테고리다. [아기 침대 추천 비교](/baby-crib-2026/)·[아기 모빌 추천 비교](/baby-mobile-2026/)는 신생아 수면 카테고리, [임산부 영양제 비교](/prenatal-supplement-comparison-2026/)는 임산부 영양 카테고리이며, [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)는 어린이제품 안전특별법 전반의 허브 글이다.
 
 영아용 조제식 표시기준·식약처 등록은 [식품의약품안전처](https://www.mfds.go.kr)에서, 영아 영양 권고·모유 수유 가이드는 [대한소아청소년과학회](https://www.pediatrics.or.kr)에서, 분유 안전성·표시 조사 보고는 [한국소비자원](https://www.kca.go.kr)에서 확인할 수 있다.
 

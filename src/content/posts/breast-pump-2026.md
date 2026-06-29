@@ -229,12 +229,12 @@ sources:
 
 함께 읽기 좋은 글:
 
-- [출산 준비물 가이드 — 시기별·필수도 등급표](/childbirth-essentials-hub-2026)
-- [수유 쿠션 추천 비교 — 형태·커버·각도 등급표](/nursing-pillow-2026)
-- [임산부 영양제 비교 — 엽산·철분 등급표](/prenatal-supplement-comparison-2026)
-- [신생아 젖병 추천 비교 — PPSU·PP 소재·모유실감 등급표](/baby-bottle-recommendation-2026)
-- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026)
-- [노리개 젖꼭지·쪽쪽이 추천 비교 — 단계·실리콘 등급표](/baby-pacifier-2026)
+- [출산 준비물 가이드 — 시기별·필수도 등급표](/childbirth-essentials-hub-2026/)
+- [수유 쿠션 추천 비교 — 형태·커버·각도 등급표](/nursing-pillow-2026/)
+- [임산부 영양제 비교 — 엽산·철분 등급표](/prenatal-supplement-comparison-2026/)
+- [신생아 젖병 추천 비교 — PPSU·PP 소재·모유실감 등급표](/baby-bottle-recommendation-2026/)
+- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026/)
+- [노리개 젖꼭지·쪽쪽이 추천 비교 — 단계·실리콘 등급표](/baby-pacifier-2026/)
 
 ## 자주 함께 검색되는 질문
 

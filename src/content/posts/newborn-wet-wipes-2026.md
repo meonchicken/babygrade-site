@@ -201,14 +201,14 @@ sources:
 
 같은 신생아 클러스터에서 함께 읽기 좋은 글:
 
-- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026)
-- [신생아 기저귀 추천 TOP 5 — 안전인증 등급표](/newborn-diaper-top5-2026)
-- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026)
-- [아기 욕조 추천 — 신생아·접이식·KC 인증 등급표](/baby-bathtub-2026)
-- [신생아 젖병 추천 비교 — PPSU·PP 소재 등급표](/baby-bottle-recommendation-2026)
-- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026)
-- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026)
-- [BPA 프리 검증 가이드 — 영유아 용품 안전 표시 판별](/bpa-free-baby-guide-2026)
+- [신생아 용품 종합 가이드 — KC 인증 7대 카테고리 등급표](/newborn-essentials-hub-2026/)
+- [신생아 기저귀 추천 TOP 5 — 안전인증 등급표](/newborn-diaper-top5-2026/)
+- [신생아 옷 추천 — 100% 면 등급표](/newborn-clothes-cotton-2026/)
+- [아기 욕조 추천 — 신생아·접이식·KC 인증 등급표](/baby-bathtub-2026/)
+- [신생아 젖병 추천 비교 — PPSU·PP 소재 등급표](/baby-bottle-recommendation-2026/)
+- [젖병 소독기 추천 비교 — UV·스팀·올인원 등급표](/bottle-sterilizer-comparison-2026/)
+- [출산 준비물 리스트 — 임신 32주 1주 단위 가이드](/childbirth-essentials-hub-2026/)
+- [BPA 프리 검증 가이드 — 영유아 용품 안전 표시 판별](/bpa-free-baby-guide-2026/)
 
 ## 신생아 물티슈 디시·맘카페 후기 패턴
 
