@@ -9,6 +9,9 @@ const { ping } = require('./indexnow');
 const { processFile } = require('./fix-coupang-links');
 
 const SITE_DIR = path.resolve(__dirname, '../affiliate-site');
+// 2026-07-31 repo 재구성으로 git 루트가 한 단계 위로 올라왔다. git 은 REPO_ROOT 에서 돈다
+// (SITE_DIR 에서 돌리면 `git add -A` 가 affiliate-site/ 하위만 담는다).
+const REPO_ROOT = path.resolve(__dirname, '..');
 const HOST = 'babygrade.kr';
 
 const slug = process.argv[2];
@@ -77,8 +80,8 @@ async function main() {
   // 2. git commit + push
   console.log('\n[2/5] git push...');
   try {
-    run(`git add -A && git -c user.email="polarissearchlab@gmail.com" -c user.name="meonchicken" commit -m "신규: ${slug}"`);
-    run('git push');
+    run(`git add -A && git -c user.email="polarissearchlab@gmail.com" -c user.name="meonchicken" commit -m "신규: ${slug}"`, { cwd: REPO_ROOT });
+    run('git push', { cwd: REPO_ROOT });
   } catch (e) {
     console.log('  (변경사항 없음 또는 이미 push됨)');
   }
