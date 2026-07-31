@@ -1,8 +1,28 @@
-node_modules/
+# ── 자격증명 ─────────────────────────────────────────────
+# 이 repo 는 PUBLIC 이다. 키가 들어간 파일은 어떤 경로에서도 커밋하지 않는다.
+# 클라우드 실행에 필요한 값은 전부 GitHub Secret 으로 넣는다.
 .env
 .env.*
-dist/
-.astro/
+!.env.example
+
+# ── 의존성·빌드 산출물 ───────────────────────────────────
+node_modules/
+affiliate-site/dist/
+affiliate-site/.astro/
+
+# ── 파이프라인 캐시 ──────────────────────────────────────
+# 쿠팡 API 응답 스냅샷. 발행마다 새로 생기므로 커밋하면 repo 가 계속 부푼다.
+content-pipeline/last-data-*.json
+
+# ── 자동 발행 러너의 임시 산출물 ─────────────────────────
+# 커밋 단계에서 rm 으로 지웠더니 뒤따르는 알림 단계가 telegram-message.txt 를
+# 못 찾아 매번 "워크플로가 예기치 않게 중단됐습니다" 를 보냈다 (딜픽 2026-07-30 실측).
+# 지우지 말고 무시한다.
+auto-publish-result.json
+telegram-message.txt
+claude-output.json
+claude-error.log
+
+# ── OS·편집기 ────────────────────────────────────────────
 .DS_Store
 .vscode/
-last-data-*.json
