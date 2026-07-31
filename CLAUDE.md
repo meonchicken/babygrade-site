@@ -4,6 +4,38 @@
 
 ---
 
+## 무인 자동 발행 (2026-07-31~)
+
+**매일 02:00 KST**, GitHub Actions 러너에서 글 1편을 쓰고 게이트를 통과하면 발행한다. 노트북 전원 무관.
+지시서는 `content-pipeline/auto-publish-prompt.md`, 게이트는 `content-pipeline/gate.js`(14항).
+
+> ⚠️ **repo 루트 = 이 폴더(`babygrade/`)다.** 2026-07-31 재구성 전에는 `affiliate-site/` 가 루트였다.
+> 클라우드는 repo 만 내려받으므로 **규칙 문서·파이프라인이 repo 밖에 있으면 존재하지 않는 것과 같다.**
+> 새 규칙 문서를 만들면 반드시 커밋할 것.
+
+| | |
+|---|---|
+| 실행 | `.github/workflows/daily-publish.yml` (cron `0 17 * * *` = 02:00 KST) |
+| 배포 | `.github/workflows/deploy.yml` — **`wrangler deploy`(Workers)**. Pages 아님 |
+| 안전장치 | ① repo variable `LIVE_PUBLISH=true` 여야 실전 ② 그날 수동 발행 있으면 스킵 ③ 게이트 block 1건이면 중단 |
+| 알림 | Telegram (🟢 발행 / 🟡 게이트 보류 / ⚪️ 슬롯없음 / ⏭ 수동발행 감지 / 🔴 실패) |
+
+```bash
+gh variable set LIVE_PUBLISH --body false -R meonchicken/babygrade-site   # 멈추기
+gh run list -R meonchicken/babygrade-site --workflow=daily-publish.yml    # 로그
+node content-pipeline/gate.js --all                                       # 게이트 오탐률 점검
+node content-pipeline/gate.test.js                                        # 사전 회귀 테스트
+```
+
+**게이트를 고칠 때는 `gate.js --all`(오탐 0 유지)과 `gate.test.js`(누락 0 유지)를 둘 다 돌린다.**
+한쪽만 보면 반대 방향으로 조용히 무너진다.
+
+**컨텍스트 크기 = 실행 비용.** 자동 발행이 매 실행 통째로 읽는 문서는
+`CLAUDE.md` + `EDITORIAL-CALENDAR.md` + `WORKFLOW.md` + `CLUSTERS.md` 4종(현재 약 58KB)뿐이다.
+끝난 주차는 `EDITORIAL-CALENDAR-ARCHIVE.md` 로 옮긴다(30KB 넘으면 Telegram 경고).
+
+---
+
 ## 외부 이미지 자체 도메인 프록시 (자동 적용 중)
 
 쿠팡 상품 이미지는 빌드 타임에 **`/img/<base64>.jpg` 자체 도메인 경로로 자동 변환**되어 출력된다.
