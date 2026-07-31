@@ -1,0 +1,289 @@
+name: Daily Auto-Publish (babygrade)
+
+# 매일 02:00 KST 자동 발행. 노트북 전원과 무관하게 실행된다.
+#
+# ⚠️ 안전장치 3중
+#   1) 기본이 DRY RUN. 실제 발행은 repo variable LIVE_PUBLISH=true 를 켜야 시작된다
+#   2) 결번 방지 — 사용자가 그날 이미 수동 발행했으면 스킵한다
+#   3) 게이트 14항(gate.js) block 1건이라도 있으면 발행 중단
+#
+# 설계 근거: 웹사이트/자동발행-이식가이드.md · 어필리에이트/자동발행-검토.md
+
+on:
+  schedule:
+    # 17:00 UTC = 02:00 KST (다음날). 이식가이드 §3-4 의 babygrade 배정 슬롯.
+    # GitHub Actions 예약은 정시 보장이 없다(수 분~수십 분 지연, 드물게 스킵).
+    # 딜픽 실측: 07:00 설정 시 07:47 에 실행됐다. "2시"가 아니라 "2시대"로 볼 것.
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '드라이런 (파일 변경 없이 슬롯 선정까지만)'
+        type: boolean
+        default: true
+      force:
+        description: '결번 방지 무시하고 강제 실행'
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-publish-babygrade
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      actions: write # 발행 후 deploy.yml 을 명시적으로 트리거하기 위해 필요
+
+    steps:
+      # ── 1. 체크아웃 ──────────────────────────────────────────
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ── 2. 실행 모드 결정 ────────────────────────────────────
+      # 예약 실행은 repo variable LIVE_PUBLISH 가 'true' 일 때만 실전 발행.
+      # 그 전까지는 무조건 드라이런 — 첫 실행이 곧바로 라이브로 나가는 사고를 막는다.
+      - name: Resolve run mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            DRY="${{ inputs.dry_run }}"
+          elif [ "${{ vars.LIVE_PUBLISH }}" = "true" ]; then
+            DRY="false"
+          else
+            DRY="true"
+          fi
+          echo "dry_run=$DRY" >> "$GITHUB_OUTPUT"
+          echo "실행 모드: DRY_RUN=$DRY"
+
+      # ── 3. 결번 방지 — 오늘 사용자가 이미 발행했으면 스킵 ────
+      # 자동화는 사용자를 대체하지 않고 공백만 메운다.
+      # 이 체크가 Claude 실행 **앞**에 있어야 스킵한 날 비용이 0이 된다.
+      - name: Check for manual publish today
+        id: gap
+        run: |
+          TODAY=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          echo "오늘(KST): $TODAY"
+          CHANGED=$(git log --since="$TODAY 00:00 +0900" --name-only --pretty=format: \
+                    -- 'affiliate-site/src/content/posts/*.md' | sort -u | grep -v '^$' || true)
+          if [ -n "$CHANGED" ] && [ "${{ inputs.force }}" != "true" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "detail<<EOF"
+              echo "$CHANGED"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            echo "사용자 수동 발행 감지 — 자동 실행 스킵"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ── 4. 런타임 준비 ───────────────────────────────────────
+      - uses: actions/setup-node@v4
+        if: steps.gap.outputs.skip != 'true'
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: affiliate-site/package-lock.json
+
+      - name: Install dependencies
+        if: steps.gap.outputs.skip != 'true'
+        run: |
+          npm ci --prefix affiliate-site
+          npm ci --prefix content-pipeline
+
+      # ── 5. 집필 (여기만 LLM) ─────────────────────────────────
+      # anthropics/claude-code-action 은 Claude Code GitHub App 설치를 요구한다.
+      # PR·이슈 연동이 필요 없는 무인 배치라 CLI 를 직접 쓴다 — App 의존 제거.
+      - name: Install Claude Code CLI
+        if: steps.gap.outputs.skip != 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Write today's article
+        if: steps.gap.outputs.skip != 'true'
+        id: claude
+        continue-on-error: true
+        run: |
+          claude --print \
+                 --permission-mode bypassPermissions \
+                 --model opus \
+                 --output-format json \
+                 "content-pipeline/auto-publish-prompt.md 를 읽고 그 지시서대로 오늘치 발행을 수행하라. DRY_RUN 환경변수는 \"$DRY_RUN\" 이다. 반드시 마지막에 auto-publish-result.json 을 repo 루트에 남겨라." \
+                 > claude-output.json 2> claude-error.log || true
+          echo "--- claude 종료. 출력 요약 ---"
+          node -e '
+            try {
+              const o = require("./claude-output.json");
+              console.log("is_error:", o.is_error, "| turns:", o.num_turns, "| ms:", o.duration_ms);
+              if (o.usage) console.log("usage:", JSON.stringify(o.usage));
+              if (o.total_cost_usd != null) console.log("cost_usd:", o.total_cost_usd);
+            } catch (e) { console.log("출력 파싱 불가:", e.message); }
+          ' || true
+          tail -20 claude-error.log || true
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          DRY_RUN: ${{ steps.mode.outputs.dry_run }}
+          COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+          IMAGE_PROVIDER: replicate
+          REPLICATE_MODEL: ${{ secrets.REPLICATE_MODEL }}
+          # 🚫 GEMINI_API_KEY 는 의도적으로 주입하지 않는다.
+          #    있으면 generate-images.js 의 Gemini 프롬프트 합성 경로가 되살아난다
+          #    (2026-07-28 사용자 지시: "이미지 생성 gemini 절대 쓰지마").
+          #    키가 없으면 그 경로는 애초에 실행 자체가 불가능하다.
+
+      # ── 6. 결과 수집 ─────────────────────────────────────────
+      - name: Collect result
+        if: always() && steps.gap.outputs.skip != 'true'
+        id: result
+        run: |
+          if [ -f auto-publish-result.json ]; then
+            node -e '
+              const r = require("./auto-publish-result.json");
+              const out = [];
+              const esc = (s) => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+              const icon = { published:"🟢", blocked:"🟡", no_slot:"⚪️", frozen:"⏸", error:"🔴" }[r.status] || "❔";
+              const mode = r.dry_run ? " <i>(드라이런)</i>" : "";
+              const day = new Date().toLocaleDateString("ko-KR",{timeZone:"Asia/Seoul",month:"2-digit",day:"2-digit"});
+              out.push(`${icon} <b>babygrade ${day}</b>${mode}`);
+              if (r.slug) {
+                out.push(` • <code>${esc(r.slug)}</code>`);
+                out.push(`   ${esc(r.mainKeyword)}${r.volume ? ` (${r.volume} / ${esc(r.competition)})` : ""}`);
+                if (r.url && r.status === "published" && !r.dry_run) out.push(`   ${esc(r.url)}`);
+              }
+              for (const g of r.blocked_gates || [])
+                out.push(` ⛔ 게이트 #${g.n} ${esc(g.name)} — ${esc(g.detail).slice(0,120)}`);
+              for (const g of r.warnings || [])
+                out.push(` ▲ 게이트 #${g.n} ${esc(g.name)} — ${esc(g.detail).slice(0,120)}`);
+              if (r.note) out.push(`\n${esc(r.note)}`);
+              require("fs").writeFileSync("telegram-message.txt", out.join("\n"));
+              console.log("status=" + r.status);
+            ' >> "$GITHUB_OUTPUT"
+          else
+            echo "status=error" >> "$GITHUB_OUTPUT"
+            printf '🔴 <b>babygrade</b>\n결과 파일이 생성되지 않았습니다 — 집필 단계에서 중단된 것으로 보입니다.\n로그: %s/%s/actions/runs/%s' \
+              "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > telegram-message.txt
+          fi
+          cat telegram-message.txt
+
+      # ── 7. 발행 (실전 + 게이트 통과 시에만) ──────────────────
+      - name: Commit and push
+        if: >-
+          steps.gap.outputs.skip != 'true' &&
+          steps.mode.outputs.dry_run == 'false' &&
+          steps.result.outputs.status == 'published'
+        run: |
+          # 슬러그를 먼저 읽는다 — 결과 파일에 손대기 전에.
+          SLUG=$(node -pe 'require("./auto-publish-result.json").slug' 2>/dev/null || echo "auto")
+          # 임시 산출물은 .gitignore 가 걸러낸다. 여기서 rm 하면 뒤따르는 알림 단계가
+          # telegram-message.txt 를 못 읽어 매번 실패 알림이 온다 (딜픽 2026-07-30 사고).
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "변경 없음 — push 생략"
+          else
+            git commit -m "post: ${SLUG} (auto)"
+            git push origin main
+            # GITHUB_TOKEN 으로 한 push 는 다른 워크플로를 트리거하지 않는다
+            # (GitHub 의 재귀 실행 방지 정책). deploy.yml 이 안 돌면 글이 커밋만 되고
+            # 라이브로 안 나가므로 명시적으로 부른다. 딜픽 첫 실전 발행에서 발견.
+            # 슬러그를 함께 넘겨 deploy.yml 이 IndexNow 까지 처리하게 한다.
+            echo "deploy.yml 명시적 트리거 (slug=${SLUG})"
+            gh workflow run deploy.yml --ref main -f slugs="${SLUG}"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 7-0. 실패한 날의 기록만 따로 커밋 ────────────────────
+      # 위 커밋 단계는 status == published 일 때만 돈다. 그래서 게이트에 막힌 날,
+      # 슬롯이 없던 날, 에러 난 날의 기록은 VM 과 함께 사라진다. 정작 나중에
+      # "게이트가 어디서 몇 번 막았나"를 보려면 그 기록이 필요하다.
+      # 실패 시 생성됐을 수 있는 초안·이미지는 커밋하지 않고 아카이브만 담는다.
+      - name: Record non-publish outcome
+        if: >-
+          steps.gap.outputs.skip != 'true' &&
+          steps.mode.outputs.dry_run == 'false' &&
+          steps.result.outputs.status != 'published'
+        run: |
+          if git diff --quiet -- EDITORIAL-CALENDAR-ARCHIVE.md; then
+            echo "아카이브 변경 없음 — 기록할 것 없음"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add EDITORIAL-CALENDAR-ARCHIVE.md
+          git commit -m "docs: record ${{ steps.result.outputs.status }} outcome"
+          for i in 1 2 3; do
+            git push origin main && break
+            echo "push 거부 — rebase 후 재시도 ($i/3)"
+            git pull --rebase origin main
+          done
+
+      # ── 7-1. 컨텍스트 비대화 감시 ────────────────────────────
+      # 캘린더는 매 실행마다 통째로 읽히므로 크기가 곧 실행 비용이다.
+      # 2026-07-31 에 47KB -> 16KB 로 줄였는데, 자동 발행이 하루 2.6KB 씩
+      # 덧붙이면 한 달이면 원상복구된다. 조용히 되돌아가지 않도록 감시한다.
+      - name: Watch context size
+        if: always() && steps.gap.outputs.skip != 'true'
+        run: |
+          KB=$(( $(wc -c < EDITORIAL-CALENDAR.md) / 1024 ))
+          echo "EDITORIAL-CALENDAR.md: ${KB} KB (임계 30 KB)"
+          if [ "$KB" -gt 30 ]; then
+            curl -sS -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+              --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+              --data-urlencode "parse_mode=HTML" \
+              --data-urlencode "text=⚠️ <b>babygrade — 캘린더가 다시 커졌습니다</b>
+          EDITORIAL-CALENDAR.md ${KB} KB (임계 30 KB)
+          매 실행마다 통째로 읽히는 파일이라 그대로 비용이 됩니다.
+          끝난 주차를 EDITORIAL-CALENDAR-ARCHIVE.md 로 옮길 때가 됐습니다." > /dev/null
+          fi
+
+      # ── 8. Telegram 알림 (항상) ──────────────────────────────
+      - name: Notify — skipped (manual publish detected)
+        if: steps.gap.outputs.skip == 'true'
+        env:
+          MSG: |
+            ⏭ <b>babygrade</b> — 자동 실행 스킵
+            오늘 수동 발행이 감지되어 비켜섰습니다.
+            ${{ steps.gap.outputs.detail }}
+        run: |
+          curl -sS -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "parse_mode=HTML" \
+            --data-urlencode "disable_web_page_preview=true" \
+            --data-urlencode "text=$MSG" > /dev/null
+
+      - name: Notify — result
+        if: always() && steps.gap.outputs.skip != 'true'
+        run: |
+          if [ ! -f telegram-message.txt ]; then
+            printf '🔴 <b>babygrade</b>\n워크플로가 예기치 않게 중단됐습니다.\n%s/%s/actions/runs/%s' \
+              "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > telegram-message.txt
+          fi
+          curl -sS -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "parse_mode=HTML" \
+            --data-urlencode "disable_web_page_preview=true" \
+            --data-urlencode "text@telegram-message.txt" > /dev/null
+
+      # ── 9. 드라이런 흔적 검증 ────────────────────────────────
+      # 드라이런인데 파일이 바뀌었으면 지시서 위반 — 알린다.
+      - name: Assert dry-run left no changes
+        if: steps.gap.outputs.skip != 'true' && steps.mode.outputs.dry_run == 'true'
+        run: |
+          DIRTY=$(git status --porcelain)
+          if [ -n "$DIRTY" ]; then
+            curl -sS -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+              --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+              --data-urlencode "text=⚠️ babygrade 드라이런인데 파일이 변경됐습니다. 지시서 위반 — 확인 필요:
+          $DIRTY" > /dev/null
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "드라이런 정상 — 변경 0건"

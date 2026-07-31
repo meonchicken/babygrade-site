@@ -1,0 +1,122 @@
+name: Deploy to Cloudflare Workers (babygrade)
+
+# babygrade 는 Cloudflare **Workers**(wrangler.toml + src/worker.ts + [assets])로 배포한다.
+# 딜픽은 Pages 라 `wrangler pages deploy` 지만 여기는 `wrangler deploy` 다 — 헷갈리지 말 것.
+# worker.ts 가 외부 이미지 프록시(/img/<base64>)를 담당하므로 Pages 로 바꾸면 이미지가 죽는다.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'affiliate-site/**'
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: 'IndexNow 로 제출할 슬러그 (공백 구분). 비우면 제출 생략'
+        type: string
+        default: ''
+
+concurrency:
+  group: deploy-babygrade
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # IndexNow 변경 파일 diff 에 히스토리가 필요하다
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: affiliate-site/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: affiliate-site
+
+      - name: Build
+        run: npm run build
+        working-directory: affiliate-site
+
+      # 빌드 산출물에 외부 쿠팡 이미지 URL 이 남아 있으면 프록시 변환이 깨진 것이다.
+      # 근거: 어필리에이트/IMAGE-PROXY-PLAYBOOK.md · CLAUDE.md 「검증 한 줄」
+      - name: Assert image proxy rewrote every external image
+        working-directory: affiliate-site
+        run: |
+          LEFT=$(grep -roE 'src="https://[^/]*coupang[^"]*"' dist/ | wc -l | tr -d ' ')
+          echo "미변환 외부 이미지: ${LEFT}건 (0 이어야 정상)"
+          if [ "$LEFT" != "0" ]; then
+            grep -roE 'src="https://[^/]*coupang[^"]*"' dist/ | head -5
+            echo "::error::이미지 프록시 변환 실패 — worker.ts ALLOWED_IMAGE_HOSTS 와"
+            echo "::error::image-proxy.ts ALLOWED_HOSTS 동기화를 확인하라"
+            exit 1
+          fi
+
+      - name: Deploy to Cloudflare Workers
+        working-directory: affiliate-site
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler@4 deploy
+
+      # ─── IndexNow ───────────────────────────────────────────
+      # push 로 왔으면 diff 에서 바뀐 글을 뽑고, workflow_dispatch 로 왔으면
+      # 호출자가 넘긴 슬러그를 쓴다.
+      #
+      # ⚠️ 딜픽 함정: IndexNow 를 push 이벤트 전용으로 두면, 자동 발행이
+      #    workflow_dispatch 로 배포를 부를 때 **영원히 제출되지 않는다**.
+      #    그래서 여기서는 dispatch 입력도 받는다.
+      - name: Submit IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLUGS="${{ inputs.slugs }}"
+            [ -z "$SLUGS" ] && { echo "슬러그 미지정 — IndexNow 생략"; exit 0; }
+            URLS=""
+            for s in $SLUGS; do URLS="$URLS https://babygrade.kr/${s}/"; done
+          else
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              BEFORE="$(git rev-parse HEAD~1 2>/dev/null || echo HEAD)"
+            fi
+            CHANGED=$(git diff --name-only "$BEFORE" "${{ github.sha }}" \
+                      -- 'affiliate-site/src/content/posts/*.md' || true)
+            [ -z "$CHANGED" ] && { echo "변경된 글 없음 — IndexNow 생략"; exit 0; }
+            URLS=$(echo "$CHANGED" | sed -E 's#affiliate-site/src/content/posts/(.*)\.md#https://babygrade.kr/\1/#')
+          fi
+          echo "IndexNow 제출 대상:"; echo "$URLS"
+          # 사이트 공통 엔드포인트도 함께 갱신 통보
+          node -e '
+            const https = require("https");
+            const urls = process.argv.slice(1).filter(Boolean);
+            const body = JSON.stringify({
+              host: "babygrade.kr",
+              key: process.env.INDEXNOW_KEY,
+              keyLocation: `https://babygrade.kr/${process.env.INDEXNOW_KEY}.txt`,
+              urlList: [
+                "https://babygrade.kr/",
+                "https://babygrade.kr/sitemap-index.xml",
+                "https://babygrade.kr/llms.txt",
+                ...urls,
+              ],
+            });
+            const req = https.request(
+              { hostname: "api.indexnow.org", path: "/indexnow", method: "POST",
+                headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(body) } },
+              (res) => {
+                let d = ""; res.on("data", (c) => (d += c));
+                res.on("end", () => {
+                  console.log(`IndexNow ${res.statusCode} ${d}`);
+                  // 색인 제출 실패로 배포를 실패시키지 않는다 — 글은 이미 라이브다
+                  process.exit(0);
+                });
+              }
+            );
+            req.on("error", (e) => { console.log("IndexNow 실패(무시):", e.message); process.exit(0); });
+            req.write(body); req.end();
+          ' $URLS

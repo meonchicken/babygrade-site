@@ -9,10 +9,12 @@ const { check: checkCannibal } = require('./check-cannibalization');
 const POSTS_DIR = path.resolve(__dirname, '../affiliate-site/src/content/posts');
 
 const ARG_KEYWORD = process.argv[2];
-const ARG_CATEGORY = process.argv[3]; // 사료 | 간식 | 용품 | 건강 | 미용 | 기타
+// content.config.ts 의 enum 과 일치해야 한다
+const ARG_CATEGORY = process.argv[3]; // 임산부 | 신생아 | 영아 | 유아 | 안전 | 기타
 
 if (!ARG_KEYWORD || !ARG_CATEGORY) {
-  console.error('사용법: node new-article.js "강아지 알러지 사료" "사료"');
+  console.error('사용법: node content-pipeline/new-article.js "임산부 칼슘" "임산부"');
+  console.error('카테고리: 임산부 | 신생아 | 영아 | 유아 | 안전 | 기타');
   process.exit(1);
 }
 
