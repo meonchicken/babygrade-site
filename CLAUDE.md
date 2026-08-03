@@ -30,6 +30,12 @@ node content-pipeline/gate.test.js                                        # 사�
 **게이트를 고칠 때는 `gate.js --all`(오탐 0 유지)과 `gate.test.js`(누락 0 유지)를 둘 다 돌린다.**
 한쪽만 보면 반대 방향으로 조용히 무너진다.
 
+> 🚨 **키워드 선정은 네이버 SERP 게이트를 통과해야 한다 (2026-08-04~).**
+> `bash ../../../keyword-tool/naver-serp.sh "키워드1" "키워드2"` → 웹문서 컬렉션 위치(px) + 상위 도메인 강도.
+> **🟢(강도 0~1 · ≤400px)만 슬롯에 넣는다.** 네이버 검색량이 아무리 커도 쇼핑몰·정부기관·의학매체가
+> 웹문서 상위를 채우면 발행해도 노출되지 않는다 — 발행 완료 8건 실측에서 **7건이 이 이유로 미노출**이었다.
+> 상세 근거 → `EDITORIAL-CALENDAR.md` 「2026-08-04 네이버 SERP 게이트 실측」
+
 **컨텍스트 크기 = 실행 비용.** 자동 발행이 매 실행 통째로 읽는 문서는
 `CLAUDE.md` + `EDITORIAL-CALENDAR.md` + `WORKFLOW.md` + `CLUSTERS.md` 4종(현재 약 58KB)뿐이다.
 끝난 주차는 `EDITORIAL-CALENDAR-ARCHIVE.md` 로 옮긴다(30KB 넘으면 Telegram 경고).
@@ -52,7 +58,10 @@ node content-pipeline/gate.test.js                                        # 사�
 **BabyGrade**: 임산부·영유아 용품 등급 비교 어필리에이트 사이트
 - 도메인: https://babygrade.kr (구매 예정 — 2026-05-13 결정)
 - 수익화: 쿠팡 파트너스 (파트너스 ID 신규 발급 또는 `AF2360800` 통합 — 사용자 확정 필요)
-- 타겟: 한국 Google 검색 (네이버 X — C-Rank 저품질 위험)
+- 타겟: **한국 네이버 검색** (2026-08-04 전환 — 그 전에는 Google 우선이었다)
+  - Google 색인이 사실상 정지 → 네이버는 48개 URL 수집 + 신규 글 **5일 내 색인** 확인
+  - **네이버 블로그 운영은 여전히 금지** (C-Rank 저품질) — 자체 도메인의 **웹문서 컬렉션**을 노리는 것이다
+  - 키워드 선정 게이트: `bash ../../../keyword-tool/naver-serp.sh "키워드"` → 🟢(강도 0~1)만 발행
 - 톤: **doggrade와 100% 동일** (Wirecutter 스타일 · 객관·데이터·등급)
 - 작성자: `babygrade Editorial Team` (개인 X, 팀 페르소나)
 
