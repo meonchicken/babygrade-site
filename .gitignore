@@ -26,3 +26,6 @@ claude-error.log
 # ── OS·편집기 ────────────────────────────────────────────
 .DS_Store
 .vscode/
+
+# Playwright MCP 스냅샷 찌꺼기
+.playwright-mcp/
