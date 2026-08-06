@@ -24,9 +24,31 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # ⚠️ `ref: main` 을 명시하는 이유 (2026-08-06 사고)
+      # 발행 워크플로는 `git push` 직후 `gh workflow run deploy.yml --ref main` 을 부르는데,
+      # GitHub 이 그 시점의 main 을 **밀어넣기 전 SHA 로 해석**하는 경우가 있다.
+      # 실제로 8/6 발행에서 deploy 가 전날 커밋(5626def)을 빌드해 새 글이 dist 에 없었고,
+      # 텔레그램은 🟢 로 알렸는데 URL 은 404 였다.
+      # 체크아웃 시점은 디스패치 시점보다 늦으므로, 여기서 main 을 다시 집으면 최신이 잡힌다.
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0 # IndexNow 변경 파일 diff 에 히스토리가 필요하다
+
+      - name: Show what we are actually building
+        run: |
+          echo "체크아웃된 커밋: $(git rev-parse --short HEAD) — $(git log -1 --pretty=%s)"
+          if [ -n "${{ inputs.slugs }}" ]; then
+            for s in ${{ inputs.slugs }}; do
+              F="affiliate-site/src/content/posts/${s}.md"
+              if [ -f "$F" ]; then
+                echo "✅ $F 존재"
+              else
+                echo "::error::$F 가 체크아웃에 없다 — 배포해도 $s 는 라이브에 안 나온다"
+                exit 1
+              fi
+            done
+          fi
 
       - uses: actions/setup-node@v4
         with:
@@ -56,12 +78,58 @@ jobs:
             exit 1
           fi
 
+      # 배포 전에 dist 안에 그 글이 실제로 빌드됐는지 본다.
+      # 빌드 산출물에 없으면 배포해봐야 404 다 — 여기서 멈추는 편이 낫다.
+      - name: Assert slug built into dist
+        if: inputs.slugs != ''
+        run: |
+          for s in ${{ inputs.slugs }}; do
+            if [ -f "affiliate-site/dist/${s}/index.html" ]; then
+              echo "✅ dist/${s}/index.html ($(wc -c < "affiliate-site/dist/${s}/index.html") bytes)"
+            else
+              echo "::error::dist/${s}/index.html 이 없다 — 빌드에서 누락됐다(draft:true 이거나 체크아웃이 낡음)"
+              exit 1
+            fi
+          done
+
       - name: Deploy to Cloudflare Workers
         working-directory: affiliate-site
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler@4 deploy
+
+      # 배포가 성공했다고 글이 보이는 것은 아니다 (2026-08-06 사고).
+      # 실제 URL 을 때려 200 인지 확인하고, 아니면 실패시켜 텔레그램 🔴 가 나가게 한다.
+      - name: Verify published URL is live
+        if: inputs.slugs != ''
+        run: |
+          FAILED=""
+          for s in ${{ inputs.slugs }}; do
+            URL="https://babygrade.kr/${s}/"
+            CODE=""
+            for i in 1 2 3 4 5 6; do
+              CODE=$(curl -s -o /dev/null -w '%{http_code}' "${URL}?cachebust=${GITHUB_RUN_ID}-${i}")
+              [ "$CODE" = "200" ] && break
+              echo "  ${URL} → ${CODE} (전파 대기 ${i}/6)"
+              sleep 10
+            done
+            if [ "$CODE" = "200" ]; then
+              echo "✅ ${URL} → 200"
+            else
+              echo "::error::${URL} → ${CODE}"
+              FAILED="${FAILED} ${s}"
+            fi
+          done
+          if [ -n "$FAILED" ]; then
+            curl -sS -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+              --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+              --data-urlencode "parse_mode=HTML" \
+              --data-urlencode "text=🔴 <b>babygrade — 배포했는데 라이브가 아닙니다</b>
+          커밋은 됐지만 URL 이 200 이 아닙니다:${FAILED}
+          ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" > /dev/null
+            exit 1
+          fi
 
       # ─── IndexNow ───────────────────────────────────────────
       # push 로 왔으면 diff 에서 바뀐 글을 뽑고, workflow_dispatch 로 왔으면

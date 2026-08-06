@@ -200,6 +200,43 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # ── 7-½. 라이브 확인 — 🟢 는 URL 이 200 일 때만 나간다 ──
+      # 2026-08-06 사고: 커밋·배포 트리거까지 다 됐고 텔레그램은 🟢 로 나갔는데
+      # deploy 가 **밀어넣기 전 SHA** 를 빌드해 URL 은 404 였다. 사용자가 알림 링크를
+      # 눌러서야 발견했다. 알림이 배포 결과를 반영하지 않으면 🟢 는 신뢰할 수 없다.
+      # 여기서 실제 URL 을 확인하고, 아니면 메시지를 고쳐서 내보낸다.
+      - name: Verify article is actually live
+        if: >-
+          steps.gap.outputs.skip != 'true' &&
+          steps.mode.outputs.dry_run == 'false' &&
+          steps.result.outputs.status == 'published'
+        run: |
+          SLUG=$(node -pe 'require("./auto-publish-result.json").slug' 2>/dev/null || echo "")
+          [ -z "$SLUG" ] && { echo "슬러그 없음 — 확인 생략"; exit 0; }
+          URL="https://babygrade.kr/${SLUG}/"
+          CODE=""
+          # 배포 워크플로가 큐에 잡히고 빌드까지 도는 시간을 감안해 넉넉히 기다린다.
+          for i in $(seq 1 30); do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' "${URL}?cachebust=${GITHUB_RUN_ID}-${i}")
+            [ "$CODE" = "200" ] && break
+            echo "  ${URL} → ${CODE} (배포 대기 ${i}/30)"
+            sleep 20
+          done
+          if [ "$CODE" = "200" ]; then
+            echo "✅ ${URL} → 200"
+            exit 0
+          fi
+          echo "::error::${URL} → ${CODE} — 커밋은 됐으나 라이브가 아니다"
+          # 알림을 사실대로 고친다. 🟢 로 나가면 사용자가 문제를 못 본다.
+          {
+            printf '🔴 <b>babygrade — 커밋됐으나 라이브가 아닙니다</b>\n'
+            printf ' • <code>%s</code>\n' "$SLUG"
+            printf '   %s → HTTP %s\n\n' "$URL" "$CODE"
+            printf '글은 repo 에 있습니다. 배포만 다시 돌리면 됩니다:\n'
+            printf '<code>gh workflow run deploy.yml -R %s --ref main -f slugs=%s</code>\n\n' "$GITHUB_REPOSITORY" "$SLUG"
+            printf '%s/%s/actions/runs/%s' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID"
+          } > telegram-message.txt
+
       # ── 7-0. 실패한 날의 기록만 따로 커밋 ────────────────────
       # 위 커밋 단계는 status == published 일 때만 돈다. 그래서 게이트에 막힌 날,
       # 슬롯이 없던 날, 에러 난 날의 기록은 VM 과 함께 사라진다. 정작 나중에
