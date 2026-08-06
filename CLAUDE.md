@@ -7,7 +7,7 @@
 ## 무인 자동 발행 (2026-07-31~)
 
 **매일 02:00 KST**, GitHub Actions 러너에서 글 1편을 쓰고 게이트를 통과하면 발행한다. 노트북 전원 무관.
-지시서는 `content-pipeline/auto-publish-prompt.md`, 게이트는 `content-pipeline/gate.js`(14항).
+지시서는 `content-pipeline/auto-publish-prompt.md`, 게이트는 `content-pipeline/gate.js`(15항).
 
 > ⚠️ **repo 루트 = 이 폴더(`babygrade/`)다.** 2026-07-31 재구성 전에는 `affiliate-site/` 가 루트였다.
 > 클라우드는 repo 만 내려받으므로 **규칙 문서·파이프라인이 repo 밖에 있으면 존재하지 않는 것과 같다.**
@@ -25,6 +25,7 @@ gh variable set LIVE_PUBLISH --body false -R meonchicken/babygrade-site   # 멈�
 gh run list -R meonchicken/babygrade-site --workflow=daily-publish.yml    # 로그
 node content-pipeline/gate.js --all                                       # 게이트 오탐률 점검
 node content-pipeline/gate.test.js                                        # 사전 회귀 테스트
+node content-pipeline/gate.js --all --prices                              # 기존 글 가격 드리프트 감사
 ```
 
 **게이트를 고칠 때는 `gate.js --all`(오탐 0 유지)과 `gate.test.js`(누락 0 유지)를 둘 다 돌린다.**

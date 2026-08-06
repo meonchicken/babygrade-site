@@ -215,9 +215,14 @@ ls -l affiliate-site/public/images/<slug>-*.png
 ## 7. 게이트 검사 (발행 직전 필수)
 
 ```bash
-node content-pipeline/gate.js <slug>
+node content-pipeline/gate.js <slug> --prices
 npm run build --prefix affiliate-site
 ```
+
+`--prices` 는 게이트 #15 — frontmatter 의 가격을 **쿠팡 API 현재가와 대조**한다.
+네가 방금 같은 API 에서 받아 적은 값이라 정상이면 ±0% 로 나온다. 여기서 5% 넘게 벌어지면
+**엉뚱한 옵션(itemId)의 가격을 적었거나 가격을 옮겨 적다 틀린 것**이므로 반드시 고친다.
+"해당 옵션 행이 검색 결과에 없음"·"검색으로 상품을 못 찾음" 은 확인 불가일 뿐 위반이 아니다.
 
 - **중단(block) 1건이라도 있으면 발행하지 않는다.** 원인을 고쳐서 재시도(2회까지),
   그래도 안 되면 `status: "blocked"` 로 종료한다

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * gate.js — babygrade 발행 게이트 14항
+ * gate.js — babygrade 발행 게이트 15항
  *
  * 자동 발행의 방어선. 사람의 사후 검토가 아니라 여기서 사고를 막는다.
  * 근거: CLAUDE.md「절대 하지 말 것」·「영유아 특화 추가 주의사항」,
@@ -17,6 +17,8 @@
  *   node content-pipeline/gate.js --all              # 전체 글 검사 (오탐률 측정용)
  *   node content-pipeline/gate.js --all --json       # 기계 판독용 출력
  *   node content-pipeline/gate.js <slug> --links     # 게이트 #9(CTA 목적지 실제 요청) 포함
+ *   node content-pipeline/gate.js <slug> --prices    # 게이트 #15(쿠팡 API 가격 대조) 포함
+ *   node content-pipeline/gate.js --all --prices     # 기존 글 가격 드리프트 감사
  *
  * 종료 코드: 0 = block 없음, 1 = block 1건 이상
  */
@@ -112,7 +114,14 @@ const SEVERITY = {
   12: 'block', // 빌드 — 배포 실패
   13: 'block', // 절대적 안전 표현 — 표시광고법 (영유아 특화)
   14: 'block', // 내부링크 유효성 — 404·리다이렉트 (2026-06-18 에 432개를 손으로 고친 이력)
+  15: 'block', // 가격 대조 — 표시광고. --prices 일 때만 실검사
 };
+
+/**
+ * #15 허용 오차. 쿠팡 가격은 상시 변동하므로 완전 일치를 요구하면 종일 빨간불이다.
+ * 발행 직전 검사에서는 몇 분 전 같은 API 에서 받은 값이라 0%에 가깝게 나온다.
+ */
+const PRICE_TOLERANCE = 0.05;
 
 // ─────────────────────────────────────────────────────────────
 // 구조 임계값 — 기존 87편 실측 분포에서 뽑았다 (하위 5% 근처를 하한으로).
@@ -306,6 +315,138 @@ async function checkCtaTargets(links) {
 }
 
 // ─────────────────────────────────────────────────────────────
+// #15 가격 대조 — --prices 일 때만
+// ─────────────────────────────────────────────────────────────
+
+/**
+ * frontmatter 의 products 를 (이름·가격·상품ID·옵션ID) 로 뽑는다.
+ * name 은 `>-` 접힘 스칼라라 다음 줄로 넘어가는 경우가 많아 이어 붙인다.
+ */
+function parseProducts(fm) {
+  const lines = fm.split('\n');
+  const out = [];
+  let inSec = false;
+  let cur = null;
+  let pendingName = false;
+  for (const line of lines) {
+    if (/^products:/.test(line)) {
+      inSec = true;
+      if (/:\s*\[\s*\]\s*$/.test(line)) return [];
+      continue;
+    }
+    if (!inSec) continue;
+    if (/^[^\s#-]/.test(line)) break; // 새 최상위 키 → 종료
+
+    const n = line.match(/^  - name:\s*(.*)$/);
+    if (n) {
+      cur = { name: '', price: null, productId: null, itemId: null };
+      out.push(cur);
+      const v = n[1].trim();
+      if (v && v !== '>-' && v !== '>' && v !== '|') cur.name = v.replace(/^["']|["']$/g, '');
+      else pendingName = true;
+      continue;
+    }
+    if (!cur) continue;
+
+    if (pendingName) {
+      const cont = line.match(/^\s{4,}(\S.*)$/);
+      if (cont && !/^(price|image|url|rating|features):/.test(cont[1])) {
+        cur.name = (cur.name + ' ' + cont[1].trim()).trim();
+        continue;
+      }
+      pendingName = false;
+    }
+    const p = line.match(/^\s+price:\s*(\d+)/);
+    if (p) cur.price = Number(p[1]);
+    const u = line.match(/link\.coupang\.com\/re\/[^\s"']*[?&]pageKey=(\d+)[^\s"']*?[?&]itemId=(\d+)/);
+    if (u) {
+      cur.productId = u[1];
+      cur.itemId = u[2];
+    }
+  }
+  return out.filter((p) => p.name && p.price);
+}
+
+/**
+ * 쿠팡 파트너스 API 로 현재 가격을 확인한다.
+ *
+ * 제약: 파트너스 API 에는 상품ID 단건 조회가 없어 **상품명으로 검색**해 찾아야 한다.
+ *
+ * ⚠️ **반드시 itemId 로 맞춘다. productId 로 맞추면 틀린 값을 본다.**
+ * 같은 productId 가 옵션마다 다른 행으로 오고 가격이 제각각이다. 실측:
+ *   9099561385 · itemId 26748527499 (16cm) = 29,900원
+ *   9099561385 · itemId 26748527505 (18cm) = 32,900원
+ * 이걸 productId 로만 매칭했더니 18cm 글(32,900원 · 정상)을 "18.2% 드리프트"로
+ * 오탐했다(2026-08-06). itemId 는 API 행의 productUrl 안에 들어 있다.
+ *
+ * 못 찾으면 `null` — "확인 불가"이지 "틀림"이 아니다. 발행을 막지 않는다.
+ */
+const itemIdOf = (url) => (String(url || '').match(/[?&]itemId=(\d+)/) || [])[1] || null;
+
+async function currentPrice(searchProducts, prod) {
+  // 검색어를 좁은 것 → 넓은 것 순으로. 옵션 표기(", 1개, 유백색, 18cm")가 붙은 원문이
+  // 가장 정확히 그 행을 끌어오므로 자르지 않고 먼저 쓴다.
+  const tries = [
+    prod.name,
+    prod.name.replace(/[\[\]]/g, ' ').split(',')[0].trim(),
+    prod.name.replace(/[\[\]]/g, ' ').split(',')[0].trim().split(/\s+/).slice(0, 6).join(' '),
+  ];
+  let sawProduct = false;
+  for (const q of [...new Set(tries)]) {
+    let rows;
+    try {
+      rows = await searchProducts(q, 10);
+    } catch (e) {
+      return { price: null, note: `조회 실패: ${String(e.message).slice(0, 60)}` };
+    }
+    const hit = (rows || []).find((r) => itemIdOf(r.productUrl) === prod.itemId);
+    if (hit) return { price: hit.productPrice, note: '' };
+    if ((rows || []).some((r) => String(r.productId) === String(prod.productId))) sawProduct = true;
+  }
+  // 상품은 보이는데 그 옵션 행이 안 잡히는 경우가 있다(검색 결과 10건 제한).
+  // 다른 옵션 가격으로 대신 비교하면 오탐이 나므로 확인 불가로 둔다.
+  return {
+    price: null,
+    note: sawProduct ? '해당 옵션(itemId) 행이 검색 결과에 없음' : '검색으로 상품을 못 찾음',
+  };
+}
+
+async function checkPrices(fm) {
+  let searchProducts;
+  try {
+    ({ searchProducts } = require('./coupang'));
+  } catch (e) {
+    return { issues: [], detail: `coupang.js 로드 실패 — 건너뜀 (${e.message})` };
+  }
+  const prods = parseProducts(fm);
+  if (!prods.length) return { issues: [], detail: '제품 없음' };
+
+  const issues = [];
+  const notes = [];
+  for (const p of prods) {
+    if (!p.productId) {
+      notes.push(`${p.name.slice(0, 20)}: 링크에서 상품ID 추출 불가`);
+      continue;
+    }
+    const { price, note } = await currentPrice(searchProducts, p);
+    if (price == null) {
+      notes.push(`${p.name.slice(0, 20)}: ${note}`);
+      continue;
+    }
+    const drift = Math.abs(price - p.price) / p.price;
+    if (drift > PRICE_TOLERANCE) {
+      issues.push(
+        `${p.name.slice(0, 24)} 글 ${p.price.toLocaleString()}원 → 현재 ${price.toLocaleString()}원 (${(drift * 100).toFixed(1)}%)`
+      );
+    } else {
+      notes.push(`${p.name.slice(0, 16)} ±${(drift * 100).toFixed(1)}%`);
+    }
+    await new Promise((r) => setTimeout(r, 400)); // API 예우
+  }
+  return { issues, detail: notes.join(' · ') };
+}
+
+// ─────────────────────────────────────────────────────────────
 // 게이트 실행
 // ─────────────────────────────────────────────────────────────
 
@@ -418,6 +559,18 @@ function runGates(slug, raw, ctx) {
   }
   add(14, '내부링크 유효성', linkFails.length === 0, [...new Set(linkFails)].join(' | '));
 
+  // #15 가격 대조 (--prices 일 때만 실검사)
+  if (ctx.checkPrices) {
+    add(
+      15,
+      '가격 대조',
+      ctx.priceIssues.length === 0,
+      ctx.priceIssues.length ? ctx.priceIssues.join(' | ') : ctx.priceDetail || '일치'
+    );
+  } else {
+    add(15, '가격 대조', true, `건너뜀 (--prices 로 활성화, 제품 ${productCount}개)`);
+  }
+
   return { slug, category, mainKeyword, results };
 }
 
@@ -431,6 +584,7 @@ async function main() {
     all: argv.includes('--all'),
     json: argv.includes('--json'),
     checkLinks: argv.includes('--links'),
+    checkPrices: argv.includes('--prices'),
   };
   const slugs = argv.filter((a) => !a.startsWith('--')).map((s) => s.replace(/\.md$/, ''));
 
@@ -467,7 +621,19 @@ async function main() {
       const links = matchAll(raw, /https:\/\/link\.coupang\.com\/re\/[^"'\s)]+/g);
       deadLinks = await checkCtaTargets(links);
     }
-    reports.push(runGates(slug, raw, { keywordMap, allSlugs, deadLinks, ...opts }));
+
+    let priceIssues = [];
+    let priceDetail = '';
+    if (opts.checkPrices) {
+      process.stderr.write(`  가격 조회 중: ${slug}\n`);
+      const r = await checkPrices(splitFrontmatter(raw).fm);
+      priceIssues = r.issues;
+      priceDetail = r.detail;
+    }
+
+    reports.push(
+      runGates(slug, raw, { keywordMap, allSlugs, deadLinks, priceIssues, priceDetail, ...opts })
+    );
   }
 
   if (opts.json) console.log(JSON.stringify(reports, null, 2));
