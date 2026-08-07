@@ -8,6 +8,12 @@ routes = [
   { pattern = "www.babygrade.kr", custom_domain = true }
 ]
 
+# 발행 감시 (worker.ts 의 scheduled 핸들러).
+# 21:00 KST = 12:00 UTC — 본 슬롯(02시)·보충(08·14시)이 다 끝난 뒤 확인한다.
+# 감시자를 GitHub 밖에 두는 이유는 worker.ts 주석 참조.
+[triggers]
+crons = ["0 12 * * *"]
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"

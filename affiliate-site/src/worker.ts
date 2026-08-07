@@ -11,6 +11,9 @@
 
 interface Env {
   ASSETS: Fetcher;
+  // 발행 감시용 (Worker secret — GitHub Secret 과 별개다)
+  TELEGRAM_BOT_TOKEN?: string;
+  TELEGRAM_CHAT_ID?: string;
 }
 
 // ⚠️ src/utils/image-proxy.ts 의 ALLOWED_HOSTS 와 동기화 유지
@@ -142,7 +145,68 @@ Allow: /
 Sitemap: https://babygrade.kr/sitemap-index.xml
 `;
 
+// ─────────────────────────────────────────────────────────────
+// 발행 감시 (Cron Trigger)
+//
+// 왜 여기 있나: 알림이 전부 GitHub Actions **안**에서 나가므로, 실행 자체가 안 뜨거나
+// 러너를 못 잡으면 알림 경로도 같이 사라진다 — 실패가 아니라 **침묵**이 된다.
+// 2026-08-07 에 실제로 그렇게 하루가 비었고 사람이 물어보기 전까지 아무도 몰랐다.
+// 그래서 감시자를 감시 대상 **밖**(다른 회사 인프라)에 둔다.
+//
+// 판정 기준은 사이트가 스스로 내놓는 RSS 의 최신 pubDate 다. 발행이 됐다면 배포도 됐고
+// RSS 도 갱신돼 있으므로 **배포까지 포함한 체인 끝단을 통째로** 검사하는 셈이다.
+// ─────────────────────────────────────────────────────────────
+
+const kstDate = (t: number) => new Date(t + 9 * 3600 * 1000).toISOString().slice(0, 10);
+
+async function notify(env: Env, text: string): Promise<void> {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
+  const body = new URLSearchParams({
+    chat_id: env.TELEGRAM_CHAT_ID,
+    parse_mode: 'HTML',
+    disable_web_page_preview: 'true',
+    text,
+  });
+  await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body,
+  });
+}
+
+async function checkPublishedToday(env: Env): Promise<void> {
+  const today = kstDate(Date.now());
+  let newest: string | null = null;
+  try {
+    const res = await env.ASSETS.fetch(new Request('https://babygrade.kr/rss.xml'));
+    if (res.ok) {
+      const dates = [...(await res.text()).matchAll(/<pubDate>([^<]+)<\/pubDate>/g)]
+        .map((m) => Date.parse(m[1]))
+        .filter((n) => !Number.isNaN(n));
+      if (dates.length) newest = kstDate(Math.max(...dates));
+    }
+  } catch {
+    /* newest === null 로 처리 */
+  }
+
+  if (newest === today) return; // 정상 — 조용히 끝낸다
+
+  await notify(
+    env,
+    `🔴 <b>babygrade — 오늘 발행이 없습니다</b>\n` +
+      `오늘(KST) ${today} · RSS 최신 ${newest ?? '읽기 실패'}\n\n` +
+      `자동 발행이 세 슬롯(02·08·14시) 모두 실패했거나 실행 자체가 뜨지 않은 상태입니다.\n` +
+      `<code>gh run list -R meonchicken/babygrade-site --workflow=daily-publish.yml --limit 5</code>\n` +
+      `수동 실행: <code>gh workflow run daily-publish.yml -R meonchicken/babygrade-site -f dry_run=false -f force=true</code>`
+  );
+}
+
 export default {
+  // 21:00 KST — 본 슬롯·보충 2회가 다 끝난 뒤 확인한다 (wrangler.toml [triggers])
+  async scheduled(_e: ScheduledController, env: Env, ctx: ExecutionContext): Promise<void> {
+    ctx.waitUntil(checkPublishedToday(env));
+  },
+
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 

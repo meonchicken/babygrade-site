@@ -18,6 +18,16 @@ if (!ARG_KEYWORD || !ARG_CATEGORY) {
   process.exit(1);
 }
 
+/**
+ * 발행 일자는 반드시 **한국 시각** 기준.
+ * `new Date().toISOString()` 은 UTC라, 자동 발행이 도는 17:00~05:00 UTC 는 한국에서 이미
+ * 다음 날이다. 그대로 쓰면 글이 하루 이른 날짜로 찍히고 RSS·sitemap·JSON-LD 가 전부 따라간다.
+ * (복원력가이드 결함 4)
+ */
+function kstToday() {
+  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
 // 슬러그 생성 (영문이면 그대로, 한글이면 공백→하이픈 + 연도)
 function makeSlug(kw) {
   const cleaned = kw.replace(/\s+/g, '-').replace(/[?!.,]/g, '');
@@ -74,7 +84,7 @@ async function main() {
     process.exit(1);
   }
 
-  const today = new Date().toISOString().slice(0, 10);
+  const today = kstToday();
   const productsBlock = products
     .map(
       (p) => `  - name: ${JSON.stringify(p.productName)}

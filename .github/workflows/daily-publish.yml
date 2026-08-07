@@ -11,10 +11,18 @@ name: Daily Auto-Publish (babygrade)
 
 on:
   schedule:
-    # 17:00 UTC = 02:00 KST (다음날). 이식가이드 §3-4 의 babygrade 배정 슬롯.
-    # GitHub Actions 예약은 정시 보장이 없다(수 분~수십 분 지연, 드물게 스킵).
-    # 딜픽 실측: 07:00 설정 시 07:47 에 실행됐다. "2시"가 아니라 "2시대"로 볼 것.
-    - cron: '0 17 * * *'
+    # 예약은 늦게 오는 게 아니라 **안 오기도 한다.** 2026-08-07 실측: 예약은 떴지만
+    # `The job was not acquired by Runner of type hosted` 로 15분 만에 실패했고,
+    # 러너를 못 잡았으니 알림 스텝도 안 돌아 **침묵**으로 끝났다. 그날 글은 0편.
+    # → 기회를 하루 3번으로 늘린다 (복원력가이드 결함 1).
+    #
+    # 결번 방지 검사가 런타임·LLM 설치보다 앞이라, 이미 발행된 날의 보충 실행은
+    # 10초 만에 끝난다 — 정상인 날 추가 비용은 0에 가깝다.
+    #
+    # 다른 사이트와 겹치지 않게 흩은 시각이다 (딜픽 18:00 · doggrade 21/03/09 UTC).
+    - cron: '0 17 * * *' # 02:00 KST — 본 슬롯
+    - cron: '0 23 * * *' # 08:00 KST — 1차 보충
+    - cron: '0 5 * * *' #  14:00 KST — 최종 보충
   workflow_dispatch:
     inputs:
       dry_run:
@@ -60,6 +68,17 @@ jobs:
           echo "dry_run=$DRY" >> "$GITHUB_OUTPUT"
           echo "실행 모드: DRY_RUN=$DRY"
 
+          # 본 슬롯인가 보충 슬롯인가.
+          # 보충 슬롯이 "이미 발행됨"으로 스킵할 때 알림을 보내면 매일 스킵 알림이 두 번씩
+          # 오고, 그러면 알림을 안 읽게 돼 진짜 사고도 같이 놓친다.
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "${{ github.event.schedule }}" = "0 17 * * *" ]; then
+            echo "primary=true" >> "$GITHUB_OUTPUT"
+            echo "슬롯: 본 슬롯"
+          else
+            echo "primary=false" >> "$GITHUB_OUTPUT"
+            echo "슬롯: 보충 (${{ github.event.schedule }})"
+          fi
+
       # ── 3. 결번 방지 — 오늘 사용자가 이미 발행했으면 스킵 ────
       # 자동화는 사용자를 대체하지 않고 공백만 메운다.
       # 이 체크가 Claude 실행 **앞**에 있어야 스킵한 날 비용이 0이 된다.
@@ -68,7 +87,9 @@ jobs:
         run: |
           TODAY=$(TZ=Asia/Seoul date +%Y-%m-%d)
           echo "오늘(KST): $TODAY"
-          CHANGED=$(git log --since="$TODAY 00:00 +0900" --name-only --pretty=format: \
+          # --diff-filter=A = **새로 추가된 파일만**. 이게 없으면 기존 글을 손보기만 해도
+          # "사람이 오늘 발행했다"로 판정해 자동 실행이 비켜선다 (복원력가이드 결함 5).
+          CHANGED=$(git log --since="$TODAY 00:00 +0900" --diff-filter=A --name-only --pretty=format: \
                     -- 'affiliate-site/src/content/posts/*.md' | sort -u | grep -v '^$' || true)
           if [ -n "$CHANGED" ] && [ "${{ inputs.force }}" != "true" ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
@@ -282,8 +303,9 @@ jobs:
           fi
 
       # ── 8. Telegram 알림 (항상) ──────────────────────────────
+      # 보충 슬롯의 스킵은 알리지 않는다 — 정상 동작이고, 매일 두 번 오면 알림이 무뎌진다.
       - name: Notify — skipped (manual publish detected)
-        if: steps.gap.outputs.skip == 'true'
+        if: steps.gap.outputs.skip == 'true' && steps.mode.outputs.primary == 'true'
         env:
           MSG: |
             ⏭ <b>babygrade</b> — 자동 실행 스킵

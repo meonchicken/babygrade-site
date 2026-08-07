@@ -27,6 +27,15 @@ function run(cmd, opts = {}) {
   return execSync(cmd, { stdio: 'inherit', cwd: SITE_DIR, ...opts });
 }
 
+/**
+ * 발행 일자는 반드시 **한국 시각** 기준. UTC로 찍으면 하루 이르게 나간다.
+ * 이 스크립트는 publishedAt 을 **덮어쓰므로** 밤에 돌리면 전량 밀린다
+ * (doggrade 는 같은 패턴으로 자동 발행 6/6 이 밀렸다 — 복원력가이드 결함 4).
+ */
+function kstToday() {
+  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
 function check(url) {
   return new Promise((resolve) => {
     https
@@ -58,7 +67,7 @@ async function main() {
     const r = processFile(mdPath);
     console.log(r.changed ? `     → ${r.replacements}개 링크 치환` : '     (이미 치환됨 또는 자리표시자 없음)');
 
-    const today = new Date().toISOString().slice(0, 10);
+    const today = kstToday();
     let md = fs.readFileSync(mdPath, 'utf8');
 
     const placeholders = md.match(/\{\{(INTERNAL_LINK|COUPANG_LINK|TODO)[^}]*\}\}/g);
