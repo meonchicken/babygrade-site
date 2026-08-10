@@ -1,9 +1,24 @@
 // Google.co.kr 자동완성 + 관련검색어 기반 키워드/의도 수집 (EUC-KR 응답)
 const { execSync } = require('child_process');
 
+/**
+ * Google 자동완성은 **보조 도구**다. 2026-08-04 이후 타겟은 네이버이고, 이 결과는
+ * 문체·소제목 발굴에만 쓴다. 그러니 **여기서 실패해도 글쓰기를 막아선 안 된다.**
+ *
+ * 2026-08-10 실측: GitHub 러너에서 이 호출이 죽어 `new-article.js` 가 통째로 멈췄고,
+ * 자동 발행이 스켈레톤 없이 본문을 직접 쓰는 우회를 해야 했다. 원인은 두 가지가 겹친다 —
+ *   ① 데이터센터 IP 라 Google 이 EUC-KR JSON 대신 다른 응답(동의·차단 페이지)을 준다
+ *   ② 그러면 `iconv -f EUC-KR` 가 잘못된 바이트에서 **비0 종료** → `execSync` 가 throw
+ * `-c`(변환 불가 문자 버림) + try/catch 로 **빈 배열로 degrade** 시킨다.
+ */
 function fetchSuggest(query, hl = 'ko', gl = 'kr') {
-  const cmd = `curl -s 'https://suggestqueries.google.com/complete/search?client=firefox&hl=${hl}&gl=${gl}&q=${encodeURIComponent(query).replace(/'/g, '%27')}' | iconv -f EUC-KR -t UTF-8`;
-  const text = execSync(cmd, { encoding: 'utf-8', maxBuffer: 5 * 1024 * 1024 });
+  const cmd = `curl -sf --max-time 10 'https://suggestqueries.google.com/complete/search?client=firefox&hl=${hl}&gl=${gl}&q=${encodeURIComponent(query).replace(/'/g, '%27')}' | iconv -c -f EUC-KR -t UTF-8`;
+  let text;
+  try {
+    text = execSync(cmd, { encoding: 'utf-8', maxBuffer: 5 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
+  } catch {
+    return []; // 네트워크·차단·인코딩 실패 — 보조 데이터이므로 조용히 비운다
+  }
   try {
     return JSON.parse(text)[1] || [];
   } catch {
