@@ -32,7 +32,7 @@ node content-pipeline/gate.js --all --prices                              # 기�
 한쪽만 보면 반대 방향으로 조용히 무너진다.
 
 > 🚨 **키워드 선정은 네이버 SERP 게이트를 통과해야 한다 (2026-08-04~).**
-> `bash ../../../keyword-tool/naver-serp.sh "키워드1" "키워드2"` → 웹문서 컬렉션 위치(px) + 상위 도메인 강도.
+> `node ../../../keyword-tool/naver-serp.js "키워드1" "키워드2"` → 웹문서 상위 도메인 강도 + 자사 순위 (**브라우저 불필요 · HTTP 만 사용**).
 > **🟢(강도 0~1 · ≤400px)만 슬롯에 넣는다.** 네이버 검색량이 아무리 커도 쇼핑몰·정부기관·의학매체가
 > 웹문서 상위를 채우면 발행해도 노출되지 않는다 — 발행 완료 8건 실측에서 **7건이 이 이유로 미노출**이었다.
 > 상세 근거 → `EDITORIAL-CALENDAR.md` 「2026-08-04 네이버 SERP 게이트 실측」
@@ -62,7 +62,8 @@ node content-pipeline/gate.js --all --prices                              # 기�
 - 타겟: **한국 네이버 검색** (2026-08-04 전환 — 그 전에는 Google 우선이었다)
   - Google 색인이 사실상 정지 → 네이버는 48개 URL 수집 + 신규 글 **5일 내 색인** 확인
   - **네이버 블로그 운영은 여전히 금지** (C-Rank 저품질) — 자체 도메인의 **웹문서 컬렉션**을 노리는 것이다
-  - 키워드 선정 게이트: `bash ../../../keyword-tool/naver-serp.sh "키워드"` → 🟢(강도 0~1)만 발행
+  - 키워드 선정 게이트: `node ../../../keyword-tool/naver-serp.js "키워드"` → 🟢(강도 0~1)만 발행
+  - 수요 조회: `source ../../../keyword-tool/.env && node ../../../keyword-tool/naver-volume.js "키워드"` (exact-match만)
 - 톤: **doggrade와 100% 동일** (Wirecutter 스타일 · 객관·데이터·등급)
 - 작성자: `babygrade Editorial Team` (개인 X, 팀 페르소나)
 
