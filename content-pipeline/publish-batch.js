@@ -157,7 +157,10 @@ async function main() {
   console.log('\n[4/5] git push + Cloudflare 배포 (1회)...');
   const msg = slugs.length === 1 ? `신규: ${slugs[0]}` : `신규 ${slugs.length}건: ${slugs.join(', ')}`;
   try {
-    run(`git add -A && git -c user.email="polarissearchlab@gmail.com" -c user.name="meonchicken" commit -m "${msg}"`, { cwd: REPO_ROOT });
+    // 신원은 repo 의 git config 를 그대로 쓴다 (CLAUDE.md 「커밋 신원」 참조).
+    // 2026-08-24 이전에는 여기에 이메일이 하드코딩돼 있어, repo config 를 고쳐도
+    // 발행 커밋만 별개 계정(polarissearchlab-hub)에 기여자로 잡혔다. 다시 박아 넣지 말 것.
+    run(`git add -A && git commit -m "${msg}"`, { cwd: REPO_ROOT });
     run('git push', { cwd: REPO_ROOT });
   } catch (e) {
     console.log('  (변경사항 없음 또는 이미 push됨)');
