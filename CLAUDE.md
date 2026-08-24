@@ -10,12 +10,14 @@
 
 ```bash
 git config user.name   # meonchicken
-git config user.email  # 213314716+meonchicken@users.noreply.github.com
+git config user.email  # kis11649@gmail.com   ← 사용자 지정 (2026-08-24)
 ```
 
 `polarissearchlab@gmail.com` 로 커밋하면 **별개 계정(polarissearchlab-hub)** 에 기여자로 잡힌다 —
-실제로 8/24 이전 로컬 커밋 72건이 그렇게 기록됐다. noreply 주소를 쓰는 이유는 PUBLIC repo 히스토리에
-실제 메일 주소를 남기지 않기 위해서다. **이 설정을 바꾸지 말 것.**
+실제로 8/24 이전 로컬 커밋 72건이 그렇게 기록됐다. **이 설정을 바꾸지 말 것.**
+
+babygrade · homegrade · doggrade 세 repo 모두 동일하게 맞춰 뒀다(8/24).
+repo 가 PUBLIC 이라 이 주소는 커밋 메타데이터로 공개된다 — 사용자가 이 주소를 지정했다.
 
 ---
 
