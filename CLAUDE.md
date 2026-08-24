@@ -4,6 +4,21 @@
 
 ---
 
+## ⚠️ 커밋 신원 (2026-08-24 교정)
+
+**이 repo 는 PUBLIC 이다.** GitHub 은 이름이 아니라 **이메일로** 커밋을 계정에 연결한다.
+
+```bash
+git config user.name   # meonchicken
+git config user.email  # 213314716+meonchicken@users.noreply.github.com
+```
+
+`polarissearchlab@gmail.com` 로 커밋하면 **별개 계정(polarissearchlab-hub)** 에 기여자로 잡힌다 —
+실제로 8/24 이전 로컬 커밋 72건이 그렇게 기록됐다. noreply 주소를 쓰는 이유는 PUBLIC repo 히스토리에
+실제 메일 주소를 남기지 않기 위해서다. **이 설정을 바꾸지 말 것.**
+
+---
+
 ## 무인 자동 발행 (2026-07-31~)
 
 **매일 02:00 KST**, GitHub Actions 러너에서 글 1편을 쓰고 게이트를 통과하면 발행한다. 노트북 전원 무관.
