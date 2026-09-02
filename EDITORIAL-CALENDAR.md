@@ -74,7 +74,7 @@
 > DataForSEO 는 잔액 소진으로 사용 불가다.
 
 > **5단계 (약 20분):**
-> 1. **네이버 수요 측정** — `source ../../../keyword-tool/.env && node ../../../keyword-tool/naver-volume.js -f seeds.txt`
+> 1. **네이버 수요 측정** — `source ../keyword-tool/.env && node ../keyword-tool/naver-volume.js -f seeds.txt`
 >    (exact-match만 나온다. hintKeywords 는 1회 5개 상한이라 스크립트가 알아서 끊어 보낸다.)
 > 2. **🆕 네이버 SERP 게이트 (가장 중요)** — `node content-pipeline/naver-serp.js "후보1" "후보2" ...`
 >    `where=web` 상위 5개 중 **쇼핑몰·정부기관·의학매체가 몇 개인지(=강도)** + 자사 순위를 잰다.
