@@ -4,7 +4,7 @@
 
 ---
 
-## 📍 작업 위치 = `~/Developer/babygrade` (2026-09-02 이전 · 되돌리지 말 것)
+## 📍 작업 위치 = `~/Developer/부업마스터/웹사이트 수익/babygrade` (2026-09-02 이전 · 되돌리지 말 것)
 
 **`~/Desktop` 아래에서 작업하지 마라. iCloud 동기화 대상이라 로컬 저장소가 깨진다.**
 
@@ -14,7 +14,7 @@ GitHub 원격만 온전해서 거기서 다시 클론해 복구했다. 같은 �
 
 | | |
 |---|---|
-| 작업 복사본 | `~/Developer/babygrade` |
+| 작업 복사본 | `~/Developer/부업마스터/웹사이트 수익/babygrade` |
 | 키워드 도구 | `~/Developer/keyword-tool` (= 이 repo 기준 `../keyword-tool/`) |
 | 원격 | `meonchicken/babygrade-site` (PUBLIC) |
 
