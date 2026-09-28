@@ -15,12 +15,13 @@ GitHub 원격만 온전해서 거기서 다시 클론해 복구했다. 같은 �
 | | |
 |---|---|
 | 작업 복사본 | `~/Developer/부업마스터/웹사이트 수익/babygrade` |
-| 키워드 도구 | `~/Developer/keyword-tool` (= 이 repo 기준 `../keyword-tool/`) |
+| 키워드 도구 | `~/Developer/keyword-tool` (= 이 repo 기준 `../../../keyword-tool/`) |
 | 원격 | `meonchicken/babygrade-site` (PUBLIC) |
 
-- 문서 안의 도구 경로는 **`../keyword-tool/`** 이다. 구 경로 `../../../keyword-tool/` 은 9/2에 전량 치환했다
+- 문서 안의 도구 경로는 **`~/Developer/keyword-tool/`**(절대 경로)로 적는다 — 9/2 폴더 이전으로 repo 가 두 단계 깊어져
+  `../keyword-tool/` 은 더 이상 존재하지 않는다(2026-09-28 교정). 상대 경로로 쓰려면 `../../../keyword-tool/`
 - **`.env` 는 git 추적 대상이 아니라 클론만으로는 안 따라온다.** 재복구 시 별도로 옮길 것
-  (`content-pipeline/.env` = 쿠팡·Replicate·Cloudflare · `../keyword-tool/.env` = 네이버 검색광고·DataLab)
+  (`content-pipeline/.env` = 쿠팡·Replicate·Cloudflare · `~/Developer/keyword-tool/.env` = 네이버 검색광고·DataLab)
 
 ---
 
@@ -72,7 +73,7 @@ node content-pipeline/gate.js --all --prices                              # 기�
 > `node content-pipeline/naver-serp.js "키워드1" "키워드2"` → 웹문서 상위 도메인 강도 + 자사 순위 (**브라우저 불필요 · HTTP 만 사용 · 자격증명 불필요**).
 > **2026-09-02: repo 안으로 벤더링했다** — 자격증명·의존성이 0이라 GitHub 러너에서도 돈다.
 > 그래서 자동 발행이 **매일 발행 직전에 그날 슬롯을 직접 재측정**한다(🔴 면 백업 교체 · 🟡 면 롱테일 우회).
-> 원본은 `../keyword-tool/naver-serp.js` 이고 **두 사본은 같이 갱신**한다.
+> 원본은 `~/Developer/keyword-tool/naver-serp.js` 이고 **두 사본은 같이 갱신**한다.
 > **🟢(강도 0~1 · ≤400px)만 슬롯에 넣는다.** 네이버 검색량이 아무리 커도 쇼핑몰·정부기관·의학매체가
 > 웹문서 상위를 채우면 발행해도 노출되지 않는다 — 발행 완료 8건 실측에서 **7건이 이 이유로 미노출**이었다.
 > 상세 근거 → `EDITORIAL-CALENDAR.md` 「2026-08-04 네이버 SERP 게이트 실측」
@@ -103,7 +104,7 @@ node content-pipeline/gate.js --all --prices                              # 기�
   - Google 색인이 사실상 정지 → 네이버는 48개 URL 수집 + 신규 글 **5일 내 색인** 확인
   - **네이버 블로그 운영은 여전히 금지** (C-Rank 저품질) — 자체 도메인의 **웹문서 컬렉션**을 노리는 것이다
   - 키워드 선정 게이트: `node content-pipeline/naver-serp.js "키워드"` → 🟢(강도 0~1)만 발행
-  - 수요 조회: `source ../keyword-tool/.env && node ../keyword-tool/naver-volume.js "키워드"` (exact-match만)
+  - 수요 조회: `source ~/Developer/keyword-tool/.env && node ~/Developer/keyword-tool/naver-volume.js "키워드"` (exact-match만)
 - 톤: **doggrade와 100% 동일** (Wirecutter 스타일 · 객관·데이터·등급)
 - 작성자: `babygrade Editorial Team` (개인 X, 팀 페르소나)
 
@@ -175,8 +176,8 @@ node content-pipeline/gate.js --all --prices                              # 기�
 └── babygrade.code-workspace
 ```
 
-> **키워드 도구는 어필리에이트 루트**: `../keyword-tool/`
-> **자격증명 (.env)**: `keyword-tool/.env` — DataForSEO + 네이버 검색광고
+> **키워드 도구**: `~/Developer/keyword-tool/`
+> **자격증명 (.env)**: `~/Developer/keyword-tool/.env` — 네이버 검색광고(DataForSEO 는 잔액 소진)
 
 ---
 
