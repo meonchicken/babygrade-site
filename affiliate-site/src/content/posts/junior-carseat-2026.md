@@ -24,7 +24,7 @@ lsiKeywords:
   - 일체형 주니어 카시트
   - 부스터 방석 카시트
   - 주니어 카시트 디시
-heroImage: /images/junior-carseat-2026-1.png
+heroImage: /images/junior-carseat-2026-1.webp
 heroImageAlt: 주니어 카시트 단독 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -137,7 +137,7 @@ draft: false
 주니어 카시트는 어린이제품 안전 특별법상 안전확인 대상 어린이제품이므로 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 KC 안전확인 번호를 조회할 수 있다. 유럽 [UNECE Regulation No. 129](https://unece.org)는 키(cm)로 적용 범위를 정하는 기준이고, 이 기준에서 **등받이 없는 방석형 부스터는 키 125cm 이상 아동에게만** 적용된다. 이 글의 「적용 범위 표기」 축은 이 키 기준을 바탕으로 한다. KC 표시 읽는 법은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/junior-carseat-2026-2.png" alt="주니어 카시트 3종 나란히 비교 일러스트 — 등받이 형태·하네스 유무 차이" loading="lazy" width="800" height="450" />
+  <img src="/images/junior-carseat-2026-2.webp" alt="주니어 카시트 3종 나란히 비교 일러스트 — 등받이 형태·하네스 유무 차이" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>일체형</b><br/>하네스 → 부스터 겸용</span>
     <span><b>분리형</b><br/>등받이 → 방석 전환</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 절충형 유모차 언제까지
   - 리안 유모차
   - 절충형 유모차 디시
-heroImage: /images/mid-size-stroller-2026-1.png
+heroImage: /images/mid-size-stroller-2026-1.webp
 heroImageAlt: 절충형 유모차 단독 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -130,7 +130,7 @@ draft: false
 유모차는 어린이제품 안전 특별법상 안전확인 대상 어린이제품이므로 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 KC 안전확인 번호를 조회할 수 있다. 같은 기관의 [어린이제품 안전관리 제도 안내](https://www.kats.go.kr)는 제품 라벨의 사용 연령·주의 문구 표시를 의무로 두고 있어, 이 글의 「신생아 사용」 축은 이 라벨 표시를 기준으로 본다. KC 표시 읽는 법은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/mid-size-stroller-2026-2.png" alt="절충형 유모차 3가지 상태 비교 일러스트 — 전면 시트·눕힌 시트·접힌 상태" loading="lazy" width="800" height="450" />
+  <img src="/images/mid-size-stroller-2026-2.webp" alt="절충형 유모차 3가지 상태 비교 일러스트 — 전면 시트·눕힌 시트·접힌 상태" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>무게</b><br/>들어올림 횟수</span>
     <span><b>신생아 사용</b><br/>월령·등받이 각도</span>

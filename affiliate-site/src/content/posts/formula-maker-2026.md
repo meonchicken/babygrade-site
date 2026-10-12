@@ -24,7 +24,7 @@ lsiKeywords:
   - 분유 제조기 필요성
   - 분유 자동 조유
   - 분유 제조기 디시
-heroImage: /images/formula-maker-2026-1.png
+heroImage: /images/formula-maker-2026-1.webp
 heroImageAlt: 자동 분유 제조기 단독 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -124,7 +124,7 @@ draft: false
 분유 제조기는 전기를 쓰는 가전이므로 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 전기용품 KC 인증을 조회할 수 있고, 물·분유가 닿는 부품은 식품용 기구 기준 대상이라 [식품안전나라](https://www.foodsafetykorea.go.kr)의 기구·용기 정보와 함께 볼 수 있다. KC 표시 읽는 법은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/formula-maker-2026-2.png" alt="자동 분유 제조기 3종 형태 비교 일러스트 — 물탱크·분유통·토출구 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/formula-maker-2026-2.webp" alt="자동 분유 제조기 3종 형태 비교 일러스트 — 물탱크·분유통·토출구 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>분유 호환</b><br/>설정표·재설정</span>
     <span><b>세척 동선</b><br/>분리 부품·주기</span>

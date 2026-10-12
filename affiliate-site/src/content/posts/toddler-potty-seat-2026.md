@@ -24,7 +24,7 @@ lsiKeywords:
   - 변기커버 사이즈
   - 변기커버 고정
   - 유아 변기 전환
-heroImage: /images/toddler-potty-seat-2026-1.png
+heroImage: /images/toddler-potty-seat-2026-1.webp
 heroImageAlt: 유아 변기커버 고정 방식·사이즈·비데 호환 비교 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -128,7 +128,7 @@ draft: false
 어린이 손·피부에 직접 닿는 제품이므로 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 KC 인증 여부를 조회할 수 있다. 어린이제품은 [어린이제품 안전 특별법](https://www.law.go.kr/법령/어린이제품안전특별법)에 따라 안전인증·안전확인 표시 대상이 정해져 있으며, 표시 읽는 법은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/toddler-potty-seat-2026-2.png" alt="유아 변기커버 3종 형태 비교 일러스트 — 소프트형·하드형·손잡이형" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-potty-seat-2026-2.webp" alt="유아 변기커버 3종 형태 비교 일러스트 — 소프트형·하드형·손잡이형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>고정</b><br/>시트 위 밀림 여부</span>
     <span><b>호환</b><br/>변기 사이즈·비데</span>
