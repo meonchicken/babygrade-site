@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 세제 헹굼
   - 아기 무향 세제 디시
   - 아기 빨래 세제 비교
-heroImage: /images/baby-unscented-detergent-2026-1.png
+heroImage: /images/baby-unscented-detergent-2026-1.webp
 heroImageAlt: 아기 빨래 무향 세제 저자극 성분·세정 헹굼·형태 사용편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 세탁세제는 [식품의약품안전처](https://www.mfds.go.kr)·[환경부](https://www.me.go.kr)가 안내하는 생활화학제품 안전 표시 대상으로, **"아토피·피부염 치료"·"100% 무자극"·"피부 개선" 같은 효능·절대 표현은 쓸 수 없다.** 무향·중성·형광증백제 무첨가 같은 객관 표기와 정량 사용·충분한 헹굼이 실제 관리의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/baby-unscented-detergent-2026-2.png" alt="아기 빨래 무향 세제 유형별 비교 일러스트 — 대용량 무향 액상·비건 캡슐·무향 가성비" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-unscented-detergent-2026-2.webp" alt="아기 빨래 무향 세제 유형별 비교 일러스트 — 대용량 무향 액상·비건 캡슐·무향 가성비" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>저자극 성분</b><br/>무향·중성·비건</span>
     <span><b>세정 헹굼</b><br/>효소·잔여물</span>

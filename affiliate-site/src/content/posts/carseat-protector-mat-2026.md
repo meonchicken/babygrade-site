@@ -25,7 +25,7 @@ lsiKeywords:
   - 논슬립 카시트 매트
   - 카시트 밑에 까는 매트
   - 카시트 눌림 자국
-heroImage: /images/carseat-protector-mat-2026-1.png
+heroImage: /images/carseat-protector-mat-2026-1.webp
 heroImageAlt: 카시트 보호매트 두께·미끄럼·표면 마감 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -160,7 +160,7 @@ draft: false
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 카시트 장착 절차와 확인 항목은 [도로교통공단](https://www.koroad.or.kr) 공개 안내를, 차량용품 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/carseat-protector-mat-2026-2.png" alt="카시트 보호매트 3종 비교 일러스트 — 3D 메쉬 통풍형·다층 적층형·브랜드 액세서리형" loading="lazy" width="800" height="450" />
+  <img src="/images/carseat-protector-mat-2026-2.webp" alt="카시트 보호매트 3종 비교 일러스트 — 3D 메쉬 통풍형·다층 적층형·브랜드 액세서리형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>두께</b><br/>하중 후 mm</span>
     <span><b>미끄럼</b><br/>억제 방식</span>

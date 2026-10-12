@@ -24,7 +24,7 @@ lsiKeywords:
   - 어린이집 물병 용량
   - 트라이탄 물병
   - 어린이 물병 세척
-heroImage: /images/kids-water-bottle-2026-1.png
+heroImage: /images/kids-water-bottle-2026-1.webp
 heroImageAlt: 어린이 물병 용량·빨대 세척·보온 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ draft: false
 식품에 닿는 물병은 식품용 기구 기준의 적용을 받으므로 재질 표기는 [식품의약품안전처](https://www.mfds.go.kr) 기구·용기 기준을 기준으로 읽었고, 어린이제품 안전 표시는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있다. 연령별 수분 섭취의 큰 틀은 [한국영양학회](https://www.kns.or.kr)의 2020 한국인 영양소 섭취기준을 참고했다.
 
 <figure class="infographic">
-  <img src="/images/kids-water-bottle-2026-2.png" alt="어린이 물병 3종 비교 일러스트 — 빨대형·원터치 직음형·보온보냉형 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-water-bottle-2026-2.webp" alt="어린이 물병 3종 비교 일러스트 — 빨대형·원터치 직음형·보온보냉형 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>용량</b><br/>체류 시간 역산</span>
     <span><b>세척</b><br/>분해 부품 수</span>

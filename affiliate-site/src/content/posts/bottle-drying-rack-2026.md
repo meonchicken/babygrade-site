@@ -24,7 +24,7 @@ lsiKeywords:
   - 젖병 자연건조
   - 젖병 건조대 세척
   - 젖병 건조대 디시
-heroImage: /images/bottle-drying-rack-2026-1.png
+heroImage: /images/bottle-drying-rack-2026-1.webp
 heroImageAlt: 젖병 건조대 건조 구조·위생 배수·수납 용량 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -137,7 +137,7 @@ sources:
 젖병과 젖꼭지는 [식품의약품안전처](https://www.mfds.go.kr)의 「기구 및 용기·포장의 기준 및 규격」이 적용되는 식품용 기구이고, 세척·소독·건조 절차는 [미국 질병통제예방센터(CDC)](https://www.cdc.gov)의 영유아 수유용품 안내와 [식품안전나라](https://www.foodsafetykorea.go.kr)의 식품용 기구 관리 정보가 함께 참고된다. **"살균 건조"·"세균 100% 차단"·"장염 예방" 같은 표현은 건조대에 쓸 수 없다.** 소재 표기(식품용 플라스틱·실리콘·스테인리스), 내열 온도, 물받침 분리 여부 같은 객관 표시가 실제 위생의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/bottle-drying-rack-2026-2.png" alt="젖병 건조대 3종 비교 일러스트 — 컴팩트 풀잎형·스탠딩 다단형·비접촉 구조형" loading="lazy" width="800" height="450" />
+  <img src="/images/bottle-drying-rack-2026-2.webp" alt="젖병 건조대 3종 비교 일러스트 — 컴팩트 풀잎형·스탠딩 다단형·비접촉 구조형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>건조 구조</b><br/>접촉·비접촉·공기 순환</span>
     <span><b>위생 배수</b><br/>물받침 분리·경사 배수</span>

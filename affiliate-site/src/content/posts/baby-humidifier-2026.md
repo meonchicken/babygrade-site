@@ -24,7 +24,7 @@ lsiKeywords:
   - 가습기 소음
   - 아기 가습기 디시
   - 아기 가습기 비교
-heroImage: /images/baby-humidifier-2026-1.png
+heroImage: /images/baby-humidifier-2026-1.webp
 heroImageAlt: 아기 가습기 가습 방식·살균 위생·세척 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 가습기는 [식품의약품안전처](https://www.mfds.go.kr)·[한국소비자원](https://www.kca.go.kr)이 위생 관리를 강조해 온 가전으로, 구매 시 세척 구조와 살균 방식을 확인하는 것이 표준이다. **"세균 100% 제거"·"비염·감기 예방"·"완벽 살균" 같은 절대 표현·효능 단정은 쓸 수 없다.** 특히 **가습기 살균제를 물에 타서 쓰는 것은 금지**이며, 세척은 물·전용 세척 방법으로 한다. 물은 매일 갈고 본체는 정기 세척·건조한다.
 
 <figure class="infographic">
-  <img src="/images/baby-humidifier-2026-2.png" alt="아기 가습기 방식별 비교 일러스트 — 복합식·UV 대용량·가열식" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-humidifier-2026-2.webp" alt="아기 가습기 방식별 비교 일러스트 — 복합식·UV 대용량·가열식" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가습 방식</b><br/>가열·초음파·복합</span>
     <span><b>살균 위생</b><br/>저온가열·UV·세척</span>

@@ -25,7 +25,7 @@ lsiKeywords:
   - 트라이탄 이유식 용기
   - 이유식 용기 전자레인지
   - 이유식 용기 냉동
-heroImage: /images/baby-food-container-2026-1.png
+heroImage: /images/baby-food-container-2026-1.webp
 heroImageAlt: 이유식 용기 트라이탄·PP·유리 소재별 내열·BPA 안전성 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -172,7 +172,7 @@ sources:
 [한국소비자원](https://www.kca.go.kr) 어린이 식기 안전성 조사는 **외출·냉동·이유식 단계는 PP/트라이탄, 가정 장기 보관은 유리, 휴대·여행은 실리콘**으로 소재별 분리 사용을 표준으로 안내한다. "BPA-Free" 표시는 BPA 한 가지 화학물에 대한 표시이며, BPS·BPF 같은 유사 첨가물의 안전성은 소재별 식약처 식품용 기구 안전기준에서 별도 관리된다. 트라이탄(Tritan)은 미국 이스트만(Eastman)이 개발한 BPA-Free 코폴리에스터로, 0~12개월 신생아·영아 이유식 라인에서 채택률이 높다. PP는 가장 일반적인 식품용 플라스틱으로 BPA-Free 표준이며 전자레인지 호환과 가성비가 강점이다.
 
 <figure class="infographic">
-  <img src="/images/baby-food-container-2026-1.png" alt="이유식 용기 트라이탄·PP·유리 소재별 내열·BPA 안전성 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-food-container-2026-1.webp" alt="이유식 용기 트라이탄·PP·유리 소재별 내열·BPA 안전성 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>유리</b><br/>가정 장기 보관 표준</span>
     <span><b>트라이탄</b><br/>외출·냉동 라인</span>
@@ -244,7 +244,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-food-container-2026-2.png" alt="이유식 용기 트라이탄 눈금형·PP 가성비 묶음·락앤락 단일 보관 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-food-container-2026-2.webp" alt="이유식 용기 트라이탄 눈금형·PP 가성비 묶음·락앤락 단일 보관 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>트라이탄 눈금형</b><br/>베베락 · 14,400원</span>
     <span><b>PP 가성비</b><br/>베베락 PP · 14,000원</span>

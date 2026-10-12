@@ -24,7 +24,7 @@ lsiKeywords:
   - 어린이 장우산
   - 어린이 우산 디시
   - 어린이 우산 비교
-heroImage: /images/kids-umbrella-2026-1.png
+heroImage: /images/kids-umbrella-2026-1.webp
 heroImageAlt: 어린이 우산 안전 설계·사이즈 적합·내구 사용편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 어린이 우산은 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 KC 인증과 [한국소비자원](https://www.kca.go.kr)의 어린이 용품 안전(끼임·시인성) 정보 대상으로, **"100% 안전"·"절대 안 부러짐" 같은 절대 표현은 쓸 수 없다.** 손끼임 마개·투명창·반사띠·글라스파이버 같은 객관 표기와 보호자 동반·시인성 확보 같은 사용 원칙이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/kids-umbrella-2026-2.png" alt="어린이 우산 유형별 비교 일러스트 — 안전우산·자동 장우산·캐릭터 수동 장우산" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-umbrella-2026-2.webp" alt="어린이 우산 유형별 비교 일러스트 — 안전우산·자동 장우산·캐릭터 수동 장우산" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 설계</b><br/>손끼임·시야·시인성</span>
     <span><b>사이즈 적합</b><br/>키·연령·무게</span>

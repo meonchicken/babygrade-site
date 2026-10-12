@@ -24,7 +24,7 @@ lsiKeywords:
   - 젖병 세척솔 세트
   - 리필형 젖병솔
   - 젖병솔 건조
-heroImage: /images/bottle-brush-2026-1.png
+heroImage: /images/bottle-brush-2026-1.webp
 heroImageAlt: 젖병 세척솔 모 재질·젖꼭지솔 구성·건조 구조 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -157,7 +157,7 @@ sources:
 젖병과 젖꼭지는 [식품의약품안전처](https://www.mfds.go.kr)의 「기구 및 용기·포장의 기준 및 규격」이 적용되는 식품용 기구이며, 세척부터 보관까지의 절차는 [미국 질병통제예방센터(CDC)](https://www.cdc.gov)의 영유아 수유용품 안내와 [식품안전나라](https://www.foodsafetykorea.go.kr)의 식품용 기구 관리 정보가 함께 참고된다. 재질 표기·내열 온도·KC 인증 표기를 눈으로 판별하는 절차는 [KC 인증이란 — 어린이제품 안전 가이드](/kc-certification-baby-products-2026/)와 [BPA 프리 검증 가이드](/bpa-free-baby-guide-2026/)에 정리했다.
 
 <figure class="infographic">
-  <img src="/images/bottle-brush-2026-2.png" alt="젖병 세척솔 4종 비교 일러스트 — 실리콘형·스펀지형·회전형·리필형과 젖꼭지솔" loading="lazy" width="800" height="450" />
+  <img src="/images/bottle-brush-2026-2.webp" alt="젖병 세척솔 4종 비교 일러스트 — 실리콘형·스펀지형·회전형·리필형과 젖꼭지솔" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>모 재질</b><br/>실리콘·스펀지·나일론</span>
     <span><b>젖꼭지솔</b><br/>세트·별매</span>

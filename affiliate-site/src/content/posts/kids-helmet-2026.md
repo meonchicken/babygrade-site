@@ -24,7 +24,7 @@ lsiKeywords:
   - 헬멧 머리둘레
   - 헬멧 턱끈 조절
   - 아동 헬멧 무게
-heroImage: /images/kids-helmet-2026-1.png
+heroImage: /images/kids-helmet-2026-1.webp
 heroImageAlt: 어린이 헬멧 KC 인증·사이즈 조절·무게 3축 등급 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -122,7 +122,7 @@ draft: false
 KC 표기는 제품 라벨이나 상세페이지의 인증번호를 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회하는 방식으로 확인한다. 사이즈·착용 기준은 [NHTSA 자전거 안전 안내](https://www.nhtsa.gov/road-safety/bicycle-safety)의 헬멧 착용 절차를, 활동별 헬멧 구분은 [CPSC 활동별 헬멧 안내](https://www.cpsc.gov/safety-education/safety-guides/sports-fitness-and-recreation-bicycles/which-helmet-which-activity)를 근거로 잡았다.
 
 <figure class="infographic">
-  <img src="/images/kids-helmet-2026-2.png" alt="어린이 헬멧 3종 비교 일러스트 — 자전거형·고글 일체형·하드쉘 인라인형 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-helmet-2026-2.webp" alt="어린이 헬멧 3종 비교 일러스트 — 자전거형·고글 일체형·하드쉘 인라인형 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>KC 표기</b><br/>인증번호 조회</span>
     <span><b>사이즈</b><br/>머리둘레 가운데</span>

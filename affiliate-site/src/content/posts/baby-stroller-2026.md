@@ -25,7 +25,7 @@ lsiKeywords:
   - 유모차 언제부터
   - 유모차 신생아
   - 초경량 유모차 추천
-heroImage: /images/baby-stroller-2026-1.png
+heroImage: /images/baby-stroller-2026-1.webp
 heroImageAlt: 유모차 KC 인증·휴대·디럭스 단계별 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -148,7 +148,7 @@ sources:
 [한국소비자원](https://www.kca.go.kr) 유모차 안전성 조사는 **신생아~6개월은 누운 자세 호환 디럭스·절충형 라인, 6~12개월은 절충형·휴대 라인 전환, 12~36개월은 휴대·트라이크 라인 운영**으로 단계별 매칭을 표준으로 안내한다. 디럭스는 출산 직후 첫 외출·산책 표준 라인이지만 무게(9~13kg) 부담으로 차량 적재가 어렵고, 절충형은 무게·기능 균형으로 영아 활동 단계 채택률이 가장 높은 라인이다. 휴대·기내반입은 초경량 + 원터치 접이식으로 외출·여행·차량 적재 시나리오에 최적화된 라인이며, 본 페이지의 3개 라인이 이 카테고리에 해당한다. 트라이크·미니 라인은 만 12개월+ 활동 단계의 가성비 입문 라인으로, **신생아 단계에서는 누인 자세 호환 표시가 없으므로 디럭스·절충형으로 별도 운영**해야 한다.
 
 <figure class="infographic">
-  <img src="/images/baby-stroller-2026-1.png" alt="유모차 KC 인증·휴대·디럭스 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-stroller-2026-1.webp" alt="유모차 KC 인증·휴대·디럭스 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>디럭스</b><br/>0~36개월 표준</span>
     <span><b>절충형</b><br/>3~36개월 균형</span>
@@ -220,7 +220,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-stroller-2026-2.png" alt="유모차 가성비 휴대·가성비 기내반입·표준 기내반입 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-stroller-2026-2.webp" alt="유모차 가성비 휴대·가성비 기내반입·표준 기내반입 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 휴대</b><br/>베이블퓨어리 · 53,400원</span>
     <span><b>가성비 기내반입</b><br/>초경량 접이식 · 141,000원</span>

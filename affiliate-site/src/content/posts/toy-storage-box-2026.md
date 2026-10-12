@@ -24,7 +24,7 @@ lsiKeywords:
   - 블록 정리백
   - 장난감 보관함
   - 유아 놀이방 정리
-heroImage: /images/toy-storage-box-2026-1.png
+heroImage: /images/toy-storage-box-2026-1.webp
 heroImageAlt: 장난감 정리함 개폐 방식·적재·분류 3축 등급 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -130,7 +130,7 @@ draft: false
 평가에는 KC 표시를 별도 확인 항목으로 둔다. 정리함은 판매 방식에 따라 어린이제품으로 분류되기도, 일반 생활용 수납용품으로 분류되기도 해서 표시 여부가 제품마다 다르다. 표시가 있으면 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다.
 
 <figure class="infographic">
-  <img src="/images/toy-storage-box-2026-2.png" alt="장난감 정리함 3가지 구조 비교 일러스트 — 메쉬 바구니·투명 정리백·뚜껑형 박스" loading="lazy" width="800" height="450" />
+  <img src="/images/toy-storage-box-2026-2.webp" alt="장난감 정리함 3가지 구조 비교 일러스트 — 메쉬 바구니·투명 정리백·뚜껑형 박스" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>개폐 방식</b><br/>혼자 열 수 있나</span>
     <span><b>적재 구조</b><br/>쌓을 수 있나</span>

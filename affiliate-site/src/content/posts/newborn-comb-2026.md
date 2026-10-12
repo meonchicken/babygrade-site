@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 두피 각질
   - 출산 선물 아기빗
   - 아기 빗 언제부터
-heroImage: /images/newborn-comb-2026-1.png
+heroImage: /images/newborn-comb-2026-1.webp
 heroImageAlt: 신생아 빗 모 재질·헤드 크기·세척 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -120,7 +120,7 @@ draft: false
 머리 폭 기준은 [WHO 머리둘레 성장 기준](https://www.who.int/tools/child-growth-standards/standards/head-circumference-for-age)의 월령별 중앙값에서 역산했다. 빗·브러시는 만 13세 이하 대상 어린이제품이라 KC 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다.
 
 <figure class="infographic">
-  <img src="/images/newborn-comb-2026-2.png" alt="신생아 빗 3종 비교 일러스트 — 소프트 빗 세트·양모 브러시·컬러 브러시 세트 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-comb-2026-2.webp" alt="신생아 빗 3종 비교 일러스트 — 소프트 빗 세트·양모 브러시·컬러 브러시 세트 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>모 재질</b><br/>두피에 닿는 끝</span>
     <span><b>헤드 크기</b><br/>머리 폭 역산</span>

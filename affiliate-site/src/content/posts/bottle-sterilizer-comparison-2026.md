@@ -24,7 +24,7 @@ lsiKeywords:
   - 젖병 소독기 디시
   - 젖병 소독기 언제까지
   - 젖병 소독기 사용법
-heroImage: /images/bottle-sterilizer-comparison-2026-1.png
+heroImage: /images/bottle-sterilizer-comparison-2026-1.webp
 heroImageAlt: 젖병 소독기 UV·스팀·올인원 3가지 방식 비교 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ sources:
 UV-C는 [WHO 공중 보건 가이드](https://www.who.int)에서도 의료기기 표면 살균에 사용되는 검증된 방식이다. 다만 **자외선이 닿지 않는 그늘진 면(젖병 내부 굴곡, 노리개 틈)은 살균력이 떨어진다**는 한계가 있어, 분해 가능한 제품은 모두 분리해 넣는 것이 권장된다. 고온 스팀은 표면 침투력이 좋은 반면 100℃가 일부 실리콘 제품 권장 온도를 넘길 수 있어 노리개젖꼭지 제조사의 내열 표기를 확인해야 한다.
 
 <figure class="infographic">
-  <img src="/images/bottle-sterilizer-comparison-2026-1.png" alt="젖병 소독기 UV·스팀·올인원 3가지 방식 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/bottle-sterilizer-comparison-2026-1.webp" alt="젖병 소독기 UV·스팀·올인원 3가지 방식 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>UV-C 자외선</b><br/>비열 · 실리콘 변형 낮음</span>
     <span><b>고온 스팀</b><br/>100℃ · 표면 침투력</span>
@@ -201,7 +201,7 @@ KC 안전확인은 「전기용품 및 생활용품 안전관리법」에 따른
 </div>
 
 <figure class="infographic">
-  <img src="/images/bottle-sterilizer-comparison-2026-2.png" alt="젖병 소독기 가성비 입문·올인원·프리미엄 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/bottle-sterilizer-comparison-2026-2.webp" alt="젖병 소독기 가성비 입문·올인원·프리미엄 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 입문</b><br/>해님 HN-M1 · 148,000원</span>
     <span><b>올인원 동선</b><br/>나리몽 · 199,000원</span>

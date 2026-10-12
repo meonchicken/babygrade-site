@@ -24,7 +24,7 @@ lsiKeywords:
   - 역류방지쿠션 경사각
   - 아기 역류방지쿠션 디시
   - 아기 역류방지쿠션 비교
-heroImage: /images/baby-reflux-cushion-2026-1.png
+heroImage: /images/baby-reflux-cushion-2026-1.webp
 heroImageAlt: 아기 역류방지쿠션 경사각 지지·통기 소재·세탁 관리 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -124,7 +124,7 @@ sources:
 역류방지쿠션은 [보건복지부·질병관리청](https://www.kdca.go.kr)이 안내해 온 영유아 안전 수면 원칙과 함께 보아야 하는 용품으로, **경사진 제품 위 수면은 권장되지 않는다.** 광고에서 **"역류 치료·예방"·"100% 역류 차단"·"재워도 안전" 같은 효능 단정·절대 표현은 쓸 수 없다.** 쿠션은 수유 직후 트림·놀이처럼 보호자 관찰이 되는 시간에 쓰고, 수면은 평평한 바닥으로 한다.
 
 <figure class="infographic">
-  <img src="/images/baby-reflux-cushion-2026-2.png" alt="아기 역류방지쿠션 유형별 비교 일러스트 — 커버분리 프리미엄·순면 메쉬·수유쿠션 겸용" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-reflux-cushion-2026-2.webp" alt="아기 역류방지쿠션 유형별 비교 일러스트 — 커버분리 프리미엄·순면 메쉬·수유쿠션 겸용" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>경사각 지지</b><br/>완만 경사·둘레 지지</span>
     <span><b>통기 소재</b><br/>메쉬·순면·커버</span>

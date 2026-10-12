@@ -24,7 +24,7 @@ lsiKeywords:
   - 쪽쪽이 떼는법
   - 노리개 젖꼭지 소독
   - 쪽쪽이 디시
-heroImage: /images/baby-pacifier-2026-1.png
+heroImage: /images/baby-pacifier-2026-1.webp
 heroImageAlt: 노리개 젖꼭지 단계·소재(올실리콘)·통기 설계 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -139,7 +139,7 @@ sources:
 | 정형(오쏘) 젖꼭지 | 구강 형태 고려 모양 | 구강 발달 고려 선호 | 모양 호불호 강한 아기 |
 
 <figure class="infographic">
-  <img src="/images/baby-pacifier-2026-1.png" alt="노리개 젖꼭지 단계·소재·통기 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-pacifier-2026-1.webp" alt="노리개 젖꼭지 단계·소재·통기 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>월령 단계</b><br/>0-6M·6-18M 맞춤</span>
     <span><b>소재</b><br/>올실리콘·BPA-Free</span>

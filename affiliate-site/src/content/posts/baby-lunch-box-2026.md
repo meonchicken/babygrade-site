@@ -23,7 +23,7 @@ lsiKeywords:
   - 어린이집 도시락통
   - 아기 도시락 가방
   - 유아 도시락통 용량
-heroImage: /images/baby-lunch-box-2026-1.png
+heroImage: /images/baby-lunch-box-2026-1.webp
 heroImageAlt: 아기 도시락통 보온 구간·용량·재질 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -168,7 +168,7 @@ sources:
 식품용 기구의 표시 기준은 [식품의약품안전처](https://www.mfds.go.kr) 공개 안내를 따랐고, 어린이제품으로 분류되는 부속의 인증 표시는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있다. 영유아 용품의 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/baby-lunch-box-2026-2.png" alt="아기 도시락통 3종 비교 일러스트 — 보온 2단형·밀프랩 2단형·보급 사각 2단형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-lunch-box-2026-2.webp" alt="아기 도시락통 3종 비교 일러스트 — 보온 2단형·밀프랩 2단형·보급 사각 2단형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>보온</b><br/>유지 구간</span>
     <span><b>용량</b><br/>연령별 mL</span>

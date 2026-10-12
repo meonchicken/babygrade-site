@@ -23,7 +23,7 @@ lsiKeywords:
   - 임산부 허리 베개
   - 안고자는 베개
   - 임산부 바디필로우 순위
-heroImage: /images/maternity-body-pillow-2026-1.png
+heroImage: /images/maternity-body-pillow-2026-1.webp
 heroImageAlt: 임산부 바디필로우 형태·자세 지지·소재와 계절 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 | 냉감 여름형 | 냉감 원단·일자 롱쿠션 | 여름·가성비·휴대 | 전신 넓은 지지 필요 |
 
 <figure class="infographic">
-  <img src="/images/maternity-body-pillow-2026-1.png" alt="임산부 바디필로우 형태·자세 지지·소재와 계절 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-body-pillow-2026-1.webp" alt="임산부 바디필로우 형태·자세 지지·소재와 계절 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>J·U·I 감싸기</span>
     <span><b>자세 지지</b><br/>측면수면·허리·다리</span>

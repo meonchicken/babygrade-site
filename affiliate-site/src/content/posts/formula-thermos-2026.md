@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 보온병
   - 분유 보온병 세척
   - 외출 수유 준비물
-heroImage: /images/formula-thermos-2026-1.png
+heroImage: /images/formula-thermos-2026-1.webp
 heroImageAlt: 분유 보온병 보온 유지·온도 표시·용량 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -124,7 +124,7 @@ draft: false
 70℃ 기준은 [WHO 조제분유 조제·보관·취급 지침](https://www.who.int/publications/i/item/9789241595414)을 근거로 잡았다. 보온병 안쪽은 물에 닿는 식품용 기구라 재질 표기는 [식품의약품안전처](https://www.mfds.go.kr) 기구·용기 기준으로 읽었고, 생활용품 안전 표시는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다.
 
 <figure class="infographic">
-  <img src="/images/formula-thermos-2026-2.png" alt="분유 보온병 3종 비교 일러스트 — 온도 표시형·조제분유 전용형·범용형 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/formula-thermos-2026-2.webp" alt="분유 보온병 3종 비교 일러스트 — 온도 표시형·조제분유 전용형·범용형 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>보온</b><br/>마지막 수유 70℃</span>
     <span><b>온도 확인</b><br/>표시 유무</span>

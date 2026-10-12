@@ -25,7 +25,7 @@ lsiKeywords:
   - 유아 철분 앰플
   - 리포좀 철분 어린이
   - 어린이 철분제 복용법
-heroImage: /images/kids-iron-supplement-2026-1.png
+heroImage: /images/kids-iron-supplement-2026-1.webp
 heroImageAlt: 어린이 철분제 액상 1회분 확정 방식·라벨 함량·회당 원가 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -161,7 +161,7 @@ sources:
 건강기능식품의 표시 기준과 인정 기능성 문구는 [식품의약품안전처 식품안전나라](https://www.foodsafetykorea.go.kr)에서 확인할 수 있고, 연령별 섭취기준은 [보건복지부](https://www.mohw.go.kr)와 [한국영양학회](https://www.kns.or.kr)가 공개한 한국인 영양소 섭취기준 자료를 따랐다. 어린이 식품 표시에 관한 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 참고했다.
 
 <figure class="infographic">
-  <img src="/images/kids-iron-supplement-2026-2.png" alt="어린이 액상 철분제 3계열 비교 일러스트 — 스틱포형·앰플형·병형 시럽" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-iron-supplement-2026-2.webp" alt="어린이 액상 철분제 3계열 비교 일러스트 — 스틱포형·앰플형·병형 시럽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>1회분 확정</b><br/>포장 단위</span>
     <span><b>라벨 표기</b><br/>함량·기준치</span>

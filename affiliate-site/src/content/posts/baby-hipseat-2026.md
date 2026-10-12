@@ -25,7 +25,7 @@ lsiKeywords:
   - 힙시트 몇 개월
   - 힙시트 체중 제한
   - 휴대용 힙시트
-heroImage: /images/baby-hipseat-2026-1.png
+heroImage: /images/baby-hipseat-2026-1.webp
 heroImageAlt: 아기 힙시트 하중 경로·벨트 폭·월령 범위 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -156,7 +156,7 @@ draft: false
 어린이제품의 안전 관리 근거는 [국가기술표준원](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에서 확인할 수 있고, 인증번호가 표기된 경우 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 아기를 안는 자세 자체의 권고는 [국제고관절이형성증협회(IHDI)](https://hipdysplasia.org) 공개 자료를, 표시·품질 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/baby-hipseat-2026-2.png" alt="아기 힙시트 3종 착용 구조 비교 일러스트 — 슬링형·어깨끈 결합형·허리 벨트 단독 선반형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-hipseat-2026-2.webp" alt="아기 힙시트 3종 착용 구조 비교 일러스트 — 슬링형·어깨끈 결합형·허리 벨트 단독 선반형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>하중</b><br/>흐르는 경로</span>
     <span><b>벨트</b><br/>폭·둘레</span>

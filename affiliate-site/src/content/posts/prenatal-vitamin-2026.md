@@ -26,7 +26,7 @@ lsiKeywords:
   - 임산부 비타민 디시
   - 임산부 비타민 d 5000iu
   - 임산부 비타민 d 언제 까지
-heroImage: /images/prenatal-vitamin-2026-1.png
+heroImage: /images/prenatal-vitamin-2026-1.webp
 heroImageAlt: 임산부 비타민 D·C·종합 멀티 시기별 권장량 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -140,7 +140,7 @@ sources:
 핵심은 **비타민 D는 한국 임산부의 부족률이 가장 높다**는 점이다. 한국 일조량과 실내 활동 비중을 감안하면 식사·자연 합성만으로 600IU 충족이 어려운 경우가 다수이며, [산부인과](https://www.ksog.org) 정기 검사 시 혈중 25-OH 비타민 D 농도(20ng/mL 미만 시 결핍)에 따라 단일 보충 권고가 일반화돼 있다. **비타민 A는 정반대로 과량 보충 시 기형 위험이 보고**되므로 종합 영양제 외 별도 보충은 권장되지 않는다.
 
 <figure class="infographic">
-  <img src="/images/prenatal-vitamin-2026-1.png" alt="임산부 비타민 D·C·B군 권장량 시기별 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/prenatal-vitamin-2026-1.webp" alt="임산부 비타민 D·C·B군 권장량 시기별 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>비타민 D</b><br/>600IU · 전 기간</span>
     <span><b>비타민 C</b><br/>100mg · 항산화 보조</span>
@@ -212,7 +212,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/prenatal-vitamin-2026-2.png" alt="임산부 비타민 종합 멀티·콜린 B군 1박스·2박스 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/prenatal-vitamin-2026-2.webp" alt="임산부 비타민 종합 멀티·콜린 B군 1박스·2박스 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>중후기 통합</b><br/>맘스포뮬러 · 32,000원</span>
     <span><b>B군 입문</b><br/>리얼그램 1박스 · 22,620원</span>

@@ -108,7 +108,7 @@ tags: ["${ARG_CATEGORY}", "TODO 태그"]
 mainKeyword: "${ARG_KEYWORD}"
 lsiKeywords:
 ${lsiBlock}
-heroImage: "TODO Unsplash URL or /images/${slug}-hero.png"
+heroImage: "/images/${slug}-1.webp"
 heroImageAlt: "${ARG_KEYWORD} 관련 설명"
 tldr:
   - "TODO 첫 줄: 결론을 한 문장으로"
@@ -147,7 +147,7 @@ sources:
 | 값 | 값 | 값 |
 
 <figure class="infographic">
-  <img src="/images/${slug}-1.png" alt="${ARG_KEYWORD} 인포그래픽 1" loading="lazy" width="800" height="450" />
+  <img src="/images/${slug}-2.webp" alt="${ARG_KEYWORD} 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>라벨1</b><br/>설명1</span>
     <span><b>라벨2</b><br/>설명2</span>

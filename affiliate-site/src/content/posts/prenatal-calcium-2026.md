@@ -24,7 +24,7 @@ lsiKeywords:
   - 임산부 칼슘 철분 같이
   - 임산부 칼슘 순위
   - 임산부 칼슘 디시
-heroImage: /images/prenatal-calcium-2026-1.png
+heroImage: /images/prenatal-calcium-2026-1.webp
 heroImageAlt: 임산부 칼슘 형태·동반 성분·섭취 시기 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -136,7 +136,7 @@ sources:
 임산부 칼슘은 [식품의약품안전처](https://www.mfds.go.kr)가 고시한 건강기능식품 기능성 원료 "칼슘"을 쓰는 제품이며, [보건복지부·한국영양학회](https://www.mohw.go.kr)의 한국인 영양소 섭취기준과 [식품안전나라](https://www.foodsafetykorea.go.kr)의 표시·섭취량 기준이 함께 참고된다. **"임신중독증 예방"·"다리 쥐 완화"·"태아 골격 발달 촉진" 같은 표현은 쓸 수 없다.** 원소칼슘 함량·형태·1일 섭취량·상한섭취량 같은 객관 표시와 라벨 준수가 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/prenatal-calcium-2026-2.png" alt="임산부 칼슘 3종 비교 일러스트 — 진입가 올인원·임산부 라인 3종·K2 포함 4종 90정 2개입" loading="lazy" width="800" height="450" />
+  <img src="/images/prenatal-calcium-2026-2.webp" alt="임산부 칼슘 3종 비교 일러스트 — 진입가 올인원·임산부 라인 3종·K2 포함 4종 90정 2개입" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태·흡수 조건</b><br/>탄산·구연산·원소칼슘</span>
     <span><b>동반 성분 설계</b><br/>Mg·비타민D·K2</span>

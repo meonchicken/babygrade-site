@@ -24,7 +24,7 @@ lsiKeywords:
   - 이유식 디시
   - 이유식 시작 시기
   - 영유아식 식약처
-heroImage: /images/weaning-food-stages-2026-1.png
+heroImage: /images/weaning-food-stages-2026-1.webp
 heroImageAlt: 이유식 4단계(초·중·후·완료기) + 알러지 가이드 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -135,7 +135,7 @@ sources:
 **단계 전환 신호**는 (1) 영아의 식품 거부 빈도 감소, (2) 입자가 큰 식품 수용, (3) 분량 증가 요구, (4) 식사 후 만족도 표시 같은 행동 신호다. 절대 월령 기준이 아니며 영아의 적응 정도에 따라 1~2주 조정이 표준이다. WHO 보완식 가이드도 단계 전환을 영아의 신호 기반으로 조정하도록 권고한다.
 
 <figure class="infographic">
-  <img src="/images/weaning-food-stages-2026-1.png" alt="이유식 4단계 + 알러지 가이드 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/weaning-food-stages-2026-1.webp" alt="이유식 4단계 + 알러지 가이드 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>초기 4~6m</b><br/>미음형 1회</span>
     <span><b>중기 7~9m</b><br/>죽형 2회</span>

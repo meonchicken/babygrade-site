@@ -24,7 +24,7 @@ lsiKeywords:
   - 가정용 아기 수영장
   - 아기 풀장 크기
   - 아기 풀장 순위
-heroImage: /images/baby-pool-2026-1.png
+heroImage: /images/baby-pool-2026-1.webp
 heroImageAlt: 아기 풀장 안전 구조·크기와 수심·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ sources:
 | 소형 욕조형 | 얕은 수심·소형 | 영아 첫 물놀이·욕실 | 활동량 많은 유아 |
 
 <figure class="infographic">
-  <img src="/images/baby-pool-2026-1.png" alt="아기 풀장 안전 구조·크기와 수심·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-pool-2026-1.webp" alt="아기 풀장 안전 구조·크기와 수심·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>다중 챔버·미끄럼·배수</span>
     <span><b>크기와 수심</b><br/>연령·공간 적합</span>

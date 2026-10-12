@@ -13,7 +13,7 @@ lsiKeywords:
   - "좌식 수유의자"
   - "수유 안락의자"
   - "수유의자 디시"
-heroImage: "/images/nursing-chair-2026-1.png"
+heroImage: "/images/nursing-chair-2026-1.webp"
 heroImageAlt: "수유 의자 커버 일러스트 — 등받이와 팔걸이 구조가 드러난 1인용 안락의자"
 tldr:
   - "12개월 동안 수유로 이 의자에 앉아 있는 시간은 약 670시간으로 역산된다. 표시가 79,800원~182,900원(2.29배)을 이 시간으로 나누면 시간당 119원~273원이며, 값 차이는 원가가 아니라 구조에서 회수해야 한다."
@@ -83,7 +83,7 @@ sources:
 가구·생활용품의 안전관리 제도는 [국가기술표준원](https://www.kats.go.kr) 안내에서 확인할 수 있고, 인증·신고번호가 표기된 제품이면 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 가구 표시·품질 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/nursing-chair-2026-2.png" alt="수유 의자 3종 구조 비교 일러스트 — 고정형 1인 소파·흔들의자·발받침 포함 리클라이너" loading="lazy" width="800" height="450" />
+  <img src="/images/nursing-chair-2026-2.webp" alt="수유 의자 3종 구조 비교 일러스트 — 고정형 1인 소파·흔들의자·발받침 포함 리클라이너" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>등받이</b><br/>젖힘 각도</span>
     <span><b>팔 지지</b><br/>좌면 기준 높이</span>

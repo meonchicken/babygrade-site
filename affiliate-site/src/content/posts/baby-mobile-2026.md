@@ -25,7 +25,7 @@ lsiKeywords:
   - 아기 모빌 가격
   - 아기 흑백 모빌 언제까지
   - 신생아 모빌 추천
-heroImage: /images/baby-mobile-2026-1.png
+heroImage: /images/baby-mobile-2026-1.webp
 heroImageAlt: 아기 모빌 흑백·컬러·자동 발달 단계별 시기 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -165,7 +165,7 @@ sources:
 신생아는 출생 직후 시각이 매우 흐릿한 상태이며, 명암 대비가 큰 흑백 패턴에 시선을 고정하는 행동이 만 1~2개월부터 관찰된다. 컬러 식별은 만 3~4개월 무렵 본격화되며, 청각은 출생 직후부터 작동하지만 멜로디·소리 자극을 즐기는 시기는 6개월 이후가 일반적이다. 단계 전환 비용이 부담스럽다면 **0~12개월 흑백·컬러 교체형 풀세트**(타이니러브 등 글로벌 라인)가 1회 구매로 단계를 모두 커버한다.
 
 <figure class="infographic">
-  <img src="/images/baby-mobile-2026-1.png" alt="아기 모빌 흑백·컬러·자동 발달 단계별 시기 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-mobile-2026-1.webp" alt="아기 모빌 흑백·컬러·자동 발달 단계별 시기 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>흑백 (0~3개월)</b><br/>명암 대비 시각 자극</span>
     <span><b>컬러 (3~6개월)</b><br/>밝은 단색 색 인식</span>
@@ -237,7 +237,7 @@ KC 어린이제품 안전특별법은 만 13세 이하 어린이가 사용할 �
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-mobile-2026-2.png" alt="아기 모빌 가성비 입문·표준 흑백·풀세트 프리미엄 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-mobile-2026-2.webp" alt="아기 모빌 가성비 입문·표준 흑백·풀세트 프리미엄 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 입문</b><br/>꿈나라 · 43,500원</span>
     <span><b>표준 흑백</b><br/>코니스 · 93,900원</span>

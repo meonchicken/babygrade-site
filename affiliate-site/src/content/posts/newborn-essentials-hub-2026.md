@@ -26,7 +26,7 @@ lsiKeywords:
   - 신생아 용품 등급표
   - 출산 준비물 리스트
   - 신생아 필수품
-heroImage: /images/newborn-essentials-hub-2026-1.png
+heroImage: /images/newborn-essentials-hub-2026-1.webp
 heroImageAlt: 신생아 용품 7대 카테고리 KC 인증 평가 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -132,7 +132,7 @@ sources:
 KC 인증은 「어린이제품 안전특별법」상 의무 표시이며, 기저귀·분유는 식약처 「식품위생법」·「화장품법」 별도 규제 대상입니다. **모든 카테고리에서 가격은 등급 결정의 직접 요인이 아니며**, KC 인증·재질 시험성적서·연령 표시가 객관 등급의 결정 요소입니다.
 
 <figure class="infographic">
-  <img src="/images/newborn-essentials-hub-2026-1.png" alt="신생아 용품 7대 카테고리 KC 인증 평가 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-essentials-hub-2026-1.webp" alt="신생아 용품 7대 카테고리 KC 인증 평가 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>위생·수유</b><br/>기저귀 / 분유 / 젖병 / 소독기</span>
     <span><b>의류·침구</b><br/>배냇저고리 / 침대 / 매트리스</span>
@@ -262,7 +262,7 @@ KC 인증 통과 라인 사이에서는 안전성 객관 차이는 작고, 사�
 모빌·바운서·러그매트는 출산 직전 미리 구매보다 1~2개월 후 영아 발달 단계 확인 후 구매하는 패턴이 유리합니다. 영아 시각·청각 반응을 확인한 후 적합한 라인을 선택할 수 있기 때문입니다.
 
 <figure class="infographic">
-  <img src="/images/newborn-essentials-hub-2026-2.png" alt="신생아 용품 출산 준비 3단계 분할 구매 의사결정 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-essentials-hub-2026-2.webp" alt="신생아 용품 출산 준비 3단계 분할 구매 의사결정 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>1단계</b><br/>출산 직전 1주<br/>필수 30종</span>
     <span><b>2단계</b><br/>출산 직후 1개월<br/>보강 20종</span>

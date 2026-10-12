@@ -24,7 +24,7 @@ lsiKeywords:
   - 면 복대
   - 산후 복부벨트
   - 산후 복대 디시
-heroImage: /images/postpartum-belly-band-2026-1.png
+heroImage: /images/postpartum-belly-band-2026-1.webp
 heroImageAlt: 산후 복대 압박 단수·착용 시기·소재 3축 등급 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -120,7 +120,7 @@ draft: false
 평가와 별개로 **분류 확인 항목**을 둔다. 산후 복대는 대부분 공산품(의류·생활용품)으로 판매되지만, 일부는 의료기기로 신고된 「의료용 복대」로 판매된다. 상세페이지에 의료기기 표시가 있으면 [식약처 의료기기전자민원창구](https://emedi.mfds.go.kr)에서 품목과 신고 번호를 조회할 수 있고, 표시가 없으면 의료 목적의 효능을 내세울 수 없는 일반 용품으로 읽으면 된다.
 
 <figure class="infographic">
-  <img src="/images/postpartum-belly-band-2026-2.png" alt="산후 복대 3가지 구조 비교 일러스트 — 면 복대·다중 밴드형·본체와 보조벨트형" loading="lazy" width="800" height="450" />
+  <img src="/images/postpartum-belly-band-2026-2.webp" alt="산후 복대 3가지 구조 비교 일러스트 — 면 복대·다중 밴드형·본체와 보조벨트형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>압박 단수</b><br/>몇 단계로 조절하나</span>
     <span><b>착용 시기</b><br/>몇 주차까지 쓰나</span>

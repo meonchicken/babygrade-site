@@ -21,7 +21,7 @@ lsiKeywords:
   - 아기 빨대컵 언제부터
   - 6개월 아기 빨대컵
   - 미국 아기 빨대컵
-heroImage: /images/baby-straw-cup-2026-1.png
+heroImage: /images/baby-straw-cup-2026-1.webp
 heroImageAlt: 아기 빨대컵 소재 안전·흘림방지·세척 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -108,7 +108,7 @@ sources:
 소재 표기는 객관 정보이며, **"PPSU라서 안전" "면역·발달에 좋다" 같은 단정 표현은 쓸 수 없다.** PPSU·BPA-Free는 소재가 무엇인지 알려주는 표기일 뿐 효능을 보장하지 않는다. 실제 내열 온도·소독 가능 방식·교체 부품 호환은 제품 안내가 우선이며, 빨대·밸브는 마모·곰팡이 우려가 있어 주기적 세척과 교체가 전제다.
 
 <figure class="infographic">
-  <img src="/images/baby-straw-cup-2026-1.png" alt="아기 빨대컵 소재 안전·흘림방지·세척 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-straw-cup-2026-1.webp" alt="아기 빨대컵 소재 안전·흘림방지·세척 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>소재 안전</b><br/>PPSU·BPA-Free</span>
     <span><b>흘림방지</b><br/>원터치 밸브·역류 방지</span>

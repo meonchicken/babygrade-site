@@ -24,7 +24,7 @@ lsiKeywords:
   - 체중계 5g 10g 차이
   - 영아 체중 증가량
   - 아기 체중계 대여
-heroImage: /images/newborn-scale-2026-1.png
+heroImage: /images/newborn-scale-2026-1.webp
 heroImageAlt: 신생아 체중계 측정 단위·최대 하중·트레이 구조 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -137,7 +137,7 @@ sources:
 전기를 쓰는 어린이용 제품은 [국가기술표준원](https://www.kats.go.kr)이 관장하는 안전 인증 대상이며, 인증 번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 한편 「영아용 체중계」로 허가된 의료기기 품목은 [식품의약품안전처 의료기기 전자민원창구](https://emed.mfds.go.kr)에서 별도로 조회되며, **쿠팡에서 팔리는 가정용 유아 저울 대부분은 여기에 해당하지 않는 일반 공산품**이다. 사양표에서 확인 가능한 객관 표시는 **표시 단위(g) · 최대 하중(kg) · 트레이 크기 · 영점 조정 기능 · 전원 방식 · 인증 번호**다.
 
 <figure class="infographic">
-  <img src="/images/newborn-scale-2026-2.png" alt="신생아 체중계 3종 비교 일러스트 — 기본 디지털형·앱 기록형·전문 계측 브랜드형" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-scale-2026-2.webp" alt="신생아 체중계 3종 비교 일러스트 — 기본 디지털형·앱 기록형·전문 계측 브랜드형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>측정 단위</b><br/>5g·10g·구간별 표시</span>
     <span><b>최대 하중</b><br/>20kg·30kg·사용 기간</span>

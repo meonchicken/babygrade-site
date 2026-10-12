@@ -5,6 +5,15 @@
 
 ---
 
+## 🖼 이미지 경량화 — webp 전환 (2026-10-12)
+
+- **증상**: 이미지 로딩이 수십 초. 진단 결과 두 원인 — ① KT 회선에서 Cloudflare 가 babygrade.kr 을 **SEA(시애틀) PoP** 로 서빙(40KB/s, 같은 회선 cdnjs 는 ICN 7MB/s) ② Flux PNG 1344×768 **장당 1.2MB** 를 400×225 카드·64×48 썸네일에 그대로 사용(홈 9.4MB · 글 3.9MB).
+- **조치(②)**: `content-pipeline/optimize-images.js` 신설 → 275장 전부 `.webp`(1344)·`-800`·`-400` + 히어로 `.jpg`(OG) 변환(155MB → 11MB). 템플릿 srcset(`local-images.ts`) · 본문 srcset(`rehype-local-img.mjs`) · `_headers` 30일 캐시. 발행 경로는 `generateArticleImage` 가 PNG → webp 후 PNG 삭제. 결과 홈 16장 **62KB**, 글 1편 **약 80KB**.
+- **① 은 코드로 못 고친다**: 무료 플랜 + KT 피어링. Pro 플랜이면 보통 ICN. 다른 ISP 에서 재측정 필요.
+- 기존 PNG 275장은 색인된 URL 보호를 위해 유지(참조는 0). homegrade·doggrade 동일 구조 → `~/Developer/부업마스터/어필리에이트/IMAGE-PERF-PLAYBOOK.md`.
+
+---
+
 ## 🔁 매주 월요일 데이터 리프레시 (2026-07-06 신설)
 
 > **주간 발행 계획 = 매주 월요일 DataForSEO+네이버 데이터로 재산정.** 큰 클러스터 전략은 유지, 시즌성·검색량 변동에 따라 주마다 조금씩 조정.

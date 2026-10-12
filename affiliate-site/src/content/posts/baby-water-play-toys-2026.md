@@ -23,7 +23,7 @@ lsiKeywords:
   - 물놀이 완구 KC 인증
   - 아기 목욕 완구
   - 아기 물놀이 장난감 순위
-heroImage: /images/baby-water-play-toys-2026-1.png
+heroImage: /images/baby-water-play-toys-2026-1.webp
 heroImageAlt: 아기 물놀이 장난감 소재 안전·놀이 유형·세척 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 | 캐릭터 세트형 | 캐릭터·다구성·가성비 | 흥미 유도·여러 개 필요 | 단일 고급 완구 선호 |
 
 <figure class="infographic">
-  <img src="/images/baby-water-play-toys-2026-1.png" alt="아기 물놀이 장난감 소재 안전·놀이 유형·세척 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-water-play-toys-2026-1.webp" alt="아기 물놀이 장난감 소재 안전·놀이 유형·세척 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>소재 안전</b><br/>실리콘·BPA-Free·KC</span>
     <span><b>놀이 유형</b><br/>목욕·야외·캐릭터</span>

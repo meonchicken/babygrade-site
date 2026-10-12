@@ -14,7 +14,7 @@ lsiKeywords:
   - "아기 워시앤샴푸"
   - "약산성 바디워시"
   - "무향 아기 바디워시"
-heroImage: "/images/baby-body-wash-2026-1.png"
+heroImage: "/images/baby-body-wash-2026-1.webp"
 heroImageAlt: "아기 바디워시 커버 일러스트 — 펌프 용기와 거품 접시가 놓인 욕실 선반"
 tldr:
   - "이 품목에서 값을 가르는 것은 표시가가 아니라 용량 단가다. 비교한 4종을 원/100mL로 환산하면 999원에서 3,960원까지 4.0배가 벌어지는데, 표시가 순위와 단가 순위는 서로 어긋난다. 표시가 2위인 400mL 제품이 단가로는 3위로 내려간다."
@@ -109,7 +109,7 @@ sources:
 화장품의 표시·광고 관리 기준은 [식품의약품안전처](https://www.mfds.go.kr) 안내에서 확인할 수 있고, 영유아 피부 세정 빈도에 대한 공개 권고는 [대한피부과학회](https://www.derma.or.kr) 자료를 참고했다. 효능을 단정하는 표현의 허용 범위는 [공정거래위원회](https://www.ftc.go.kr) 표시광고 심사지침이 다룬다.
 
 <figure class="infographic">
-  <img src="/images/baby-body-wash-2026-2.png" alt="아기 바디워시 3종 제형 비교 일러스트 — 대용량 펌프 용기·중형 워시 용기·거품 펌프 용기" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-body-wash-2026-2.webp" alt="아기 바디워시 3종 제형 비교 일러스트 — 대용량 펌프 용기·중형 워시 용기·거품 펌프 용기" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>용량 단가</b><br/>원/100mL</span>
     <span><b>제형·토출</b><br/>1회 사용량</span>

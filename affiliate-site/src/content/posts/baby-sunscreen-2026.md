@@ -24,7 +24,7 @@ lsiKeywords:
   - SPF50 아기 선크림
   - 논나노 무기자차
   - 아기 선크림 순위
-heroImage: /images/baby-sunscreen-2026-1.png
+heroImage: /images/baby-sunscreen-2026-1.webp
 heroImageAlt: 아기 선크림 자외선 차단 지수·저자극 세척·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -130,7 +130,7 @@ sources:
 | 워셔블 | 물·땀에 닦기 쉬움 | 물놀이·야외 활동 잦음 | 워터프루프 강력 고정 선호 |
 
 <figure class="infographic">
-  <img src="/images/baby-sunscreen-2026-1.png" alt="아기 선크림 자외선 차단 지수·저자극 세척·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-sunscreen-2026-1.webp" alt="아기 선크림 자외선 차단 지수·저자극 세척·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>차단 지수</b><br/>SPF·PA·무기자차</span>
     <span><b>저자극 세척</b><br/>논나노·눈시림·워셔블</span>

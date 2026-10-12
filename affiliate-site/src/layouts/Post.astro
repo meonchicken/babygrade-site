@@ -3,6 +3,7 @@ import Base from './Base.astro';
 import { render, getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { proxyImage, absoluteProxyImage } from '../utils/image-proxy';
+import { localSrcset, ogImageFor } from '../utils/local-images';
 import { catUrl } from '../utils/categories';
 
 interface Props {
@@ -56,8 +57,12 @@ const sameCategory = others.filter((p) => p.data.category === data.category).sor
 const fillers = others.filter((p) => p.data.category !== data.category).sort(byRecent);
 const relatedPosts = [...sameCategory, ...fillers].slice(0, 4);
 
+// 히어로: <img> 는 webp 변형(srcset), og:image · Schema 는 스크랩 호환용 JPEG 사본 (src/utils/local-images.ts)
+const heroSrc = proxyImage(data.heroImage);
+const heroOg = ogImageFor(data.heroImage);
+
 // Schema.org
-const absoluteHeroImage = absoluteProxyImage(data.heroImage, siteOrigin);
+const absoluteHeroImage = heroOg ? new URL(heroOg, siteOrigin).href : '';
 const publisherLogo = new URL('/apple-touch-icon.png', Astro.site).href;
 
 const articleSchema = {
@@ -125,7 +130,7 @@ const schemas = [articleSchema, faqSchema, breadcrumbSchema, ...productSchemas];
 const { Content } = await render(post);
 ---
 
-<Base title={data.title} description={data.description} ogImage={proxyImage(data.heroImage)} ogType="article" schemas={schemas}>
+<Base title={data.title} description={data.description} ogImage={heroOg || undefined} ogType="article" schemas={schemas}>
 
   <div class="page-grid">
 
@@ -173,7 +178,7 @@ const { Content } = await render(post);
       </header>
 
       <!-- 피처 이미지 -->
-      <img src={proxyImage(data.heroImage)} alt={data.heroImageAlt} class="hero" loading="eager" width="1200" height="630" />
+      <img src={heroSrc} srcset={localSrcset(heroSrc)} sizes="(min-width: 1200px) 840px, 100vw" alt={data.heroImageAlt} class="hero" loading="eager" fetchpriority="high" decoding="async" width="1200" height="630" />
 
       <!-- 모바일 TOC 토글 -->
       <div class="toc-mobile-wrap">
@@ -251,7 +256,7 @@ const { Content } = await render(post);
           <div class="related-grid">
             {relatedPosts.map((p) => (
               <a href={`/${p.id}/`} class="related-card">
-                <img src={proxyImage(p.data.heroImage)} alt={p.data.title} loading="lazy" width="400" height="225" />
+                <img src={proxyImage(p.data.heroImage)} srcset={localSrcset(proxyImage(p.data.heroImage))} sizes="(max-width: 600px) 100vw, 240px" alt={p.data.title} loading="lazy" decoding="async" width="400" height="225" />
                 <div class="related-card-body">
                   <span class="related-cat">{p.data.category}</span>
                   <p class="related-card-title">{p.data.title}</p>
@@ -288,7 +293,7 @@ const { Content } = await render(post);
             <div class="sidebar-related-label">관련 글</div>
             {relatedPosts.map((p) => (
               <a href={`/${p.id}/`} class="rec-card">
-                <img src={proxyImage(p.data.heroImage)} alt={p.data.title} class="rec-thumb" loading="lazy" width="128" height="96" />
+                <img src={proxyImage(p.data.heroImage)} srcset={localSrcset(proxyImage(p.data.heroImage))} sizes="64px" alt={p.data.title} class="rec-thumb" loading="lazy" decoding="async" width="128" height="96" />
                 <div class="rec-body">
                   <span class="rec-cat">{p.data.category}</span>
                   <div class="rec-title">{p.data.title}</div>

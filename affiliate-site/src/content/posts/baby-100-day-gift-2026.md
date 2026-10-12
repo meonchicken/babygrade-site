@@ -24,7 +24,7 @@ lsiKeywords:
   - 백일 딸랑이 선물
   - 백일 턱받이 선물
   - 가제손수건 선물세트
-heroImage: /images/baby-100-day-gift-2026-1.png
+heroImage: /images/baby-100-day-gift-2026-1.webp
 heroImageAlt: 백일 선물 예산대별·실용도 비교 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -128,7 +128,7 @@ draft: false
 입·손에 닿는 선물은 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 KC 인증 여부를 조회할 수 있다. 어린이제품은 [어린이제품 안전 특별법](https://www.law.go.kr/법령/어린이제품안전특별법)에 따라 안전인증·안전확인 표시 대상이 정해져 있으며, 표시 읽는 법 전반은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/baby-100-day-gift-2026-2.png" alt="백일 선물 4종 비교 일러스트 — 가제손수건·턱받이·딸랑이·기념품 액자" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-100-day-gift-2026-2.webp" alt="백일 선물 4종 비교 일러스트 — 가제손수건·턱받이·딸랑이·기념품 액자" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>예산대</b><br/>관계별 금액</span>
     <span><b>실용도</b><br/>백일 이후 사용 기간</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 임산부 복대 디시
   - 산전 복대 멜빵형
   - 임산부 복대 비교
-heroImage: /images/maternity-support-belt-2026-1.png
+heroImage: /images/maternity-support-belt-2026-1.webp
 heroImageAlt: 임산부 복대 지지 방식·착용감 통기·시기 사이즈 호환 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 임산부 복대는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 생활용품(섬유·신축 밴드) 안전 정보와 [보건복지부](https://www.mohw.go.kr)의 임신·출산 건강관리 안내 맥락에서 보며, **"요통 치료"·"태아 보호"·"100% 교정" 같은 효능·절대 표현은 쓸 수 없다.** 신축·메쉬·벨크로 조절 같은 객관 표기와 과압박 회피·필요 시 착용 같은 사용 원칙이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/maternity-support-belt-2026-2.png" alt="임산부 복대 유형별 비교 일러스트 — 허리밴드형·고급 허리보호형·멜빵형" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-support-belt-2026-2.webp" alt="임산부 복대 유형별 비교 일러스트 — 허리밴드형·고급 허리보호형·멜빵형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>지지 방식</b><br/>허리·멜빵·배받침</span>
     <span><b>착용감 통기</b><br/>신축·메쉬·조절</span>

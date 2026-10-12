@@ -24,7 +24,7 @@ lsiKeywords:
   - 카시트 다리 받침
   - 차량용 아기 발받침
   - 카시트 발받침대 필요성
-heroImage: /images/carseat-footrest-2026-1.png
+heroImage: /images/carseat-footrest-2026-1.webp
 heroImageAlt: 카시트 발받침대 높이 조절·고정 방식·발판 각도 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -142,7 +142,7 @@ draft: false
 어린이제품 안전 인증 표시는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있고, 카시트 장착 절차와 확인 항목은 [도로교통공단](https://www.koroad.or.kr) 공개 안내를 따랐다. 연령별 다리 길이는 [사이즈코리아](https://sizekorea.kr) 인체치수조사 공개 자료의 구간을, 차량용품 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 참고했다.
 
 <figure class="infographic">
-  <img src="/images/carseat-footrest-2026-2.png" alt="카시트 발받침대 3종 비교 일러스트 — 걸이형·거치형·링크형 지지 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/carseat-footrest-2026-2.webp" alt="카시트 발받침대 3종 비교 일러스트 — 걸이형·거치형·링크형 지지 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>높이</b><br/>조절 범위 cm</span>
     <span><b>고정</b><br/>지지점 위치</span>

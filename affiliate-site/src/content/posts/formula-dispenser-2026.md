@@ -24,7 +24,7 @@ lsiKeywords:
   - 분유포트 디시
   - 분유포트 세척
   - 분유포트 비교
-heroImage: /images/formula-dispenser-2026-1.png
+heroImage: /images/formula-dispenser-2026-1.webp
 heroImageAlt: 분유 포트 보온·온도 정확도·안전 위생·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -125,7 +125,7 @@ sources:
 분유 포트는 [식품의약품안전처](https://www.mfds.go.kr) 기준의 **식품용 기구·전기 가전**으로, 구매 시 접촉 재질 표기와 [전기용품 안전인증(KC)](https://www.kats.go.kr) 표기를 확인하는 것이 표준이다. **"세균 100% 제거"·"항상 정확한 온도"·"완벽 멸균" 같은 절대 표현·효능 단정은 쓸 수 없다.** 표시 온도와 실제 온도 차이를 고려해 손목 확인 후 수유하고, 내부 용기는 정기적으로 세척한다.
 
 <figure class="infographic">
-  <img src="/images/formula-dispenser-2026-2.png" alt="분유 포트 유형별 비교 일러스트 — 휴대용·올인원·정온 보온" loading="lazy" width="800" height="450" />
+  <img src="/images/formula-dispenser-2026-2.webp" alt="분유 포트 유형별 비교 일러스트 — 휴대용·올인원·정온 보온" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>보온·정확도</b><br/>정온 유지·재가열</span>
     <span><b>안전 위생</b><br/>세척·소독·재질</span>

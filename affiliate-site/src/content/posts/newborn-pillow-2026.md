@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 베개 사용 시기
   - 메모리폼 아기 베개
   - 짱구베개 후기
-heroImage: /images/newborn-pillow-2026-1.png
+heroImage: /images/newborn-pillow-2026-1.webp
 heroImageAlt: 짱구베개·신생아 베개 권장 월령·통기 소재·두상 곡면 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -134,7 +134,7 @@ sources:
 | 통기 메시 프리미엄 | 통기·커버 세탁 | 위생·통기 우선·장기 사용 | 가성비 우선 단기 |
 
 <figure class="infographic">
-  <img src="/images/newborn-pillow-2026-1.png" alt="짱구베개·신생아 베개 월령·통기·곡면 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-pillow-2026-1.webp" alt="짱구베개·신생아 베개 월령·통기·곡면 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>권장 월령</b><br/>수면/각성 구분</span>
     <span><b>통기 소재</b><br/>메시·커버 세탁</span>

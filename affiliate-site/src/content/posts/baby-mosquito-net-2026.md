@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 그늘막 모기장
   - 모기장 통기성
   - 아기 모기장 순위
-heroImage: /images/baby-mosquito-net-2026-1.png
+heroImage: /images/baby-mosquito-net-2026-1.webp
 heroImageAlt: 아기 모기장 설치 방식·통기와 안전·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -127,7 +127,7 @@ sources:
 | 그늘막 겸용형 | 실내외 겸용·이동식 | 실외 그늘+모기 동시 | 촘촘 밀폐 텐트 선호 |
 
 <figure class="infographic">
-  <img src="/images/baby-mosquito-net-2026-1.png" alt="아기 모기장 설치 방식·통기와 안전·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-mosquito-net-2026-1.webp" alt="아기 모기장 설치 방식·통기와 안전·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>설치 방식</b><br/>원터치·침대·텐트</span>
     <span><b>통기와 안전</b><br/>메쉬·통기·끼임</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 스텐 유아 수저
   - 아기 수저 디시
   - 아기 수저 비교
-heroImage: /images/baby-spoon-fork-2026-1.png
+heroImage: /images/baby-spoon-fork-2026-1.webp
 heroImageAlt: 아기 수저 자기주도 단계·소재 안전·그립 휴대 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -120,7 +120,7 @@ sources:
 아기 수저는 [식품의약품안전처](https://www.mfds.go.kr)·[국가기술표준원](https://www.kats.go.kr)이 안내하는 식품용 기구·어린이제품 안전 표시 대상으로, **"두뇌 발달"·"소근육 향상 보장"·"100% 무해" 같은 효능·절대 표현은 쓸 수 없다.** 식품용 실리콘·스텐·BPA-Free 같은 객관 표기와 앉아서·관찰 하 사용이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/baby-spoon-fork-2026-2.png" alt="아기 수저 유형별 비교 일러스트 — 자기주도 휘어지는·실리콘 스텐 입문·교정 젓가락" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-spoon-fork-2026-2.webp" alt="아기 수저 유형별 비교 일러스트 — 자기주도 휘어지는·실리콘 스텐 입문·교정 젓가락" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>자기주도 단계</b><br/>휘어짐·스텐·젓가락</span>
     <span><b>소재 안전</b><br/>실리콘·스텐·BPA-Free</span>

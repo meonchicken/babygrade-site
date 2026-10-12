@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기띠 사용시기
   - 아기띠 추천 디시
   - 아기띠 추천 클리앙
-heroImage: /images/baby-carrier-2026-1.png
+heroImage: /images/baby-carrier-2026-1.webp
 heroImageAlt: 아기띠 고관절 안전·형태·월령 호환 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -142,7 +142,7 @@ sources:
 | 힙시트+버클 결합 | 받침 + 어깨 벨트 분산 | 허리 부담·무게 분산 필요 | 초경량 휴대 우선 |
 
 <figure class="infographic">
-  <img src="/images/baby-carrier-2026-1.png" alt="아기띠 고관절·형태·월령 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-carrier-2026-1.webp" alt="아기띠 고관절·형태·월령 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>고관절 안전</b><br/>M자 다리·넓은 좌석</span>
     <span><b>형태</b><br/>힙시트·슬링·4in1</span>

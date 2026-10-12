@@ -26,7 +26,7 @@ lsiKeywords:
   - 아기 욕조 수영
   - 미국 아기 욕조 추천
   - 접이식 아기 욕조
-heroImage: /images/baby-bathtub-2026-1.png
+heroImage: /images/baby-bathtub-2026-1.webp
 heroImageAlt: 아기 욕조 KC 인증·접이식·미끄럼 방지 단계별 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -141,7 +141,7 @@ sources:
 핵심은 **신생아 시기 절대 한순간도 보호자가 자리를 비울 수 없다**는 점이다. 영아 익수 사고는 욕조 수심 2.5cm 수준에서도 발생 가능하다는 미국 소아과학회([AAP](https://www.aap.org)) 보고가 있다. 본 페이지의 3개 제품은 모두 KC 인증 라인이지만 미끄럼 방지·접이성·운영 가성비에서 차이가 있다.
 
 <figure class="infographic">
-  <img src="/images/baby-bathtub-2026-1.png" alt="아기 욕조 KC 인증·미끄럼 방지·접이성 단계별 평가 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bathtub-2026-1.webp" alt="아기 욕조 KC 인증·미끄럼 방지·접이성 단계별 평가 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>KC 인증</b><br/>어린이제품 안전특별법</span>
     <span><b>미끄럼 방지</b><br/>머리받침·논슬립</span>
@@ -213,7 +213,7 @@ KC 인증·BPA-Free 같은 안전 인증 전반의 등급 체계는 [KC 인증�
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-bathtub-2026-2.png" alt="아기 욕조 접이식·컬러 표준·다용도 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bathtub-2026-2.webp" alt="아기 욕조 접이식·컬러 표준·다용도 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 접이식</b><br/>말랑하니 · 26,900원</span>
     <span><b>컬러 표준</b><br/>리틀클라우드 · 29,900원</span>

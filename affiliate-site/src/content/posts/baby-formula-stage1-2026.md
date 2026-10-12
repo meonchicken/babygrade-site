@@ -24,7 +24,7 @@ lsiKeywords:
   - 분유 1단계 비교
   - 영아용 조제식 1단계
   - 0~6개월 분유
-heroImage: /images/baby-formula-stage1-2026-1.png
+heroImage: /images/baby-formula-stage1-2026-1.webp
 heroImageAlt: 분유 1단계 A2·국내·직구 라인 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -151,7 +151,7 @@ A2 분유는 우유 단백질 중 **베타카제인(β-카제인)을 A2 단독 �
 A2 라인은 "소화 적응 관련 표시"가 일부 광고에서 등장하지만, **"소화 개선"·"알러지 완화" 등 효능 인과 표시는 [식품의약품안전처](https://www.mfds.go.kr) 영아용 조제식 표시·광고 가이드라인상 객관적 근거 없이 사용할 수 없는 효능 표시 영역**이다. A2 라인은 일반 1단계 대비 단가가 1.5~2배 수준이며, 첫 분유 선택은 **가정 환경·예산·기존 모유 수유 운영 시나리오를 종합 판단**해 결정하는 것이 표준이다. A2가 모든 가정에 의무는 아니다.
 
 <figure class="infographic">
-  <img src="/images/baby-formula-stage1-2026-1.png" alt="분유 1단계 A2·국내·직구 라인 등급 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-formula-stage1-2026-1.webp" alt="분유 1단계 A2·국내·직구 라인 등급 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>프리미엄 A2</b><br/>에이투밀크 a2플래티넘</span>
     <span><b>표준 A2 묶음</b><br/>뉴오리진 A2 3팩</span>

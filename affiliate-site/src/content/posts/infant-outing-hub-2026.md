@@ -26,7 +26,7 @@ lsiKeywords:
   - 외출용 분유 케이스
   - 아기띠 추천
   - 외출용 기저귀 가방
-heroImage: /images/infant-outing-hub-2026-1.png
+heroImage: /images/infant-outing-hub-2026-1.webp
 heroImageAlt: 영아 외출 용품 4대 카테고리 KC 인증 단계별 평가 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -131,7 +131,7 @@ sources:
 [한국교통안전공단](https://www.kotsa.or.kr) 어린이 보호 장구 가이드상 차량 이동 시 카시트는 의무 사용이며, 신생아부터 만 6세까지 단계별 카시트 또는 R129(아이사이즈) 통합 라인 사용이 표준입니다. **모든 카테고리에서 "완벽 안전", "100% 보호" 같은 단정 표현은 「공정거래위원회 표시광고 심사지침」상 객관 근거 없이 사용할 수 없습니다.**
 
 <figure class="infographic">
-  <img src="/images/infant-outing-hub-2026-1.png" alt="영아 외출 용품 4대 카테고리 KC 인증 평가 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/infant-outing-hub-2026-1.webp" alt="영아 외출 용품 4대 카테고리 KC 인증 평가 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>차량 이동</b><br/>카시트(KC + ECE)</span>
     <span><b>도보 이동</b><br/>유모차 / 아기띠 / 힙시트</span>
@@ -250,7 +250,7 @@ sources:
 외출용은 트라이탄 라인(가벼움), 가정용은 유리 라인(가열·세척 편의)으로 분리 보유하는 패턴이 효율적입니다. 외출용은 1회분 소분 케이스 2~3개 회전이 표준입니다.
 
 <figure class="infographic">
-  <img src="/images/infant-outing-hub-2026-2.png" alt="영아 외출 시나리오별 우선순위 의사결정 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/infant-outing-hub-2026-2.webp" alt="영아 외출 시나리오별 우선순위 의사결정 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>차량 위주</b><br/>카시트 + 휴대용 유모차</span>
     <span><b>도보 위주</b><br/>절충형 유모차 + 아기띠</span>

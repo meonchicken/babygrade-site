@@ -24,7 +24,7 @@ lsiKeywords:
   - 어린이 멀티 비타민 추천
   - 어린이 비타민D 권장량
   - 어린이 비타민C 메가도스
-heroImage: /images/children-vitamin-2026-1.png
+heroImage: /images/children-vitamin-2026-1.webp
 heroImageAlt: 어린이 비타민 비타민D·C·종합 연령별 권장 섭취량 비교 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -149,7 +149,7 @@ sources:
 [질병관리청](https://www.kdca.go.kr) 국민건강영양조사는 한국 어린이의 11~2월 비타민D 결핍률이 일조량이 풍부한 국가 대비 높다고 보고한다. 반면 비타민C·종합 비타민은 균형 식사가 가능한 경우 별도 보충이 필수가 아니라는 것이 대한소아청소년과학회의 일관된 입장이다.
 
 <figure class="infographic">
-  <img src="/images/children-vitamin-2026-1.png" alt="어린이 비타민 비타민D·C·종합 연령별 권장 섭취량 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/children-vitamin-2026-1.webp" alt="어린이 비타민 비타민D·C·종합 연령별 권장 섭취량 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>비타민D</b><br/>1~8세 5μg / 일조량 부족기</span>
     <span><b>비타민C</b><br/>3~5세 40mg / 편식 시</span>
@@ -221,7 +221,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/children-vitamin-2026-2.png" alt="어린이 비타민 종합 대용량·단일 표준·캐릭터 입문 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/children-vitamin-2026-2.webp" alt="어린이 비타민 종합 대용량·단일 표준·캐릭터 입문 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>종합 대용량</b><br/>키즈텐 300g · 86,000원</span>
     <span><b>단일 표준</b><br/>바르니 · 14,400원</span>

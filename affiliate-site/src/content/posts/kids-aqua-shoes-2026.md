@@ -24,7 +24,7 @@ lsiKeywords:
   - 유아 아쿠아슈즈 순위
   - 유아 아쿠아슈즈 가격
   - 유아 아쿠아슈즈 디시
-heroImage: /images/kids-aqua-shoes-2026-1.png
+heroImage: /images/kids-aqua-shoes-2026-1.webp
 heroImageAlt: 유아 아쿠아슈즈 미끄럼방지·통기 배수·KC 인증 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -125,7 +125,7 @@ sources:
 유아 아쿠아슈즈는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 KC 인증 대상이며, [한국소비자원](https://www.kca.go.kr)의 어린이 물놀이용품 안전 정보와 [행정안전부](https://www.mois.go.kr)의 여름철 물놀이 안전수칙 대상이다. **"100% 미끄럼방지"·"완벽 안전" 같은 절대 표현은 쓸 수 없다.** 논슬립 밑창·배수구멍·KC 인증 같은 객관 표기와 실측 사이즈·보호자 관찰 같은 사용 원칙이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/kids-aqua-shoes-2026-2.png" alt="유아 아쿠아슈즈 유형별 비교 일러스트 — KC인증 캐릭터·에어로 메쉬 통기·가성비 베이직" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-aqua-shoes-2026-2.webp" alt="유아 아쿠아슈즈 유형별 비교 일러스트 — KC인증 캐릭터·에어로 메쉬 통기·가성비 베이직" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>미끄럼방지 안전</b><br/>논슬립·배수·발등 고정</span>
     <span><b>통기 배수 소재</b><br/>에어로 메쉬·경량·건조</span>

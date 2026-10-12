@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 바운서 추천
   - 아기 바운서 필요한가요
   - 아기 흔들의자 추천
-heroImage: /images/baby-bouncer-2026-1.png
+heroImage: /images/baby-bouncer-2026-1.webp
 heroImageAlt: 아기 바운서 안전 구조·구동 방식·휴대/각도 조절 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ sources:
 | 전동 스윙형 | 자동 스윙·멜로디·블루투스 | 손 부족·자동 달래기 | 휴대·저예산 우선 |
 
 <figure class="infographic">
-  <img src="/images/baby-bouncer-2026-1.png" alt="아기 바운서 안전 구조·구동 방식·휴대/각도 조절 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bouncer-2026-1.webp" alt="아기 바운서 안전 구조·구동 방식·휴대/각도 조절 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>KC·5점식 벨트</span>
     <span><b>구동 방식</b><br/>수동·진동·전동</span>

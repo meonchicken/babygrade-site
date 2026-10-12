@@ -25,7 +25,7 @@ lsiKeywords:
   - 1종 세척제
   - 젖병세정제 유통기한
   - 거품형 젖병세정제
-heroImage: /images/bottle-cleanser-2026-1.png
+heroImage: /images/bottle-cleanser-2026-1.webp
 heroImageAlt: 젖병 세정제 세척제 종별·제형·헹굼 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -158,7 +158,7 @@ sources:
 세척제의 분류와 기준은 [식품의약품안전처](https://www.mfds.go.kr)의 위생용품의 기준 및 규격을 따르고, 용기에 무엇을 적어야 하는지는 같은 기관의 표시기준이 정한다. 근거 법령은 [국가법령정보센터](https://www.law.go.kr)에서 확인할 수 있는 위생용품 관리법이며, 영유아 기구·용기의 표시 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료가 함께 인용된다.
 
 <figure class="infographic">
-  <img src="/images/bottle-cleanser-2026-2.png" alt="젖병 세정제 3종 제형 비교 일러스트 — 액상 희석형·거품 원액형·대용량 액상형과 젖병솔" loading="lazy" width="800" height="450" />
+  <img src="/images/bottle-cleanser-2026-2.webp" alt="젖병 세정제 3종 제형 비교 일러스트 — 액상 희석형·거품 원액형·대용량 액상형과 젖병솔" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>종별 표시</b><br/>1종·2종</span>
     <span><b>제형</b><br/>거품·액상</span>

@@ -26,7 +26,7 @@ lsiKeywords:
   - 아기 물티슈
   - 캡형 물티슈
   - 무자극 물티슈
-heroImage: /images/newborn-wet-wipes-2026-1.png
+heroImage: /images/newborn-wet-wipes-2026-1.webp
 heroImageAlt: 신생아 물티슈 무자극·캡형·생분해 평가 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -133,7 +133,7 @@ sources:
 | 두께·엠보싱 | 도톰 + 엠보싱 (대변 호환) | 표준 두께 | 얇은 라인 | 사용 시나리오별 호환 |
 
 <figure class="infographic">
-  <img src="/images/newborn-wet-wipes-2026-1.png" alt="신생아 물티슈 4축 등급 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-wet-wipes-2026-1.webp" alt="신생아 물티슈 4축 등급 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>S 등급</b><br/>식약처 신고 + 시험성적서 공개</span>
     <span><b>A 등급</b><br/>자극 시험 통과 + 캡형 보관</span>

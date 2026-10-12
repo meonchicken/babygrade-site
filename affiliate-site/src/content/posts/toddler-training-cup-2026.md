@@ -24,7 +24,7 @@ lsiKeywords:
   - 유아 물컵 세척
   - 유아 물컵 디시
   - 유아 물컵 비교
-heroImage: /images/toddler-training-cup-2026-1.png
+heroImage: /images/toddler-training-cup-2026-1.webp
 heroImageAlt: 유아 물컵 이행기 단계·흘림방지 구조·소재 세척 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 유아 물컵은 [식품의약품안전처](https://www.mfds.go.kr)·[국가기술표준원](https://www.kats.go.kr)이 안내하는 식품용 기구·어린이제품 안전 표시 대상으로, **"흘림 0%"·"새지 않음 100%"·"발달·집중 향상" 같은 절대·효능 표현은 쓸 수 없다.** 단계 적합·흘림방지 구조·분리 세척 같은 객관 표기와 앉아서·관찰 하 사용이 실제 관리의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/toddler-training-cup-2026-2.png" alt="유아 물컵 유형별 비교 일러스트 — 처음 스파우트·360 자기주도·PPSU 빨대" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-training-cup-2026-2.webp" alt="유아 물컵 유형별 비교 일러스트 — 처음 스파우트·360 자기주도·PPSU 빨대" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>이행기 단계</b><br/>스파우트·360·빨대</span>
     <span><b>흘림방지 구조</b><br/>밸브·웨이트볼·실링</span>

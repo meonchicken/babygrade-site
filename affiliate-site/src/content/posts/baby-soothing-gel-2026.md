@@ -25,7 +25,7 @@ lsiKeywords:
   - 아기 쿨링젤
   - 아기 진정 젤
   - 수딩젤 로션 차이
-heroImage: /images/baby-soothing-gel-2026-1.png
+heroImage: /images/baby-soothing-gel-2026-1.webp
 heroImageAlt: 아기 수딩젤 진정 성분·저자극 표시·발림 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -152,7 +152,7 @@ sources:
 수딩젤의 표시·광고 기준은 [식품의약품안전처](https://www.mfds.go.kr)의 화장품 표시·광고 관리 기준을 따르며, 전성분에 적히는 성분명은 [대한화장품협회](https://kcia.or.kr) 성분사전의 표시 명칭 체계를 쓴다. 영유아 제품의 표시 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료가 함께 인용된다. **"아토피 치료"·"태열 완치"·"가려움증 치료" 같은 문구는 화장품 광고에서 쓸 수 없는 의약품적 표현이다.** 제품에서 확인할 것은 전성분 표기와 권장 월령, 그리고 개봉 후 사용기한 표시다.
 
 <figure class="infographic">
-  <img src="/images/baby-soothing-gel-2026-2.png" alt="아기 수딩젤 3종 구성 비교 일러스트 — 젤 로션 하이브리드·쿨링 젤 로션·대용량 알로에 젤" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-soothing-gel-2026-2.webp" alt="아기 수딩젤 3종 구성 비교 일러스트 — 젤 로션 하이브리드·쿨링 젤 로션·대용량 알로에 젤" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>진정 성분</b><br/>알로에·판테놀</span>
     <span><b>저자극 표시</b><br/>향료·에탄올</span>

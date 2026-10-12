@@ -24,7 +24,7 @@ lsiKeywords:
   - 유아 킥보드 몇살
   - 유아 킥보드 가격
   - 유아 킥보드 디시
-heroImage: /images/kids-kick-scooter-2026-1.png
+heroImage: /images/kids-kick-scooter-2026-1.webp
 heroImageAlt: 유아 킥보드 안전 설계·연령 성장 호환·주행 휴대 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -125,7 +125,7 @@ sources:
 유아 킥보드는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 KC 인증과 [한국소비자원](https://www.kca.go.kr)의 어린이 킥보드·스쿠터 안전사고 정보 대상으로, **"100% 안전"·"절대 안 넘어짐" 같은 절대 표현은 쓸 수 없다.** KC 인증·후륜 브레이크·저중심 발판 같은 객관 표기와 헬멧·보호대·평지·보호자 동반 같은 사용 원칙이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/kids-kick-scooter-2026-2.png" alt="유아 킥보드 유형별 비교 일러스트 — 3in1 성장형·접이식 두발형·가성비 발광 입문형" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-kick-scooter-2026-2.webp" alt="유아 킥보드 유형별 비교 일러스트 — 3in1 성장형·접이식 두발형·가성비 발광 입문형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 설계</b><br/>인증·브레이크·저중심</span>
     <span><b>연령 성장 호환</b><br/>세발/두발·높이조절</span>

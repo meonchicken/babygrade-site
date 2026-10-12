@@ -24,7 +24,7 @@ lsiKeywords:
   - 오볼 치발기 추천
   - 손목 치발기 추천
   - 치발기 세척
-heroImage: /images/baby-teether-2026-1.png
+heroImage: /images/baby-teether-2026-1.webp
 heroImageAlt: 아기 치발기 소재 안전·소독/냉장·잡기 설계 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ sources:
 | 손목형 | 손목 착용·흘림 방지 | 외출·바닥 낙하 방지 | 손목 착용 거부 |
 
 <figure class="infographic">
-  <img src="/images/baby-teether-2026-1.png" alt="아기 치발기 소재 안전·소독/냉장·잡기 설계 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-teether-2026-1.webp" alt="아기 치발기 소재 안전·소독/냉장·잡기 설계 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>소재 안전</b><br/>식품용 실리콘·BPA-Free</span>
     <span><b>소독·냉장</b><br/>열탕·냉장·세척</span>

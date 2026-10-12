@@ -24,7 +24,7 @@ lsiKeywords:
   - 자기주도 이유식
   - 흡착 식판
   - BLW 식판
-heroImage: /images/baby-suction-tray-2026-1.png
+heroImage: /images/baby-suction-tray-2026-1.webp
 heroImageAlt: 아기 식판 실리콘·트라이탄·스텐 소재별 흡착력·자기주도 이유식 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -150,7 +150,7 @@ sources:
 [한국소비자원](https://www.kca.go.kr) 어린이 식기 안전성 조사는 **자기주도 이유식 BLW 시작기는 실리콘 흡착 라인, 가정 식사 일반 보관은 스텐·트라이탄, 외출·이동은 트라이탄/실리콘**으로 소재별 분리 사용을 표준으로 안내한다. 실리콘은 흡착 구조에 가장 자주 채택되는 소재이며 -40~230℃ 폭넓은 내열로 전자레인지·식기세척기 호환 라인이 다수다. 트라이탄(Tritan)은 미국 이스트만(Eastman)이 개발한 BPA-Free 코폴리에스터로 투명도·내충격이 모두 우수해 영아·유아 식기 라인에서 채택률이 높다. 스텐은 화학물 용출 우려가 가장 낮지만 흡착 구조 적용이 어렵고 전자레인지 사용이 불가능하다. 도자기는 가정 장기 보관에 안정적이지만 낙하 파손 위험과 무게로 인해 자기주도 이유식 시작기 라인에는 채택률이 낮다.
 
 <figure class="infographic">
-  <img src="/images/baby-suction-tray-2026-1.png" alt="아기 식판 실리콘·트라이탄·스텐 소재별 흡착력·자기주도 이유식 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-suction-tray-2026-1.webp" alt="아기 식판 실리콘·트라이탄·스텐 소재별 흡착력·자기주도 이유식 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>실리콘 흡착</b><br/>자기주도 이유식 BLW 시작기</span>
     <span><b>트라이탄</b><br/>가정 식사·외출 라인</span>
@@ -222,7 +222,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-suction-tray-2026-2.png" alt="아기 식판 가성비 묶음·프리미엄 흡착·올인원 BLW 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-suction-tray-2026-2.webp" alt="아기 식판 가성비 묶음·프리미엄 흡착·올인원 BLW 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 1+1</b><br/>투데이리빙 · 11,800원</span>
     <span><b>프리미엄 흡착</b><br/>퍼기 · 29,700원</span>

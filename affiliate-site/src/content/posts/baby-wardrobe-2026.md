@@ -13,7 +13,7 @@ lsiKeywords:
   - "아기 행거"
   - "유아 옷장"
   - "아기 옷 수납"
-heroImage: "/images/baby-wardrobe-2026-1.png"
+heroImage: "/images/baby-wardrobe-2026-1.webp"
 heroImageAlt: "아기 옷장 커버 일러스트 — 2단 행거와 하단 서랍이 드러나도록 문을 연 흰색 아기 옷장"
 tldr:
   - "아기 옷은 총장이 짧아 성인 옷장 1단 높이(100cm)에서 21~43cm가 그대로 빈다. 사이즈 70 기준 1단에 실제로 필요한 유효 높이는 62cm이므로, 같은 폭이라도 단을 하나 더 넣을 수 있는지가 수납량을 두 배로 가른다."
@@ -85,7 +85,7 @@ sources:
 어린이제품의 안전관리 제도는 [국가기술표준원](https://www.kats.go.kr) 안내에서 확인할 수 있고, KC 인증·신고번호가 표기된 제품이면 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 가구 전도와 관련한 공개 안전 정보는 [한국소비자원](https://www.kca.go.kr) 자료를, 사이즈 환산의 기준이 되는 월령별 신장 구간은 [질병관리청 소아청소년 성장도표](https://www.kdca.go.kr)의 공개 값을 참고했다.
 
 <figure class="infographic">
-  <img src="/images/baby-wardrobe-2026-2.png" alt="아기 옷장 3종 구조 비교 일러스트 — 모듈 행거형·1단 아가장·서랍 결합형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-wardrobe-2026-2.webp" alt="아기 옷장 3종 구조 비교 일러스트 — 모듈 행거형·1단 아가장·서랍 결합형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>단 구성</b><br/>유효 높이</span>
     <span><b>봉·서랍</b><br/>병목 위치</span>

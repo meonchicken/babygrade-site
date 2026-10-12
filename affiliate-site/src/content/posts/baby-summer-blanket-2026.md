@@ -24,7 +24,7 @@ lsiKeywords:
   - 죽부인 대신 아기 이불
   - 쿨메쉬 블랭킷
   - 아기 여름 이불 순위
-heroImage: /images/baby-summer-blanket-2026-1.png
+heroImage: /images/baby-summer-blanket-2026-1.webp
 heroImageAlt: 아기 여름 이불 소재 통기성·안전과 관리·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ sources:
 | 쿨메쉬 가성비형 | 통기·저가 | 가성비·여벌 필요 | 두툼한 보온 필요 |
 
 <figure class="infographic">
-  <img src="/images/baby-summer-blanket-2026-1.png" alt="아기 여름 이불 소재 통기성·안전과 관리·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-summer-blanket-2026-1.webp" alt="아기 여름 이불 소재 통기성·안전과 관리·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>소재 통기성</b><br/>인견·거즈·냉감</span>
     <span><b>안전과 관리</b><br/>KC·세탁·소재</span>

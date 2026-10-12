@@ -24,7 +24,7 @@ lsiKeywords:
   - 쏘서 연령
   - 아기 쏘서 디시
   - 아기 쏘서 비교
-heroImage: /images/baby-saucer-2026-1.png
+heroImage: /images/baby-saucer-2026-1.webp
 heroImageAlt: 아기 쏘서 형태·안전 구조·활동 연령 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -124,7 +124,7 @@ sources:
 쏘서·점퍼루는 [국가기술표준원](https://www.kats.go.kr)·[한국소비자원](https://www.kca.go.kr)이 어린이제품 안전(KC)을 안내해 온 품목으로, 구매 시 높이조절과 고정 구조를 확인하는 것이 표준이다. **"두뇌 발달"·"성장 촉진"·"다리 힘 강화" 같은 발달·효능 단정 표현은 쓸 수 없다.** 목을 가누고 허리 힘이 생긴 뒤 제품 표기 기준으로 시작하고, 1회 사용은 짧게 제한하며 발끝이 바닥에 닿는 높이로 맞춘다.
 
 <figure class="infographic">
-  <img src="/images/baby-saucer-2026-2.png" alt="아기 쏘서 형태별 비교 일러스트 — 정적 쏘서·점프형 점퍼루·겸용" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-saucer-2026-2.webp" alt="아기 쏘서 형태별 비교 일러스트 — 정적 쏘서·점프형 점퍼루·겸용" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>쏘서·점퍼루·겸용</span>
     <span><b>안전 구조</b><br/>고관절·높이조절·미끄럼</span>

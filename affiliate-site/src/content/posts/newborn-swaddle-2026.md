@@ -24,7 +24,7 @@ lsiKeywords:
   - 사계절 속싸개
   - 유기농 속싸개
   - 신생아 속싸개 디시
-heroImage: /images/newborn-swaddle-2026-1.png
+heroImage: /images/newborn-swaddle-2026-1.webp
 heroImageAlt: 신생아 속싸개 고관절 안전·소재·월령 호환 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -142,7 +142,7 @@ sources:
 | 거즈·메쉬 라인 | 얇고 빠른 건조·통기 | 여름·고온다습 | 겨울 보온 라인 |
 
 <figure class="infographic">
-  <img src="/images/newborn-swaddle-2026-1.png" alt="신생아 속싸개 고관절·소재·월령 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-swaddle-2026-1.webp" alt="신생아 속싸개 고관절·소재·월령 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>고관절 안전</b><br/>다리 자유도(M자)</span>
     <span><b>소재</b><br/>유기농 면·통기성</span>

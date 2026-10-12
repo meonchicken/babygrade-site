@@ -25,7 +25,7 @@ lsiKeywords:
   - 신생아 비타민D
   - 6개월 아기 비타민D
   - 아기 비타민D 함량
-heroImage: /images/baby-vitamin-d-2026-1.png
+heroImage: /images/baby-vitamin-d-2026-1.webp
 heroImageAlt: 아기 비타민D 함량 표기·섭취 방식·표시 적합성 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -166,7 +166,7 @@ sources:
 건강기능식품의 기능성 원료 인정과 표시·광고 기준은 [식품의약품안전처](https://www.mfds.go.kr) 공개 자료를 따르고, 개별 제품이 어떤 기능성으로 인정됐는지는 [식품안전나라](https://www.foodsafetykorea.go.kr)에서 조회할 수 있다. 영양소 섭취기준의 비타민D 항목은 [보건복지부·한국영양학회](https://www.mohw.go.kr)가 공개하는 2020 한국인 영양소 섭취기준을, 영유아 대상 표시·광고 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 참고했다.
 
 <figure class="infographic">
-  <img src="/images/baby-vitamin-d-2026-2.png" alt="아기 비타민D 3종 비교 일러스트 — 대용량 스포이드 라인·정량 드롭 라인·소용량 400IU 표기 라인" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-vitamin-d-2026-2.webp" alt="아기 비타민D 3종 비교 일러스트 — 대용량 스포이드 라인·정량 드롭 라인·소용량 400IU 표기 라인" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>함량</b><br/>1회당 IU</span>
     <span><b>방식</b><br/>정량 구조</span>

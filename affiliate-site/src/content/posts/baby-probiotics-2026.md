@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 유산균 순위
   - 아기 유산균 부작용
   - 베이비 프로바이오틱스
-heroImage: /images/baby-probiotics-2026-1.png
+heroImage: /images/baby-probiotics-2026-1.webp
 heroImageAlt: 아기 유산균 월령별 급여 형태·균종 표기·부원료 안전 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -138,7 +138,7 @@ sources:
 아기 유산균은 [식품의약품안전처](https://www.mfds.go.kr)가 고시한 건강기능식품 기능성 원료 "프로바이오틱스"를 쓰는 제품이며, [식품안전나라](https://www.foodsafetykorea.go.kr)의 표시·1일 섭취량 기준과 [한국소비자원](https://www.kca.go.kr)의 영유아 건강기능식품 표시 정보가 함께 참고된다. **"면역력 강화"·"장 건강 개선"·"변비 치료" 같은 표현은 인정 기능성 범위 밖이라 쓸 수 없다.** 균주 표기·보장균수·연령 표기·복합 성분 함량 같은 객관 표시와 라벨의 1일 섭취량 준수가 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/baby-probiotics-2026-2.png" alt="아기 유산균 형태별 비교 일러스트 — 액상 드롭 단품·드롭 2개입·3병세트 구성" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-probiotics-2026-2.webp" alt="아기 유산균 형태별 비교 일러스트 — 액상 드롭 단품·드롭 2개입·3병세트 구성" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>월령별 형태</b><br/>점적·혼합 급여</span>
     <span><b>균종·CFU 표기</b><br/>학명·보장균수</span>

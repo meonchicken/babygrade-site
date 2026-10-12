@@ -13,7 +13,7 @@ lsiKeywords:
   - "누비 겉싸개"
   - "카시트 겉싸개"
   - "사계절 겉싸개"
-heroImage: "/images/newborn-outer-wrap-2026-1.png"
+heroImage: "/images/newborn-outer-wrap-2026-1.webp"
 heroImageAlt: "신생아 겉싸개 커버 일러스트 — 누빔 면과 여밈 구조가 드러나도록 펼쳐 놓은 정사각 겉싸개"
 tldr:
   - "정사각 겉싸개는 대각선으로 쓴다. 규격에 1.414를 곱한 값에서 신장과 머리 여유 10cm를 빼면 발 아래 접어 넣을 여유가 나오고, 75cm 규격은 생후 6개월 구간에서 29cm로 떨어져 고정이 성립하지 않는다."
@@ -85,7 +85,7 @@ sources:
 어린이제품의 안전관리 제도는 [국가기술표준원](https://www.kats.go.kr) 안내에서 확인할 수 있고, KC 인증·신고번호가 표기된 제품이면 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 월령별 신장 기준은 [질병관리청 소아청소년 성장도표](https://www.kdca.go.kr)의 공개 구간을 참고했고, 카시트 착용 기준은 [도로교통공단](https://www.koroad.or.kr) 공개 안내를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/newborn-outer-wrap-2026-2.png" alt="신생아 겉싸개 3종 구조 비교 일러스트 — 두꺼운 누빔·얇은 사계절·카시트용 겉싸개" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-outer-wrap-2026-2.webp" alt="신생아 겉싸개 3종 구조 비교 일러스트 — 두꺼운 누빔·얇은 사계절·카시트용 겉싸개" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>누빔</b><br/>두께와 계절</span>
     <span><b>규격</b><br/>대각선 환산</span>

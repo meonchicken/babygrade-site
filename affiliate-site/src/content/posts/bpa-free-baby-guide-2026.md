@@ -27,7 +27,7 @@ lsiKeywords:
   - bpa 프리 영유아
   - 트라이탄 BPA 프리
   - PPSU BPA 프리
-heroImage: /images/bpa-free-baby-guide-2026-1.png
+heroImage: /images/bpa-free-baby-guide-2026-1.webp
 heroImageAlt: BPA 프리 재질별 영유아 용품 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -137,7 +137,7 @@ sources:
 | 사용 온도 호환 | 180℃+ 내열 (스팀·열탕 소독 호환) | 100~120℃ (전자레인지 호환) | 100℃ 이하 | 명시 없음 |
 
 <figure class="infographic">
-  <img src="/images/bpa-free-baby-guide-2026-1.png" alt="BPA 프리 영유아 용품 4축 등급 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/bpa-free-baby-guide-2026-1.webp" alt="BPA 프리 영유아 용품 4축 등급 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>S 등급</b><br/>내열 유리 + 시험성적서 공개</span>
     <span><b>A 등급</b><br/>PPSU / 트라이탄 + KC 인증</span>

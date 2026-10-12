@@ -24,7 +24,7 @@ lsiKeywords:
   - 산후 튼살크림
   - 튼살크림 디시
   - 튼살크림 비교
-heroImage: /images/maternity-stretch-mark-cream-2026-1.png
+heroImage: /images/maternity-stretch-mark-cream-2026-1.webp
 heroImageAlt: 임산부 튼살크림 시기별·성분·흡수 사용감 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 튼살크림은 [식품의약품안전처](https://www.mfds.go.kr) 기준의 **화장품으로 분류되는 제품**이며, 구매 시 성분 표기와 임산부 사용 표기를 확인하는 것이 표준이다. **"튼살 완전 예방"·"임신선 제거"·"100% 효과" 같은 효능 단정·절대 표현은 쓸 수 없다.** 향에 민감해지는 시기이므로 무향·저자극을 선호하는 의견이 많고, 사용 전 팔 안쪽에 패치 테스트를 권장한다.
 
 <figure class="infographic">
-  <img src="/images/maternity-stretch-mark-cream-2026-2.png" alt="임산부 튼살크림 제형별 비교 일러스트 — 크림+오일 세트·대용량 크림·저자극 크림" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-stretch-mark-cream-2026-2.webp" alt="임산부 튼살크림 제형별 비교 일러스트 — 크림+오일 세트·대용량 크림·저자극 크림" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>시기별 사용</b><br/>임신 초·중기~산후</span>
     <span><b>성분</b><br/>보습·무향·저자극</span>

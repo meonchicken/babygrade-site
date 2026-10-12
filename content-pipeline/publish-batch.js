@@ -17,8 +17,7 @@ const { processFile } = require('./fix-coupang-links');
 const {
   readArticleContext,
   synthesizePrompts,
-  buildImagePrompt,
-  generateImage,
+  generateArticleImage,
 } = require('./generate-images');
 
 const SITE_DIR = path.resolve(__dirname, '../affiliate-site');
@@ -118,10 +117,10 @@ async function main() {
     const imgTasks = [];
     for (const { slug, prompts } of synthesized) {
       prompts.forEach((p, i) => {
-        const filepath = path.join(IMAGES_DIR, `${slug}-${i + 1}.png`);
         imgTasks.push(async () => {
-          await generateImage(buildImagePrompt(p), filepath);
-          console.log(`   ✅ ${slug}-${i + 1}.png`);
+          // PNG 생성 → webp 변형 + OG JPEG → PNG 삭제 (generate-images.js)
+          const produced = await generateArticleImage(slug, i + 1, p);
+          console.log(`   ✅ ${slug}-${i + 1}.webp (+${produced.length - 1} 변형)`);
         });
       });
     }

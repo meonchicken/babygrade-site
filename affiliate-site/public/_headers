@@ -1,6 +1,12 @@
 /llms.txt
   Content-Type: text/plain; charset=utf-8
 
+# 일러스트는 slug-N 고정 이름이라 해시가 없다. 기본값(max-age=0, must-revalidate)이면 브라우저가
+# 장마다 느린 경로(KT→SEA)로 재검증 왕복을 한다. 30일이면 재방문이 공짜이고, 같은 이름으로
+# 다시 그린 그림도 한 달 안에 교체된다.
+/images/*
+  Cache-Control: public, max-age=2592000
+
 /*
   Link: <https://babygrade.kr/llms.txt>; rel="llms"
   X-Robots-Tag: index, follow

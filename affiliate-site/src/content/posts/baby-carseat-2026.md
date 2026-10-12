@@ -25,7 +25,7 @@ lsiKeywords:
   - 카시트 ISOFIX
   - 컨버터블 카시트
   - 부스터 카시트
-heroImage: /images/baby-carseat-2026-1.png
+heroImage: /images/baby-carseat-2026-1.webp
 heroImageAlt: 카시트 신생아·영아·유아 단계별 ISOFIX·뒤보기·아이사이즈 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -166,7 +166,7 @@ sources:
 유럽 ECE R129(i-Size) 기준은 **신장 75cm 또는 만 15개월까지 후방(뒤보기) 의무**, 미국 AAP는 만 2세까지 후방 권고가 표준이다. 회전형은 후방·전방을 한 손에 전환할 수 있어 뒤보기 기간 연장에 유리하며, 디시·맘카페에서 0~3세 보호자 추천 빈도가 가장 높다. 컨버터블은 1회 구매로 풀라이프를 커버하는 가성비 라인이며, 바구니형은 0~12개월 조리원 퇴소·외출 운반 편의를 우선하는 가정에 추천된다. 부스터는 만 4세 이상 신장 135~150cm 구간 학동기 표준이다.
 
 <figure class="infographic">
-  <img src="/images/baby-carseat-2026-1.png" alt="카시트 신생아·영아·유아 단계별 ISOFIX·뒤보기·아이사이즈 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-carseat-2026-1.webp" alt="카시트 신생아·영아·유아 단계별 ISOFIX·뒤보기·아이사이즈 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>바구니 (0~12개월)</b><br/>후방 전용 + 운반 편의</span>
     <span><b>회전형 (0~7세)</b><br/>360도 후방↔전방 전환</span>
@@ -238,7 +238,7 @@ KC 어린이제품 안전특별법 인증은 국내 유통 카시트의 의무 �
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-carseat-2026-2.png" alt="카시트 프리미엄 풀라이프·중급 회전형·가성비 컨버터블 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-carseat-2026-2.webp" alt="카시트 프리미엄 풀라이프·중급 회전형·가성비 컨버터블 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>프리미엄 풀라이프</b><br/>뉴나 · 1,010,000원</span>
     <span><b>중급 회전형</b><br/>에어보스 · 199,000원</span>

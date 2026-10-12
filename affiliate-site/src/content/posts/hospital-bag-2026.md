@@ -25,7 +25,7 @@ lsiKeywords:
   - 분만실 준비물
   - 퇴원 준비물
   - 출산 가방 순위
-heroImage: /images/hospital-bag-2026-1.png
+heroImage: /images/hospital-bag-2026-1.webp
 heroImageAlt: 출산 가방 파우치 분리·개봉 접근성·오염 대응 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -168,7 +168,7 @@ sources:
 임신·출산 관련 지원 항목과 비용 범위는 [보건복지부](https://www.mohw.go.kr) 안내와 [국민건강보험공단](https://www.nhis.or.kr) 임신·출산 진료비 안내에서 확인할 수 있고, 아기용 물품의 안전 인증 표시는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있다.
 
 <figure class="infographic">
-  <img src="/images/hospital-bag-2026-2.png" alt="출산 가방 파우치 분리 비교 일러스트 — 분만·병실·퇴원 3개 구성" loading="lazy" width="800" height="450" />
+  <img src="/images/hospital-bag-2026-2.webp" alt="출산 가방 파우치 분리 비교 일러스트 — 분만·병실·퇴원 3개 구성" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>파우치</b><br/>분리·이너백</span>
     <span><b>개봉</b><br/>접근성·개폐 폭</span>

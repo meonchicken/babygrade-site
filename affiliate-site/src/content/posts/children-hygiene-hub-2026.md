@@ -26,7 +26,7 @@ lsiKeywords:
   - 어린이집 위생용품
   - 어린이 식판 칫솔
   - 어린이 샴푸 비타민
-heroImage: /images/children-hygiene-hub-2026-1.png
+heroImage: /images/children-hygiene-hub-2026-1.webp
 heroImageAlt: 어린이 위생용품 5대 카테고리 KC 인증 단계별 평가 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -133,7 +133,7 @@ sources:
 [대한치과의사협회](https://www.kda.or.kr) 권고상 어린이 칫솔 교체 주기는 1~2개월이며, 식판은 흠집·변색 발생 시 즉시 교체가 표준입니다. **모든 카테고리에서 "어린이 전용", "저자극"이라는 표시만으로는 안전성을 단정할 수 없으며**, KC 인증 번호 또는 식약처 등록 번호가 외포장에 명시돼야 합니다.
 
 <figure class="infographic">
-  <img src="/images/children-hygiene-hub-2026-1.png" alt="어린이 위생용품 5대 카테고리 인증 평가 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/children-hygiene-hub-2026-1.webp" alt="어린이 위생용품 5대 카테고리 인증 평가 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>구강 위생</b><br/>칫솔(KC) / 치약(화장품법)</span>
     <span><b>목욕·식사</b><br/>샴푸(화장품법) / 식판(KC)</span>
@@ -229,7 +229,7 @@ STEP2(2~4세) 입문 라인입니다. 핑크퐁아기상어 캐릭터 디자인�
 "면역력 강화", "성장 발달", "지능 향상" 표현은 「건강기능식품법」·「약사법」 위반 가능성이 있어 마케팅 표현에 의존하지 말라는 권고가 반복됩니다. 식약처 건강기능식품 인증 + 권장량(D 5~10μg / C 30~40mg) 표시 확인이 핵심입니다.
 
 <figure class="infographic">
-  <img src="/images/children-hygiene-hub-2026-2.png" alt="어린이 위생용품 카테고리별 교체 주기 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/children-hygiene-hub-2026-2.webp" alt="어린이 위생용품 카테고리별 교체 주기 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>1~2개월</b><br/>칫솔 / 치약 / 비타민</span>
     <span><b>2~3개월</b><br/>샴푸 / 바디워시</span>

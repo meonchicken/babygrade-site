@@ -25,7 +25,7 @@ lsiKeywords:
   - 신생아 휴대용 침대
   - 산후조리원 아기침대
   - 아기침대 무게
-heroImage: /images/portable-crib-2026-1.png
+heroImage: /images/portable-crib-2026-1.webp
 heroImageAlt: 휴대용 아기침대 접이 구조·무게·설치 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -178,7 +178,7 @@ sources:
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 유아용 침대의 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 영아 수면 환경에 관한 권고는 [미국소아과학회(AAP)](https://www.aap.org)를 비롯한 공개 자료에서 반복 인용되는 내용을 따랐다.
 
 <figure class="infographic">
-  <img src="/images/portable-crib-2026-2.png" alt="휴대용 아기침대 4종 비교 일러스트 — 롤 매트형·공기 주입형·원터치 프레임형·접이 프레임 풀세트" loading="lazy" width="800" height="450" />
+  <img src="/images/portable-crib-2026-2.webp" alt="휴대용 아기침대 4종 비교 일러스트 — 롤 매트형·공기 주입형·원터치 프레임형·접이 프레임 풀세트" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>접이 구조</b><br/>전개 동작</span>
     <span><b>수납</b><br/>3변 합·무게</span>

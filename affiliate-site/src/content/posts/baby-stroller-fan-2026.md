@@ -24,7 +24,7 @@ lsiKeywords:
   - 저소음 아기 선풍기
   - 신생아 선풍기
   - 아기 선풍기 순위
-heroImage: /images/baby-stroller-fan-2026-1.png
+heroImage: /images/baby-stroller-fan-2026-1.webp
 heroImageAlt: 아기 선풍기 안전 구조·바람과 모터·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -129,7 +129,7 @@ sources:
 | 날개없는 타워형 | 날개없음·실내 | 실내·끼임 안전 최우선 | 휴대·유모차 거치 |
 
 <figure class="infographic">
-  <img src="/images/baby-stroller-fan-2026-1.png" alt="아기 선풍기 안전 구조·바람과 모터·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-stroller-fan-2026-1.webp" alt="아기 선풍기 안전 구조·바람과 모터·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>KC·날개없는·안전망</span>
     <span><b>바람과 모터</b><br/>BLDC·풍량·저소음</span>

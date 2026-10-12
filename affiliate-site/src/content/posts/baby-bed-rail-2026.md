@@ -25,7 +25,7 @@ lsiKeywords:
   - 침대가드 몇 개월부터
   - 퀸침대 침대가드 길이
   - 아기 침대 가드 차이
-heroImage: /images/baby-bed-rail-2026-1.png
+heroImage: /images/baby-bed-rail-2026-1.webp
 heroImageAlt: 아기 침대가드 낙상 차단 높이·고정 방식·개폐 동선 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -178,7 +178,7 @@ sources:
 어린이제품의 안전 관리 구분은 [국가기술표준원](https://www.kats.go.kr)이 운영하는 어린이제품 안전 특별법 체계를 따르고, 발급된 인증번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 근거 법령은 [국가법령정보센터](https://www.law.go.kr)에서 확인할 수 있으며, 영유아 용품의 표시 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료가 함께 인용된다.
 
 <figure class="infographic">
-  <img src="/images/baby-bed-rail-2026-2.png" alt="아기 침대가드 3종 비교 일러스트 — 접이식 다운형 가드·표준 고정형 가드·휴대용 안전바" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bed-rail-2026-2.webp" alt="아기 침대가드 3종 비교 일러스트 — 접이식 다운형 가드·표준 고정형 가드·휴대용 안전바" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>낙상 차단</b><br/>노출 높이·틈</span>
     <span><b>고정 방식</b><br/>지지판·볼트</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 거즈면 방수 턱받이
   - 아기 가제수건 디시
   - 아기 손수건 비교
-heroImage: /images/baby-gauze-handkerchief-2026-1.png
+heroImage: /images/baby-gauze-handkerchief-2026-1.webp
 heroImageAlt: 아기 가제 손수건·턱받이 소재·안전 인증·용도 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 가제 손수건·턱받이는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 KC 인증과 [한국소비자원](https://www.kca.go.kr)의 섬유제품 안전 정보 대상으로, **"피부 개선"·"항균 100%"·"완전 무해" 같은 효능·절대 표현은 쓸 수 없다.** 순면·밤부·KC·무형광 같은 객관 표기와 첫 세탁·수면 시 천 제거 같은 사용 원칙이 실제 관리의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/baby-gauze-handkerchief-2026-2.png" alt="아기 가제 손수건·턱받이 유형별 비교 일러스트 — KC 순면 손수건·밤부 거즈 손수건·거즈면 방수 턱받이" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-gauze-handkerchief-2026-2.webp" alt="아기 가제 손수건·턱받이 유형별 비교 일러스트 — KC 순면 손수건·밤부 거즈 손수건·거즈면 방수 턱받이" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>소재</b><br/>순면·밤부·거즈면</span>
     <span><b>안전 인증</b><br/>KC·무형광</span>

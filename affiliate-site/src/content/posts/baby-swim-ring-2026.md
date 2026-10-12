@@ -24,7 +24,7 @@ lsiKeywords:
   - 그늘막 보행기 튜브
   - 아기 튜브 월령
   - 아기 튜브 순위
-heroImage: /images/baby-swim-ring-2026-1.png
+heroImage: /images/baby-swim-ring-2026-1.webp
 heroImageAlt: 아기 튜브 안전 구조·월령과 체중·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -131,7 +131,7 @@ sources:
 | (비권장) 신생아 목튜브 | 목에 끼움 | — | 안전 논란으로 권장 안 함 |
 
 <figure class="infographic">
-  <img src="/images/baby-swim-ring-2026-1.png" alt="아기 튜브 안전 구조·월령과 체중·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-swim-ring-2026-1.webp" alt="아기 튜브 안전 구조·월령과 체중·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>보행기형·다중 챔버·밸브</span>
     <span><b>월령과 체중</b><br/>권장 개월·체중</span>

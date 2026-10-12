@@ -25,7 +25,7 @@ lsiKeywords:
   - 캡형 아기 물티슈
   - 아기 물티슈 매당 가격
   - 외출용 아기 물티슈
-heroImage: /images/baby-wet-wipes-2026-1.png
+heroImage: /images/baby-wet-wipes-2026-1.webp
 heroImageAlt: 아기 물티슈 성분 표시·원단 두께·캡 구조 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -165,7 +165,7 @@ sources:
 인체 세정용 물휴지의 표시·광고 기준은 [식품의약품안전처](https://www.mfds.go.kr) 공개 자료를 따르고, 식탁·기구를 닦는 제품의 분류는 [식품안전나라](https://www.foodsafetykorea.go.kr)가 안내하는 위생용품 관리 체계를 인용한다. 영유아용 물티슈의 표시 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 어린이제품 안전 관리 구분은 [국가기술표준원](https://www.kats.go.kr) 체계를 참고했으며 발급된 인증번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다.
 
 <figure class="infographic">
-  <img src="/images/baby-wet-wipes-2026-2.png" alt="아기 물티슈 3종 비교 일러스트 — 진입 캡형 라인·엠보싱 원단 라인·대용량 구성 라인" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-wet-wipes-2026-2.webp" alt="아기 물티슈 3종 비교 일러스트 — 진입 캡형 라인·엠보싱 원단 라인·대용량 구성 라인" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>성분</b><br/>전성분 표시</span>
     <span><b>두께</b><br/>평량·엠보싱</span>

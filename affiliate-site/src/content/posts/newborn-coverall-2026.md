@@ -25,7 +25,7 @@ lsiKeywords:
   - 신생아 실내복 우주복
   - 신생아 방한 우주복
   - 신생아 우주복 호수
-heroImage: /images/newborn-coverall-2026-1.png
+heroImage: /images/newborn-coverall-2026-1.webp
 heroImageAlt: 신생아 우주복 착의 층위·여밈 구조·KC 표기 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -166,7 +166,7 @@ draft: false
 유아용 섬유제품의 안전 관리 근거는 [국가기술표준원](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에서 확인할 수 있고, 인증번호가 표기된 경우 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 섬유제품 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/newborn-coverall-2026-2.png" alt="신생아 우주복 3종 층위 비교 일러스트 — 순면 이너·후리스 아우터·패딩 슈트" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-coverall-2026-2.webp" alt="신생아 우주복 3종 층위 비교 일러스트 — 순면 이너·후리스 아우터·패딩 슈트" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>층위</b><br/>몇 번째 겹</span>
     <span><b>여밈</b><br/>교체 범위</span>

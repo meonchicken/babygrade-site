@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 보습 크림
   - 아토 로션 추천
   - 신생아 로션 순위
-heroImage: /images/newborn-lotion-2026-1.png
+heroImage: /images/newborn-lotion-2026-1.webp
 heroImageAlt: 신생아 로션 저자극 성분·보습 성분·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -130,7 +130,7 @@ sources:
 | 아토 집중 보습 | 펌프·집중 보습 | 건조 심한 부위 관리 | 가벼운 수분만 원함 |
 
 <figure class="infographic">
-  <img src="/images/newborn-lotion-2026-1.png" alt="신생아 로션 저자극 성분·보습 성분·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-lotion-2026-1.webp" alt="신생아 로션 저자극 성분·보습 성분·사용 편의 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>저자극 성분</b><br/>무향·민감성 처방</span>
     <span><b>보습 성분</b><br/>세라마이드·판테놀</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 어린이 책상 가성비
   - 어린이 책상 디시
   - 어린이 책상 비교
-heroImage: /images/kids-study-desk-2026-1.png
+heroImage: /images/kids-study-desk-2026-1.webp
 heroImageAlt: 어린이 책상 바른자세 설계·성장 높이조절·안전 구조 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 어린이 책상은 [국가기술표준원](https://www.kats.go.kr)·[산업통상자원부](https://www.motie.go.kr)가 안내하는 어린이제품 KC 인증과 [한국소비자원](https://www.kca.go.kr)의 가구 안전(전도·모서리) 정보 대상으로, **"집중력 향상"·"성적 상승"·"100% 안전" 같은 효능·절대 표현은 쓸 수 없다.** 높이조절·둥근 모서리·KC 같은 객관 표기와 올라서지 않기·볼트 점검 같은 사용 원칙이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/kids-study-desk-2026-2.png" alt="어린이 책상 유형별 비교 일러스트 — 높이조절 성장형·표준 세트·가성비 입문" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-study-desk-2026-2.webp" alt="어린이 책상 유형별 비교 일러스트 — 높이조절 성장형·표준 세트·가성비 입문" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>바른자세 설계</b><br/>각도·시야·발받침</span>
     <span><b>성장 높이조절</b><br/>책상·의자 단계</span>

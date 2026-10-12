@@ -24,7 +24,7 @@ lsiKeywords:
   - 이유식 필수 준비물
   - 초기 이유식 양
   - 이유식 스푼 초기
-heroImage: /images/weaning-starter-kit-2026-1.png
+heroImage: /images/weaning-starter-kit-2026-1.webp
 heroImageAlt: 초기 이유식 준비물 도입 시점·조리량 역산·회당 원가 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -151,7 +151,7 @@ sources:
 영유아 식품과 기구의 취급·표시 기준은 [식품의약품안전처](https://www.foodsafetykorea.go.kr) 식품안전나라의 공개 안내를 따르고, 보완식 시작 시기의 기준은 [WHO](https://www.who.int) 권고를 인용한다. 어린이제품의 안전 관리 구분은 [국가기술표준원](https://www.kats.go.kr)이 운영하는 어린이제품 안전 특별법 체계를 따르며, 표시된 인증번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 영유아용 기구의 표시 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 함께 참고한다.
 
 <figure class="infographic">
-  <img src="/images/weaning-starter-kit-2026-2.png" alt="초기 이유식 준비물 비교 일러스트 — 급여 동선·조리 동선·손질 동선 3구획" loading="lazy" width="800" height="450" />
+  <img src="/images/weaning-starter-kit-2026-2.webp" alt="초기 이유식 준비물 비교 일러스트 — 급여 동선·조리 동선·손질 동선 3구획" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>도입</b><br/>주차별 시점</span>
     <span><b>규격</b><br/>조리량 역산</span>

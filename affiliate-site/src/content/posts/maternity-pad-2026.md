@@ -24,7 +24,7 @@ lsiKeywords:
   - 산모패드 디시
   - 산모패드 사용법
   - 출산 준비물 산모패드
-heroImage: /images/maternity-pad-2026-1.png
+heroImage: /images/maternity-pad-2026-1.webp
 heroImageAlt: 산모패드 사이즈·흡수력·통기 착용감 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -132,7 +132,7 @@ sources:
 | 대용량 실속형 | 매수 많고 가성비 | 장기 사용·자주 교체 | 단기 소량만 필요 |
 
 <figure class="infographic">
-  <img src="/images/maternity-pad-2026-1.png" alt="산모패드 사이즈·흡수력·통기 착용감 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-pad-2026-1.webp" alt="산모패드 사이즈·흡수력·통기 착용감 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>사이즈</b><br/>대형→표준 단계</span>
     <span><b>흡수력</b><br/>다량·옆샘 방지</span>

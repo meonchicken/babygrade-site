@@ -24,7 +24,7 @@ lsiKeywords:
   - 임부복 여름
   - 임부복 디시
   - 임산부 옷
-heroImage: /images/maternity-wear-2026-1.png
+heroImage: /images/maternity-wear-2026-1.webp
 heroImageAlt: 임부복 분기별·소재·만삭 호환 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -133,7 +133,7 @@ sources:
 **임부복 1벌의 표준 운영 기간**은 약 4~5개월(임신 중기~후기) + 출산 후 3~4개월(회복기·모유 수유 운영) = 약 8~9개월이다. 일반 의류 대비 단가 효율은 단일 라인 1벌 운영 기간 기준으로 안정적이다.
 
 <figure class="infographic">
-  <img src="/images/maternity-wear-2026-1.png" alt="임부복 분기별·소재·만삭 핏 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-wear-2026-1.webp" alt="임부복 분기별·소재·만삭 핏 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>분기 호환</b><br/>중기~만삭 단일 라인</span>
     <span><b>소재</b><br/>면·미라클 주름 우선</span>

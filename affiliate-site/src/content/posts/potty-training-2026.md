@@ -23,7 +23,7 @@ lsiKeywords:
   - 유아 변기 일러스트
   - 유아 변기 커버 비데
   - 유아 변기 커버 추천
-heroImage: /images/potty-training-2026-1.png
+heroImage: /images/potty-training-2026-1.webp
 heroImageAlt: 유아 변기 형태·안전 위생·훈련 동기 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -130,7 +130,7 @@ sources:
 | 계단형(발판) | 전환 보강 — 안정감 | 변기커버 단계 안정·자립 보조 | 단순 입문 단계만 필요 |
 
 <figure class="infographic">
-  <img src="/images/potty-training-2026-1.png" alt="유아 변기 형태·안전 위생·훈련 동기 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/potty-training-2026-1.webp" alt="유아 변기 형태·안전 위생·훈련 동기 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>독립형·변기커버·계단형</span>
     <span><b>안전 위생</b><br/>KC·미끄럼방지·세척</span>

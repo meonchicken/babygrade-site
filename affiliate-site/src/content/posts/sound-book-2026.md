@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 사운드북 추천
   - 플레이송스 사운드북 추천
   - 사운드북 고장
-heroImage: /images/sound-book-2026-1.png
+heroImage: /images/sound-book-2026-1.webp
 heroImageAlt: 사운드북 연령 적합·콘텐츠 구성·안전(KC)/세이펜 호환 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -128,7 +128,7 @@ sources:
 | 단권 입문 | 한 권 시작·저단가 | 처음 입문·맛보기 | 다양한 주제 동시 필요 |
 
 <figure class="infographic">
-  <img src="/images/sound-book-2026-1.png" alt="사운드북 연령 적합·콘텐츠 구성·안전/세이펜 호환 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/sound-book-2026-1.webp" alt="사운드북 연령 적합·콘텐츠 구성·안전/세이펜 호환 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>연령 적합</b><br/>월령·세 단위 표기</span>
     <span><b>구성·내구성</b><br/>권수·보드북·버튼</span>

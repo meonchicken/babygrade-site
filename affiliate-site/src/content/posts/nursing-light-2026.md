@@ -24,7 +24,7 @@ lsiKeywords:
   - 수유등 무드등 차이
   - 신생아 조명 밝기
   - 수유등 디시
-heroImage: /images/nursing-light-2026-1.png
+heroImage: /images/nursing-light-2026-1.webp
 heroImageAlt: 신생아 수유등 밝기·색온도·야간 조작·전원 배치 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -139,7 +139,7 @@ sources:
 전기용품은 [국가기술표준원](https://www.kats.go.kr)이 관장하는 「전기용품 및 생활용품 안전관리법」에 따라 KC 안전 인증 대상이며, 인증 여부는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 캐릭터 형태의 조명은 완구로 함께 분류되는 경우가 있어 어린이제품 인증 표시도 확인 대상이다. **"시력 보호"·"통잠"·"수면 개선" 같은 표현은 조명 기구에 쓸 수 없는 효과 표현**이며, 확인 가능한 객관 표시는 색온도(K)·밝기 조절 단계·전원 방식·인증 번호다.
 
 <figure class="infographic">
-  <img src="/images/nursing-light-2026-2.png" alt="신생아 수유등 3종 비교 일러스트 — 소형 캐릭터형·뒤집는 조작형·리모컨 무선형" loading="lazy" width="800" height="450" />
+  <img src="/images/nursing-light-2026-2.webp" alt="신생아 수유등 3종 비교 일러스트 — 소형 캐릭터형·뒤집는 조작형·리모컨 무선형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>밝기·색온도</b><br/>최저 단계·전구색 계열</span>
     <span><b>야간 조작</b><br/>한 손·무접촉·오조작</span>

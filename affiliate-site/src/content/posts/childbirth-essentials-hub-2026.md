@@ -26,7 +26,7 @@ lsiKeywords:
   - 출산 준비물 우선순위
   - 임신 32주 준비물
   - 출산 준비물 7대 카테고리
-heroImage: /images/childbirth-essentials-hub-2026-1.png
+heroImage: /images/childbirth-essentials-hub-2026-1.webp
 heroImageAlt: 출산 준비물 7대 카테고리 1주 단위 우선순위 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -133,7 +133,7 @@ sources:
 | 호환성 | 1개 라인으로 풀세트 통일 | 부분 통일 | 라인별 분산 | 젖병·소독기·분유 호환 |
 
 <figure class="infographic">
-  <img src="/images/childbirth-essentials-hub-2026-1.png" alt="출산 준비물 7대 카테고리 우선순위 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/childbirth-essentials-hub-2026-1.webp" alt="출산 준비물 7대 카테고리 우선순위 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>32주</b><br/>본격 구매 시작 — 위생·수유 우선</span>
     <span><b>34주</b><br/>의류·침구 보강 — KC 인증 우선</span>

@@ -27,7 +27,7 @@ lsiKeywords:
   - 어린이 불소 치약 추천
   - 어린이 치약 더쿠
   - 어린이 치약 광고
-heroImage: /images/children-toothpaste-2026-1.png
+heroImage: /images/children-toothpaste-2026-1.webp
 heroImageAlt: 어린이 치약 만 3세·만 6세·8세 이상 불소 함량 단계별 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -171,7 +171,7 @@ sources:
 세계치과연맹(FDI)·세계보건기구(WHO)는 만 3세 미만이라도 침 뱉기·헹구기가 가능하고 소아치과 권고가 있다면 1000ppm 사용을 허용하는 최신 가이드를 채택했다. 다만 한국 일반 가정의 표준 운영은 **만 3세 미만 무불소 또는 ≤500ppm**이 다수이며, 어린이집·유치원 단체 양치 지도에서도 이 기준이 통용된다. 만 6세 이상은 영구치(앞니·어금니)가 새로 나는 시기로 1450ppm 표준 라인을 권고하며, 양치 후 침 뱉기·물 헹굼이 표준 마무리다. 사용량은 콩알 크기를 넘기지 않는 것이 누적 삼킴 노출을 최소화하는 표준 방법이다.
 
 <figure class="infographic">
-  <img src="/images/children-toothpaste-2026-1.png" alt="어린이 치약 만 3세·만 6세·8세 이상 불소 함량 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/children-toothpaste-2026-1.webp" alt="어린이 치약 만 3세·만 6세·8세 이상 불소 함량 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>만 0~3세</b><br/>무불소·≤500ppm · 쌀알</span>
     <span><b>만 3~6세</b><br/>1000ppm · 콩알</span>
@@ -243,7 +243,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/children-toothpaste-2026-2.png" alt="어린이 치약 가성비 묶음·1450ppm 표준·3스텝 시스템 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/children-toothpaste-2026-2.webp" alt="어린이 치약 가성비 묶음·1450ppm 표준·3스텝 시스템 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 묶음</b><br/>2080 브래드이발소 · 6,300원</span>
     <span><b>1450ppm 표준</b><br/>페리오 키즈 · 9,100원</span>

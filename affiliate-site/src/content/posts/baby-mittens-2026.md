@@ -22,7 +22,7 @@ lsiKeywords:
   - 신생아 손싸개
   - 출산선물세트 손싸개
   - 여름용 손싸개
-heroImage: /images/baby-mittens-2026-1.png
+heroImage: /images/baby-mittens-2026-1.webp
 heroImageAlt: 아기 손싸개·가제수건 소재·안전·계절 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -122,7 +122,7 @@ sources:
 [국가기술표준원(KATS)](https://www.kats.go.kr)은 어린이제품 안전특별법에 따라 영유아 섬유·의류용품에 KC 안전 표시를 요구한다. 손싸개·배냇저고리처럼 신생아 피부에 직접 닿는 품목은 **소재 표시(면 함량·오가닉 여부)와 봉제 마감(실밥·뒤집힘 처리)**을 함께 확인하는 것이 S 등급 기준이다. 손싸개는 손목이 너무 조이지 않고, 안쪽 솔기·실밥이 손가락에 걸리지 않는 마감이 권장된다.
 
 <figure class="infographic">
-  <img src="/images/baby-mittens-2026-1.png" alt="아기 손싸개·가제수건 소재·안전·계절 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-mittens-2026-1.webp" alt="아기 손싸개·가제수건 소재·안전·계절 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>소재</b><br/>100% 면·오가닉·통기</span>
     <span><b>안전</b><br/>KC·봉제·실밥 마감</span>

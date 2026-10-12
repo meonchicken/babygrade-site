@@ -13,7 +13,7 @@ lsiKeywords:
   - "수유 원피스"
   - "산후 홈웨어"
   - "수유구 잠옷"
-heroImage: "/images/nursing-pajamas-2026-1.png"
+heroImage: "/images/nursing-pajamas-2026-1.webp"
 heroImageAlt: "수유 잠옷 커버 일러스트 — 개폐 구조가 표기된 수유 홈웨어 한 벌"
 tldr:
   - "판단 기준은 소재가 아니라 개폐 부속의 개수와 배치다. 부속이 몇 개든 부속 1개당 누적 조작은 1,800회로 같고, 갈리는 것은 1개가 파손됐을 때의 결과다."
@@ -78,7 +78,7 @@ sources:
 가정용 섬유제품의 표시사항 기준은 [국가기술표준원](https://www.kats.go.kr)의 제품 안전 표시 제도 안내에서 확인할 수 있고, 인증번호가 표기된 경우 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 섬유제품 표시·품질 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/nursing-pajamas-2026-2.png" alt="수유 잠옷 3종 개폐 구조 비교 일러스트 — 원피스형·상하 세트형·긴팔 세트형" loading="lazy" width="800" height="450" />
+  <img src="/images/nursing-pajamas-2026-2.webp" alt="수유 잠옷 3종 개폐 구조 비교 일러스트 — 원피스형·상하 세트형·긴팔 세트형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>개폐</b><br/>부속 수·배치</span>
     <span><b>수유구</b><br/>노출 범위</span>

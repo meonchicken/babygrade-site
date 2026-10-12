@@ -24,7 +24,7 @@ lsiKeywords:
   - 제품안전정보센터
   - 직구 KC 인증
   - 유해물질 안전기준
-heroImage: /images/kc-certification-baby-products-2026-1.png
+heroImage: /images/kc-certification-baby-products-2026-1.webp
 heroImageAlt: KC 인증 3단계 안전인증·안전확인·공급자적합성확인 등급 비교 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -142,7 +142,7 @@ KC 인증은 단일 제도가 아니라 위험도에 따라 세 단계로 나뉜
 [어린이제품 안전 특별법](https://www.law.go.kr)은 위험도가 높은 제품일수록 더 엄격한 검증을 요구한다. 예컨대 카시트는 충돌 시험·정적 강도 시험을 정부 지정 기관에서 통과해야 안전인증을 받는다. 반면 일반 어린이 의류는 폼알데하이드·pH 같은 항목을 제조사가 자체 시험해 결과를 보관·표시하면 된다.
 
 <figure class="infographic">
-  <img src="/images/kc-certification-baby-products-2026-1.png" alt="KC 인증 3단계 안전인증·안전확인·공급자적합성확인 등급 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/kc-certification-baby-products-2026-1.webp" alt="KC 인증 3단계 안전인증·안전확인·공급자적합성확인 등급 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전인증</b><br/>고위험 · 정부 사전 인증</span>
     <span><b>안전확인</b><br/>중위험 · 시험 후 신고</span>
@@ -250,7 +250,7 @@ KC 인증이 실제로 어떻게 적용되는지 카테고리별 사례로 확�
 </div>
 
 <figure class="infographic">
-  <img src="/images/kc-certification-baby-products-2026-2.png" alt="KC 인증 카테고리별 적용 사례 완구·식기·카시트 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/kc-certification-baby-products-2026-2.webp" alt="KC 인증 카테고리별 적용 사례 완구·식기·카시트 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>완구·블록</b><br/>안전확인 · 폼알데하이드</span>
     <span><b>식기</b><br/>KC + 식약처 BPA 용출</span>

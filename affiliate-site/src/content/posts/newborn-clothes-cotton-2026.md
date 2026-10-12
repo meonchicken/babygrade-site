@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 우주복
   - 신생아 바디슈트
   - 신생아 옷 KC 인증
-heroImage: /images/newborn-clothes-cotton-2026-1.png
+heroImage: /images/newborn-clothes-cotton-2026-1.webp
 heroImageAlt: 신생아 옷 100% 면·뱀부·바디슈트 3가지 소재 비교 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -133,7 +133,7 @@ sources:
 100% 면은 가장 검증된 표준 소재로 [한국소비자원](https://www.kca.go.kr) 어린이 의류 안전성 조사에서도 권장 카테고리에 들어간다. 뱀부 비스코스는 대나무 셀룰로오스를 화학 가공한 재생 섬유로 촉감·통기성은 뛰어나나 **"뱀부 = 100% 천연"이라는 광고 표현은 부정확**하다는 지적이 [공정거래위원회](https://www.ftc.go.kr) 가이드에서 반복된다. 오가닉 코튼은 GOTS·OCS 인증으로 농약 잔류 우려를 줄인 라인이며 일반 코튼 대비 30~50% 가격이 비싸다.
 
 <figure class="infographic">
-  <img src="/images/newborn-clothes-cotton-2026-1.png" alt="신생아 옷 100% 면·뱀부·오가닉 코튼 3가지 소재 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-clothes-cotton-2026-1.webp" alt="신생아 옷 100% 면·뱀부·오가닉 코튼 3가지 소재 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>100% 면</b><br/>통기성 표준 · 가성비</span>
     <span><b>뱀부 비스코스</b><br/>촉감·통기성 우수</span>
@@ -205,7 +205,7 @@ KC 어린이제품 안전확인은 어린이제품 안전특별법에 따른 의
 </div>
 
 <figure class="infographic">
-  <img src="/images/newborn-clothes-cotton-2026-2.png" alt="신생아 옷 출산선물·일상 우주복·가성비 5종 세트 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-clothes-cotton-2026-2.webp" alt="신생아 옷 출산선물·일상 우주복·가성비 5종 세트 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>출산선물 프리미엄</b><br/>밍크뮤 뱀부 · 60,000원</span>
     <span><b>봄·가을 외출</b><br/>로을 우주복 · 35,300원</span>

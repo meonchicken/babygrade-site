@@ -24,7 +24,7 @@ lsiKeywords:
   - BPA-Free 모유저장팩
   - 모유 저장팩 디시
   - 모유 저장팩 비교
-heroImage: /images/breast-milk-storage-bag-2026-1.png
+heroImage: /images/breast-milk-storage-bag-2026-1.webp
 heroImageAlt: 모유 저장팩 밀폐 위생·호환 편의·용량 가성비 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 모유 저장팩은 [질병관리청](https://www.kdca.go.kr)이 안내하는 모유 수유·보관 일반 정보와 [식품의약품안전처](https://www.mfds.go.kr)의 위생용품 표시 대상으로, **"세균 100% 차단"·"영양 보존 보장"·"신선도 영구 유지" 같은 절대·효능 표현은 쓸 수 없다.** 멸균·BPA-Free·이중지퍼 같은 객관 표기와 공인 보관 기준 준수가 실제 위생의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/breast-milk-storage-bag-2026-2.png" alt="모유 저장팩 유형별 비교 일러스트 — 변온 표시·유축기 직결 리필·가성비 대용량" loading="lazy" width="800" height="450" />
+  <img src="/images/breast-milk-storage-bag-2026-2.webp" alt="모유 저장팩 유형별 비교 일러스트 — 변온 표시·유축기 직결 리필·가성비 대용량" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>밀폐 위생</b><br/>이중지퍼·멸균·BPA-Free</span>
     <span><b>호환 편의</b><br/>유축기 직결·변온·이지컷</span>

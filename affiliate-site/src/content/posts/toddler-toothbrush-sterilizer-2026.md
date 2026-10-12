@@ -24,7 +24,7 @@ lsiKeywords:
   - 가정용 칫솔살균기
   - 칫솔살균기 디시
   - 칫솔 세균
-heroImage: /images/toddler-toothbrush-sterilizer-2026-1.png
+heroImage: /images/toddler-toothbrush-sterilizer-2026-1.webp
 heroImageAlt: 유아 칫솔살균기 살균 방식·전원·KC 전기안전 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -141,7 +141,7 @@ sources:
 | 건조 기능 없는 라인 | 단가 낮음 | 가성비 입문 | 물기 재번식 우려 |
 
 <figure class="infographic">
-  <img src="/images/toddler-toothbrush-sterilizer-2026-1.png" alt="유아 칫솔살균기 살균 방식·전원·KC 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-toothbrush-sterilizer-2026-1.webp" alt="유아 칫솔살균기 살균 방식·전원·KC 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>살균 방식</b><br/>UV-C + 바람 건조</span>
     <span><b>전원·휴대</b><br/>무선·케이스형</span>

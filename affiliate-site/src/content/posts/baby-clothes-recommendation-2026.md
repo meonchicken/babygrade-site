@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 우주복
   - 영아 의류 사이즈
   - 아기 옷 디시
-heroImage: /images/baby-clothes-recommendation-2026-1.png
+heroImage: /images/baby-clothes-recommendation-2026-1.webp
 heroImageAlt: 아기 옷 KC 인증·소재·사이즈 표기 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -139,7 +139,7 @@ sources:
 | 100% 폴리에스테르 | 가격·세탁 강성 | 외투·우주복 외피 | 직접 피부 접촉 라인 |
 
 <figure class="infographic">
-  <img src="/images/baby-clothes-recommendation-2026-1.png" alt="아기 옷 KC 인증·소재·사이즈 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-clothes-recommendation-2026-1.webp" alt="아기 옷 KC 인증·소재·사이즈 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>KC 인증</b><br/>어린이제품 안전특별법</span>
     <span><b>소재</b><br/>100% 면·거즈면 우선</span>

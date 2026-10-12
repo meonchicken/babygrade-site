@@ -25,7 +25,7 @@ lsiKeywords:
   - 아기 안전문 폭
   - 아기 안전문 디시
   - 아기 안전문 확장 패널
-heroImage: /images/baby-safety-gate-2026-1.png
+heroImage: /images/baby-safety-gate-2026-1.webp
 heroImageAlt: 아기 안전문 설치 방식·잠금 구조·개폐 동선 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -149,7 +149,7 @@ sources:
 아기 안전문은 [국가기술표준원](https://www.kats.go.kr)이 관장하는 어린이제품 안전 특별법의 적용 범위에서 다뤄지며, KC 안전확인 신고번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회한다. 구조 요건은 [ASTM International](https://www.astm.org)의 확장형 게이트 소비자 안전 규격 계열이 국제적으로 참조되고, 국내 사고 통계는 [한국소비자원](https://www.kca.go.kr)의 어린이 안전사고 동향 자료가 함께 인용된다. **"100% 안전"·"절대 안 넘어감"·"완벽 차단" 같은 표현은 안전용품 광고에서 쓸 수 없는 절대적 단정형이다.** KC 표시 확인과 설치 조건 준수가 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/baby-safety-gate-2026-2.png" alt="아기 안전문 3종 구조 비교 일러스트 — 도어형·슬라이드 개폐형·롤 스크린형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-safety-gate-2026-2.webp" alt="아기 안전문 3종 구조 비교 일러스트 — 도어형·슬라이드 개폐형·롤 스크린형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>설치 방식</b><br/>압착식·볼트식</span>
     <span><b>잠금 구조</b><br/>1단계·2단계</span>

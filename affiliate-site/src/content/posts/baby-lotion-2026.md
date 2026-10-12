@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 로션 디시
   - 아기 바디로션 추천
   - 민감성 아기 로션
-heroImage: /images/baby-lotion-2026-1.png
+heroImage: /images/baby-lotion-2026-1.webp
 heroImageAlt: 아기 로션 보습·무향 저자극·민감성 적합성 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -138,7 +138,7 @@ sources:
 | 밤(밤타입) | 고밀착 국소 보호 | 볼·입 주변 국소 트러블 | 넓은 면적 데일리 |
 
 <figure class="infographic">
-  <img src="/images/baby-lotion-2026-1.png" alt="아기 로션 보습·무향 저자극·민감성 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-lotion-2026-1.webp" alt="아기 로션 보습·무향 저자극·민감성 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>보습 지속력</b><br/>세라마이드·판테놀</span>
     <span><b>무향·저자극</b><br/>향료·색소 최소</span>

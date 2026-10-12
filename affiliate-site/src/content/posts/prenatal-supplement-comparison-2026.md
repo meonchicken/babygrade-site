@@ -24,7 +24,7 @@ lsiKeywords:
   - 임산부 영양제 복용시기
   - 미국 임산부 영양제
   - 솔가 엽산 800
-heroImage: /images/prenatal-supplement-comparison-2026-1.png
+heroImage: /images/prenatal-supplement-comparison-2026-1.webp
 heroImageAlt: 임산부 영양제 시기별 엽산·철분·DHA 권장량 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -134,7 +134,7 @@ sources:
 핵심은 **엽산은 임신 인지 전부터 시작**해야 한다는 점이다. 신경관 결손은 임신 4주차에 형성되는데 이 시점은 임신을 모르는 경우가 많아 [CDC](https://www.cdc.gov)는 계획기 3개월 전부터 복용을 권고한다. 철분은 정반대로 **임신 13주차 이후**에 우선순위가 올라가는데, 초기에 고용량 철분을 복용하면 입덧·메스꺼움이 악화되는 사례가 보고된다.
 
 <figure class="infographic">
-  <img src="/images/prenatal-supplement-comparison-2026-1.png" alt="임산부 영양제 시기별 엽산·철분·DHA 권장량 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/prenatal-supplement-comparison-2026-1.webp" alt="임산부 영양제 시기별 엽산·철분·DHA 권장량 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>계획기·초기</b><br/>엽산 400~600μg</span>
     <span><b>중기</b><br/>철분 24mg · 칼슘 1000mg</span>
@@ -206,7 +206,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/prenatal-supplement-comparison-2026-2.png" alt="임산부 영양제 종합·단일엽산·액상철분 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/prenatal-supplement-comparison-2026-2.webp" alt="임산부 영양제 종합·단일엽산·액상철분 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>초기 종합</b><br/>마더스케어 · 56,900원</span>
     <span><b>가성비 엽산</b><br/>솔가 240정 · 57,000원</span>

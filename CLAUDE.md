@@ -93,6 +93,12 @@ node content-pipeline/gate.js --all --prices                              # 기�
 - **새 외부 호스트(예: `image11.coupangcdn.com`)가 등장하면** `worker.ts`의 `ALLOWED_IMAGE_HOSTS` + `image-proxy.ts`의 `ALLOWED_HOSTS` **두 곳을 동기화**한 뒤 재배포.
 - **검증 한 줄**: `grep -roE 'src="https://[^/]*coupang[^"]*"' dist/ | wc -l` → 0이면 정상.
 
+**로컬 일러스트는 webp 전용이다 (2026-10-12~).** Flux PNG 1.2MB 가 카드·썸네일에 그대로 나가 홈 한 번에 9.4MB 였다.
+`generateForArticle`/`generateArticleImage` 가 `.webp`(1344)·`-800.webp`·`-400.webp` + 히어로 OG 용 `.jpg` 를 만들고 **PNG 를 지운다**.
+글에는 `/images/<slug>-N.webp` 만 적는다(srcset 은 빌드가 붙인다). 레거시 PNG 가 생기면 `node content-pipeline/optimize-images.js`.
+KT 회선은 Cloudflare 무료 플랜을 SEA(시애틀) PoP 로 묶어 40KB/s 다(`curl https://babygrade.kr/cdn-cgi/trace` → `colo=`) — 용량이 곧 체감 속도다.
+세 사이트 공용 절차 → `~/Developer/부업마스터/어필리에이트/IMAGE-PERF-PLAYBOOK.md`
+
 ---
 
 ## 프로젝트 정의

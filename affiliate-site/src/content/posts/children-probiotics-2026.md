@@ -24,7 +24,7 @@ lsiKeywords:
   - 어린이 유산균 가격
   - 어린이 유산균 디시
   - 어린이 유산균 언제부터
-heroImage: /images/children-probiotics-2026-1.png
+heroImage: /images/children-probiotics-2026-1.webp
 heroImageAlt: 어린이 유산균 균주·CFU 표기·섭취 형태 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -132,7 +132,7 @@ sources:
 어린이 유산균은 [식품의약품안전처](https://www.mfds.go.kr)가 고시한 건강기능식품 기능성 원료 "프로바이오틱스"를 쓰는 제품이며, [식품안전나라](https://www.foodsafetykorea.go.kr)의 표시·섭취량 기준과 [한국소비자원](https://www.kca.go.kr)의 어린이 건강기능식품 표시 정보가 함께 참고된다. **"면역력 강화"·"장 건강 개선"·"변비 치료"·"아토피 완화" 같은 표현은 쓸 수 없다.** 균주 표기·보장균수·연령 표기·알레르기 유발물질 같은 객관 표시와 라벨의 1일 섭취량 준수가 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/children-probiotics-2026-2.png" alt="어린이 유산균 형태별 비교 일러스트 — 분말 스틱 가성비·젤리형 섭취 편의·30포 3개입 장기 구성" loading="lazy" width="800" height="450" />
+  <img src="/images/children-probiotics-2026-2.webp" alt="어린이 유산균 형태별 비교 일러스트 — 분말 스틱 가성비·젤리형 섭취 편의·30포 3개입 장기 구성" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>균주·CFU 표기</b><br/>학명·보장균수</span>
     <span><b>섭취 형태 적합</b><br/>분말·젤리·연령</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 기저귀 가성비
   - 밴드형 기저귀
   - 신생아 1단계 기저귀
-heroImage: /images/newborn-diaper-top5-2026-1.png
+heroImage: /images/newborn-diaper-top5-2026-1.webp
 heroImageAlt: 신생아 기저귀 추천 TOP 5 안전 인증·흡수력·피부자극 5축 등급 비교표 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -135,7 +135,7 @@ sources:
 [어린이제품 안전 특별법](https://www.law.go.kr)에 따라 모든 영유아 기저귀는 **KC 안전 인증**이 필수이며, 인증 번호는 제품 외포장에 명시되어야 한다. [식품의약품안전처](https://www.mfds.go.kr)의 「위생용품의 기준 및 규격」은 BPA·포름알데히드·중금속 등 유해 물질 검출 한도를 정한다.
 
 <figure class="infographic">
-  <img src="/images/newborn-diaper-top5-2026-1.png" alt="신생아 기저귀 추천 핵심 기준 KC 인증·BPA-Free·피부 자극 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-diaper-top5-2026-1.webp" alt="신생아 기저귀 추천 핵심 기준 KC 인증·BPA-Free·피부 자극 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>KC 인증</b><br/>어린이제품 안전</span>
     <span><b>식약처 등록</b><br/>BPA·포름알데히드</span>
@@ -222,7 +222,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/newborn-diaper-top5-2026-2.png" alt="신생아 기저귀 추천 5선 가격·단계·등급 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/newborn-diaper-top5-2026-2.webp" alt="신생아 기저귀 추천 5선 가격·단계·등급 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>친환경</b><br/>밤부 3팩 · 57,900원</span>
     <span><b>신상</b><br/>매직컴포트 · 42,900원</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 홈캠 보안
   - 베이비 모니터 가성비
   - 신생아 안전 모니터
-heroImage: /images/baby-monitor-2026-1.png
+heroImage: /images/baby-monitor-2026-1.webp
 heroImageAlt: 베이비 모니터 전용 무선·Wi-Fi 홈캠·통합형 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -140,7 +140,7 @@ sources:
 **가족 다수 접속·외출 원격 확인**이 필요한 가정은 Wi-Fi 홈캠 라인이 호환되지만 **개인정보 보안 점검(비밀번호·2단계 인증·펌웨어·암호화)이 필수**다. 전용 무선 라인은 외부 네트워크 노출이 없어 보안 우위이지만 부모용 모니터 화면 휴대 거리에 한정된다.
 
 <figure class="infographic">
-  <img src="/images/baby-monitor-2026-1.png" alt="베이비 모니터 전용 무선·Wi-Fi 홈캠·통합형 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-monitor-2026-1.webp" alt="베이비 모니터 전용 무선·Wi-Fi 홈캠·통합형 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>전용 무선</b><br/>보안 우위·휴대 한정</span>
     <span><b>Wi-Fi 홈캠</b><br/>원격 확인·보안 점검</span>

@@ -25,7 +25,7 @@ lsiKeywords:
   - 원터치 텐트 유아
   - 인디언 텐트 유아
   - 놀이텐트 KC 인증
-heroImage: /images/kids-play-tent-2026-1.png
+heroImage: /images/kids-play-tent-2026-1.webp
 heroImageAlt: 유아 텐트 설치 방식·통기 개구부·안전 표시 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -154,7 +154,7 @@ sources:
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 어린이 제품 표시에 관한 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 연령별 신장 범위는 [질병관리청 소아청소년 성장도표](https://knhanes.kdca.go.kr) 공개 자료에서 일반적으로 인용되는 값을 따랐다.
 
 <figure class="infographic">
-  <img src="/images/kids-play-tent-2026-2.png" alt="유아 텐트 3계열 비교 일러스트 — 소형 하우스형·매트 포함 세트형·대형 프레임형" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-play-tent-2026-2.webp" alt="유아 텐트 3계열 비교 일러스트 — 소형 하우스형·매트 포함 세트형·대형 프레임형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>설치·점유</b><br/>바닥 면적</span>
     <span><b>통기</b><br/>개구부 비율</span>

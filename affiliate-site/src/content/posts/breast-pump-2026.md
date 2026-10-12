@@ -24,7 +24,7 @@ lsiKeywords:
   - 유축기 후기
   - 듀얼 유축기
   - 유축기 디시
-heroImage: /images/breast-pump-2026-1.png
+heroImage: /images/breast-pump-2026-1.webp
 heroImageAlt: 유축기 흡입 방식·흡입력 조절·세척 위생 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -138,7 +138,7 @@ sources:
 | 핸즈프리(컵 일체형) | 옷 안 착용·이동 유축 | 외출·동시 작업·이동 | 정숙·고흡입 최우선 |
 
 <figure class="infographic">
-  <img src="/images/breast-pump-2026-1.png" alt="유축기 방식·흡입력·세척 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/breast-pump-2026-1.webp" alt="유축기 방식·흡입력·세척 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>흡입 방식</b><br/>전동·수동·핸즈프리</span>
     <span><b>흡입력 조절</b><br/>약한 단계부터</span>

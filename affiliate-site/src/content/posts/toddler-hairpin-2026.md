@@ -24,7 +24,7 @@ lsiKeywords:
   - 미끄럼 방지 헤어핀
   - 헤어핀 개당 가격
   - 어린이 헤어 액세서리
-heroImage: /images/toddler-hairpin-2026-1.png
+heroImage: /images/toddler-hairpin-2026-1.webp
 heroImageAlt: 유아 헤어핀 논슬립 구조·크기·마감 3축 등급 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -119,7 +119,7 @@ draft: false
 헤어핀은 아이 몸에 착용하는 소품이라 마감 축을 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)의 어린이제품 안전 정보 기준으로 읽었다. 확인할 표기는 **KC 표시, 사용 연령, 제조·수입사 정보**이며, 표시 읽는 법 전반은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/toddler-hairpin-2026-2.png" alt="유아 헤어핀 3종 비교 일러스트 — 대용량 똑딱핀·리본 똑딱핀·미니 베이비핀 구성" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-hairpin-2026-2.webp" alt="유아 헤어핀 3종 비교 일러스트 — 대용량 똑딱핀·리본 똑딱핀·미니 베이비핀 구성" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>논슬립 구조</b><br/>패드·톱니·판</span>
     <span><b>크기</b><br/>모발 길이 대비</span>

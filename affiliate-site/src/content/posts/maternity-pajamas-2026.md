@@ -25,7 +25,7 @@ lsiKeywords:
   - 임산부 잠옷 상하세트
   - 만삭 잠옷
   - 임산부 실내복
-heroImage: /images/maternity-pajamas-2026-1.png
+heroImage: /images/maternity-pajamas-2026-1.webp
 heroImageAlt: 임산부 잠옷 배 수용·야간 동선·소재 표기 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -167,7 +167,7 @@ draft: false
 가정용 섬유제품의 표시사항 기준은 [국가기술표준원](https://www.kats.go.kr)의 제품 안전 표시 제도 안내와 [국가법령정보센터](https://www.law.go.kr)의 생활용품 안전관리 법령에서 확인할 수 있고, 인증번호가 표기된 경우 [제품안전정보센터](https://www.safetykorea.kr)에서 조회된다. 섬유제품 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/maternity-pajamas-2026-2.png" alt="임산부 잠옷 3종 구조 비교 일러스트 — 원피스형·상하 분리형·전개 겸용형" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-pajamas-2026-2.webp" alt="임산부 잠옷 3종 구조 비교 일러스트 — 원피스형·상하 분리형·전개 겸용형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>배 수용</b><br/>밴드 유무</span>
     <span><b>동선</b><br/>1회 동작 수</span>

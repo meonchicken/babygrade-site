@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 수면조끼 순위
   - 아기 수면조끼 가격
   - 아기 수면조끼 디시
-heroImage: /images/baby-sleep-vest-2026-1.png
+heroImage: /images/baby-sleep-vest-2026-1.webp
 heroImageAlt: 아기 수면조끼 TOG 보온·소재 안전·수면 설계 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -128,7 +128,7 @@ sources:
 아기 수면조끼는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 KC 인증 대상 섬유제품이며, [한국소비자원](https://www.kca.go.kr)의 유아용 섬유제품 안전 정보와 [미국소아과학회(AAP)](https://www.aap.org)의 영아 안전 수면 환경 권고가 함께 참고된다. **"꿀잠"·"수면 시간 증가"·"돌연사 예방" 같은 효과 단정 표현은 쓸 수 없다.** 소재 구성·KC 인증·겹수 표기 같은 객관 표기와 실내 온도 매칭·안전 수면 환경 같은 사용 원칙이 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/baby-sleep-vest-2026-2.png" alt="아기 수면조끼 유형별 비교 일러스트 — 여름 거즈 경량·밤부 메쉬 프리미엄·삼중지 보온" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-sleep-vest-2026-2.webp" alt="아기 수면조끼 유형별 비교 일러스트 — 여름 거즈 경량·밤부 메쉬 프리미엄·삼중지 보온" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>TOG 보온·계절</b><br/>0.5~2.5 TOG·겹수</span>
     <span><b>소재 안전 통기</b><br/>거즈·밤부·KC 인증</span>

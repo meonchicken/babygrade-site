@@ -24,7 +24,7 @@ lsiKeywords:
   - 아기 신발 밑창
   - 걸음마 신발 시기
   - 첫걸음마 신발 디시
-heroImage: /images/baby-first-walking-shoes-2026-1.png
+heroImage: /images/baby-first-walking-shoes-2026-1.webp
 heroImageAlt: 아기 첫걸음마 신발 밑창 굽힘·발볼·무게 3축 등급 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -121,7 +121,7 @@ sources:
 첫걸음마 신발은 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 안전 특별법 대상 품목으로, KC 인증은 유해물질·물리적 안전 기준을 통과했다는 객관 표기다. 미국소아과학회가 운영하는 [HealthyChildren.org](https://www.healthychildren.org/English/ages-stages/toddler/Pages/Choosing-Shoes.aspx)의 보호자 안내는 걸음마 시기에는 실내에서 맨발로 걷게 하고, 신발은 실외에서 발을 보호하는 용도로 고르되 **유연한 밑창**을 택하라고 권한다. [한국소비자원](https://www.kca.go.kr)의 어린이용품 안전정보에서도 부속품 이탈과 치수 불일치가 반복 지적 항목이다.
 
 <figure class="infographic">
-  <img src="/images/baby-first-walking-shoes-2026-2.png" alt="아기 첫걸음마 신발 유형별 비교 일러스트 — 양말형·말랑 밑창 보행기화·삑삑이형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-first-walking-shoes-2026-2.webp" alt="아기 첫걸음마 신발 유형별 비교 일러스트 — 양말형·말랑 밑창 보행기화·삑삑이형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>밑창 굽힘</b><br/>앞코 1/3·비틀림</span>
     <span><b>발볼·앞여유</b><br/>앞여유 10mm</span>

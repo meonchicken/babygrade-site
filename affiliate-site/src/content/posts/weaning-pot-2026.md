@@ -24,7 +24,7 @@ lsiKeywords:
   - 이유식 냄비 디시
   - 아기 이유식 냄비
   - 이유식 찜기 냄비
-heroImage: /images/weaning-pot-2026-1.png
+heroImage: /images/weaning-pot-2026-1.webp
 heroImageAlt: 이유식 냄비 재질 계열·인덕션 호환 구조·조리 용량 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -146,7 +146,7 @@ sources:
 이유식 냄비는 [식품의약품안전처](https://www.mfds.go.kr)의 「기구 및 용기·포장의 기준 및 규격」을 따르는 식품용 기구이며, [식품안전나라](https://www.foodsafetykorea.go.kr)의 식품용 기구 표시 정보와 [국가기술표준원](https://www.kats.go.kr)의 KS 스테인리스 강판 재질 규격, [한국소비자원](https://www.kca.go.kr)의 조리기구 표시 정보가 함께 참고된다. **"완전 무해"·"부작용 없음" 같은 표현은 조리기구 광고에서 쓸 수 없는 단정형 표현이다.** 재질 계열·식품용 기구 표시·용량 표기 같은 객관 표시와 사용 조건 준수가 실제 안전의 기본이다.
 
 <figure class="infographic">
-  <img src="/images/weaning-pot-2026-2.png" alt="이유식 냄비 지름별 비교 일러스트 — 통3중 편수냄비·찜기 겸용 냄비·316 세트 구성" loading="lazy" width="800" height="450" />
+  <img src="/images/weaning-pot-2026-2.webp" alt="이유식 냄비 지름별 비교 일러스트 — 통3중 편수냄비·찜기 겸용 냄비·316 세트 구성" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>재질 계열</b><br/>304·316·통3중</span>
     <span><b>인덕션 호환</b><br/>바닥 자성층</span>

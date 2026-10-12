@@ -24,7 +24,7 @@ lsiKeywords:
   - 모유실감 젖병
   - 젖병 소독기 추천 디시
   - 미국 신생아 젖병 추천
-heroImage: /images/baby-bottle-recommendation-2026-1.png
+heroImage: /images/baby-bottle-recommendation-2026-1.webp
 heroImageAlt: 신생아 젖병 PPSU·PP·유리 소재 단계별 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -136,7 +136,7 @@ sources:
 핵심은 **"PPSU 무조건 좋다"는 통념이 한국 신생아 가구의 운영 패턴에서 항상 성립하지 않는다**는 점이다. 신생아 0~6개월은 1일 8~12회 수유로 소독 사이클이 잦아 PPSU 내열이 강점이지만, 보조 PP·유리 라인을 병행하는 후기가 디시·클리앙에서 다수 보고된다. 어떤 소재든 [식품안전나라](https://www.foodsafetykorea.go.kr) 식품용 기구·용기 등록 라인을 선택하는 것이 표준 절차다.
 
 <figure class="infographic">
-  <img src="/images/baby-bottle-recommendation-2026-1.png" alt="신생아 젖병 PPSU·PP·유리 소재 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bottle-recommendation-2026-1.webp" alt="신생아 젖병 PPSU·PP·유리 소재 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>PPSU</b><br/>프리미엄 · 내열 180℃</span>
     <span><b>PP</b><br/>입문 · 내열 120℃</span>
@@ -208,7 +208,7 @@ KC 인증·BPA-Free 같은 안전 인증 전반의 등급 체계는 [KC 인증�
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-bottle-recommendation-2026-2.png" alt="신생아 젖병 모유실감·가성비 PPSU·초저가 PP 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bottle-recommendation-2026-2.webp" alt="신생아 젖병 모유실감·가성비 PPSU·초저가 PP 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>모유실감</b><br/>더블하트 · 43,400원</span>
     <span><b>가성비 PPSU</b><br/>베베그로우 · 28,900원</span>

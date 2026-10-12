@@ -24,7 +24,7 @@ lsiKeywords:
   - 마더케이 유두 보호기
   - 스펙트라 유두 보호기
   - 모유수유 용품
-heroImage: /images/nipple-shield-2026-1.png
+heroImage: /images/nipple-shield-2026-1.webp
 heroImageAlt: 유두 보호기 두께·터널 사이즈·세척 구조 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -123,7 +123,7 @@ draft: false
 유두 보호기는 아기 입에 직접 닿는 실리콘 기구라 소재 표기를 [식품의약품안전처](https://www.mfds.go.kr) 기구·용기 기준으로 읽었다. 확인할 표기는 **실리콘 재질, BPA-Free 표기, 식품용 기구 표시**이며, 제품 안전 관련 인증 번호는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 영유아 용품 인증 표시 읽는 법 전반은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/nipple-shield-2026-2.png" alt="유두 보호기 3종 비교 일러스트 — 실리콘 보호기와 보관 케이스 구성" loading="lazy" width="800" height="450" />
+  <img src="/images/nipple-shield-2026-2.webp" alt="유두 보호기 3종 비교 일러스트 — 실리콘 보호기와 보관 케이스 구성" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>두께·소재</b><br/>실리콘 막 두께</span>
     <span><b>터널 사이즈</b><br/>유두 지름 + 여유</span>

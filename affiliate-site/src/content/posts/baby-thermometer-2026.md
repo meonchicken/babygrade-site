@@ -24,7 +24,7 @@ lsiKeywords:
   - 신생아 체온계
   - 아기 체온계 디시
   - 아기 체온계 비교
-heroImage: /images/baby-thermometer-2026-1.png
+heroImage: /images/baby-thermometer-2026-1.webp
 heroImageAlt: 아기 유아 체온계 측정 방식·정확도 반복성·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 체온계는 [식품의약품안전처](https://www.mfds.go.kr) 기준의 **의료기기로 표기·허가되는 제품**이 있으며, 구매 시 의료기기 표기와 권장 측정 부위·월령을 확인하는 것이 표준이다. **"항상 정확"·"오차 없음"·"열 100% 감지" 같은 절대 표현이나 "감기·독감 진단" 같은 진단 단정은 쓸 수 없다.** 측정 방식·부위마다 정상 범위가 다르므로 같은 방식으로 일관되게 재고, 한 번의 값으로 자가 진단하지 않는다.
 
 <figure class="infographic">
-  <img src="/images/baby-thermometer-2026-2.png" alt="아기 체온계 방식별 비교 일러스트 — 비접촉 다목적·비접촉 가성비·접촉 전자" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-thermometer-2026-2.webp" alt="아기 체온계 방식별 비교 일러스트 — 비접촉 다목적·비접촉 가성비·접촉 전자" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>측정 방식</b><br/>비접촉·고막·접촉</span>
     <span><b>정확도 반복성</b><br/>재측정 편차</span>

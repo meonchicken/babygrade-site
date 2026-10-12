@@ -213,8 +213,8 @@ node content-pipeline/new-article.js "<메인키워드>" "<카테고리>"
 ```bash
 cd content-pipeline && node -e '
 const { generateForArticle } = require("./generate-images.js");
-const cover   = "<단일 제품 커버 컷 영문 묘사>";   // -1.png 썸네일/OG 전용
-const compare = "<3제품 비교 일러스트 영문 묘사>"; // -2.png 본문 figure 전용
+const cover   = "<단일 제품 커버 컷 영문 묘사>";   // -1.webp 썸네일/OG 전용
+const compare = "<3제품 비교 일러스트 영문 묘사>"; // -2.webp 본문 figure 전용
 generateForArticle("<slug>", [cover, compare]).then(()=>console.log("DONE"));
 '
 ```
@@ -230,8 +230,11 @@ node publish-batch.js <slug>          # ❌ 금지 (--images 미지정)
 
 | 파일 | 용도 | 규칙 |
 |---|---|---|
-| `<slug>-1.png` | **썸네일/OG 전용** (frontmatter `heroImage`) | **본문에 다시 넣지 마라** |
-| `<slug>-2.png` | 본문 `<figure>` 전용 | 썸네일과 다른 구도 |
+| `<slug>-1.webp` | **썸네일/OG 전용** (frontmatter `heroImage`) | **본문에 다시 넣지 마라** |
+| `<slug>-2.webp` | 본문 `<figure>` 전용 | 썸네일과 다른 구도 |
+
+파일 형식은 **webp** 다. `generateForArticle` 이 Flux PNG 를 webp 3종(`.webp`·`-800.webp`·`-400.webp`) + OG 용 `.jpg` 로
+바꾸고 PNG 를 지운다. frontmatter·본문에는 `/images/<slug>-N.webp` 만 적는다 (`.png` 를 적으면 404 다).
 
 스타일 기준: 파스텔 플랫 벡터 일러스트, 텍스트 없음.
 
@@ -251,10 +254,11 @@ node publish-batch.js <slug>          # ❌ 금지 (--images 미지정)
 ### 6-3. 생성 후 검증
 
 ```bash
-ls -l affiliate-site/public/images/<slug>-*.png
+ls -l affiliate-site/public/images/<slug>-*
 ```
 
-- 파일이 **100KB 미만이면 거의 빈 그림이다.** 묘사를 사물 중심으로 바꿔 재생성하라
+- 글당 7개 파일이어야 한다: `-1.webp`·`-1-800.webp`·`-1-400.webp`·`-1.jpg`·`-2.webp`·`-2-800.webp`·`-2-400.webp`. `.png` 가 남아 있으면 변환이 안 된 것이다
+- 원본 폭 `<slug>-N.webp` 가 **3KB 미만이면 거의 빈 그림이다**(정상은 7~70KB). 묘사를 사물 중심으로 바꿔 재생성하라
 - Replicate 실패(404 `No adapter found` / 429)는 **일시적이다. 같은 Flux 경로로 재시도**한다.
   **어떤 경우에도 Gemini 로 우회하지 않는다**
 - 그래도 2장을 못 만들면 **이미지 없이 발행하지 말고** `status: "blocked"` 로 끝낸다

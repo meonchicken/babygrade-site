@@ -25,7 +25,7 @@ lsiKeywords:
   - 저상형 아기 침대 추천
   - 트리미고 아기침대
   - 이케아 아기 침대
-heroImage: /images/baby-crib-2026-1.png
+heroImage: /images/baby-crib-2026-1.webp
 heroImageAlt: 아기 침대 KC 인증·매트리스·접이식 안전 단계별 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -148,7 +148,7 @@ sources:
 [한국소비자원](https://www.kca.go.kr) 어린이용 침대 안전성 조사는 **신생아~12개월 영아는 저상형/접이식 휴대용/원목 라인 중 KC 인증 라인, 만 12~24개월은 동일 라인 유지 또는 범퍼 침대 전환, 만 24개월+는 유아 침대 전환**으로 단계별 운영을 표준으로 안내한다. 저상형은 매트리스 높이가 낮아 부모 침대와 가까이 둘 때 룸 셰어링 운영에 적합하고, 원목 라인은 내구성과 중고 회전이 강점이지만 무게와 단가가 부담될 수 있다. 접이식 휴대용은 산후조리원·외가·이사 등 이동 시나리오에 강점이 있고, 본 페이지의 3개 트리미고 라인이 이 카테고리에 해당한다. 범퍼 침대는 만 12개월+ 활동 단계에 적합한 라인으로, **신생아 단계에서는 범퍼·이불·인형이 SIDS 위험 요인**이라는 미국 소아과학회·대한소아청소년과학회의 일관된 안내가 있다.
 
 <figure class="infographic">
-  <img src="/images/baby-crib-2026-1.png" alt="아기 침대 KC 인증·매트리스·접이식 안전 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-crib-2026-1.webp" alt="아기 침대 KC 인증·매트리스·접이식 안전 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>저상형·원목</b><br/>가정 표준 라인</span>
     <span><b>접이식 휴대용</b><br/>산후조리원·이동</span>
@@ -220,7 +220,7 @@ Trimigo 휴대용 이동식 신생아 접이식 산후조리원 애기 침대+�
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-crib-2026-2.png" alt="아기 침대 가성비 프리미엄·휴대 표준·산후조리원 풀세트 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-crib-2026-2.webp" alt="아기 침대 가성비 프리미엄·휴대 표준·산후조리원 풀세트 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 프리미엄</b><br/>트리미고 · 139,800원</span>
     <span><b>산후조리원 풀세트</b><br/>트리미고 · 212,850원</span>

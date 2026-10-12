@@ -25,7 +25,7 @@ lsiKeywords:
   - 유모차 시트커버
   - 신생아 유모차 시트
   - 사계절 유모차 라이너
-heroImage: /images/stroller-seat-liner-2026-1.png
+heroImage: /images/stroller-seat-liner-2026-1.webp
 heroImageAlt: 유모차 시트 통기 구조·세탁 건조·하네스 슬롯 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -164,7 +164,7 @@ draft: false
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 섬유·이동기구 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 광고 표시의 허용 범위는 [공정거래위원회](https://www.ftc.go.kr)의 표시·광고 관련 안내를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/stroller-seat-liner-2026-2.png" alt="유모차 시트 3종 비교 일러스트 — 3D 에어메쉬 단층형·양면 라이너 단품형·목쿠션 세트형" loading="lazy" width="800" height="450" />
+  <img src="/images/stroller-seat-liner-2026-2.webp" alt="유모차 시트 3종 비교 일러스트 — 3D 에어메쉬 단층형·양면 라이너 단품형·목쿠션 세트형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>통기</b><br/>층 구성</span>
     <span><b>세탁</b><br/>건조 시간</span>

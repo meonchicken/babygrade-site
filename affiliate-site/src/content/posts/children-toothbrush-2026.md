@@ -24,7 +24,7 @@ lsiKeywords:
   - 어린이 전동 칫솔 추천
   - 어린이 칫솔질 방법
   - 어린이 칫솔 치약 함께
-heroImage: /images/children-toothbrush-2026-1.png
+heroImage: /images/children-toothbrush-2026-1.webp
 heroImageAlt: 어린이 칫솔 STEP1~STEP4 단계별 헤드·모 굵기 비교 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -137,7 +137,7 @@ sources:
 STEP1·2 구간은 보호자가 마무리 닦아주기를 함께 하는 것이 [대한소아치과학회](https://www.kapd.org) 권고이며, STEP3 구간부터 어린이 자조 칫솔질이 본격화된다. 다만 칫솔질 자조 능력은 만 7~8세에 완성된다는 학회 입장이 일관되므로 STEP3 구간에서도 **취침 전 보호자 마무리 닦아주기** 1회는 유지하는 것이 일반적이다.
 
 <figure class="infographic">
-  <img src="/images/children-toothbrush-2026-1.png" alt="어린이 칫솔 STEP1~STEP4 단계별 헤드·모 굵기 비교 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/children-toothbrush-2026-1.webp" alt="어린이 칫솔 STEP1~STEP4 단계별 헤드·모 굵기 비교 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>STEP1·2</b><br/>0~4세 보호자 도움</span>
     <span><b>STEP3</b><br/>4~7세 자조 훈련</span>
@@ -209,7 +209,7 @@ KC 어린이제품 안전확인은 어린이제품 안전특별법에 따른 의
 </div>
 
 <figure class="infographic">
-  <img src="/images/children-toothbrush-2026-2.png" alt="어린이 칫솔 미세모 표준·대용량 회전·캐릭터 입문 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/children-toothbrush-2026-2.webp" alt="어린이 칫솔 미세모 표준·대용량 회전·캐릭터 입문 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>STEP3 미세모 표준</b><br/>센토 12개입 · 11,900원</span>
     <span><b>대용량 동시 회전</b><br/>왕타 48개 · 49,040원</span>

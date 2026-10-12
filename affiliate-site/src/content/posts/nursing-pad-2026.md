@@ -23,7 +23,7 @@ lsiKeywords:
   - 수유패드 언제까지
   - 수유패드 몇개
   - 수유패드 필요한가요
-heroImage: /images/nursing-pad-2026-1.png
+heroImage: /images/nursing-pad-2026-1.webp
 heroImageAlt: 수유패드 흡수력·통기 피부 자극·착용 밀착 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -116,7 +116,7 @@ sources:
 수유 시기·상황에 따라 **외출·다량(일회용 다량) → 집·반복(다회용) → 얇은 옷(박형)**으로 운영을 나누는 것이 일반적이다. 흡수력이 커도 **젖으면 바로 교체**해야 위생·짓무름을 줄일 수 있다. 수유패드는 위생용품이라 **"유선염 예방·치료", "트러블 100% 차단" 같은 의료 효능·절대 표현을 단정 표시할 수 없다.** 유방 통증·발열·발진·고름이 있으면 산부인과·모유수유클리닉 진료가 우선이다.
 
 <figure class="infographic">
-  <img src="/images/nursing-pad-2026-1.png" alt="수유패드 흡수력·통기 피부 자극·착용 밀착 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/nursing-pad-2026-1.webp" alt="수유패드 흡수력·통기 피부 자극·착용 밀착 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>흡수력</b><br/>다량·역류 방지</span>
     <span><b>통기 피부 자극</b><br/>통기·저자극 표면</span>

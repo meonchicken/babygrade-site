@@ -24,7 +24,7 @@ lsiKeywords:
   - 하이체어 브랜드
   - 하이체어 디시
   - 하이체어 추천 클리앙
-heroImage: /images/high-chair-2026-1.png
+heroImage: /images/high-chair-2026-1.webp
 heroImageAlt: 하이체어 안전 구조·청소 위생·성장 호환 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -124,7 +124,7 @@ sources:
 외출·식사 동선상 식탁에 붙여 함께 먹는 경우가 많아 **식탁 부착(2-way) 호환**과 **발받침·높이 조절**이 실사용에 크게 작용한다. 안전벨트(하네스)는 형태와 무관하게 매번 체결하고, **"100% 안전"·"절대 넘어지지 않음" 같은 절대 표현은 쓸 수 없다.** 하이체어는 보호자 관찰을 전제로 사용하고, 식판·시트는 분리 세척 가능 구조가 위생에 유리하다.
 
 <figure class="infographic">
-  <img src="/images/high-chair-2026-1.png" alt="하이체어 안전 구조·청소 위생·성장 호환 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/high-chair-2026-1.webp" alt="하이체어 안전 구조·청소 위생·성장 호환 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>5점식 하네스·KC 인증</span>
     <span><b>청소 위생</b><br/>식판 탈착·시트 분리</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 유모차 디럭스 언제부터
   - 유모차 디럭스 사용 기간
   - 디럭스 유모차 무게
-heroImage: /images/baby-stroller-deluxe-2026-1.png
+heroImage: /images/baby-stroller-deluxe-2026-1.webp
 heroImageAlt: 유모차 디럭스·절충형·휴대용 운영 시나리오 단계별 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -135,7 +135,7 @@ sources:
 핵심은 **"디럭스 무조건 좋다"는 통념이 한국 평균 가구에서 항상 성립하지 않는다**는 점이다. 첫째 신생아·디럭스 단독 운영 가구는 디럭스가 표준 답이지만, 차량 이동 빈도가 높거나 둘째 이상·엘리베이터 폭 제약이 있는 가구는 절충형 단일 운영 또는 디럭스 + 휴대용 2단계 보유가 더 합리적이라는 후기가 디시·맘카페에서 반복된다.
 
 <figure class="infographic">
-  <img src="/images/baby-stroller-deluxe-2026-1.png" alt="유모차 디럭스·절충형·휴대용 운영 시나리오 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-stroller-deluxe-2026-1.webp" alt="유모차 디럭스·절충형·휴대용 운영 시나리오 단계별 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>디럭스</b><br/>신생아~12개월 표준</span>
     <span><b>절충형</b><br/>신생아~24개월 단일</span>
@@ -208,7 +208,7 @@ KC 인증·BPA-Free 같은 안전 인증 전반의 등급 체계는 [KC 인증�
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-stroller-deluxe-2026-2.png" alt="유모차 디럭스·절충형·휴대용 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-stroller-deluxe-2026-2.webp" alt="유모차 디럭스·절충형·휴대용 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>디럭스 단독</b><br/>에어보스 뷰텍 · 298,000원</span>
     <span><b>절충형 단일</b><br/>어반라이더 · 459,000원</span>

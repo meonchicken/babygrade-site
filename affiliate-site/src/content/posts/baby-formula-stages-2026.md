@@ -25,7 +25,7 @@ lsiKeywords:
   - 압타밀 분유
   - 압타밀 프로푸투라
   - 분유 영양 성분
-heroImage: /images/baby-formula-stages-2026-1.png
+heroImage: /images/baby-formula-stages-2026-1.webp
 heroImageAlt: 분유 단계별 1·2·3단계 + 식약처 영아용 조제식 표시기준 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -149,7 +149,7 @@ sources:
 [식품의약품안전처](https://www.mfds.go.kr) 영아용 조제식 표시기준은 **1단계(0~6개월)는 모유 성분에 가장 근접한 영양 조성을, 2단계(6~12개월)는 이유식 보조 영양을, 3단계(12개월+)는 유아 일반 식사 병행을 표시·광고 기준의 표준**으로 안내한다. 본 페이지의 3개 라인은 모두 1단계(0~6개월) 라인으로, 신생아·영아 0~6개월 영양 공급 표준 단계에 해당한다. [대한소아청소년과학회](https://www.pediatrics.or.kr) 영아 영양 권고는 단계 전환을 월령·체중·이유식 진행도 기반으로 결정하도록 안내하며, 특수 분유(알러지·미숙아·유당 불내성 등)는 일반 단계 분유와 별도로 분류되어 소아청소년과 전문의 상담 후 운영하는 것이 표준이다. 모유 수유 + 분유 보충(혼합 수유)은 모유 수유가 충분하지 않은 가정의 표준 운영 시나리오이며, 분유 단독 수유는 모유 수유가 불가능한 경우의 운영 라인이다.
 
 <figure class="infographic">
-  <img src="/images/baby-formula-stages-2026-1.png" alt="분유 단계별 1·2·3단계 + 식약처 영아용 조제식 표시기준 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-formula-stages-2026-1.webp" alt="분유 단계별 1·2·3단계 + 식약처 영아용 조제식 표시기준 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>1단계</b><br/>0~6개월 영아용</span>
     <span><b>2단계</b><br/>6~12개월 이유식 보조</span>
@@ -221,7 +221,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/baby-formula-stages-2026-2.png" alt="분유 가성비 국내·표준 직구·프리미엄 직구 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-formula-stages-2026-2.webp" alt="분유 가성비 국내·표준 직구·프리미엄 직구 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 국내</b><br/>앱솔루트 명작 · 65,880원</span>
     <span><b>표준 직구</b><br/>압타밀 4팩 · 161,850원</span>

@@ -25,7 +25,7 @@ lsiKeywords:
   - 홍삼 진세노사이드 함량
   - 어린이 홍삼 부작용
   - 어린이 건강기능식품 표시
-heroImage: /images/kids-red-ginseng-2026-1.png
+heroImage: /images/kids-red-ginseng-2026-1.webp
 heroImageAlt: 어린이 홍삼 표시 계열·1포 함량·회당 원가 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -162,7 +162,7 @@ sources:
 건강기능식품의 표시 기준과 원료별 인정 사항은 [식품의약품안전처 식품안전나라](https://www.foodsafetykorea.go.kr)에서 조회할 수 있고, 표시·광고 기준과 이상사례 보고 창구는 [식품의약품안전처](https://www.mfds.go.kr)가 공개한다. 어린이 식품 표시에 관한 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 연령별 섭취기준은 [보건복지부](https://www.mohw.go.kr)의 한국인 영양소 섭취기준 자료를 참고했다.
 
 <figure class="infographic">
-  <img src="/images/kids-red-ginseng-2026-2.png" alt="어린이 홍삼 3계열 비교 일러스트 — 액상 스틱형·젤리형·대용량 박스형" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-red-ginseng-2026-2.webp" alt="어린이 홍삼 3계열 비교 일러스트 — 액상 스틱형·젤리형·대용량 박스형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>표시 계열</b><br/>인증 도안</span>
     <span><b>1포 함량</b><br/>용량·지표성분</span>

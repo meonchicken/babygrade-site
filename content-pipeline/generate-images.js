@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const matter = require('gray-matter');
+const { optimizeImage } = require('./optimize-images');
 
 const API_KEY = process.env.GEMINI_API_KEY;
 const REPLICATE_API_TOKEN = process.env.REPLICATE_API_TOKEN;
@@ -206,24 +207,38 @@ async function generateImageReplicate(prompt, filename) {
 }
 
 async function generateImage(prompt, filename) {
+  // 모델 출력은 PNG 다. 다른 확장자로 받으면 내용과 이름이 어긋난다 — 발행용 webp 는 generateArticleImage 가 만든다.
+  if (!/\.png$/i.test(filename)) {
+    throw new Error(`generateImage 는 .png 경로만 받는다 (${path.basename(filename)}). webp 는 generateArticleImage(slug, index, 묘사) 로`);
+  }
   return IMAGE_PROVIDER === 'replicate'
     ? generateImageReplicate(prompt, filename)
     : generateImageGemini(prompt, filename);
 }
 
+// 발행용 이미지 1장: <slug>-<index>.png 생성 → webp 변형 3종(+히어로 OG JPEG) → 원본 PNG 삭제.
+// 발행 경로는 전부 이 함수를 거친다. PNG(1.2MB)가 repo 에 남으면 카드·썸네일까지 그걸 받아
+// 홈 한 번에 9MB 가 나갔다 (2026-10-12). 산출 규칙은 optimize-images.js 참조.
+async function generateArticleImage(slug, index, visualDescription) {
+  if (!fs.existsSync(IMAGES_DIR)) fs.mkdirSync(IMAGES_DIR, { recursive: true });
+  const png = path.join(IMAGES_DIR, `${slug}-${index}.png`);
+  await generateImage(buildImagePrompt(visualDescription), png);
+  const { produced } = await optimizeImage(png, { force: true, rmSource: true });
+  return produced;
+}
 
 async function generateForArticle(slug, prompts) {
-  if (!fs.existsSync(IMAGES_DIR)) fs.mkdirSync(IMAGES_DIR, { recursive: true });
   for (let i = 0; i < prompts.length; i++) {
-    const filepath = path.join(IMAGES_DIR, `${slug}-${i + 1}.png`);
     console.log(`\n[${i + 1}/${prompts.length}] 생성 중...`);
     console.log(`   시각 묘사: ${prompts[i].slice(0, 120)}${prompts[i].length > 120 ? '...' : ''}`);
-    await generateImage(buildImagePrompt(prompts[i]), filepath);
+    const produced = await generateArticleImage(slug, i + 1, prompts[i]);
+    console.log(`   → ${produced.map((p) => path.basename(p)).join(', ')}`);
   }
 }
 
 module.exports = {
   generateImage,
+  generateArticleImage,
   generateForArticle,
   buildImagePrompt,
   readArticleContext,

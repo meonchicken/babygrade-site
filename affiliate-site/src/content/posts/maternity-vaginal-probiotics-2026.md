@@ -25,7 +25,7 @@ lsiKeywords:
   - 임산부 프로바이오틱스
   - 질유산균 가격 비교
   - 임산부 건강기능식품 표시
-heroImage: /images/maternity-vaginal-probiotics-2026-1.png
+heroImage: /images/maternity-vaginal-probiotics-2026-1.webp
 heroImageAlt: 임산부 질유산균 균주 표기·1일 섭취 기준·잔여 기간 총액 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -161,7 +161,7 @@ sources:
 건강기능식품의 표시 기준과 원료별 인정 사항은 [식품의약품안전처 식품안전나라](https://www.foodsafetykorea.go.kr)에서 조회할 수 있고, 표시·광고 기준과 이상사례 보고 창구는 [식품의약품안전처](https://www.mfds.go.kr)가 공개한다. 표시 실태에 관한 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 임신·수유부 영양 기준은 [보건복지부](https://www.mohw.go.kr)의 한국인 영양소 섭취기준 자료를 참고했다.
 
 <figure class="infographic">
-  <img src="/images/maternity-vaginal-probiotics-2026-2.png" alt="임산부 질유산균 3종 비교 일러스트 — 정제 병형·박스 3개 묶음형·캡슐 단일형" loading="lazy" width="800" height="450" />
+  <img src="/images/maternity-vaginal-probiotics-2026-2.webp" alt="임산부 질유산균 3종 비교 일러스트 — 정제 병형·박스 3개 묶음형·캡슐 단일형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>균주 표기</b><br/>명칭 해상도</span>
     <span><b>1일 섭취</b><br/>정수·균수 기준</span>

@@ -23,7 +23,7 @@ lsiKeywords:
   - 아기 열대야 대비
   - 여름 아기 용품 리스트
   - 여름 아기 용품 체크리스트
-heroImage: /images/baby-summer-essentials-hub-2026-1.png
+heroImage: /images/baby-summer-essentials-hub-2026-1.webp
 heroImageAlt: 여름 아기 용품 자외선·물놀이·모기·열대야 4대 위협 평가 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -119,7 +119,7 @@ sources:
 네 위협은 카테고리가 달라도 **어린이 KC 인증(전기·완구·물놀이), 소재 안전(BPA-Free·식품용 실리콘·무기자차), 보호자 동반·물리 차단**이라는 공통 기준을 공유한다. 특히 **"100% 차단·완전 안전·발달 향상" 같은 단정·효능 표현은 쓸 수 없고,** 물놀이는 수심이 얕아도 항상 지켜보는 것이 표준이다.
 
 <figure class="infographic">
-  <img src="/images/baby-summer-essentials-hub-2026-1.png" alt="여름 아기 용품 자외선·물놀이·모기·열대야 4대 위협 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-summer-essentials-hub-2026-1.webp" alt="여름 아기 용품 자외선·물놀이·모기·열대야 4대 위협 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>자외선</b><br/>선크림·차단</span>
     <span><b>물놀이</b><br/>풀장·튜브·장난감</span>

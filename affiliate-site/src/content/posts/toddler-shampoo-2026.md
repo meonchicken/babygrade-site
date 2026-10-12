@@ -24,7 +24,7 @@ lsiKeywords:
   - 퓨어솜 베이비 키즈
   - 약산성 샴푸
   - EWG 그린 샴푸
-heroImage: /images/toddler-shampoo-2026-1.png
+heroImage: /images/toddler-shampoo-2026-1.webp
 heroImageAlt: 유아 샴푸 저자극·약산성·EWG 등급별 안전성 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -146,7 +146,7 @@ sources:
 [대한피부과학회](https://www.derma.or.kr) 영유아 피부 관리 안내는 **신생아 0~3개월 물 세정·신생아 전용 라인, 만 6개월~1세 베이비 라인, 만 1~3세 자기 세정 시작 시 키즈 라인, 민감·아토피 의심 시 민감성·아토 라인**으로 라인별 단계 운영을 표준으로 안내한다. 베이비 라인은 세정력이 키즈 라인보다 낮게 설계되어 두피 보호막 친화에 우선순위를 두며, 키즈 라인은 자기 세정 적응을 위한 마일드 향과 점도 조정이 일반적이다. 약산성은 라벨 표시 기준이며, 민감성·아토 라인은 보습 성분(세라마이드·판테놀 등) 강화 + 향료·색소 최소화가 일반적 설계다.
 
 <figure class="infographic">
-  <img src="/images/toddler-shampoo-2026-1.png" alt="유아 샴푸 저자극·약산성·EWG 등급별 안전성 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-shampoo-2026-1.webp" alt="유아 샴푸 저자극·약산성·EWG 등급별 안전성 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>베이비/키즈 공용</b><br/>가성비 일상 라인</span>
     <span><b>키즈 마일드 향</b><br/>자기 세정 적응</span>
@@ -218,7 +218,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/toddler-shampoo-2026-2.png" alt="유아 샴푸 가성비·마일드 향·민감성 보습 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-shampoo-2026-2.webp" alt="유아 샴푸 가성비·마일드 향·민감성 보습 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 일상</b><br/>밀크바오밥 · 10,900원</span>
     <span><b>마일드 향</b><br/>그린핑거 · 14,900원</span>

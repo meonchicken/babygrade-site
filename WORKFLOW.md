@@ -182,14 +182,15 @@ node publish-batch.js --images 0 <slug>
 > - Flux 호출이 실패하면(예: 404 `No adapter found`, 429 rate limit) **같은 Flux 경로로 재시도**한다. Gemini로 우회하지 않는다.
 
 > 🖼️ **이미지 2장 규칙 (필수 · 썸네일 ≠ 본문)** — 글마다 **서로 다른 일러스트 2장**을 생성·사용한다. 스타일 기준은 https://babygrade.kr/maternity-body-pillow-2026/ (파스텔 플랫 벡터 일러스트, 텍스트 없음).
-> - **`-1.png` = 썸네일/OG 전용** (카드·검색 미리보기). frontmatter `heroImage`에만 사용. → 단일 제품 실루엣 "커버" 컷.
-> - **`-2.png` = 본문 `<figure>` 전용**. 썸네일과 **다른 구도**(예: 3제품 비교 일러스트). 본문에는 절대 `-1.png`를 넣지 말 것.
-> - 즉 `heroImage: /images/{slug}-1.png` + 본문 `<img src="/images/{slug}-2.png">`. `publish-batch.js` 기본값이 `--images 2`이므로 그대로 두 장 생성된다(`--images 1`은 금지 — 썸네일=본문 중복 발생).
+> - **`-1.webp` = 썸네일/OG 전용** (카드·검색 미리보기). frontmatter `heroImage`에만 사용. → 단일 제품 실루엣 "커버" 컷.
+> - **`-2.webp` = 본문 `<figure>` 전용**. 썸네일과 **다른 구도**(예: 3제품 비교 일러스트). 본문에는 절대 `-1.webp`를 넣지 말 것.
+> - 즉 `heroImage: /images/{slug}-1.webp` + 본문 `<img src="/images/{slug}-2.webp">`. `publish-batch.js` 기본값이 `--images 2`이므로 그대로 두 장 생성된다(`--images 1`은 금지 — 썸네일=본문 중복 발생).
+> - **파일 형식은 webp 다 (2026-10-12~).** `generateForArticle`/`generateArticleImage` 가 Flux PNG 를 받아 `.webp`(1344)·`-800.webp`·`-400.webp` + 히어로 OG 용 `.jpg` 로 바꾸고 **PNG 를 지운다**. 본문·frontmatter 에는 `<slug>-N.webp` 만 적는다 — srcset 은 빌드가 붙인다(`rehype-local-img.mjs`·`local-images.ts`). PNG 1.2MB 가 카드·썸네일에 그대로 나가 홈 한 번에 9.4MB 였던 게 원인이다. 레거시 PNG 가 생기면 `node content-pipeline/optimize-images.js`.
 >
 > ⚠️ **Flux 생성 실패 시 처리** — Gemini를 쓰지 않으므로 프롬프트 합성 장애는 애초에 발생하지 않는다. Replicate Flux 호출 자체가 실패할 때만 대응한다.
 > - **404 `No adapter found for model`** — 일시 오류. 같은 호출을 **1회 재시도**하면 대개 통과한다(2026-07-28 실증).
 > - **429 rate limit** — 계정 잔액 <$5면 분당 6 prediction으로 제한. 슬러그별 **순차 호출**로 낮추거나 잔액 충전.
-> - 단일 이미지만 재생성할 때는 인덱스를 직접 지정한다: `generateImage(buildImagePrompt(영문_묘사), "../affiliate-site/public/images/<slug>-2.png")`.
+> - 단일 이미지만 재생성할 때는 인덱스를 직접 지정한다: `cd content-pipeline && node -e 'require("./generate-images.js").generateArticleImage("<slug>", 2, "영문 묘사")'` (webp 변형까지 한 번에 만든다. `generateImage(...png)` 직접 호출은 PNG 가 남으니 쓰지 않는다).
 > - **rsvg 로컬 SVG 폴백은 Replicate가 완전히 불가일 때만 최후로** 쓰고, 회복 후 Flux로 교체한다. **어떤 경우에도 Gemini로 우회하지 않는다.**
 
 **Google 톤 시각:**
@@ -232,7 +233,7 @@ node publish-batch.js --images 0 slug1 slug2 slug3   # 이미지 이미 생성�
 node publish-batch.js --concurrency 6 ...            # 이미지 동시 생성 수(기본 4)
 ```
 
-> 참고: 본문에 `-2.png`(둘째 인포그래픽)를 안 넣을 거면 `--images 1`로 절반 시간 절약.
+> 참고: 본문에 `-2.webp`(둘째 인포그래픽)를 안 넣을 거면 `--images 1`로 절반 시간 절약.
 > 기본 2장은 기존 글 관습(본문 figure 2개)과 맞춘 값이다.
 
 ---

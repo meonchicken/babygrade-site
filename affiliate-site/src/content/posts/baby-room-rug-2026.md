@@ -24,7 +24,7 @@ lsiKeywords:
   - 러그 미끄럼 방지
   - 놀이방 러그
   - 아기 방 꾸미기
-heroImage: /images/baby-room-rug-2026-1.png
+heroImage: /images/baby-room-rug-2026-1.webp
 heroImageAlt: 아기 방 러그 크기·쿠션·세탁 구조 3축 등급 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -122,7 +122,7 @@ sources:
 아기 방 러그는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 기준상 **영유아용으로 판매되는 섬유제품이면 어린이제품 안전 특별법 대상**이 되고, 일반 가정용 러그라면 생활용품 안전확인 대상이 된다. 어느 쪽이든 인증번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. [한국소비자원](https://www.kca.go.kr)의 영유아 용품 안전정보에서도 섬유 제품의 유해물질·부속품 이탈은 반복 점검 항목이다.
 
 <figure class="infographic">
-  <img src="/images/baby-room-rug-2026-2.png" alt="아기 방 러그 유형별 비교 일러스트 — 사각 놀이 패턴 러그·솜 누빔 원형 러그·커버 분리형 원형 러그" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-room-rug-2026-2.webp" alt="아기 방 러그 유형별 비교 일러스트 — 사각 놀이 패턴 러그·솜 누빔 원형 러그·커버 분리형 원형 러그" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>크기</b><br/>뒤집기 반경 130cm+</span>
     <span><b>쿠션·미끄럼</b><br/>솜 누빔·논슬립</span>

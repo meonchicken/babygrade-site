@@ -15,6 +15,7 @@
     "@tryghost/admin-api": "^1.14.8",
     "axios": "^1.16.0",
     "dotenv": "^17.4.2",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "sharp": "^0.34.5"
   }
 }

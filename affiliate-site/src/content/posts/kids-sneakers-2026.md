@@ -25,7 +25,7 @@ lsiKeywords:
   - 유아 운동화 순위
   - 유아 운동화 가격
   - 유아 운동화 디시
-heroImage: /images/kids-sneakers-2026-1.png
+heroImage: /images/kids-sneakers-2026-1.webp
 heroImageAlt: 유아 운동화 발볼·굽 높이·착탈 방식 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -122,7 +122,7 @@ sources:
 유아 운동화는 [국가기술표준원](https://www.kats.go.kr)이 안내하는 어린이제품 안전 특별법 대상 품목으로, KC 인증은 유해물질·물리적 안전 기준을 통과했다는 객관 표기다. 치수는 [e나라 표준인증](https://www.standard.go.kr)의 KS 신발 치수 체계를 따라 **발 길이(mm)** 로 표기되며, 같은 호수라도 브랜드별 발볼 폭(길이 등급)은 다를 수 있다. [한국소비자원](https://www.kca.go.kr)의 어린이용품 안전정보에서도 치수 불일치와 부속품 이탈이 반복 지적 항목이다.
 
 <figure class="infographic">
-  <img src="/images/kids-sneakers-2026-2.png" alt="유아 운동화 유형별 비교 일러스트 — 브랜드 주니어 라인·초경량 메쉬 벨크로·가성비 액티비티" loading="lazy" width="800" height="450" />
+  <img src="/images/kids-sneakers-2026-2.webp" alt="유아 운동화 유형별 비교 일러스트 — 브랜드 주니어 라인·초경량 메쉬 벨크로·가성비 액티비티" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>치수 여유</b><br/>앞여유 10mm·발볼 폭</span>
     <span><b>밑창 구조</b><br/>굽 높이·굽힘점·무게</span>

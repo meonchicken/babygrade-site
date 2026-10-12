@@ -25,7 +25,7 @@ lsiKeywords:
   - 애착 블랭킷 인형
   - 애착인형 세탁
   - 봉제인형 KC 인증
-heroImage: /images/baby-lovey-2026-1.png
+heroImage: /images/baby-lovey-2026-1.webp
 heroImageAlt: 아기 애착인형 구조 계열·세탁 공백·봉제 안전 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -153,7 +153,7 @@ sources:
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 유아용품 표시에 관한 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를, 영아 수면 환경 권고는 [미국소아과학회(AAP)](https://www.aap.org)를 비롯한 공개 자료에서 반복 인용되는 내용을 따랐다.
 
 <figure class="infographic">
-  <img src="/images/baby-lovey-2026-2.png" alt="아기 애착인형 4계열 비교 일러스트 — 블랭킷 일체형·태그 부착형·딸랑이 겸용형·전신 봉제형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-lovey-2026-2.webp" alt="아기 애착인형 4계열 비교 일러스트 — 블랭킷 일체형·태그 부착형·딸랑이 겸용형·전신 봉제형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>구조 계열</b><br/>충전재 비중</span>
     <span><b>세탁·건조</b><br/>공백 시간</span>

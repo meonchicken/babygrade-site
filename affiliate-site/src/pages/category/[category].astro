@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { proxyImage } from '../../utils/image-proxy';
+import { localSrcset } from '../../utils/local-images';
 import { CATEGORY_SLUG, SLUG_CATEGORY, catUrl } from '../../utils/categories';
 
 export async function getStaticPaths() {
@@ -66,7 +67,7 @@ const schemas = [breadcrumbSchema, collectionSchema];
     <div class="post-grid">
       {posts.map((post) => (
         <a class="post-card" href={`/${post.id}/`}>
-          <img src={proxyImage(post.data.heroImage)} alt={post.data.heroImageAlt} loading="lazy" width="400" height="225" />
+          <img src={proxyImage(post.data.heroImage)} srcset={localSrcset(proxyImage(post.data.heroImage))} sizes="(max-width: 600px) 100vw, 400px" alt={post.data.heroImageAlt} loading="lazy" decoding="async" width="400" height="225" />
           <div class="post-body">
             <h3>{post.data.title}</h3>
             <p>{post.data.description}</p>

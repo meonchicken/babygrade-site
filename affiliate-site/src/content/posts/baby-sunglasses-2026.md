@@ -23,7 +23,7 @@ lsiKeywords:
   - 유아 선글라스 UV 차단
   - 아기 선글라스 사이즈
   - 아기 선글라스 코받침
-heroImage: /images/baby-sunglasses-2026-1.png
+heroImage: /images/baby-sunglasses-2026-1.webp
 heroImageAlt: 아기 선글라스 UV 표기·렌즈 농도·프레임 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -151,7 +151,7 @@ sources:
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 영유아 용품의 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/baby-sunglasses-2026-2.png" alt="아기 선글라스 3종 비교 일러스트 — UV400 표기형·차단 기능형·디자인형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-sunglasses-2026-2.webp" alt="아기 선글라스 3종 비교 일러스트 — UV400 표기형·차단 기능형·디자인형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>UV 표기</b><br/>차단 파장</span>
     <span><b>렌즈 농도</b><br/>가시광선</span>

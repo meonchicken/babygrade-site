@@ -24,7 +24,7 @@ lsiKeywords:
   - 5구 식판
   - 미끄럼방지 식판
   - 깊은 식판
-heroImage: /images/toddler-divided-plate-2026-1.png
+heroImage: /images/toddler-divided-plate-2026-1.webp
 heroImageAlt: 유아 식판 트라이탄·에코젠·스텐 소재별 5구 분리·미끄럼방지 안전성 매칭 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -148,7 +148,7 @@ sources:
 [한국소비자원](https://www.kca.go.kr) 어린이 식기 안전성 조사는 **어린이집·유치원 등원에는 트라이탄/에코젠 라인, 가정 식사 일반 보관에는 스텐/도자기, 외출은 트라이탄/에코젠**으로 소재별 분리 사용을 표준으로 안내한다. 트라이탄(Tritan)은 미국 이스트만(Eastman)이 개발한 BPA-Free 코폴리에스터로 투명도와 내충격이 모두 우수해 유아 식기 라인에서 채택률이 높다. 에코젠(Eastman Eco)은 같은 이스트만 개발 BPA-Free 코폴리에스터의 환경 친화 라인이며, 트라이탄과 안전기준은 동일하다. 스텐은 화학물 용출 우려가 가장 낮지만 무게가 있고 전자레인지 사용이 불가능해 유치원 등원 라인보다는 가정 식사·도시락 라인에서 채택된다. 도자기는 가정 장기 식사에 안정적이지만 낙하 파손 위험으로 등원 라인에는 채택률이 낮다.
 
 <figure class="infographic">
-  <img src="/images/toddler-divided-plate-2026-1.png" alt="유아 식판 트라이탄·에코젠·스텐 소재별 5구 분리·미끄럼방지 안전성 매칭 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-divided-plate-2026-1.webp" alt="유아 식판 트라이탄·에코젠·스텐 소재별 5구 분리·미끄럼방지 안전성 매칭 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>트라이탄</b><br/>유치원 등원 표준</span>
     <span><b>에코젠</b><br/>가성비 세트 라인</span>
@@ -220,7 +220,7 @@ sources:
 </div>
 
 <figure class="infographic">
-  <img src="/images/toddler-divided-plate-2026-2.png" alt="유아 식판 가성비 미끄럼방지·에코젠 세트·국산 트라이탄 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-divided-plate-2026-2.webp" alt="유아 식판 가성비 미끄럼방지·에코젠 세트·국산 트라이탄 3가지 운영 시나리오 비교" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가성비 미끄럼방지</b><br/>아띠래빗 · 13,200원</span>
     <span><b>에코젠 세트</b><br/>리빙메이트 · 14,400원</span>

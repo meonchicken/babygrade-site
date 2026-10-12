@@ -24,7 +24,7 @@ lsiKeywords:
   - 보행기 디시
   - 보행기 논란
   - 아기 보행기 비교
-heroImage: /images/baby-walker-2026-1.png
+heroImage: /images/baby-walker-2026-1.webp
 heroImageAlt: 아기 보행기 안전 구조·형태·접이 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 아기 보행기는 [국가기술표준원](https://www.kats.go.kr) 기준의 **어린이제품 KC 인증 대상**이 일반적이며, 구매 시 KC 인증과 권장 월령·체중을 확인하는 것이 표준이다. **"발달 촉진"·"빨리 걷게 함"·"100% 안전" 같은 효능 단정·절대 표현은 쓸 수 없다.** [한국소비자원](https://www.kca.go.kr)은 좌식 보행기의 계단·문턱 추락 등 안전사고에 주의를 안내해 왔으며, 계단 차단·짧은 사용·보호자 관찰이 전제다.
 
 <figure class="infographic">
-  <img src="/images/baby-walker-2026-2.png" alt="아기 보행기 형태별 비교 일러스트 — 좌식 보행기·점퍼루·걸음마 보조기" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-walker-2026-2.webp" alt="아기 보행기 형태별 비교 일러스트 — 좌식 보행기·점퍼루·걸음마 보조기" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>안전 구조</b><br/>가드·미끄럼·좌석</span>
     <span><b>형태</b><br/>보행기·점퍼루·보조기</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 기저귀 가방 더쿠
   - 기저귀 가방 디시
   - 기저귀 가방 명품
-heroImage: /images/diaper-bag-2026-1.png
+heroImage: /images/diaper-bag-2026-1.webp
 heroImageAlt: 기저귀 가방 형태·수납 정리·휴대 소재 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -134,7 +134,7 @@ sources:
 | 보냉 대형(백팩) | 보온보냉 포켓 내장 | 분유·이유식 온도 관리·여행 | 가벼운 단거리 외출 |
 
 <figure class="infographic">
-  <img src="/images/diaper-bag-2026-1.png" alt="기저귀 가방 형태·수납·휴대 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/diaper-bag-2026-1.webp" alt="기저귀 가방 형태·수납·휴대 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>백팩·크로스·보냉</span>
     <span><b>수납 정리</b><br/>방수 안감·분류 포켓</span>

@@ -24,7 +24,7 @@ lsiKeywords:
   - 가구 모서리 안전
   - 모서리 보호대 디시
   - 유아 안전용품 모서리
-heroImage: /images/baby-corner-guard-2026-1.png
+heroImage: /images/baby-corner-guard-2026-1.webp
 heroImageAlt: 아기 모서리 보호대 두께·점착력·소재 3축 등급 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -130,7 +130,7 @@ sources:
 어린이 사용을 표방하는 생활용품은 [국가기술표준원](https://www.kats.go.kr)이 관장하는 「어린이제품 안전 특별법」의 적용 대상인지 판단받으며, 표시된 인증 번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 사양표에서 확인 가능한 객관 표시는 **두께(mm) · 길이 또는 개수 · 소재(PVC·NBR·EVA 등) · 가소제 비함유 여부 · 접착 방식 · 인증 번호**다.
 
 <figure class="infographic">
-  <img src="/images/baby-corner-guard-2026-2.png" alt="아기 모서리 보호대 3종 비교 일러스트 — 투명 일자형·U자형 쿠션·코너 캡" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-corner-guard-2026-2.webp" alt="아기 모서리 보호대 3종 비교 일러스트 — 투명 일자형·U자형 쿠션·코너 캡" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>일자형·U자형·코너 캡</span>
     <span><b>두께·완충</b><br/>투명 PVC vs 고탄성 폼</span>

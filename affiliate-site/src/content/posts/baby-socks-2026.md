@@ -25,7 +25,7 @@ lsiKeywords:
   - 무압박 아기 양말
   - 아기 중목 양말
   - 오가닉 아기 양말
-heroImage: /images/baby-socks-2026-1.png
+heroImage: /images/baby-socks-2026-1.webp
 heroImageAlt: 아기 양말 밴드 압박·발목 길이·소재 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -191,7 +191,7 @@ sources:
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 아래 발 길이 구간은 [사이즈코리아](https://sizekorea.kr) 인체치수조사 공개 자료에서 관측되는 범위를 기준으로 잡았다.
 
 <figure class="infographic">
-  <img src="/images/baby-socks-2026-2.png" alt="아기 양말 발목 길이 비교 일러스트 — 단목·중목·롱 3종" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-socks-2026-2.webp" alt="아기 양말 발목 길이 비교 일러스트 — 단목·중목·롱 3종" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>밴드</b><br/>압박·혼용률</span>
     <span><b>길이</b><br/>단목·중목·롱</span>

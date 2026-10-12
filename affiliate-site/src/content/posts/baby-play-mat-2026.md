@@ -24,7 +24,7 @@ lsiKeywords:
   - 놀이방 매트 디시
   - 아기 매트 세척
   - 놀이방 매트 비교
-heroImage: /images/baby-play-mat-2026-1.png
+heroImage: /images/baby-play-mat-2026-1.webp
 heroImageAlt: 아기 놀이방 매트 두께·층간소음·안전 소재·사용 편의 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -126,7 +126,7 @@ sources:
 놀이방 매트는 [국가기술표준원](https://www.kats.go.kr) 기준의 **어린이제품 KC 인증 대상**이 일반적이며, 구매 시 KC 인증과 [유해물질 시험·소재 표기](https://www.me.go.kr)를 확인하는 것이 표준이다. **"층간소음 100% 차단"·"낙상 완전 방지"·"무해 보장" 같은 절대 표현·효능 단정은 쓸 수 없다.** 미끄럼 방지(논슬립) 처리와 모서리 마감을 확인하고, 새 제품은 환기·물청소 후 사용하는 의견이 많다.
 
 <figure class="infographic">
-  <img src="/images/baby-play-mat-2026-2.png" alt="아기 놀이방 매트 유형별 비교 일러스트 — 두꺼운 층간소음·넓은 논슬립·다용도 보조" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-play-mat-2026-2.webp" alt="아기 놀이방 매트 유형별 비교 일러스트 — 두꺼운 층간소음·넓은 논슬립·다용도 보조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>두께·완충</b><br/>층간소음·충격</span>
     <span><b>안전 소재</b><br/>KC·친환경·논슬립</span>

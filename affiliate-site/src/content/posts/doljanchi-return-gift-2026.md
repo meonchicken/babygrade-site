@@ -24,7 +24,7 @@ lsiKeywords:
   - 돌잔치 준비
   - 돌잔치 하객 수
   - 소규모 돌잔치
-heroImage: /images/doljanchi-return-gift-2026-1.png
+heroImage: /images/doljanchi-return-gift-2026-1.webp
 heroImageAlt: 돌잔치 답례품 1인당 단가·구성·포장 3축 등급 커버 일러스트 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -132,7 +132,7 @@ sources:
 단가 구간은 babygrade 편집 기준이다. 돌잔치 답례품은 결혼식·고희연·조문 답례품과 같은 상품이 함께 팔리는 경우가 많아, 상품명에 여러 행사명이 나열돼 있어도 구성 자체는 동일하다. 차이는 **행사 하객 구성**이다. 돌잔치에는 또래 영아를 데려오는 하객이 많고, 이 점이 식품 답례품을 고를 때 추가 판단을 요구한다.
 
 <figure class="infographic">
-  <img src="/images/doljanchi-return-gift-2026-2.png" alt="돌잔치 답례품 유형별 비교 일러스트 — 수건 세트·꿀스틱·호두정과·핸드워시" loading="lazy" width="800" height="450" />
+  <img src="/images/doljanchi-return-gift-2026-2.webp" alt="돌잔치 답례품 유형별 비교 일러스트 — 수건 세트·꿀스틱·호두정과·핸드워시" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>1인당 단가</b><br/>10개 세트 ÷ 10</span>
     <span><b>구성</b><br/>생활용품 vs 식품</span>

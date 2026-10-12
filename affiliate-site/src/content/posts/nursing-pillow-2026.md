@@ -24,7 +24,7 @@ lsiKeywords:
   - 수유 쿠션 디시
   - 수유 쿠션 순면
   - 신생아 수유 쿠션
-heroImage: /images/nursing-pillow-2026-1.png
+heroImage: /images/nursing-pillow-2026-1.webp
 heroImageAlt: 수유 쿠션 D자·C자·반달 모양 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -137,7 +137,7 @@ sources:
 **구매 패턴**상 첫 임부복 도입(임신 중기) 시점에 C자형 또는 D자형 1개 + 출산 후 가성비 반달 1개를 분산 구입하는 패턴이 디시·맘카페 종합상 자주 등장한다. 빅사이즈 라인 1개로 통합 운영하는 패턴도 다수다.
 
 <figure class="infographic">
-  <img src="/images/nursing-pillow-2026-1.png" alt="수유 쿠션 D자·C자·반달 모양 3축 인포그래픽" loading="lazy" width="800" height="450" />
+  <img src="/images/nursing-pillow-2026-1.webp" alt="수유 쿠션 D자·C자·반달 모양 3축 인포그래픽" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>D자형</b><br/>표준 + 양면 사용</span>
     <span><b>C자형</b><br/>빅사이즈 + 바디 필로우</span>

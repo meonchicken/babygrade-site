@@ -25,7 +25,7 @@ lsiKeywords:
   - 아기 침받이
   - 턱받이 세탁
   - 턱받이 KC 인증
-heroImage: /images/baby-bib-2026-1.png
+heroImage: /images/baby-bib-2026-1.webp
 heroImageAlt: 아기 턱받이 커버 범위·오염 처리·고정 구조 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -160,7 +160,7 @@ sources:
 어린이제품의 안전 관리 구분은 [국가기술표준원](https://www.kats.go.kr)이 운영하는 어린이제품 안전 특별법 체계를 따르고, 발급된 인증번호는 [제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있다. 음식이 직접 닿는 부분에 적용되는 기구 및 용기·포장 기준은 [식품의약품안전처](https://www.mfds.go.kr) 공개 자료를 따르며, 영유아 용품의 표시 실태와 소비자 주의 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료가 함께 인용된다.
 
 <figure class="infographic">
-  <img src="/images/baby-bib-2026-2.png" alt="아기 턱받이 3종 비교 일러스트 — 방수 코팅 롤링빕·긴팔 소매형·오목 포켓형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-bib-2026-2.webp" alt="아기 턱받이 3종 비교 일러스트 — 방수 코팅 롤링빕·긴팔 소매형·오목 포켓형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>커버 범위</b><br/>목·가슴·팔</span>
     <span><b>오염 처리</b><br/>세탁·헹굼</span>

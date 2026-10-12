@@ -25,7 +25,7 @@ lsiKeywords:
   - 유아 경추 베개
   - 세탁 가능 유아 베개
   - 유아 베개 소재
-heroImage: /images/toddler-pillow-2026-1.png
+heroImage: /images/toddler-pillow-2026-1.webp
 heroImageAlt: 유아 베개 높이·지지·소재 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -188,7 +188,7 @@ sources:
 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 인증번호로 조회할 수 있고, 인증 체계의 근거는 [국가기술표준원(KATS)](https://www.kats.go.kr)의 어린이제품 안전 특별법 안내에 정리돼 있다. 영유아 침구의 표시 관련 소비자 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 따랐다.
 
 <figure class="infographic">
-  <img src="/images/toddler-pillow-2026-2.png" alt="유아 베개 3종 비교 일러스트 — 통세탁 일체형·높이 조절형·형상 지지형" loading="lazy" width="800" height="450" />
+  <img src="/images/toddler-pillow-2026-2.webp" alt="유아 베개 3종 비교 일러스트 — 통세탁 일체형·높이 조절형·형상 지지형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>높이</b><br/>어깨 기준 cm</span>
     <span><b>지지</b><br/>오목부 형상</span>

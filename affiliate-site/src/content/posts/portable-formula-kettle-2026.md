@@ -24,7 +24,7 @@ lsiKeywords:
   - 분유포트 기내 반입
   - 분유 70도
   - 외출 분유 물
-heroImage: /images/portable-formula-kettle-2026-1.png
+heroImage: /images/portable-formula-kettle-2026-1.webp
 heroImageAlt: 휴대용 분유포트 가열 방식·배터리·용량 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -127,7 +127,7 @@ draft: false
 70℃ 기준은 [WHO 조제분유 조제·보관·취급 지침](https://www.who.int/publications/i/item/9789241595414)을 근거로 잡았다. 휴대용 분유포트는 전기용품이라 안전인증 번호를 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있고, 물에 닿는 내부 용기 재질은 [식품의약품안전처](https://www.mfds.go.kr) 기구·용기 기준으로 읽었다. 인증 표시 읽는 법 전반은 [KC 인증 확인 가이드](/kc-certification-baby-products-2026/)에 정리돼 있다.
 
 <figure class="infographic">
-  <img src="/images/portable-formula-kettle-2026-2.png" alt="휴대용 분유포트 3종 비교 일러스트 — 배터리 분리형·생수병 직수형·접이식 유선형 구조" loading="lazy" width="800" height="450" />
+  <img src="/images/portable-formula-kettle-2026-2.webp" alt="휴대용 분유포트 3종 비교 일러스트 — 배터리 분리형·생수병 직수형·접이식 유선형 구조" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>가열 방식</b><br/>배터리·직수·유선</span>
     <span><b>배터리</b><br/>Wh ÷ 1회 에너지</span>

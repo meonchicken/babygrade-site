@@ -24,7 +24,7 @@ lsiKeywords:
   - 이동식 트롤리
   - 기저귀 정리함 디시
   - 기저귀 정리함 비교
-heroImage: /images/diaper-organizer-2026-1.png
+heroImage: /images/diaper-organizer-2026-1.webp
 heroImageAlt: 기저귀 정리함 형태·수납 정리·이동 재질 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -120,7 +120,7 @@ sources:
 기저귀 정리함은 [한국소비자원](https://www.kca.go.kr)·[국가기술표준원](https://www.kats.go.kr)이 수납가구의 전도·끼임 안전을 안내해 온 품목으로, 구매 시 바퀴 잠금과 모서리 마감을 확인하는 것이 표준이다. **"절대 안 넘어짐"·"완벽 안전" 같은 절대 표현은 쓸 수 없다.** 바퀴 달린 트롤리는 아이가 잡고 일어서다 밀릴 수 있어 평소 잠가 두고, 무거운 재고는 아래 칸에 두어 무게 중심을 낮춘다.
 
 <figure class="infographic">
-  <img src="/images/diaper-organizer-2026-2.png" alt="기저귀 정리함 형태별 비교 일러스트 — 패브릭 박스·이동식 카트·다단 트롤리" loading="lazy" width="800" height="450" />
+  <img src="/images/diaper-organizer-2026-2.webp" alt="기저귀 정리함 형태별 비교 일러스트 — 패브릭 박스·이동식 카트·다단 트롤리" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>형태</b><br/>패브릭·카트·트롤리</span>
     <span><b>수납 정리</b><br/>칸막이·분류·용량</span>

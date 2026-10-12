@@ -25,7 +25,7 @@ lsiKeywords:
   - 신생아 샤워기
   - 유아 샤워기
   - 아기 목욕 샤워기
-heroImage: /images/baby-shower-head-2026-1.png
+heroImage: /images/baby-shower-head-2026-1.webp
 heroImageAlt: 아기 샤워기 수압·필터·온도 3축 등급 인포그래픽 — babygrade Editorial Team 2026
 tldr:
   - >-
@@ -174,7 +174,7 @@ sources:
 절수설비 기준과 가정 내 물 사용량 자료는 [환경부](https://www.me.go.kr) 공개 자료를, 온수 화상과 영유아 목욕 관련 소비자 안전 정보는 [한국소비자원](https://www.kca.go.kr) 공개 자료를 참고했다. 어린이제품의 안전 인증 표시 여부는 [국가기술표준원 제품안전정보센터](https://www.safetykorea.kr)에서 조회할 수 있고, 온수 온도별 화상 도달 시간은 [미국 소비자제품안전위원회(CPSC)](https://www.cpsc.gov)를 비롯한 공개 안전 자료에서 반복 인용되는 값을 따랐다.
 
 <figure class="infographic">
-  <img src="/images/baby-shower-head-2026-2.png" alt="아기 샤워기 3종 비교 일러스트 — 유량 조절형·필터 동봉형·필터 연 단위 세트형" loading="lazy" width="800" height="450" />
+  <img src="/images/baby-shower-head-2026-2.webp" alt="아기 샤워기 3종 비교 일러스트 — 유량 조절형·필터 동봉형·필터 연 단위 세트형" loading="lazy" width="800" height="450" />
   <div class="labels-3col">
     <span><b>수압</b><br/>유량 조절</span>
     <span><b>필터</b><br/>수명(L)</span>
