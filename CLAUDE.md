@@ -45,7 +45,9 @@ repo 가 PUBLIC 이라 이 주소는 커밋 메타데이터로 공개된다 — 
 ## 무인 자동 발행 (2026-07-31~)
 
 **매일 02:00 KST**, GitHub Actions 러너에서 글 1편을 쓰고 게이트를 통과하면 발행한다. 노트북 전원 무관.
-지시서는 `content-pipeline/auto-publish-prompt.md`, 게이트는 `content-pipeline/gate.js`(15항).
+지시서는 `content-pipeline/auto-publish-prompt.md`, 게이트는 `content-pipeline/gate.js`(17항).
+> #16 내부 규칙 누출(block)·#17 해요체(warn)는 2026-10-20 추가 — 그 전에 쓴 글이 `--all` 에서 걸리는 건
+> 오탐이 아니라 **레거시**다(#16 150편 · #17 162편). 새로 생긴 오탐만 0으로 유지한다.
 
 > ⚠️ **repo 루트 = 이 폴더(`babygrade/`)다.** 2026-07-31 재구성 전에는 `affiliate-site/` 가 루트였다.
 > 클라우드는 repo 만 내려받으므로 **규칙 문서·파이프라인이 repo 밖에 있으면 존재하지 않는 것과 같다.**
@@ -111,7 +113,9 @@ KT 회선은 Cloudflare 무료 플랜을 SEA(시애틀) PoP 로 묶어 40KB/s �
   - **네이버 블로그 운영은 여전히 금지** (C-Rank 저품질) — 자체 도메인의 **웹문서 컬렉션**을 노리는 것이다
   - 키워드 선정 게이트: `node content-pipeline/naver-serp.js "키워드"` → 🟢(강도 0~1)만 발행
   - 수요 조회: `source ~/Developer/keyword-tool/.env && node ~/Developer/keyword-tool/naver-volume.js "키워드"` (exact-match만)
-- 톤: **doggrade와 100% 동일** (Wirecutter 스타일 · 객관·데이터·등급)
+- 구성: doggrade와 동일 (Wirecutter 스타일 · 객관·데이터·등급)
+- **말투: 부드러운 해요체 (2026-10-20 사용자 지시 — doggrade와 다름)** — 엄마에게 일러 주듯 「~요」.
+  금지 표현 목록은 **내부 규칙이라 글에 쓰지 않는다**(「광고 표시 주의」 섹션 금지 · 게이트 #16)
 - 작성자: `babygrade Editorial Team` (개인 X, 팀 페르소나)
 
 ---
@@ -193,11 +197,11 @@ KT 회선은 Cloudflare 무료 플랜을 SEA(시애틀) PoP 로 묶어 40KB/s �
 
 - **`/about/` 페이지**: 실명 김재형 · BabyGrade 편집장. 경력 "종합 브랜드사 BM·마케팅 4년 (바이럴·퍼포먼스·콘텐츠·세일즈), 영유아·키즈 카테고리 운영 경험" 명시 + Person/AboutPage Schema + 외부 자문(소아과/공인 영양사 — 추후 갱신) + 의료 면책 고지.
 - **글 본문 작성자**: 여전히 `BabyGrade Editorial Team` (Org persona) — 개별 글에는 실명 X.
-- **본문 톤**: "우리 아이가 직접 써본..." 절대 금지. "리뷰 빅데이터 분석 결과" 톤만 사용.
+- **본문 톤**: "우리 아이가 직접 써본..." 절대 금지. 근거는 "리뷰 빅데이터 분석 결과"로 대고, 말투는 해요체.
 
 ```
-✅ "쿠팡 인증 리뷰 847건 + 맘카페 후기 234건 종합 분석"
-❌ "우리 아이 6개월 때 사용했는데..."
+✅ "쿠팡 인증 리뷰 847건이랑 맘카페 후기 234건을 모아 봤어요"
+❌ "우리 아이 6개월 때 사용했는데..."  ← 말투가 엄마여도 경험담은 지어내지 않는다
 ```
 
 ---
