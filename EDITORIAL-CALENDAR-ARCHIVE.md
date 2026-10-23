@@ -1222,3 +1222,5 @@ px 위치는 버렸다 — 실측상 판정을 좌우한 건 px 가 아니라 �
 - **2026-10-23** ⚪️ 슬롯없음 — 4일째 10/20 「유치원 가방」. 도구 🟢0(ohmykid·all-kids·ukids·gabangclub)이지만 curl 원문상 이 도메인들은 **파워링크 광고 블록(오프셋 56k~130k)** 이고 광고 안에 giftmecca·dongingift·juagift 판촉몰이 섞여 있다. 광고 아래 실제 결과는 스팸(hintshub·nvnetworks)·daangn·enuri·ckb·뉴스 5종·ownerclan(도매) → 개인 구매 의도 아님 · 판정 유지. 「…추천」🟢1 도 aljjagift·onuga·ainmall·domeggook = 판촉·도매.
   백업 2 아기 바디슈트 🟢0 이지만 의류 5일 간격 충돌(다음 실행분 10/21 배냇저고리) · 백업 3 아기 쿠션 🟡2(gmarket) + nursing-pillow·baby-reflux-cushion·10/24 아기 소파와 축 겹침 → 교체 불가. 쿠팡 호출 0 · 파일 생성 0.
   🚨 **사람 조치 필요: 10/20 행을 🗑️ 처리하거나 교체하기 전까지 매일 no_slot 이 반복된다**(10/21 이후 슬롯 전체가 막힘).
+- **2026-10-23 (2회차)** ⚪️ 슬롯없음 — 10/20 「유치원 가방」 재측정(10:04 KST · 정상 응답): 헤드 🟢0 이지만 상위 ohmykids·**b2bkr.net·bagfactory**(B2B·공장 단체주문)·gabang1bungi, 「…추천」🟢1 은 aljjagift·solgift·ionegift·domeggook = 판촉·도매 3+ → 10/20 판촉 제외 규칙으로 판정 유지. 「유치원 책가방」🟢1 도 aljjagift·ssg 혼재.
+  백업 2 아기 바디슈트 🟢0(kangolkids·photomon·heydudu·ralphlauren)이나 다음 실행분 10/21 배냇저고리와 의류 5일 간격 충돌 → 교체 안 함. 쿠팡 호출 0 · 파일 생성 0. 🚨 10/20 행 사람 처리 필요(5일째).
