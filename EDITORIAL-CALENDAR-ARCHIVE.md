@@ -1242,3 +1242,5 @@ px 위치는 버렸다 — 실측상 판정을 좌우한 건 px 가 아니라 �
   백업 2 바디슈트는 다음 실행분 10/21 배냇저고리와 의류 5일 간격 충돌 → 교체 안 함. 쿠팡 호출 0 · 파일 생성 0. 🚨 10/20 행 🗑️ 처리(또는 교체) + 파서 점검 필요.
 - **2026-10-26 (2회차)** ⚪️ 슬롯없음 — 14번째 10/20 「유치원 가방」. `naver-serp.js` 가 헤드·「…추천」·백업 2·3 전부 「🟢0 · navercorp.com」. **원인 확인: where=web HTML(1.45MB)이 결과 URL을 JSON 이스케이프(`https:\/\/…`)로 싣는다** → `domainsInOrder` 정규식이 못 잡는다(`\/`→`/` 치환 후 파싱하면 복구 예상).
   curl 원문 외부 도메인 = onuga·ckb·giftchaeum·allforgift·koreagift·gift010·attogift·bagfactory = 판촉·단체납품 의도 → 판정 유지. 백업 2 바디슈트는 10/21 배냇저고리와 의류 5일 간격 충돌 → 교체 안 함. 쿠팡 호출 0 · 파일 생성 0. 🚨 10/20 행 🗑️ 처리 + 파서 수정 필요.
+- **2026-10-26 (3회차)** ⚪️ 슬롯없음 — 15번째 10/20 「유치원 가방」. `naver-serp.js` 정상 복구(파서 OK): 헤드 🟢0(ohmykids·petro25·ichang·all-kids) · 「…추천」🟢1(petro25·onoffmarket·aljjagift·accio). curl 원문(HTTP 200·1.45MB)에 「원가방」110·「단체」25·「제작」40회 + onuga·changchang-gift·dongingift = 원 단위 단체 제작·판촉 의도 → 판정 유지.
+  백업 2 아기 바디슈트 🟢0(heydudu·photomon·ralphlauren·babyan)이나 다음 실행분 10/21 배냇저고리와 의류 5일 간격 충돌 → 교체 안 함. 쿠팡 호출 0 · 파일 생성 0. 🚨 10/20 행 🗑️ 처리(또는 교체) 필요 — 10/21 이후 슬롯 전체가 막혀 있다.
