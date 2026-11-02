@@ -21,7 +21,6 @@
 //   ① `fds-web-doc-root`(웹문서 블록) 안의 문서만 읽고 ② 측정 실패는 🟢 가 아니라 ERR + exit 2 로 끝난다.
 
 const fs = require('fs');
-const { execFileSync } = require('child_process');
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
@@ -43,18 +42,11 @@ function classify(d) {
   return null;
 }
 
-// 러너 IP 는 간헐적으로 403 을 받는다. Node fetch 만 막히는 날이 있어 curl 로 한 번 더 시도한다.
+// 차단을 다른 클라이언트·UA 로 우회하지 않는다. 403 은 그대로 측정 실패다.
 async function get(url) {
   const res = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'ko-KR,ko;q=0.9' } });
-  if (res.ok) return res.text();
-  try {
-    return execFileSync('curl', ['-sf', '-A', UA, '-H', 'Accept-Language: ko-KR,ko;q=0.9', url], {
-      encoding: 'utf8',
-      maxBuffer: 16 * 1024 * 1024,
-    });
-  } catch {
-    throw new Error(`HTTP ${res.status} — 네이버 차단. 측정 실패(판정 아님)`);
-  }
+  if (!res.ok) throw new Error(`HTTP ${res.status} — 네이버 차단. 측정 실패(판정 아님)`);
+  return res.text();
 }
 
 const DOMAIN = /https?:\/\/(?:www\.|m\.)?([a-z0-9][a-z0-9.-]+\.[a-z]{2,})/;
