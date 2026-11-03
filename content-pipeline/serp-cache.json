@@ -1,0 +1,573 @@
+{
+  "babygrade.kr": {
+    "기저귀파우치": {
+      "kw": "기저귀 파우치",
+      "measuredAt": "2026-11-03T13:28:58.711+09:00",
+      "doms": [
+        "coupang.com",
+        "idus.com"
+      ],
+      "top5": [
+        "coupang.com",
+        "idus.com"
+      ],
+      "hard": [
+        [
+          "coupang.com",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [
+        "gijunpick.com",
+        "t1.daumcdn.net",
+        "ailexpress.kr",
+        "news.jkn.co.kr"
+      ],
+      "buried": true
+    },
+    "기저귀휴지통": {
+      "kw": "기저귀 휴지통",
+      "measuredAt": "2026-11-03T13:29:06.422+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "dongneyuga.com"
+      ],
+      "buried": false
+    },
+    "밤기저귀": {
+      "kw": "밤기저귀",
+      "measuredAt": "2026-11-03T13:28:48.606+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": false
+    },
+    "수유나시": {
+      "kw": "수유 나시",
+      "measuredAt": "2026-11-03T13:28:50.108+09:00",
+      "doms": [
+        "soim.co.kr",
+        "11st.co.kr",
+        "search.11st.co.kr"
+      ],
+      "top5": [
+        "soim.co.kr",
+        "11st.co.kr",
+        "search.11st.co.kr"
+      ],
+      "hard": [
+        [
+          "11st.co.kr",
+          "쇼핑"
+        ],
+        [
+          "search.11st.co.kr",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [
+        "babypick.co.kr",
+        "oopy.lazyrockets.com",
+        "s.011st.com"
+      ],
+      "buried": true
+    },
+    "수유브라추천": {
+      "kw": "수유브라 추천",
+      "measuredAt": "2026-11-03T13:29:12.422+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": false
+    },
+    "신생아바디워시": {
+      "kw": "신생아 바디워시",
+      "measuredAt": "2026-11-03T13:28:25.532+09:00",
+      "doms": [
+        "82cook.com"
+      ],
+      "top5": [
+        "82cook.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "dct-family.com"
+      ],
+      "buried": true
+    },
+    "신생아선물세트": {
+      "kw": "신생아 선물세트",
+      "measuredAt": "2026-11-03T13:28:28.637+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "img.alicdn.com",
+        "oopy.lazyrockets.com"
+      ],
+      "buried": false
+    },
+    "쌍둥이유모차": {
+      "kw": "쌍둥이 유모차",
+      "measuredAt": "2026-11-03T13:28:40.211+09:00",
+      "doms": [
+        "babylist.kr",
+        "bebetong.com"
+      ],
+      "top5": [
+        "babylist.kr",
+        "bebetong.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "아기딸랑이": {
+      "kw": "아기 딸랑이",
+      "measuredAt": "2026-11-03T13:29:09.266+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": false
+    },
+    "아기모자": {
+      "kw": "아기 모자",
+      "measuredAt": "2026-11-03T13:28:43.998+09:00",
+      "doms": [
+        "www2.hm.com",
+        "nike.com",
+        "neweracapkorea.com",
+        "musinsa.com"
+      ],
+      "top5": [
+        "www2.hm.com",
+        "nike.com",
+        "neweracapkorea.com",
+        "musinsa.com"
+      ],
+      "hard": [
+        [
+          "musinsa.com",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "아기범퍼침대": {
+      "kw": "아기 범퍼침대",
+      "measuredAt": "2026-11-03T13:28:33.624+09:00",
+      "doms": [
+        "bebeheaven.co.kr"
+      ],
+      "top5": [
+        "bebeheaven.co.kr"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "아기샴푸": {
+      "kw": "아기 샴푸",
+      "measuredAt": "2026-11-03T13:28:47.194+09:00",
+      "doms": [
+        "bebeganic.com"
+      ],
+      "top5": [
+        "bebeganic.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "cdn.momq.co.kr"
+      ],
+      "buried": true
+    },
+    "아기섬유유연제": {
+      "kw": "아기 섬유유연제",
+      "measuredAt": "2026-11-03T13:28:54.978+09:00",
+      "doms": [
+        "naturelovemere.com"
+      ],
+      "top5": [
+        "naturelovemere.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "a-ha.io",
+        "yugacrewapp.com",
+        "cdn.momq.co.kr",
+        "shop.trendpapago.com"
+      ],
+      "buried": true
+    },
+    "아기오일": {
+      "kw": "아기 오일",
+      "measuredAt": "2026-11-03T13:28:26.933+09:00",
+      "doms": [
+        "johnsonsbaby.co.kr",
+        "greenorganic.co.kr"
+      ],
+      "top5": [
+        "johnsonsbaby.co.kr",
+        "greenorganic.co.kr"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "kids-parenting.hintshub.com",
+        "yugacrewapp.com",
+        "aisok-app.vercel.app",
+        "cicely.storyhauz.com"
+      ],
+      "buried": true
+    },
+    "아기온습도계": {
+      "kw": "아기 온습도계",
+      "measuredAt": "2026-11-03T13:29:15.642+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "t1.daumcdn.net",
+        "jejememe.com",
+        "reviewraon.blogspot.com"
+      ],
+      "buried": false
+    },
+    "아기책장": {
+      "kw": "아기 책장",
+      "measuredAt": "2026-11-03T13:28:38.756+09:00",
+      "doms": [
+        "hyundailivart.co.kr",
+        "ohou.se"
+      ],
+      "top5": [
+        "hyundailivart.co.kr",
+        "ohou.se"
+      ],
+      "hard": [
+        [
+          "ohou.se",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "아기침구세트": {
+      "kw": "아기 침구 세트",
+      "measuredAt": "2026-11-03T13:28:32.243+09:00",
+      "doms": [
+        "formongde.com",
+        "kr.made-in-china.com",
+        "bamboo-bebe.com"
+      ],
+      "top5": [
+        "formongde.com",
+        "kr.made-in-china.com",
+        "bamboo-bebe.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "guide.ruuve.kr",
+        "sallimzip.com",
+        "bodyandwell.com",
+        "textile.decorexpro.com"
+      ],
+      "buried": true
+    },
+    "아기크림": {
+      "kw": "아기 크림",
+      "measuredAt": "2026-11-03T13:29:02.189+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "tistory1.daumcdn.net",
+        "cdn.momq.co.kr",
+        "agiharu.co.kr"
+      ],
+      "buried": false
+    },
+    "아기패딩": {
+      "kw": "아기 패딩",
+      "measuredAt": "2026-11-03T13:28:35.709+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "t1.daumcdn.net",
+        "globekoreanews.com"
+      ],
+      "buried": false
+    },
+    "아기후드집업": {
+      "kw": "아기 후드집업",
+      "measuredAt": "2026-11-03T13:29:00.412+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "eseltree.com",
+        "momstay.kr"
+      ],
+      "buried": false
+    },
+    "어린이마스크": {
+      "kw": "어린이 마스크",
+      "measuredAt": "2026-11-03T13:28:42.382+09:00",
+      "doms": [
+        "kclf.org",
+        "search.11st.co.kr"
+      ],
+      "top5": [
+        "kclf.org",
+        "search.11st.co.kr"
+      ],
+      "hard": [
+        [
+          "search.11st.co.kr",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [
+        "jayacode.com",
+        "floraontrip.com",
+        "nalssisallim.com",
+        "yugacrewapp.com",
+        "oopy.lazyrockets.com"
+      ],
+      "buried": true
+    },
+    "어린이옷장": {
+      "kw": "어린이 옷장",
+      "measuredAt": "2026-11-03T13:29:14.044+09:00",
+      "doms": [
+        "ikea.com",
+        "iloom.com",
+        "store.hanssem.com",
+        "petite-maison.co.kr"
+      ],
+      "top5": [
+        "ikea.com",
+        "iloom.com",
+        "store.hanssem.com",
+        "petite-maison.co.kr"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "어린이집낮잠이불": {
+      "kw": "어린이집 낮잠이불",
+      "measuredAt": "2026-11-03T13:28:53.112+09:00",
+      "doms": [
+        "bebeheaven.co.kr"
+      ],
+      "top5": [
+        "bebeheaven.co.kr"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "어린이치실": {
+      "kw": "어린이 치실",
+      "measuredAt": "2026-11-03T13:29:10.872+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "swooridental.com",
+        "img.etnews.com"
+      ],
+      "buried": false
+    },
+    "어린이침대": {
+      "kw": "어린이 침대",
+      "measuredAt": "2026-11-03T13:28:45.545+09:00",
+      "doms": [
+        "ikea.com",
+        "kr.made-in-china.com",
+        "lady.co.kr"
+      ],
+      "top5": [
+        "ikea.com",
+        "kr.made-in-china.com",
+        "lady.co.kr"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "유모차담요": {
+      "kw": "유모차 담요",
+      "measuredAt": "2026-11-03T13:28:56.776+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "babysleepbedding.blogspot.com",
+        "mom.leapaccount.com",
+        "lifechoicepicks.com",
+        "joiebaby.co.kr"
+      ],
+      "buried": false
+    },
+    "유모차핸드머프": {
+      "kw": "유모차 핸드머프",
+      "measuredAt": "2026-11-03T13:28:30.203+09:00",
+      "doms": [
+        "hmt-korea.com"
+      ],
+      "top5": [
+        "hmt-korea.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "tistory1.daumcdn.net",
+        "babypick.co.kr",
+        "oopy.lazyrockets.com"
+      ],
+      "buried": true
+    },
+    "유아경량패딩": {
+      "kw": "유아 경량패딩",
+      "measuredAt": "2026-11-03T13:28:51.554+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "tistory1.daumcdn.net",
+        "i4rang.blogspot.com",
+        "t1.daumcdn.net"
+      ],
+      "buried": false
+    },
+    "유아레깅스": {
+      "kw": "유아 레깅스",
+      "measuredAt": "2026-11-03T13:29:07.882+09:00",
+      "doms": [
+        "www2.hm.com",
+        "search.11st.co.kr",
+        "xexymix.com"
+      ],
+      "top5": [
+        "www2.hm.com",
+        "search.11st.co.kr",
+        "xexymix.com"
+      ],
+      "hard": [
+        [
+          "search.11st.co.kr",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [
+        "mbcdy.com"
+      ],
+      "buried": true
+    },
+    "유아수저세트": {
+      "kw": "유아 수저세트",
+      "measuredAt": "2026-11-03T13:28:23.931+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "babygrade.kr",
+        "ko.aliexpress.com",
+        "momstay.kr",
+        "money.infobaksa.com",
+        "images.inly.kr",
+        "t1.daumcdn.net"
+      ],
+      "buried": false
+    },
+    "임산부선물": {
+      "kw": "임산부 선물",
+      "measuredAt": "2026-11-03T13:28:37.191+09:00",
+      "doms": [
+        "yugacrew.com"
+      ],
+      "top5": [
+        "yugacrew.com"
+      ],
+      "hard": [],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    },
+    "임산부양말": {
+      "kw": "임산부 양말",
+      "measuredAt": "2026-11-03T13:29:04.866+09:00",
+      "doms": [],
+      "top5": [],
+      "hard": [],
+      "rank": 0,
+      "cited": [
+        "ifit.ai.kr",
+        "kjchoi.co.kr",
+        "shortstar.kr"
+      ],
+      "buried": false
+    },
+    "팬티기저귀": {
+      "kw": "팬티기저귀",
+      "measuredAt": "2026-11-03T13:29:03.493+09:00",
+      "doms": [
+        "babyan.co.kr",
+        "lotteon.com",
+        "momq.co.kr"
+      ],
+      "top5": [
+        "babyan.co.kr",
+        "lotteon.com",
+        "momq.co.kr"
+      ],
+      "hard": [
+        [
+          "lotteon.com",
+          "쇼핑"
+        ]
+      ],
+      "rank": 0,
+      "cited": [],
+      "buried": true
+    }
+  }
+}

@@ -11,6 +11,8 @@
 // 사용법:
 //   node naver-serp.js "아기 유산균" "이유식 냄비"
 //   node naver-serp.js -f seeds.txt
+//   node naver-serp.js --record "아기 유산균"      # 측정값을 serp-cache.json 에 저장(맥에서)
+//   node naver-serp.js --cache-status             # 7일 이내 캐시 건수만 출력(워크플로 사전 점검용)
 //   NSERP_SITE=homegrade.kr node naver-serp.js "무향 세제"
 //
 // 출력: 강도(상위 5개 중 쇼핑몰·정부기관·의학매체 수) · 자사 순위 · 매몰 플래그 · 판정
@@ -19,12 +21,20 @@
 //   구버전은 페이지의 URL 을 위에서부터 긁어서 ① 파워링크 광고 도메인을 「웹문서 상위」로 읽었고
 //   ② 403 차단 페이지의 navercorp.com 을 「🟢 강도 0」으로 출력했다. 지금은
 //   ① `fds-web-doc-root`(웹문서 블록) 안의 문서만 읽고 ② 측정 실패는 🟢 가 아니라 ERR + exit 2 로 끝난다.
+//
+// 📦 2026-11-03 로컬 측정 캐시: 네이버가 GitHub 러너 IP(Azure 대역)를 403 으로 막는 날이 잦다
+//   (10/30 이후 8회 중 6회). 차단을 우회하지 않는다. 대신 사람이 맥에서 `--record` 로 잰 값을
+//   repo 에 커밋해 두면, 러너는 403 을 받았을 때 **7일 이내 캐시**로 판정한다(판정 뒤 📦 표시).
+//   캐시도 없거나 낡았으면 전과 같이 ERR 다. 캐시는 사이트별로 나뉜다(NSERP_SITE).
 
 const fs = require('fs');
+const path = require('path');
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
 const OWN = process.env.NSERP_SITE || 'babygrade.kr';
+const CACHE = process.env.NSERP_CACHE || path.join(__dirname, 'serp-cache.json');
+const CACHE_MAX_DAYS = Number(process.env.NSERP_CACHE_DAYS || 7);
 
 // 우리가 이길 수 없는 도메인 유형
 const SHOPPING =
@@ -103,6 +113,61 @@ async function measure(kw) {
   return { kw, doms, top5, hard, rank, cited, buried: buriedFlag(html) };
 }
 
+// ── 로컬 측정 캐시 ──────────────────────────────────────────────────
+// 파일 모양: { "babygrade.kr": { "유아수저세트": { kw, measuredAt, doms, top5, hard, rank, cited, buried } } }
+// 키는 공백을 뺀 키워드다 — 「아기 침구 세트」와 「아기 침구세트」를 같은 측정으로 본다.
+// 판정(verdict)은 저장하지 않고 읽을 때 다시 계산한다 — 판정 로직이 바뀌면 캐시에도 바로 적용되게.
+const norm = (kw) => kw.replace(/\s+/g, '');
+
+function loadCache() {
+  try {
+    return JSON.parse(fs.readFileSync(CACHE, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+function cacheDays(entry) {
+  return (Date.now() - Date.parse(entry.measuredAt)) / 86400000;
+}
+
+function fromCache(cache, kw) {
+  const e = (cache[OWN] || {})[norm(kw)];
+  if (!e) return { entry: null, days: null };
+  const days = cacheDays(e);
+  return { entry: days <= CACHE_MAX_DAYS ? e : null, days }; // NaN 은 만료로 취급된다
+}
+
+function freshCount(cache) {
+  return Object.values(cache[OWN] || {}).filter((e) => cacheDays(e) <= CACHE_MAX_DAYS).length;
+}
+
+function kstNow() {
+  return new Date(Date.now() + 9 * 3600000).toISOString().replace('Z', '+09:00');
+}
+
+function saveCache(cache, r) {
+  const site = cache[OWN] || {};
+  site[norm(r.kw)] = {
+    kw: r.kw,
+    measuredAt: kstNow(),
+    doms: r.doms,
+    top5: r.top5,
+    hard: r.hard,
+    rank: r.rank,
+    cited: r.cited,
+    buried: r.buried,
+  };
+  // 키 정렬 — git diff 가 읽히게.
+  cache[OWN] = Object.fromEntries(Object.keys(site).sort().map((k) => [k, site[k]]));
+  fs.writeFileSync(CACHE, JSON.stringify(cache, null, 2) + '\n');
+}
+
+const md = (iso) => {
+  const d = new Date(Date.parse(iso) + 9 * 3600000);
+  return `${d.getUTCMonth() + 1}/${d.getUTCDate()}`;
+};
+
 // 판정은 웹문서 블록의 쇼핑·기관·매체 비중만 본다.
 // 「매몰」·「블록 없음」은 참고 표시다 — 2026-11-02 서치어드바이저 대조에서 클릭이 나는 TOP 30 페이지의
 // 대표 키워드가 거의 다 이 상태였다(유축기 추천: 블록 없음인데 CTR 12%). 정적 HTML 로는 실제 노출 위치를 모른다.
@@ -118,10 +183,19 @@ function verdict(r) {
 }
 
 (async () => {
-  let kws = process.argv.slice(2);
+  const args = process.argv.slice(2);
+  const record = args.includes('--record');
+  const cache = loadCache();
+
+  if (args.includes('--cache-status')) {
+    console.log(freshCount(cache));
+    return;
+  }
+
+  let kws = args.filter((a) => !a.startsWith('--'));
   if (kws[0] === '-f') kws = fs.readFileSync(kws[1], 'utf8').split('\n').map((s) => s.trim()).filter(Boolean);
   if (!kws.length) {
-    console.log('사용법: node naver-serp.js "키워드1" "키워드2" ...   또는   node naver-serp.js -f seeds.txt');
+    console.log('사용법: node naver-serp.js [--record] "키워드1" "키워드2" ...   또는   node naver-serp.js -f seeds.txt');
     process.exit(1);
   }
 
@@ -129,17 +203,31 @@ function verdict(r) {
   console.log('-'.repeat(100));
 
   let failed = 0;
+  let cached = 0;
   for (const kw of kws) {
+    let r;
+    let src = '';
     try {
-      const r = await measure(kw);
+      r = await measure(kw);
+      if (record) saveCache(cache, r);
+    } catch (e) {
+      const { entry, days } = fromCache(cache, kw);
+      if (entry) {
+        r = entry;
+        cached += 1;
+        src = ` · 📦 캐시 ${md(entry.measuredAt)} 로컬(${Math.floor(days)}일 전)`;
+      } else {
+        failed += 1;
+        const why = days == null ? '캐시 없음' : `캐시 ${Math.floor(days)}일 전(만료 · ${CACHE_MAX_DAYS}일 초과)`;
+        console.log(`${kw.padEnd(22)}${'ERR'.padStart(12)}  ${e.message} · ${why}`);
+      }
+    }
+    if (r) {
       const [mark, why] = verdict(r);
       const own = r.rank ? `${r.rank}위` : r.cited.includes(OWN) ? 'AI' : '-';
       console.log(
-        `${kw.padEnd(22)}${String(r.hard.length).padStart(5)}${own.padStart(7)}  ${mark} ${why}  |  ${(r.doms.length ? r.top5 : r.cited).slice(0, 4).join(', ')}`
+        `${kw.padEnd(22)}${String(r.hard.length).padStart(5)}${own.padStart(7)}  ${mark} ${why}${src}  |  ${(r.doms.length ? r.top5 : r.cited).slice(0, 4).join(', ')}`
       );
-    } catch (e) {
-      failed += 1;
-      console.log(`${kw.padEnd(22)}${'ERR'.padStart(12)}  ${e.message}`);
     }
     await new Promise((r) => setTimeout(r, 700));
   }
@@ -155,9 +243,12 @@ function verdict(r) {
   console.log('⚠️ 판정과 무관하게 상위 도메인으로 검색 의도를 눈으로 확인할 것.');
   console.log('   예: 「기저귀 교환대」 상위는 sotong.go.kr·kca.go.kr = 공공시설 위치 의도라 순위를 잡아도 전환 0.');
   console.log('   (이 건은 기관 도메인이라 강도로도 걸리지만, 소형몰이 상위인 의도 불일치는 자동으로 못 거른다.)');
+  if (record) console.log(`📦 ${path.relative(process.cwd(), CACHE)} 에 저장했다 — 러너가 403 을 받으면 ${CACHE_MAX_DAYS}일 동안 이 값으로 판정한다.`);
+  if (cached) console.log(`📦 ${cached}개는 실시간 측정이 막혀 로컬 캐시(${CACHE_MAX_DAYS}일 이내)로 판정했다 — 우회가 아니라 같은 도구의 로컬 측정값이다.`);
   if (failed) {
     console.log();
     console.log(`🚨 ${failed}개 측정 실패 — ERR 은 판정이 아니다. 이 키워드는 발행 판단에 쓰지 말 것.`);
+    console.log(`   맥에서 \`node content-pipeline/naver-serp.js --record "<키워드>"\` 를 돌려 커밋하면 러너가 ${CACHE_MAX_DAYS}일 동안 그 값을 쓴다.`);
     process.exit(2);
   }
 })();

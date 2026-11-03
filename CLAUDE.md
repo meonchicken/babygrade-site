@@ -81,6 +81,10 @@ node content-pipeline/gate.js --all --prices                              # 기�
 > 상세 근거 → `EDITORIAL-CALENDAR.md` 「2026-08-04 네이버 SERP 게이트 실측」
 > ⚠️ **2026-11-02 도구 수리**: `where=web` 이 통합검색을 돌려주게 바뀌어 도구가 **광고 도메인을 재고 있었다**(10/20 측정 무효).
 > 지금은 웹문서 블록만 읽고, 차단은 `ERR`(exit 2)로 끝난다. 「블록 없음」·「쇼핑 모듈 아래」는 제외 사유가 아니다 — **정적 측정이라 실제 순위는 서치어드바이저로 본다.**
+> 📦 **2026-11-03 로컬 캐시**: 네이버가 러너 IP 를 403 으로 막는 날이 잦다(10/30 이후 8회 중 6회). 우회하지 않는다 —
+> 대신 맥에서 `node content-pipeline/naver-serp.js --record "키워드"` 로 잰 값을 `content-pipeline/serp-cache.json` 에 커밋해 두면
+> 러너는 403 때 **7일 이내 캐시**로 판정한다(판정 뒤 📦). 캐시도 없으면 ERR 이고, 그땐 워크플로가 LLM 을 띄우지 않는다.
+> **월요일 점검 때 남은 슬롯·백업을 전부 `--record` 로 잰다.**
 
 **컨텍스트 크기 = 실행 비용.** 자동 발행이 매 실행 통째로 읽는 문서는
 `CLAUDE.md` + `EDITORIAL-CALENDAR.md` + `WORKFLOW.md` + `CLUSTERS.md` 4종(현재 약 58KB)뿐이다.

@@ -72,9 +72,10 @@
 > **5단계 (약 20분):**
 > 1. **네이버 수요 측정** — `source ~/Developer/keyword-tool/.env && node ~/Developer/keyword-tool/naver-volume.js -f seeds.txt`
 >    (exact-match만 나온다. hintKeywords 는 1회 5개 상한이라 스크립트가 알아서 끊어 보낸다.)
-> 2. **🆕 네이버 SERP 게이트 (가장 중요)** — `node content-pipeline/naver-serp.js "후보1" "후보2" ...`
+> 2. **🆕 네이버 SERP 게이트 (가장 중요)** — `node content-pipeline/naver-serp.js --record "후보1" "후보2" ...`
 >    **웹문서 블록** 상위 5개 중 **쇼핑몰·정부기관·의학매체가 몇 개인지(=강도)** + 자사 순위를 잰다.
 >    ⚠️ 정적 HTML 측정의 한계: 「블록 없음」·「쇼핑 모듈 아래」는 참고 표시이고 제외 사유가 아니다(11/2 실적 대조). `ERR` 은 측정 실패이지 판정이 아니다.
+>    📦 `--record` 는 `serp-cache.json` 에 저장한다 — 러너가 403 을 받는 날 **7일 동안** 이 값으로 판정한다(11/3~). **확정 슬롯·백업은 전부 `--record` 로 재고 커밋한다.**
 >    **🟢(강도 0~1)만 슬롯에 넣는다.** 🟡은 롱테일 우회 확정 후, 🔴은 제외.
 >    ⚠️ **🟢라고 바로 쓰지 말 것** — 상위 도메인으로 **검색 의도**를 눈으로 확인한다.
 >    (9/2 실측 사례: 「기저귀 발진 크림」은 강도 1 이지만 상위가 health.kr·amc.seoul.kr·canesten
